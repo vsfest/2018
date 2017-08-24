@@ -4,8 +4,8 @@ const serveStatic = require('serve-static')
 
 const app = express()
 
-const serve = (site) => {
-  return serveStatic(`build/${site}`, {
+const serve = (path) => {
+  return serveStatic(`build/${path}`, {
     extensions: ['html'],
     setHeaders(res, path) {
       const isRevved = /[a-f0-9]{7,}/.exec(path)
@@ -22,7 +22,8 @@ const js = serve('js')
 const decompress = serve('decompress')
 
 app.use((req, res, next) => {
-  console.log(req.hostname)
+  if (req.path.match(/static/)) return serve('static')
+
   switch (req.hostname) {
     case '2018.cssconf.com.au':
       return css(req, res, next)
