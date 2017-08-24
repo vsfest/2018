@@ -22,7 +22,7 @@ const js = serve('js')
 const decompress = serve('decompress')
 
 app.use((req, res, next) => {
-  if (req.path.match(/static/)) return serve('static')(req, res, next)
+  if (req.path.match(/static/)) return serve('')(req, res, next)
 
   switch (req.hostname) {
     case '2018.cssconf.com.au':
