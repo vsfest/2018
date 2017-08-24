@@ -10,18 +10,12 @@ const Frame = styled.div`
   
   background: ${ props => props.theme.primary };
   color: white;
-  
-  > img {
-    max-width: calc(100vw - 4rem);
-    max-height: 80vh;
-  }
 `
 
-export default ({ conference }) => (
+export default ({ conference, children }) => (
   <ThemeProvider theme={ conference.theme }>
     <Frame>
-      <h1>HI EVERYONE WELCOME TO {conference.title}!</h1>
-      <img src={conference.logo} alt="Logo"/>
+      { children }
     </Frame>
   </ThemeProvider>
 )
