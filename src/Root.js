@@ -28,9 +28,9 @@ const Frame = styled.div`
 
 const Index = () => (
   <Frame>
-    <Link to="/css">CSS Conf</Link>
-    <Link to="/js">JS Conf</Link>
-    <Link to="/decompress">Decompress</Link>
+    <Link to="/css/">CSS Conf</Link>
+    <Link to="/js/">JS Conf</Link>
+    <Link to="/decompress/">Decompress</Link>
   </Frame>
 )
 
