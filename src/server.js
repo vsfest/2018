@@ -22,6 +22,7 @@ const js = serve('js')
 const decompress = serve('decompress')
 
 app.use((req, res, next) => {
+  console.log(req.hostname)
   switch (req.hostname) {
     case '2018.cssconf.com.au':
       return css(req, res, next)
