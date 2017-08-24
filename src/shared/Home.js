@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 const Frame = styled.div`
   display: flex;
@@ -7,9 +7,14 @@ const Frame = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  
+  color: ${ props => props.theme.primary }
 `
+
 export default ({ conference }) => (
-  <Frame>
-    <h1>HI EVERYONE WELCOME TO {conference.title}!</h1>
-  </Frame>
+  <ThemeProvider theme={ conference.theme }>
+    <Frame>
+      <h1>HI EVERYONE WELCOME TO {conference.title}!</h1>
+    </Frame>
+  </ThemeProvider>
 )

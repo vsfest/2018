@@ -1,14 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link as RouterLink
 } from 'react-router-dom'
 
 import JS from './js'
 import CSS from './css'
 import Decompress from './decompress'
+import * as themes from './data'
 
 const Frame = styled.div`
   display: flex;
@@ -16,21 +17,29 @@ const Frame = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
- 
-  > * {
-    font-size: 1.5rem;
-    padding: 2rem 4rem;
-    border: 2px solid;
-    margin: 1rem;
-    border-radius: 0.5rem;
-  } 
+`
+
+const Link = styled(RouterLink)`
+  background: ${ props => props.theme.primary };
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 4rem;
+  border: 2px solid black;
+  margin: 1rem;
+  border-radius: 0.5rem;
 `
 
 const Index = () => (
   <Frame>
-    <Link to="/css/">CSS Conf</Link>
-    <Link to="/js/">JS Conf</Link>
-    <Link to="/decompress/">Decompress</Link>
+    <ThemeProvider theme={themes.CSS.theme}>
+      <Link to="/css/">CSS Conf</Link>
+    </ThemeProvider>
+    <ThemeProvider theme={themes.JS.theme}>
+      <Link to="/js/">JS Conf</Link>
+    </ThemeProvider>
+    <ThemeProvider theme={themes.Decompress.theme}>
+      <Link to="/decompress/">Decompress</Link>
+    </ThemeProvider>
   </Frame>
 )
 
