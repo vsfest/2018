@@ -9,6 +9,7 @@ import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Team from '../shared/Team'
+import Contact from '../shared/Contact'
 
 
 export default () => (
@@ -25,5 +26,7 @@ export default () => (
 
     <Sponsorship {...Decompress.contact} />
     <Team members={Staff} />
+
+    <Contact {...Decompress.contact} />
   </Home>
 )
