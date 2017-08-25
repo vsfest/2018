@@ -68,7 +68,7 @@ export const JS = {
     sponsorship: 'sponsors@jsconfau.com',
     twitter: 'jsconfau',
     mailingList: {
-      url: 'http://jsconfau.createsend.com/t/j/s/oskty',
+      url: 'https://jsconfau.createsend.com/t/j/s/oskty',
       formName: 'cm-oskty-oskty'
     }
   }
@@ -90,7 +90,7 @@ export const CSS = {
     sponsorship: 'sponsors@cssconf.com.au',
     twitter: 'cssconfau',
     mailingList: {
-      url: 'http://jsconfau.createsend.com/t/j/s/oskty',
+      url: 'https://jsconfau.createsend.com/t/j/s/oskty',
       formName: 'cm-oskty-oskty'
     }
   }
@@ -112,7 +112,7 @@ export const Decompress = {
     sponsorship: 'sponsors@decompress.com.au',
     twitter: 'decompressau',
     mailingList: {
-      url: 'http://jsconfau.createsend.com/t/j/s/obhjr/',
+      url: 'https://jsconfau.createsend.com/t/j/s/obhjr/',
       formName: 'cm-obhjr-obhjr'
     }
   }
