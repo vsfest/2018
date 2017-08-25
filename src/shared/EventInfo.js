@@ -1,25 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const EventInfo = styled.div`
-  margin: 20px auto;
-  max-width: 45em;
+const Address = styled.div`
+  margin-top: 2rem;
+  text-align: center;
+`
 
-  > p:nth-child(1) { text-align: center; }
-
-  > p:nth-child(2) {
-    text-align: left;
-    font-size: 24px;
-    margin: 40px 0;
-  }
+const Description = styled.div`
+  margin-top: 4rem;
+  text-align: left;
+  font-size: 1.5rem;
 `
 
 export default ({ date, venue, description }) => {
   return (
-    <EventInfo>
-      <p>• {venue}</p>
+    <div>
+      <Address>• {venue}</Address>
 
-      <p>{description}</p>
-    </EventInfo>
+      <Description>{description}</Description>
+    </div>
   )
 }

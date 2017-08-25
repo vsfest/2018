@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import { CSS, JS, Decompress } from '../data'
 
 import Headline from './components/Headline'
+import Copy from './components/Copy'
 
 const Schedule = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 `
 
@@ -14,7 +15,7 @@ const Conference = styled.div`
   display: flex;
   align-items: center;
   background: white;
-  margin: 7px;
+  margin: 1rem 0.5rem;
   padding: 30px;
   border-radius: 4px;
   text-align: left;
@@ -54,7 +55,7 @@ export default () => {
         </Conference>
       </Schedule>
 
-      <p>Early Bird tickets are extremely limited. Because our full programme hasn't been announced yet you're able to secure a pass on a discounted price.</p>
+      <Copy>Early Bird tickets are extremely limited. Because our full programme hasn't been announced yet you're able to secure a pass on a discounted price.</Copy>
       <a href={CSS.titoLink}>Buy Tickets</a>
     </div>
   )

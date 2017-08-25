@@ -7,9 +7,9 @@ const Masthead = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
   width: 100%;
   text-transform: uppercase;
+  margin: 2rem 0;
 `
 
 export default ({ date, titoLink }) => {
