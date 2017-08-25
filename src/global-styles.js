@@ -11,11 +11,11 @@ injectGlobal`
          url('/fonts/Maison-Neue-Book.woff') format('woff');
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
   }
 
   body {
     font-family: 'Maison Neue', Helvetica, Arial;
-    font-display: swap;
     font-size: 20px;
     letter-spacing: 0.05rem;
     line-height: 1.45;
