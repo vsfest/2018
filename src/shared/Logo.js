@@ -2,13 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Img = styled.img`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-
-  max-width: calc(30vw - 4rem);
+  display: block;
+  margin: 2rem auto;
+  max-width: calc(60vw - 4rem);
   max-height: 80vh;
 `
 
