@@ -4,37 +4,51 @@ import Headline from './components/Headline'
 
 
 const Team = styled.div`
+  margin: 80px 0;
+`
+
+const Members = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `
 
 const Human = styled.div`
-  display: flex;
-  align-items: center;
+  margin-bottom: 20px;
   font-size: 16px;
-  width: 30%;
+  text-align: center;
+  width: 50%;
+  
+  @media (min-width: 768px) {
+    width: 160px;
+  }
 `
 
 const Avatar = styled.img`
+  display: block;
+  margin: 20px auto;
   border-radius: 100%;
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 70px;
 `
 
 export default ({ members }) => {
   return (
     <Team>
       <Headline>Team</Headline>
-      {members.map((person, i) => {
-        return (
-          <Human key={i}>
-            <Avatar src={person.mugshot} />
-            <div>
-              <p>{person.name}</p>
-              <a href={`https://twitter.com/${person.twitter}`}>@{person.twitter}</a>
-            </div>
-          </Human>
-        )
-      })}
+      <Members>
+        {members.map((person, i) => {
+          return (
+            <Human key={i}>
+              <Avatar src={person.mugshot} />
+              <div>
+                <p>{person.name}</p>
+                <a href={`https://twitter.com/${person.twitter}`}>@{person.twitter}</a>
+              </div>
+            </Human>
+          )
+        })}
+      </Members>
     </Team>
   )
 }
