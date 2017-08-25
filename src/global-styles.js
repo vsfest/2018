@@ -13,15 +13,6 @@ injectGlobal`
     font-weight: 400;
   }
 
-  @font-face {
-    font-family: 'Maison Neue Mono';
-    src: url('/fonts/Maison-Neue-Mono.eot');
-    src: url('/fonts/Maison-Neue-Mono.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Maison-Neue-Mono.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-  }
-
   body {
     font-family: 'Maison Neue', Helvetica, Arial;
     font-display: swap;
