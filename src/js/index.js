@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../shared/Home'
-import { JS } from '../data'
+import { JS, Staff } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
@@ -20,6 +20,6 @@ export default () => (
     <MailingList {...JS.contact} />
 
     <CodeOfConduct />
-    <Team />
+    <Team members={Staff} />
   </Home>
 )
