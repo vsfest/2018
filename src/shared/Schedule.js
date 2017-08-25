@@ -7,19 +7,26 @@ import Copy from './components/Copy'
 
 const Schedule = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  margin: 40px 0;
 `
 
 const Conference = styled.div`
   display: flex;
   align-items: center;
   background: white;
-  margin: 1rem 0.5rem;
-  padding: 30px;
+  margin: 10px;
+  padding: 30px 20px;
+  width: 100%;
   border-radius: 4px;
   text-align: left;
   color: ${ props => props.theme.primary};
+  
+  @media (min-width: 700px) {
+    width: 31%;
+  }
 `
 
 export default () => {

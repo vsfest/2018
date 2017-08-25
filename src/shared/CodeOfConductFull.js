@@ -18,7 +18,7 @@ const Content = styled.div`
   > p { margin-bottom: 1rem; }
   > ul { 
     list-style-type: disc;
-    margin: 0 2rem;
+    margin: 30px;
   }
 `
 

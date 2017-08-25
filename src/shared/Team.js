@@ -4,7 +4,7 @@ import Headline from './components/Headline'
 
 
 const Team = styled.div`
-  margin: 80px 0;
+  margin: 10px 0;
 `
 
 const Members = styled.div`
@@ -20,7 +20,7 @@ const Human = styled.div`
   width: 50%;
   
   @media (min-width: 768px) {
-    width: 160px;
+    width: 180px;
   }
 `
 
