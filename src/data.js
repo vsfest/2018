@@ -64,6 +64,8 @@ export const JS = {
     primary: '#0247BF'
   },
   contact: {
+    team: 'team@jsconfau.com',
+    sponsorship: 'sponsors@jsconfau.com',
     twitter: 'jsconfau',
     mailingList: {
       url: 'http://jsconfau.createsend.com/t/j/s/oskty',
@@ -84,6 +86,8 @@ export const CSS = {
     primary: '#ff7500'
   },
   contact: {
+    team: 'team@cssconf.com.au',
+    sponsorship: 'sponsors@cssconf.com.au',
     twitter: 'cssconfau',
     mailingList: {
       url: 'http://jsconfau.createsend.com/t/j/s/oskty',
@@ -104,6 +108,8 @@ export const Decompress = {
     primary: '#ff3d3d'
   },
   contact: {
+    team: 'team@decompress.com.au',
+    sponsorship: 'sponsors@decompress.com.au',
     twitter: 'decompressau',
     mailingList: {
       url: 'http://jsconfau.createsend.com/t/j/s/obhjr/',
