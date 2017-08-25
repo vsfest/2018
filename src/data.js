@@ -5,6 +5,49 @@ import decompress_logo from './decompress/logo.svg'
 const titoLink = 'https://ti.to/cssconf-au/2018'
 const venue = '5 Blackwood street, North Melbourne'
 
+export const Staff = [
+  {
+    name: 'Ben Schwarz',
+    twitter: 'benschwarz',
+    mugshot: require('./shared/mugshot-ben.jpg')
+  },
+  {
+    name: 'Craig Sharkie',
+    twitter: 'twalve',
+    mugshot: require('./shared/mugshot-craig.png')
+  },
+  {
+    name: 'Glen Maddern',
+    twitter: 'glenmaddern',
+    mugshot: 'mugshot-ben.jpg'
+  },
+  {
+    name: 'Jordan Lewis',
+    twitter: 'jordanlewiz',
+    mugshot: 'mugshot-jordan.jpg'
+  },
+  {
+    name: 'Karolina Szczur',
+    twitter: 'fox',
+    mugshot: 'mugshot-kazza.jpg'
+  },
+  {
+    name: 'Michael Mifsud',
+    twitter: 'xzyfer',
+    mugshot: 'mugshot-michael.jpg'
+  },
+  {
+    name: 'Isabell Kiral-Kornek',
+    twitter: 'isa_kiko',
+    mugshot: 'mugshot-isabell.jpg'
+  },
+  {
+    name: 'Robert Kerr',
+    twitter: 'robrkerr',
+    mugshot: 'mugshot-rob.jpg'
+  }
+]
+
 export const JS = {
   title: 'JSConf AU 2018',
   logo: js_logo,
