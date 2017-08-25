@@ -1,14 +1,14 @@
 import css_wipe from 'css-wipe/js'
 import { injectGlobal } from 'styled-components'
 
+import font from './shared/fonts/Maison-Neue-Book.woff'
+
 injectGlobal`
   ${ css_wipe}
 
   @font-face {
     font-family: 'Maison Neue';
-    src: url('/fonts/Maison-Neue-Book.eot');
-    src: url('/fonts/Maison-Neue-Book.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Maison-Neue-Book.woff') format('woff');
+    src: url('${font}') format('woff');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
