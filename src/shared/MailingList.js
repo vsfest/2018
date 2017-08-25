@@ -2,11 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Headline from './components/Headline'
-import Copy from './components/Copy'
 
 const MailingList = styled.div`
   width: 100%;
-  
+
   form {
     display: flex;
     width: 100%;
@@ -54,11 +53,11 @@ export default ({ twitter, mailingList }) => {
     <MailingList>
       <Headline>Mailing list</Headline>
 
-      <Copy>
+      <p>
         For more announcements follow <a href={`https://twitter.com/${twitter}`} target="_blank">@{twitter}</a> or sign up to our mailing list below.
-      </Copy>
+      </p>
       <form action={mailingList.url} method="post">
-        <input id="fieldEmail" name={mailingList.formName} type="email" required placeholder="Your email address"/>
+        <input id="fieldEmail" name={mailingList.formName} type="email" required placeholder="Your email address" />
         <button type="submit">Join &rarr;</button>
       </form>
     </MailingList>
