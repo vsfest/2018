@@ -1,6 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Link = styled.a`
+  display: block;
+  margin: 0 auto;
+  border: 0;
+`
+
 const Img = styled.img`
   display: block;
   margin: 2rem auto;
@@ -9,5 +15,7 @@ const Img = styled.img`
 `
 
 export default ({ src }) => (
-  <Img src={src} alt="Logo" />
+  <Link href="/">
+    <Img src={src} alt="Logo" />
+  </Link>
 )

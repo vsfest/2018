@@ -4,10 +4,11 @@ import styled from 'styled-components'
 import Headline from './components/Headline'
 
 const MailingList = styled.div`
+  width: 100%;
+
   form {
     display: flex;
     width: 100%;
-    max-width: 44em;
   }
 
   input {
@@ -52,15 +53,13 @@ export default ({ twitter, mailingList }) => {
     <MailingList>
       <Headline>Mailing list</Headline>
 
-      <div class="title-content">
-        <p>
-          For more announcements follow <a href={`https://twitter.com/${twitter}`} target="_blank">@{twitter}</a> or sign up to our mailing list below.
-        </p>
-        <form action={mailingList.url} method="post">
-          <input id="fieldEmail" name={mailingList.formName} type="email" required placeholder="Your email address" />
-          <button type="submit">Join &rarr;</button>
-        </form>
-      </div>
+      <p>
+        For more announcements follow <a href={`https://twitter.com/${twitter}`} target="_blank">@{twitter}</a> or sign up to our mailing list below.
+      </p>
+      <form action={mailingList.url} method="post">
+        <input id="fieldEmail" name={mailingList.formName} type="email" required placeholder="Your email address" />
+        <button type="submit">Join &rarr;</button>
+      </form>
     </MailingList>
   )
 }
