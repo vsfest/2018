@@ -19,32 +19,32 @@ export const Staff = [
   {
     name: 'Glen Maddern',
     twitter: 'glenmaddern',
-    mugshot: 'mugshot-ben.jpg'
+    mugshot: require('./shared/mugshot-glen.jpg')
   },
   {
     name: 'Jordan Lewis',
     twitter: 'jordanlewiz',
-    mugshot: 'mugshot-jordan.jpg'
+    mugshot: require('./shared/mugshot-jordan.jpg')
   },
   {
     name: 'Karolina Szczur',
     twitter: 'fox',
-    mugshot: 'mugshot-kazza.jpg'
+    mugshot: require('./shared/mugshot-kazza.jpg')
   },
   {
     name: 'Michael Mifsud',
     twitter: 'xzyfer',
-    mugshot: 'mugshot-michael.jpg'
+    mugshot: require('./shared/mugshot-michael.jpg')
   },
   {
     name: 'Isabell Kiral-Kornek',
     twitter: 'isa_kiko',
-    mugshot: 'mugshot-isabell.jpg'
+    mugshot: require('./shared/mugshot-isabell.png')
   },
   {
     name: 'Robert Kerr',
     twitter: 'robrkerr',
-    mugshot: 'mugshot-rob.jpg'
+    mugshot: require('./shared/mugshot-rob.jpg')
   }
 ]
 

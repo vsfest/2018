@@ -4,11 +4,14 @@ import Headline from './components/Headline'
 
 
 const Team = styled.div`
-
+  display: flex;
 `
 
 const Human = styled.div`
-
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 30%;
 `
 
 const Avatar = styled.img`
@@ -25,6 +28,10 @@ export default ({ members }) => {
         return (
           <Human key={i}>
             <Avatar src={person.mugshot} />
+            <div>
+              <p>{person.name}</p>
+              <a href={`https://twitter.com/${person.twitter}`}>@{person.twitter}</a>
+            </div>
           </Human>
         )
       })}
