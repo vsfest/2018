@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Headline from './components/Headline'
+
 const MailingList = styled.div`
   form {
     display: flex;
@@ -48,7 +50,7 @@ const MailingList = styled.div`
 export default ({ twitter, mailingList }) => {
   return (
     <MailingList>
-      <p id="mailing-list">Mailing list</p>
+      <Headline>Mailing list</Headline>
 
       <div class="title-content">
         <p>

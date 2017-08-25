@@ -28,7 +28,6 @@ injectGlobal`
     font-size: 20px;
     letter-spacing: 0.05rem;
     line-height: 1.45;
-    hyphens: auto;
   }
 
   a {

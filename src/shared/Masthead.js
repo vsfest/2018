@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import LargeButtonLink from './components/LargeButtonLink'
+
 const Masthead = styled.div`
   display: flex;
   align-items: center;
@@ -10,18 +12,11 @@ const Masthead = styled.div`
   text-transform: uppercase;
 `
 
-const Button = styled.a`
-  background: white;
-  padding: 7px 15px 3px;
-  border-radius: 4px;
-  color: ${ props => props.theme.primary};
-`
-
 export default ({ date, titoLink }) => {
   return (
     <Masthead>
       <p>• {date}</p>
-      <Button href={titoLink}>Buy Tickets</Button>
+      <LargeButtonLink href={titoLink}>Buy Tickets</LargeButtonLink>
     </Masthead>
   )
 }

@@ -2,14 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import { CSS, JS, Decompress } from '../data'
 
+import Headline from './components/Headline'
+
 const Schedule = styled.div`
   display: flex;
   justify-content: space-between;
   text-align: center;
-`
-
-const Heading = styled.h1`
-  font-weight: bold;
 `
 
 const Conference = styled.div`
@@ -23,22 +21,12 @@ const Conference = styled.div`
   color: ${ props => props.theme.primary};
 `
 
-const IdentityDot = styled.span`
-  width: 10px;
-  height: 10px;
-  margin-right: 20px;
-  display: inline-block;
-  border-radius: 100%;
-  background-color: ${ props => props.theme.primary};
-`
-
 export default () => {
   return (
     <div>
-      <Heading>Schedule</Heading>
+      <Headline>Schedule</Headline>
       <Schedule>
         <Conference {...CSS}>
-          <IdentityDot {...CSS} />
           <a href={CSS.url}>
             <div>
               <p>{CSS.title}</p>
@@ -48,7 +36,6 @@ export default () => {
         </Conference>
 
         <Conference {...JS}>
-          <IdentityDot {...JS} />
           <a href={JS.url}>
             <div>
               <p>{JS.title}</p>
@@ -58,7 +45,6 @@ export default () => {
         </Conference>
 
         <Conference {...Decompress}>
-          <IdentityDot {...Decompress} />
           <a href={Decompress.url}>
             <div>
               <p>{Decompress.title}</p>
