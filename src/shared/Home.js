@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
+import Helmet from 'react-helmet'
 import { Route, withRouter } from 'react-router-dom'
 import CodeOfConductFull from './CodeOfConductFull'
 import { Staff } from '../data'
@@ -34,7 +35,7 @@ const ContentPage = ({ conference, children }) => (
 
     <Logo src={conference.logo} />
 
-    { children }
+    {children}
 
     <Team members={Staff} />
   </Container>
@@ -43,12 +44,14 @@ const ContentPage = ({ conference, children }) => (
 export default withRouter(({ conference, children, match }) => (
   <ThemeProvider theme={conference.theme}>
     <Background>
-      <Route exact path={`${match.url}`} render={() => <Container>{children}</Container>}/>
+      <Helmet {...conference} />
+
+      <Route exact path={`${match.url}`} render={() => <Container>{children}</Container>} />
       <Route path={`${match.url}/codeofconduct`} render={() => (
         <ContentPage conference={conference}>
-          <CodeOfConductFull conference={conference}/>
+          <CodeOfConductFull conference={conference} />
         </ContentPage>
-      )}/>
+      )} />
     </Background>
   </ThemeProvider>
 ))
