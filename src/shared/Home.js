@@ -36,7 +36,11 @@ export default withRouter(({ conference, children, match }) => (
   <ThemeProvider theme={conference.theme}>
     <Background>
       <Route exact path={`${match.url}`} render={() => <Container>{children}</Container>}/>
-      <Route path={`${match.url}/codeofconduct`} render={() => <ContentPage conference={conference}><CodeOfConductFull/></ContentPage>}/>
+      <Route path={`${match.url}/codeofconduct`} render={() => (
+        <ContentPage conference={conference}>
+          <CodeOfConductFull conference={conference}/>
+        </ContentPage>
+      )}/>
     </Background>
   </ThemeProvider>
 ))

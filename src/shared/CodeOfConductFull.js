@@ -22,7 +22,7 @@ const Content = styled.div`
   }
 `
 
-export default () => {
+export default ({ conference }) => {
   return (
     <Container>
       <Title>Code of Conduct</Title>
@@ -86,7 +86,7 @@ export default () => {
         </p>
         <ul>
           <li>Contacting a staff member, identified by STAFF badges, buttons, or shirts.</li>
-          <li>Emailing us: <a href="mailto:team@cssconf.com.au">team@cssconf.com.au</a></li>
+          <li>Emailing us: <a href={`mailto:${conference.contact.team}`}>{conference.contact.team}</a></li>
         </ul>
         <p>
           When taking a personal report, our staff will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked to confront anyone and we won't tell anyone who you are.
