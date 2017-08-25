@@ -53,6 +53,9 @@ export default () => {
           </a>
         </Conference>
       </Schedule>
+
+      <p>Early Bird tickets are extremely limited. Because our full programme hasn't been announced yet you're able to secure a pass on a discounted price.</p>
+      <a href={CSS.titoLink}>Buy Tickets</a>
     </div>
   )
 }
