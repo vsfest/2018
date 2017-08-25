@@ -7,15 +7,15 @@ const Frame = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
-  background: ${ props => props.theme.primary };
+
+  background: ${ props => props.theme.primary};
   color: white;
 `
 
 export default ({ conference, children }) => (
-  <ThemeProvider theme={ conference.theme }>
+  <ThemeProvider theme={conference.theme}>
     <Frame>
-      { children }
+      {children}
     </Frame>
   </ThemeProvider>
 )
