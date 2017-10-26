@@ -49,6 +49,7 @@ export const Staff = [
 ]
 
 export const JS = {
+  id: 'js',
   title: 'JSConf AU 2018',
   logo: js_logo,
   date: '21st & 22nd March 2018',
@@ -75,6 +76,7 @@ export const JS = {
 }
 
 export const CSS = {
+  id: 'css',
   title: 'CSSConf AU 2018',
   logo: css_logo,
   date: '20th March 2018',
@@ -97,6 +99,7 @@ export const CSS = {
 }
 
 export const Decompress = {
+  id: 'decompress',
   title: 'Decompress 2018',
   logo: decompress_logo,
   date: '23rd March 2018',
