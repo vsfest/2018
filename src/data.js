@@ -72,7 +72,12 @@ export const JS = {
       url: 'https://jsconfau.createsend.com/t/j/s/oskty',
       formName: 'cm-oskty-oskty'
     }
-  }
+  },
+  previousEvents: [
+    {title: 2016, url: 'http://2016.jsconfau.com/'},
+    {title: 2014, url: 'http://au.jsconf.com/'},
+    {title: 2012}
+  ]
 }
 
 export const CSS = {
@@ -95,7 +100,12 @@ export const CSS = {
       url: 'https://jsconfau.createsend.com/t/j/s/oskty',
       formName: 'cm-oskty-oskty'
     }
-  }
+  },
+  previousEvents: [
+    {title: 2016, url: 'http://2016.cssconf.com.au/'},
+    {title: 2015, url: 'http://2015.cssconf.com.au/'},
+    {title: 2014, url: 'http://2014.cssconf.com.au/'}
+  ]
 }
 
 export const Decompress = {

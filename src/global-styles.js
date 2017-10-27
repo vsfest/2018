@@ -25,7 +25,11 @@ injectGlobal`
     display: inline-block;
     color: inherit;
     text-decoration: none;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
+    
+    &:hover {
+      border-width: 0;
+    }
   }
   
   strong {

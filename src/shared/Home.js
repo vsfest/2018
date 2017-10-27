@@ -18,16 +18,10 @@ const Background = styled.div`
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 60rem;
-  padding: 1rem;
-  
+  // max-width: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  > * {
-    margin-bottom: 4rem;
-  }
 `
 
 const ContentPage = ({ conference, children }) => (

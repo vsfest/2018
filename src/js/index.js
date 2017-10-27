@@ -10,6 +10,7 @@ import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Team from '../shared/Team'
 import Contact from '../shared/Contact'
+import Footer from '../shared/Footer'
 
 export default () => (
   <Home conference={JS}>
@@ -27,5 +28,6 @@ export default () => (
     <Team members={Staff} />
 
     <Contact {...JS.contact} />
+    <Footer {...JS} />
   </Home>
 )
