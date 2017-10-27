@@ -48,7 +48,7 @@ export default withRouter(({ conference, children, match }) => (
       <Helmet {...conference} />
 
       <Route exact path={`${match.url}`} render={() => <Container>{children}</Container>} />
-      <Route path={`${match.url}/codeofconduct`} render={() => (
+      <Route path={`${match.url}/code-of-conduct`} render={() => (
         <ContentPage conference={conference}>
           <CodeOfConductFull conference={conference} />
         </ContentPage>

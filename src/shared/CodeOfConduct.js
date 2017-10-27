@@ -11,7 +11,7 @@ export default () => {
   return (
     <CodeOfConduct>
       <Headline>Code of Conduct</Headline>
-      <Copy>All organisers, sponsors, speakers and attendees are required to follow the <Link to="codeofconduct">conference Code of Conduct</Link>.
+      <Copy>All organisers, sponsors, speakers and attendees are required to follow the <Link to="code-of-conduct">conference Code of Conduct</Link>.
       We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</Copy>
     </CodeOfConduct>
   )

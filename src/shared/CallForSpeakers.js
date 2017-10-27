@@ -24,7 +24,7 @@ const JSConfTestimonials = () => (
       <cite>Michaela Lehr</cite>
     </blockquote>
     <blockquote>
-      <p></p>
+      <p>If you are ever faced with the possibility of submitting a proposal for this conference, don’t even think about it—do it! It was really lovely and well organised—I’m very glad I was invited to apply and my proposal was accepted!</p>
       <cite>Soledad Penandés</cite>
     </blockquote>
   </div>
@@ -208,7 +208,7 @@ export default ({ conference }) => {
     
       <Headline>Code of Conduct</Headline>
       <div>
-        <p>By applying to speak you agree to follow the conference <Link to="codeofconduct">Code of Conduct</Link>. We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</p>
+        <p>By applying to speak you agree to follow the conference <Link to="code-of-conduct">Code of Conduct</Link>. We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</p>
 
         <p>Speakers should pay particular attention and avoid using visuals, audio or language that may potentially be considered offensive or harmful (sexual, racist, homophobic, insensitive, etc.) as it will not be tolerated.</p>
       </div>  
