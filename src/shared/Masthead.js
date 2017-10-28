@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import LargeButtonLink from './components/LargeButtonLink'
+import Container from './components/Container'
 
 const Nav = styled.div`
   color: #222;
-  margin: 0 auto;
-  
-  @media (min-width: 48em) {
-    max-width: 80vw;
-  }
   
   ul {
     margin: 0;
@@ -46,7 +42,7 @@ const NavMobile = styled.nav`
   
   li {
     display: block;
-    padding: 10px 0;
+    padding: 10px 15px;
     margin: 0;
     border-top: 1px solid rgba(0,0,0,.1);
   }
@@ -75,9 +71,8 @@ const NavDesktop = styled.nav`
 `
 
 const Wrapper = styled.div`
-  padding: 15px 30px;
+  padding: 15px 0;
   background-color: white;
-  width: 100%;
   font-size: 16px;
 `
 
@@ -100,6 +95,18 @@ const Button = styled.button`
   &:active {
     background-color: ${ props => props.theme.primaryHover};
     transform: translateY(4px);
+  }
+`
+
+const NavToggle = styled.button`
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
   }
 `
 
@@ -126,16 +133,18 @@ export default class Masthead extends React.Component {
     return (
       <Wrapper>
         <Nav>
-          <NavDesktop>
-            <ul>
-              <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
-              <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
-              <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
-            </ul>
-            <Button href={titoLink}>Get a Ticket</Button>
-          </NavDesktop>
+          <Container>
+            <NavDesktop>
+              <ul>
+                <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
+                <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
+                <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
+              </ul>
+              <Button href={titoLink}>Get a Ticket</Button>
+            </NavDesktop>
+          </Container>
           <NavMobile className={this.state.navOpen ? 'nav-isOpen' : null}>
-            <a onClick={this.toggleNav}>Menu</a>
+            <NavToggle onClick={this.toggleNav}>Menu</NavToggle>
             <ul>
               <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
               <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>

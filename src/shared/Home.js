@@ -11,21 +11,12 @@ import Team from './Team'
 
 const Background = styled.div`
   min-height: 100vh;
-
   background: ${ props => props.theme.primary};
   color: white;
 `
 
-const Container = styled.div`
-  margin: 0 auto;
-  // max-width: 60rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
 const ContentPage = ({ conference, children }) => (
-  <Container>
+  <div>
     <Masthead {...conference} />
 
     <Logo src={conference.logo} />
@@ -33,7 +24,7 @@ const ContentPage = ({ conference, children }) => (
     {children}
 
     <Team members={Staff} />
-  </Container>
+  </div>
 )
 
 export default withRouter(({ conference, children, match }) => (
@@ -41,7 +32,7 @@ export default withRouter(({ conference, children, match }) => (
     <Background>
       <Helmet {...conference} />
 
-      <Route exact path={`${match.url}`} render={() => <Container>{children}</Container>} />
+      <Route exact path={`${match.url}`} render={() => <main>{children}</main>} />
       <Route path={`${match.url}/code-of-conduct`} render={() => (
         <ContentPage conference={conference}>
           <CodeOfConductFull conference={conference} />

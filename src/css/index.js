@@ -11,20 +11,23 @@ import Sponsorship from '../shared/Sponsorship'
 import Team from '../shared/Team'
 import Contact from '../shared/Contact'
 import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
 
 export default () => (
   <Home conference={CSS}>
     <Masthead {...CSS} />
+    <Container>
 
-    <Logo src={CSS.logo} />
-    <EventInfo {...CSS} />
+      <Logo src={CSS.logo} />
+      <EventInfo {...CSS} />
 
-    <Schedule />
-    <MailingList {...CSS.contact} />
+      <Schedule />
+      <MailingList {...CSS.contact} />
 
-    <CodeOfConduct />
+      <CodeOfConduct />
 
-    <Sponsorship {...CSS.contact} />
+      <Sponsorship {...CSS.contact} />
+    </Container>
 
     <Footer {...CSS} />
   </Home>
