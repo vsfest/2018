@@ -26,6 +26,7 @@ injectGlobal`
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid;
+    cursor: pointer;
     
     &:hover {
       border-width: 0;

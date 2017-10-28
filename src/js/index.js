@@ -25,9 +25,7 @@ export default () => (
     <CodeOfConduct />
 
     <Sponsorship {...JS.contact} />
-    <Team members={Staff} />
 
-    <Contact {...JS.contact} />
     <Footer {...JS} />
   </Home>
 )

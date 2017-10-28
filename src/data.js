@@ -62,7 +62,8 @@ export const JS = {
   venue,
   titoLink,
   theme: {
-    primary: '#0247BF'
+    primary: '#0247BF',
+    primaryHover: '#013CA3'
   },
   contact: {
     team: 'team@jsconfau.com',
@@ -90,7 +91,8 @@ export const CSS = {
   venue,
   titoLink,
   theme: {
-    primary: '#ff7500'
+    primary: '#ff7500',
+    primaryHover: '#E86B00'
   },
   contact: {
     team: 'team@cssconf.com.au',
@@ -118,7 +120,8 @@ export const Decompress = {
   venue,
   titoLink,
   theme: {
-    primary: '#ff3d3d'
+    primary: '#ff3d3d',
+    primaryHover: '#E40000'
   },
   contact: {
     team: 'team@decompress.com.au',
