@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { Route, withRouter } from 'react-router-dom'
 import CodeOfConductFull from './CodeOfConductFull'
 import CallForSpeakers from './CallForSpeakers'
+import Team from './Team'
 import { Staff } from '../data'
 import Masthead from './Masthead'
 import Logo from './Logo'
@@ -43,6 +44,11 @@ export default withRouter(({ conference, children, match }) => (
       <Route path={`${match.url}/call-for-speakers`} render={() => (
         <ContentPage conference={conference}>
           <CallForSpeakers conference={conference} />
+        </ContentPage>
+      )} />
+    <Route path={`${match.url}/team`} render={() => (
+        <ContentPage conference={conference}>
+          <Team members={Staff} />
         </ContentPage>
       )} />
     </Background>
