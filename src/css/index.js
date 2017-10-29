@@ -8,10 +8,9 @@ import Schedule from '../shared/Schedule'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
-import Team from '../shared/Team'
-import Contact from '../shared/Contact'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import Section from '../shared/components/Section'
 
 export default () => (
   <Home conference={CSS}>
@@ -19,14 +18,25 @@ export default () => (
     <Container>
 
       <Logo src={CSS.logo} />
-      <EventInfo {...CSS} />
+      <Section>
+        <EventInfo {...CSS} />
+      </Section>
 
-      <Schedule />
-      <MailingList {...CSS.contact} />
+      <Section>
+        <Schedule />
+      </Section>
+      
+      <Section>
+        <MailingList {...CSS.contact} />
+      </Section>
 
-      <CodeOfConduct />
-
-      <Sponsorship {...CSS.contact} />
+      <Section>
+        <CodeOfConduct />
+      </Section>
+      
+      <Section>
+        <Sponsorship {...CSS.contact} />
+      </Section>
     </Container>
 
     <Footer {...CSS} />

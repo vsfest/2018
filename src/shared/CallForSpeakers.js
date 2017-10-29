@@ -6,15 +6,11 @@ import Headline from './components/Headline'
 import Title from './components/Title'
 import LargeButtonLink from './components/LargeButtonLink'
 
-const Container = styled.div`
-  padding: 30px 0;
-  > * {
-    margin-bottom: 30px;
-  }
-`
+import Container from '../shared/components/Container'
+import Section from '../shared/components/Section'
 
 const JSConfTestimonials = () => (
-  <div>
+  <Section>
     <blockquote>
       <p>JSConfAU is amazing, the conference organisers, attendees, location, socials... well basically everything was brilliant! It was such an honour to be a part of it, to talk, play a gig and do a workshop at Decompress. I still haven't left Australia... I may never leave Australia... Thank you so much JSConfAU!</p>
       <cite>Ruth John</cite>
@@ -27,10 +23,10 @@ const JSConfTestimonials = () => (
       <p>If you are ever faced with the possibility of submitting a proposal for this conference, don’t even think about it—do it! It was really lovely and well organised—I’m very glad I was invited to apply and my proposal was accepted!</p>
       <cite>Soledad Penandés</cite>
     </blockquote>
-  </div>
+  </Section>
 )
 const CSSConfTestimonials = () => (
-  <div>
+  <Section>
     <blockquote>
       <p>Speaking at CSSConf AU was definitely a highlight of 2016. The team was so thoughtful and considerate while coordinating the whole thing for speakers and attendees. CSSConf, JSConf, and Decompress AU were some of the best community events I've ever attended. Bonus: I got to pet a wallaby.</p>
       <cite>Ally Palanzi</cite>
@@ -49,7 +45,7 @@ const CSSConfTestimonials = () => (
       <p>I know this must sound cheesy, but there really is something to be said of explicitly inclusive environments. They ease the normal doubts that float around when you're a minority in tech. When you trust that the organisers care about creating an inclusive space, a weight gets lifted. It frees us to absorb, learn, meet amazing people - all the things you're usually supposed to do at a conference, without worries.</p>
       <cite>Serena Chen</cite>
     </blockquote>
-  </div>
+  </Section>
 )
 
 const CSSConfTopics = () => (
@@ -93,20 +89,18 @@ export default ({ conference }) => {
       
       <LargeButtonLink>Submit a talk</LargeButtonLink>
 
-      <Headline>Topic suggestions</Headline>
-      <div>
+      <Section>
+        <Headline>Topic suggestions</Headline>
         <p>While we’re open to a wide range of topics; we’re particularly interested in talks that somewhat fit in the spectrum of: </p>
         
         { conference.id === 'css' ? CSSConfTopics() : JSConfTopics() }
         
         <p>If you’re unsure whether the proposal fits into the conference feel free to submit it nonetheless to avoid missing out on the speaking opportunity. Alternatively, consider applying for our partner conference, { conference.id === 'css' ? 'JSConf' : 'CSSConf' } AU, happening in the same venue during the same week. You’re welcome to propose multiple presentations.</p>
         <p>We’d love to hear what you’re passionate about!</p>
-      </div>
+      </Section>
       
-      <hr />
-      
-      <Headline>How to write a good proposal?</Headline>
-      <div>
+      <Section>
+        <Headline>How to write a good proposal?</Headline>
         <p>Here’s what we expect from a proposal:</p>
         
         <ul>
@@ -116,12 +110,10 @@ export default ({ conference }) => {
           <li><strong>Formatting:</strong> Write with care. Typos, sloppy formatting, all-lowercase proposals will reflect negatively on the outcome of your submission.</li>
           <li><strong>Originality:</strong> We’re committed to pushing the community forward, which is why we favour original div. There’s nothing wrong with a talk that has already been given elsewhere if it will be presented with new information or demonstrations, making it unique for our audience.</li>
         </ul>
-      </div>
+      </Section>  
       
-      <hr />
-      
-      <Headline>We can help</Headline>
-      <div>
+      <Section>
+        <Headline>We can help</Headline>
         <p>
           We know that not everyone considers themselves a potential speaker. Delivering a talk can be challenging. Designing beautiful slides might feel impossible. Live demos can go wrong in so many ways. 
         </p>
@@ -145,12 +137,10 @@ export default ({ conference }) => {
           <li><a href="https://emptysqua.re/blog/how-i-write-a-conference-talk/">Do Your Slides At The Last Minute</a></li>
           <li><a href="http://www.sarahmei.com/blog/2014/04/07/what-your-conference-proposal-is-missing/">What Your Conference Proposal Is Missing</a></li>
         </ul>
-      </div>
+      </Section>
       
-      <hr />
-      
-      <Headline>The selection process</Headline>
-      <div>
+      <Section>
+        <Headline>The selection process</Headline>
         <p>We wrote a lengthy explanation of how we’re going to be gathering submissions and why we’re doing things differently—you should have a look. Here’s how it’ll work in a nutshell:</p>
         
         <ul>
@@ -166,13 +156,11 @@ export default ({ conference }) => {
           <li>Triaged submissions are completely de-anonymised and we select the final lineup.</li>
           <li>Call for Speakers participants are notified, no matter the outcome.</li>
           
-        </ul>
-      </div>
+        </ul>        
+      </Section>
       
-      <hr />
-      
-      <Headline>What we’re offering</Headline>
-      <div>
+      <Section>
+        <Headline>What we’re offering</Headline>
         <p>If your talk is selected, here’s what you’ll get:</p>
         
         <p><strong>Travel to and within Melbourne</strong></p>
@@ -201,26 +189,24 @@ export default ({ conference }) => {
         <p>All talks are recorded, live-streamed and later on published to the conference YouTube channel—that includes slides, demos and any on-screen activity. We do it to benefit the entire tech community and those who couldn’t make it to the conference. If you’re uncomfortable with this approach in anyway, we can work around it. </p>
         
         <p>We will be gathering dietary requirements or any other necessary information to accommodate our speakers prior to the event. If you have any concerns or questions about whether all your needs can be addressed, <a href={`mailto:${team}`}>please contact us.</a></p>
-    
-      </div>  
-    
-      <hr />
-    
-      <Headline>Code of Conduct</Headline>
-      <div>
+
+      </Section>
+      
+      <Section>
+        <Headline>Code of Conduct</Headline>
         <p>By applying to speak you agree to follow the conference <Link to="code-of-conduct">Code of Conduct</Link>. We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</p>
 
-        <p>Speakers should pay particular attention and avoid using visuals, audio or language that may potentially be considered offensive or harmful (sexual, racist, homophobic, insensitive, etc.) as it will not be tolerated.</p>
-      </div>  
-    
-      <hr />
-    
-      <Headline>Past speakers feedback</Headline>
-      <p>Don’t take our word for it and read about the experiences of our past speakers.</p>
+        <p>Speakers should pay particular attention and avoid using visuals, audio or language that may potentially be considered offensive or harmful (sexual, racist, homophobic, insensitive, etc.) as it will not be tolerated.</p>      
+      </Section>
       
-      { conference.id === 'css' ? CSSConfTestimonials() : JSConfTestimonials() }
-      
-      <LargeButtonLink>Submit a talk</LargeButtonLink>
+      <Section>
+        <Headline>Past speakers feedback</Headline>
+        <p>Don’t take our word for it and read about the experiences of our past speakers.</p>
+        
+        { conference.id === 'css' ? CSSConfTestimonials() : JSConfTestimonials() }
+        
+        <LargeButtonLink>Submit a talk</LargeButtonLink>
+      </Section>
 
     </Container>
   )

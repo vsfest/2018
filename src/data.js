@@ -3,7 +3,7 @@ import css_logo from './css/logo.svg'
 import decompress_logo from './decompress/logo.svg'
 
 const titoLink = 'https://ti.to/cssconf-au/2018'
-const venue = '5 Blackwood street, North Melbourne'
+const venue = 'North Melbourne Meat Market'
 
 export const Staff = [
   {
@@ -55,9 +55,7 @@ export const JS = {
   date: '21st & 22nd March 2018',
   url: 'https://2018.jsconfau.com',
   description: `
-    JSConfAU is an event that’s far from the standard conference playbook because we believe you deserve more than that. We focus on two things, pushing JavaScript beyond its boundaries and providing exceptional human social activities that encourage community and friendship building.
-
-    JSConfAU drives beyond what is popular or cool today, toward topics that define and revolutionize the future of our technology.
+    JSConf Australia is a two-day, community event for JavaScript enthusiasts, pushing tech beyond its boundaries. We strongly encourage learning, sharing and making friends.
   `,
   venue,
   titoLink,
@@ -87,7 +85,7 @@ export const CSS = {
   logo: css_logo,
   date: '20th March 2018',
   url: 'https://2018.cssconf.com.au',
-  description: 'CSSConf is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
+  description: 'CSSConf Australia is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
   venue,
   titoLink,
   theme: {

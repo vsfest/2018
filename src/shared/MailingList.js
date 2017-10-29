@@ -51,7 +51,7 @@ const MailingList = styled.div`
 export default ({ twitter, mailingList }) => {
   return (
     <MailingList>
-      <Headline>Mailing list</Headline>
+      <Headline>Stay up to date with announcements</Headline>
 
       <p>
         For more announcements follow <a href={`https://twitter.com/${twitter}`} target="_blank">@{twitter}</a> or sign up to our mailing list below.

@@ -25,11 +25,12 @@ injectGlobal`
     display: inline-block;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     cursor: pointer;
     
     &:hover {
-      border-width: 0;
+      border-color: #222;
+      transition: all 0.2s ease-in;
     }
   }
   

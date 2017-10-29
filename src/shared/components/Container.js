@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export default styled.div`
   margin: 0 auto;
-  max-width: 80vw;
+  max-width: 70vw;
   display: flex;
   flex-direction: column;
   

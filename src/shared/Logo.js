@@ -3,15 +3,18 @@ import styled from 'styled-components'
 
 const Link = styled.a`
   display: block;
-  margin: 0 auto;
   border: 0;
 `
 
 const Img = styled.img`
   display: block;
-  margin: 2rem auto;
-  max-width: calc(60vw - 4rem);
-  max-height: 80vh;
+  margin: 60px auto 30px;
+  max-height: 150px;
+  
+  &:hover {
+    transition: all 0.2s ease;
+    opacity: 0.8;
+  }
 `
 
 export default ({ src }) => (

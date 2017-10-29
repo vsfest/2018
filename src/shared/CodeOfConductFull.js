@@ -3,43 +3,26 @@ import styled from 'styled-components'
 
 import Headline from './components/Headline'
 import Title from './components/Title'
-
-const Container = styled.div`
-  padding: 3rem 0;
-  > * {
-    margin-bottom: 3rem;
-  }
-  > ${ Headline } {
-    margin-bottom: 2rem;
-  }
-`
-
-const Content = styled.div`
-  > p { margin-bottom: 1rem; }
-  > ul { 
-    list-style-type: disc;
-    margin: 30px;
-  }
-`
+import Container from '../shared/components/Container'
+import Section from '../shared/components/Section'
 
 export default ({ conference }) => {
   return (
     <Container>
       <Title>Code of Conduct</Title>
-
       <Headline>
         Purpose
       </Headline>
-      <Content>
+      <Section>
         <p>
           CSSConf AU is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
         </p>
-      </Content>
+      </Section>
 
       <Headline>
         Anti-harassment
       </Headline>
-      <Content>
+      <Section>
         <p>
           Harassment includes, but is not limited to:
         </p>
@@ -53,12 +36,12 @@ export default ({ conference }) => {
           <li>Unwelcome sexual attention</li>
           <li>Advocating for, or encouraging, any of the above behaviour</li>
         </ul>
-      </Content>
+      </Section>
 
       <Headline>
         Enforcement
       </Headline>
-      <Content>
+      <Section>
         <p>
           Participants asked to stop any harassing behavior are expected to comply immediately.
         </p>
@@ -66,12 +49,12 @@ export default ({ conference }) => {
           <strong>If a participant engages in harassing behaviour, event organisers retain the right to take any actions to keep the event a welcoming environment for all participants.</strong> This includes warning the offender or expulsion from the conference with no refund.</p>
         <p>Event organisers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants. We expect participants to follow these rules at all event venues and event-related social activities. We think people should follow these rules outside event activities too!
         </p>
-      </Content>
+      </Section>
 
       <Headline>
         Reporting
       </Headline>
-      <Content>
+      <Section>
         <p>
           If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. Conference staff can be identified by t-shirts. Harassment and other Code of Conduct violations reduce the value of our event for everyone. We want you to be happy at our event. People like you make our event a better place. You can make a report either personally or anonymously.
         </p>
@@ -102,12 +85,12 @@ export default ({ conference }) => {
           <li><strong>Emergency Medical:</strong> Royal Melbourne Hospital, 300 Grattan Street</li>
           <li><strong>Non Emergency:</strong> Errol Street Medical Centre, 65-67 Errol Street</li>
         </ul>
-      </Content>
+      </Section>
 
       <Headline>
         Photo Policy
       </Headline>
-      <Content>
+      <Section>
         <p>
           We will have colored lanyards for attendees to indicate their comfort level with being photographed:
         </p>
@@ -117,12 +100,12 @@ export default ({ conference }) => {
           <li><strong>Red</strong>: do not photograph</li>
         </ul>
         <p>In case of any doubt, please ask before taking photographs of attendees, speakers or staff.</p>
-      </Content>
+      </Section>
 
       <Headline>
         Inclusive language
       </Headline>
-      <Content>
+      <Section>
         <p>
           In our commitment to a harassment-free and inclusive environment we strongly believe it's important to pay attention to harmful language patterns.
         </p>
@@ -139,16 +122,16 @@ export default ({ conference }) => {
         <p>
           For more information please familiarise yourself with <a href="http://geekfeminism.wikia.com/wiki/Nonsexist_language">Geek Feminism wiki guide</a>.
         </p>
-      </Content>
+      </Section>
 
       <Headline>
         Attribution
       </Headline>
-      <Content>
+      <Section>
         <p>
           This Code of Conduct was based on <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Geek Feminism wiki</a>.
         </p>
-      </Content>
+      </Section>
     </Container>
   )
 }

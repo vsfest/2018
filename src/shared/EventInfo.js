@@ -1,23 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Address = styled.div`
-  margin-top: 2rem;
-  text-align: center;
+import Headline from './components/Headline'
+
+const CalloutCopy = styled.p`
+  font-size: 20px;
+  margin: 0;
+  
+  @media (max-width: 48em) {
+    text-align: center;
+  }
 `
 
 const Description = styled.div`
-  margin-top: 4rem;
-  text-align: left;
-  font-size: 1.5rem;
+  margin-top: 30px;
 `
 
 export default ({ date, venue, description }) => {
   return (
     <div>
-      <Address>• {venue}</Address>
-
-      <Description>{description}</Description>
+      <CalloutCopy>{date}</CalloutCopy>
+      <CalloutCopy>{venue}</CalloutCopy>
+    
+      <CalloutCopy><Description>{description}</Description></CalloutCopy>
     </div>
   )
 }

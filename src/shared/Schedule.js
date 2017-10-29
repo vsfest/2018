@@ -8,24 +8,27 @@ import Copy from './components/Copy'
 const Schedule = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   text-align: center;
-  margin: 40px 0;
+  margin: 30px 0;
 `
 
 const Conference = styled.div`
   display: flex;
   align-items: center;
   background: white;
-  margin: 10px;
-  padding: 30px 20px;
+  padding: 30px;
+  margin-right: 10px;
+  margin-bottom: 30px;
   width: 100%;
-  border-radius: 4px;
   text-align: left;
   color: ${ props => props.theme.primary};
   
+  p {
+    margin: 0;
+  }
+  
   @media (min-width: 700px) {
-    width: 31%;
+    width: calc(33% - 10px);
   }
 `
 
@@ -33,12 +36,13 @@ export default () => {
   return (
     <div>
       <Headline>Schedule</Headline>
+      <Copy>The conference is a part of a bigger family of events. Limited Early Bird tickets are now available. Our programme will be announced by January 2018.</Copy>
       <Schedule>
         <Conference {...CSS}>
           <a href={CSS.url}>
             <div>
               <p>{CSS.title}</p>
-              <p>{CSS.date}</p>
+              <span>{CSS.date}</span>
             </div>
           </a>
         </Conference>
@@ -60,10 +64,8 @@ export default () => {
             </div>
           </a>
         </Conference>
+        <a href={CSS.titoLink}>Get a Ticket</a>
       </Schedule>
-
-      <Copy>Early Bird tickets are extremely limited. Because our full programme hasn't been announced yet you're able to secure a pass on a discounted price.</Copy>
-      <a href={CSS.titoLink}>Buy Tickets</a>
     </div>
   )
 }

@@ -9,7 +9,6 @@ import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Team from '../shared/Team'
-import Contact from '../shared/Contact'
 import Footer from '../shared/Footer'
 
 export default () => (

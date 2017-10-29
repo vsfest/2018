@@ -7,7 +7,8 @@ import CallForSpeakers from './CallForSpeakers'
 import { Staff } from '../data'
 import Masthead from './Masthead'
 import Logo from './Logo'
-import Team from './Team'
+import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
 
 const Background = styled.div`
   min-height: 100vh;
@@ -19,11 +20,12 @@ const ContentPage = ({ conference, children }) => (
   <div>
     <Masthead {...conference} />
 
-    <Logo src={conference.logo} />
+    <Container>
+      <Logo src={conference.logo} />
+    </Container>
 
     {children}
-
-    <Team members={Staff} />
+    <Footer {...conference} />
   </div>
 )
 
