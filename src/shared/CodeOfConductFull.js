@@ -5,6 +5,7 @@ import Headline from './components/Headline'
 import Title from './components/Title'
 import Container from '../shared/components/Container'
 import Section from '../shared/components/Section'
+import {LinkMono} from './components/Links'
 
 export default ({ conference }) => {
   return (
@@ -61,7 +62,7 @@ export default ({ conference }) => {
 
         <h3>Anonymous report</h3>
         <p>
-          You can <a href="https://goo.gl/forms/JTszjaub5cJ3stO82">make an anonymous report here</a>. We can't follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.
+          You can <LinkMono href="https://goo.gl/forms/JTszjaub5cJ3stO82">make an anonymous report here</LinkMono>. We can't follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.
         </p>
         <h3>Personal report</h3>
         <p>
@@ -69,7 +70,7 @@ export default ({ conference }) => {
         </p>
         <ul>
           <li>Contacting a staff member, identified by STAFF badges, buttons, or shirts.</li>
-          <li>Emailing us: <a href={`mailto:${conference.contact.team}`}>{conference.contact.team}</a></li>
+          <li>Emailing us: <LinkMono href={`mailto:${conference.contact.team}`}>{conference.contact.team}</LinkMono></li>
         </ul>
         <p>
           When taking a personal report, our staff will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked to confront anyone and we won't tell anyone who you are.
@@ -114,13 +115,13 @@ export default ({ conference }) => {
         <p>
           Words like "crazy", "dumb", "insane" or "lame" are examples of <strong>ableist language</strong>, devaluating people who have physical or mental disabilities. Its appearance often stems not from any intentional desire to offend, but from our innate sense of what it means to be normal. These words can be avoided by using more fitting, clearer descriptions of what we want to communicate.
         </p>
-        <p>To find out more about ableism and replacement terms please read <a href="http://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html">this guide</a>.
+        <p>To find out more about ableism and replacement terms please read <LinkMono href="http://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html">this guide</LinkMono>.
         </p>
 
         <h3>Sexism</h3>
         <p>Using gendered terms like <i>"dude"</i> or <i>"guys"</i> to address a mixed-gendered group of people contributes to furthering exclusion of underrepresented individuals. We strongly advise avoiding gendered pronouns as well as gendered terms. </p>
         <p>
-          For more information please familiarise yourself with <a href="http://geekfeminism.wikia.com/wiki/Nonsexist_language">Geek Feminism wiki guide</a>.
+          For more information please familiarise yourself with <LinkMono href="http://geekfeminism.wikia.com/wiki/Nonsexist_language">Geek Feminism wiki guide</LinkMono>.
         </p>
       </Section>
 
@@ -129,7 +130,7 @@ export default ({ conference }) => {
       </Headline>
       <Section>
         <p>
-          This Code of Conduct was based on <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Geek Feminism wiki</a>.
+          This Code of Conduct was based on <LinkMono href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Geek Feminism wiki</LinkMono>.
         </p>
       </Section>
     </Container>

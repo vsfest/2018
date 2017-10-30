@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-import LargeButtonLink from './components/LargeButtonLink'
+import { ButtonThemed } from './components/Buttons'
 import Container from './components/Container'
+import { LinkThemed } from './components/Links'
 
 const Nav = styled.div`
   color: #222;
@@ -19,14 +20,6 @@ const Nav = styled.div`
     
     @media (min-width: 48em) {
       padding-right: 30px;
-    }
-  }
-  
-  a {
-    border: none;
-    
-    &:hover {
-      color: #666;
     }
   }
 `
@@ -136,20 +129,20 @@ export default class Masthead extends React.Component {
           <Container>
             <NavDesktop>
               <ul>
-                <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
-                <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
-                <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
+                <li><Link to='call-for-speakers' passHref><LinkThemed>Call for Speakers</LinkThemed></Link></li>
+                <li><LinkThemed href={`mailto:${sponsorship}`}>Sponsor</LinkThemed></li>
+                <li><Link to='code-of-conduct' passHref><LinkThemed>Code of Conduct</LinkThemed></Link></li>
               </ul>
-              <Button href={titoLink}>Get a Ticket</Button>
+              <ButtonThemed href={titoLink}>Get a Ticket</ButtonThemed>
             </NavDesktop>
           </Container>
           <NavMobile className={this.state.navOpen ? 'nav-isOpen' : null}>
             <NavToggle onClick={this.toggleNav}>Menu</NavToggle>
             <ul>
-              <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
-              <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
-              <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
-              <li><Link to={titoLink}>Get a Ticket</Link></li>
+              <li><Link to='call-for-speakers' passHref><LinkThemed>Call for Speakers</LinkThemed></Link></li>
+              <li><LinkThemed href={`mailto:${sponsorship}`} passHref>Sponsor</LinkThemed></li>
+              <li><Link to='code-of-conduct' passHref><LinkThemed>Code of Conduct</LinkThemed></Link></li>
+              <li><Link to={titoLink} passHref><LinkThemed>Get a Ticket</LinkThemed></Link></li>
             </ul>
           </NavMobile>
         </Nav>

@@ -8,22 +8,36 @@ import Schedule from '../shared/Schedule'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
-import Team from '../shared/Team'
-
+import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
+import Section from '../shared/components/Section'
 
 export default () => (
   <Home conference={Decompress}>
     <Masthead {...Decompress} />
+    <Container>      
+        <Logo src={Decompress.logo} />
+        <Section>
+          <EventInfo {...Decompress} />
+        </Section>
 
-    <Logo src={Decompress.logo} />
-    <EventInfo {...Decompress} />
+        <Section>
+          <Schedule />
+        </Section>
+        
+        <Section>
+          <MailingList {...Decompress.contact} />
+        </Section>
 
-    <Schedule />
-    <MailingList {...Decompress.contact} />
+        <Section>
+          <CodeOfConduct />
+        </Section>
+        
+        <Section>
+          <Sponsorship {...Decompress.contact} />
+        </Section>
+      </Container>
 
-    <CodeOfConduct />
-
-    <Sponsorship {...Decompress.contact} />
-    <Team members={Staff} />
+      <Footer {...Decompress} />
   </Home>
 )

@@ -4,7 +4,8 @@ import styled from 'styled-components'
 
 import Headline from './components/Headline'
 import Title from './components/Title'
-import LargeButtonLink from './components/LargeButtonLink'
+import {ButtonMono} from './components/Buttons'
+import {LinkMono} from './components/Links'
 
 import Container from '../shared/components/Container'
 import Section from '../shared/components/Section'
@@ -85,9 +86,10 @@ export default ({ conference }) => {
   return (
     <Container>
       <Title>Call For Speakers</Title>
-      <p><strong>The Call for Speakers will close on December 1st.</strong></p>
-      
-      <LargeButtonLink>Submit a talk</LargeButtonLink>
+      <Section>
+        <p><strong>The Call for Speakers will close on December 1st.</strong></p>    
+        <ButtonMono>Submit a talk</ButtonMono>
+      </Section>
 
       <Section>
         <Headline>Topic suggestions</Headline>
@@ -122,7 +124,7 @@ export default ({ conference }) => {
         
         <p>Here’s what we can do:</p>
         <ul>
-          <li>Brainstorm the ideas for a talk (<a href={`mailto:${team}`}>just drop us an email</a>).</li>
+          <li>Brainstorm the ideas for a talk (<LinkMono href={`mailto:${team}`}>just drop us an email</LinkMono>).</li>
           <li>Connect you to experienced speakers, who can offer mentorship in preparing a great talk.</li>
           <li>Provide advice on creating a great slide deck, from typography, colours, div-writing to accessibility and Code of Conduct compliance.</li>
           <li>Rehearse the talk with you via Skype, phone or over a cuppa here in Melbourne.</li>
@@ -132,10 +134,10 @@ export default ({ conference }) => {
         <p>Additionally, you might find these materials helpful:</p>
         
         <ul>
-          <li><a href="http://weareallaweso.me/">You would make an awesome speaker</a></li>
-          <li><a href="http://wunder.schoenaberselten.com/2016/02/16/how-to-prepare-and-write-a-tech-conference-talk/">How to prepare and write a tech conference talk</a></li>
-          <li><a href="https://emptysqua.re/blog/how-i-write-a-conference-talk/">Do Your Slides At The Last Minute</a></li>
-          <li><a href="http://www.sarahmei.com/blog/2014/04/07/what-your-conference-proposal-is-missing/">What Your Conference Proposal Is Missing</a></li>
+          <li><LinkMono href="http://weareallaweso.me/">You would make an awesome speaker</LinkMono></li>
+          <li><LinkMono href="http://wunder.schoenaberselten.com/2016/02/16/how-to-prepare-and-write-a-tech-conference-talk/">How to prepare and write a tech conference talk</LinkMono></li>
+          <li><LinkMono href="https://emptysqua.re/blog/how-i-write-a-conference-talk/">Do Your Slides At The Last Minute</LinkMono></li>
+          <li><LinkMono href="http://www.sarahmei.com/blog/2014/04/07/what-your-conference-proposal-is-missing/">What Your Conference Proposal Is Missing</LinkMono></li>
         </ul>
       </Section>
       
@@ -183,18 +185,18 @@ export default ({ conference }) => {
         <p>As a speaker you can access all the events during View Source Fest free of charge. That includes CSSConf, JSConf, Decompress and all accompanying parties.</p>
         
         <p><strong>A fun post-conference activity day</strong></p>
-        <p>After all events are wrapped up we invite our speakers, their partners or families to enjoy a relaxing day together. Last year we rented a bus and went up to <a href="https://www.zoo.org.au/healesville">Healesville Sanctuary</a> to get to know some of Australia’s famous, not-at-all-deadly animals.</p>
+        <p>After all events are wrapped up we invite our speakers, their partners or families to enjoy a relaxing day together. Last year we rented a bus and went up to <LinkMono href="https://www.zoo.org.au/healesville">Healesville Sanctuary</LinkMono> to get to know some of Australia’s famous, not-at-all-deadly animals.</p>
         
         <p><strong>High-quality recording of your talk</strong></p>
         <p>All talks are recorded, live-streamed and later on published to the conference YouTube channel—that includes slides, demos and any on-screen activity. We do it to benefit the entire tech community and those who couldn’t make it to the conference. If you’re uncomfortable with this approach in anyway, we can work around it. </p>
         
-        <p>We will be gathering dietary requirements or any other necessary information to accommodate our speakers prior to the event. If you have any concerns or questions about whether all your needs can be addressed, <a href={`mailto:${team}`}>please contact us.</a></p>
+        <p>We will be gathering dietary requirements or any other necessary information to accommodate our speakers prior to the event. If you have any concerns or questions about whether all your needs can be addressed, <LinkMono href={`mailto:${team}`}>please contact us.</LinkMono></p>
 
       </Section>
       
       <Section>
         <Headline>Code of Conduct</Headline>
-        <p>By applying to speak you agree to follow the conference <Link to="code-of-conduct">Code of Conduct</Link>. We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</p>
+        <p>By applying to speak you agree to follow the conference <Link to="code-of-conduct" passHref><LinkMono>Code of Conduct</LinkMono></Link>. We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</p>
 
         <p>Speakers should pay particular attention and avoid using visuals, audio or language that may potentially be considered offensive or harmful (sexual, racist, homophobic, insensitive, etc.) as it will not be tolerated.</p>      
       </Section>
@@ -205,7 +207,7 @@ export default ({ conference }) => {
         
         { conference.id === 'css' ? CSSConfTestimonials() : JSConfTestimonials() }
         
-        <LargeButtonLink>Submit a talk</LargeButtonLink>
+        <ButtonMono>Submit a talk</ButtonMono>
       </Section>
 
     </Container>

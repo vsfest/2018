@@ -4,10 +4,10 @@ import styled from 'styled-components'
 
 import Headline from './components/Headline'
 import Title from './components/Title'
-import LargeButtonLink from './components/LargeButtonLink'
 
 import Container from '../shared/components/Container'
 import Section from '../shared/components/Section'
+import {LinkMono} from './components/Links'
 
 const Members = styled.div`
   display: flex;
@@ -52,7 +52,7 @@ export default ({ members }) => {
                 <Avatar src={person.mugshot} />
                 <div>
                   <p>{person.name}</p>
-                  <a href={`https://twitter.com/${person.twitter}`}>@{person.twitter}</a>
+                  <LinkMono href={`https://twitter.com/${person.twitter}`}>@{person.twitter}</LinkMono>
                 </div>
               </Human>
             )

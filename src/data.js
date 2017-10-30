@@ -61,7 +61,9 @@ export const JS = {
   titoLink,
   theme: {
     primary: '#0247BF',
-    primaryHover: '#013CA3'
+    primaryHover: '#013CA3',
+    primaryContrast: '#039FFF',
+    secondary: '#03B7FF'
   },
   contact: {
     team: 'team@jsconfau.com',
@@ -90,7 +92,9 @@ export const CSS = {
   titoLink,
   theme: {
     primary: '#ff7500',
-    primaryHover: '#E86B00'
+    primaryHover: '#E86B00',
+    primaryContrast: '#ff7500',
+    secondary: '#6B3100'
   },
   contact: {
     team: 'team@cssconf.com.au',
@@ -119,7 +123,9 @@ export const Decompress = {
   titoLink,
   theme: {
     primary: '#ff3d3d',
-    primaryHover: '#E40000'
+    primaryHover: '#E40000',
+    primaryContrast: '#ff3d3d',
+    secondary: '#6E1A1A'
   },
   contact: {
     team: 'team@decompress.com.au',
@@ -129,5 +135,10 @@ export const Decompress = {
       url: 'https://jsconfau.createsend.com/t/j/s/obhjr/',
       formName: 'cm-obhjr-obhjr'
     }
-  }
+  },
+  previousEvents: [
+    {title: 2016, url: 'http://2016.decompress.com.au/'},
+    {title: 2015},
+    {title: 2014}
+  ]
 }

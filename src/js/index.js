@@ -10,20 +10,35 @@ import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Team from '../shared/Team'
 import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
+import Section from '../shared/components/Section'
 
 export default () => (
   <Home conference={JS}>
     <Masthead {...JS} />
+    <Container>
 
-    <Logo src={JS.logo} />
-    <EventInfo {...JS} />
+      <Logo src={JS.logo} />
+      <Section>
+        <EventInfo {...JS} />
+      </Section>
 
-    <Schedule />
-    <MailingList {...JS.contact} />
+      <Section>
+        <Schedule />
+      </Section>
+      
+      <Section>
+        <MailingList {...JS.contact} />
+      </Section>
 
-    <CodeOfConduct />
-
-    <Sponsorship {...JS.contact} />
+      <Section>
+        <CodeOfConduct />
+      </Section>
+      
+      <Section>
+        <Sponsorship {...JS.contact} />
+      </Section>
+    </Container>
 
     <Footer {...JS} />
   </Home>

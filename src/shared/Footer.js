@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from './components/Container'
+import { LinkThemed } from './components/Links'
 
 const Footer = styled.div`
   background-color: #222;
@@ -32,7 +33,7 @@ const Footer = styled.div`
     padding-right: 7px;
   }
   
-  a, img {
+  a, img, span {
     margin-right: 7px;
   }
   
@@ -52,15 +53,15 @@ export default ({contact, previousEvents}) => {
           <div>
             <HeadlineSmall>About</HeadlineSmall>
             <ul>
-              <li><Link to='team'>Team</Link>•</li>
-              <li><Link to='code-of-conduct'>Code of Conduct</Link>•</li>
-              <li><a href={`mailto:${team}`}>Contact</a></li>
+              <li><Link to='team' passHref><LinkThemed>Team</LinkThemed></Link>•</li>
+              <li><Link to='code-of-conduct' passHref><LinkThemed>Code of Conduct</LinkThemed></Link>•</li>
+              <li><LinkThemed href={`mailto:${team}`}>Contact</LinkThemed></li>
             </ul>
             
             <HeadlineSmall>Get Involved</HeadlineSmall>
             <ul>
-              <li><a href={`mailto:${sponsorship}`}>Sponsor</a>•</li>
-              <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
+              <li><LinkThemed href={`mailto:${sponsorship}`}>Sponsor</LinkThemed>•</li>
+              <li><Link to='call-for-speakers' passHref><LinkThemed>Call for Speakers</LinkThemed></Link></li>
             </ul>
           </div>
           
@@ -70,13 +71,16 @@ export default ({contact, previousEvents}) => {
               {previousEvents.map((event, i) => {
                 if(event.url) return (
                   <li>
-                    <a href={event.url}>{event.title}</a>
+                    <LinkThemed href={event.url}>{event.title}</LinkThemed>
                     { i === (previousEvents.length - 1) ? null : '•'}
                   </li>
                 )
-                return (<span>{event.title}</span>)
+                return (<li>
+                          <span>{event.title}</span>
+                          { i === (previousEvents.length - 1) ? null : '•'}
+                        </li>)
               })}
-            </ul>  
+            </ul>
             
             <img src="/flag-aboriginal.jpg" alt="Aboriginal Flag" width='40' />
             <img src="/flag-torres.jpg" alt="Torres Strait Islanders Flag" width='40' />

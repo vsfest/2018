@@ -20,19 +20,6 @@ injectGlobal`
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
   }
-
-  a {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 2px solid;
-    cursor: pointer;
-    
-    &:hover {
-      border-color: #222;
-      transition: all 0.2s ease-in;
-    }
-  }
   
   strong {
     font-weight: bold;
@@ -50,12 +37,5 @@ injectGlobal`
   
   li {
     margin-bottom: 15px;
-  }
-  
-  hr {
-    width: 100%;
-    height: 2px;
-    border: none;
-    background-color: white;
   }
 `
