@@ -78,7 +78,8 @@ export const JS = {
     {title: 2016, url: 'http://2016.jsconfau.com/'},
     {title: 2014, url: 'http://au.jsconf.com/'},
     {title: 2012}
-  ]
+  ],
+  isCfpOpen: true
 }
 
 export const CSS = {
@@ -109,7 +110,8 @@ export const CSS = {
     {title: 2016, url: 'http://2016.cssconf.com.au/'},
     {title: 2015, url: 'http://2015.cssconf.com.au/'},
     {title: 2014, url: 'http://2014.cssconf.com.au/'}
-  ]
+  ],
+  isCfpOpen: true
 }
 
 export const Decompress = {
@@ -140,5 +142,6 @@ export const Decompress = {
     {title: 2016, url: 'http://2016.decompress.com.au/'},
     {title: 2015},
     {title: 2014}
-  ]
+  ],
+  isCfpOpen: false
 }

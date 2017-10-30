@@ -58,7 +58,7 @@ const Footer = styled.div`
   }
 `
 
-export default ({contact, previousEvents}) => {
+export default ({isCfpOpen, contact, previousEvents}) => {
   const team = contact.team
   const sponsorship = contact.sponsorship
   
@@ -77,7 +77,7 @@ export default ({contact, previousEvents}) => {
             <HeadlineSmall>Get Involved</HeadlineSmall>
             <ul>
               <li><a href={`mailto:${sponsorship}`}>Sponsor</a>•</li>
-              <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
+              {(isCfpOpen ? (<li><Link to='call-for-speakers'>Call for Speakers</Link></li>) : null)}
             </ul>
           </div>
           

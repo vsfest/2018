@@ -113,6 +113,7 @@ export default class Masthead extends React.Component {
   render() {
     const sponsorship = this.props.contact.sponsorship
     const titoLink = this.props.titoLink
+    const isCfpOpen = this.props.isCfpOpen
     
     return (
       <Wrapper>
@@ -120,7 +121,7 @@ export default class Masthead extends React.Component {
           <Container>
             <NavDesktop>
               <ul>
-                <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
+                {(isCfpOpen ? (<li><Link to='call-for-speakers'>Call for Speakers</Link></li>) : null)}
                 <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
                 <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
               </ul>
