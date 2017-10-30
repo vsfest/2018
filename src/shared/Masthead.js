@@ -4,10 +4,8 @@ import styled from 'styled-components'
 
 import { ButtonThemed } from './components/Buttons'
 import Container from './components/Container'
-import { LinkThemed } from './components/Links'
 
 const Nav = styled.div`
-  color: #222;
   
   ul {
     margin: 0;
@@ -20,6 +18,22 @@ const Nav = styled.div`
     
     @media (min-width: 48em) {
       padding-right: 30px;
+    }
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: ${ props => props.theme.primaryContrast};
+    
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover {
+      text-decoration: underline;
+      color: ${ props => props.theme.primaryHover};
     }
   }
 `
@@ -69,28 +83,6 @@ const Wrapper = styled.div`
   font-size: 16px;
 `
 
-const Button = styled.button`
-  border: none;
-  background-color: ${ props => props.theme.primary};
-  color: white;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-  
-  @media (max-width: 30em) {
-    width: 100%;
-    margin-top: 15px;  
-  }
-  
-  &:hover,
-  &:active {
-    background-color: ${ props => props.theme.primaryHover};
-    transform: translateY(4px);
-  }
-`
-
 const NavToggle = styled.button`
   padding: 0;
   margin: 0;
@@ -119,7 +111,6 @@ export default class Masthead extends React.Component {
   }
   
   render() {
-    const team = this.props.contact.team
     const sponsorship = this.props.contact.sponsorship
     const titoLink = this.props.titoLink
     
@@ -129,9 +120,9 @@ export default class Masthead extends React.Component {
           <Container>
             <NavDesktop>
               <ul>
-                <li><Link to='call-for-speakers' passHref><LinkThemed>Call for Speakers</LinkThemed></Link></li>
-                <li><LinkThemed href={`mailto:${sponsorship}`}>Sponsor</LinkThemed></li>
-                <li><Link to='code-of-conduct' passHref><LinkThemed>Code of Conduct</LinkThemed></Link></li>
+                <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
+                <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
+                <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
               </ul>
               <ButtonThemed href={titoLink}>Get a Ticket</ButtonThemed>
             </NavDesktop>
@@ -139,10 +130,10 @@ export default class Masthead extends React.Component {
           <NavMobile className={this.state.navOpen ? 'nav-isOpen' : null}>
             <NavToggle onClick={this.toggleNav}>Menu</NavToggle>
             <ul>
-              <li><Link to='call-for-speakers' passHref><LinkThemed>Call for Speakers</LinkThemed></Link></li>
-              <li><LinkThemed href={`mailto:${sponsorship}`} passHref>Sponsor</LinkThemed></li>
-              <li><Link to='code-of-conduct' passHref><LinkThemed>Code of Conduct</LinkThemed></Link></li>
-              <li><Link to={titoLink} passHref><LinkThemed>Get a Ticket</LinkThemed></Link></li>
+              <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
+              <li><a href={`mailto:${sponsorship}`}>Sponsor</a></li>
+              <li><Link to='code-of-conduct'>Code of Conduct</Link></li>
+              <li><Link to={titoLink}>Get a Ticket</Link></li>
             </ul>
           </NavMobile>
         </Nav>

@@ -4,11 +4,11 @@ import styled from 'styled-components'
 
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from './components/Container'
-import { LinkThemed } from './components/Links'
 
 const Footer = styled.div`
   background-color: #222;
   font-size: 14px;
+  margin-top: 30px;
   
   footer {
     padding-top: 30px;
@@ -16,6 +16,22 @@ const Footer = styled.div`
     
     @media (min-width: 48em) {
       display: flex;  
+    }
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: ${ props => props.theme.primaryContrast};
+    
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover {
+      text-decoration: underline;
+      color: ${ props => props.theme.primaryHover};
     }
   }
   
@@ -53,15 +69,15 @@ export default ({contact, previousEvents}) => {
           <div>
             <HeadlineSmall>About</HeadlineSmall>
             <ul>
-              <li><Link to='team' passHref><LinkThemed>Team</LinkThemed></Link>•</li>
-              <li><Link to='code-of-conduct' passHref><LinkThemed>Code of Conduct</LinkThemed></Link>•</li>
-              <li><LinkThemed href={`mailto:${team}`}>Contact</LinkThemed></li>
+              <li><Link to='team'>Team</Link>•</li>
+              <li><Link to='code-of-conduct'>Code of Conduct</Link>•</li>
+              <li><a href={`mailto:${team}`}>Contact</a></li>
             </ul>
             
             <HeadlineSmall>Get Involved</HeadlineSmall>
             <ul>
-              <li><LinkThemed href={`mailto:${sponsorship}`}>Sponsor</LinkThemed>•</li>
-              <li><Link to='call-for-speakers' passHref><LinkThemed>Call for Speakers</LinkThemed></Link></li>
+              <li><a href={`mailto:${sponsorship}`}>Sponsor</a>•</li>
+              <li><Link to='call-for-speakers'>Call for Speakers</Link></li>
             </ul>
           </div>
           
@@ -70,15 +86,15 @@ export default ({contact, previousEvents}) => {
             <ul>
               {previousEvents.map((event, i) => {
                 if(event.url) return (
-                  <li>
-                    <LinkThemed href={event.url}>{event.title}</LinkThemed>
+                  <li key={i}>
+                    <a href={event.url}>{event.title}</a>
                     { i === (previousEvents.length - 1) ? null : '•'}
                   </li>
                 )
-                return (<li>
-                          <span>{event.title}</span>
-                          { i === (previousEvents.length - 1) ? null : '•'}
-                        </li>)
+                return (<li key={i}>
+                  <span>{event.title}</span>
+                  { i === (previousEvents.length - 1) ? null : '•'}
+                </li>)
               })}
             </ul>
             

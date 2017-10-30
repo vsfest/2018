@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../shared/Home'
-import { Decompress, Staff } from '../data'
+import { Decompress } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'

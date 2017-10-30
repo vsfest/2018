@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-import Headline from './components/Headline'
 import Title from './components/Title'
 
 import Container from '../shared/components/Container'

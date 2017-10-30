@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Headline from './components/Headline'
-
 const CalloutCopy = styled.p`
   font-size: 20px;
   margin: 0;
