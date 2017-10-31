@@ -22,7 +22,7 @@ export default () => {
         <Expectations>
         <ul>
           <li>8 high quality talks per day</li>
-          <li>nutritious meals</li>
+          <li>delicious, nutritious meals</li>
           <li>endless coffee and soft drinks</li>
         </ul>
         <ul>
