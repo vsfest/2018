@@ -17,7 +17,7 @@ const Schedule = styled.div`
 const Conference = styled.div`
   display: flex;
   align-items: center;
-  border: 2px solid hsla(0, 0%, 0%, 0.2);
+  border: 2px solid ${props => props.theme.secondary};
   padding: 30px;
   margin-right: 10px;
   margin-bottom: 30px;

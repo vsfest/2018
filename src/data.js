@@ -127,7 +127,8 @@ export const Decompress = {
   titoLink,
   theme: {
     primary: 'hsla(0, 100%, 62%, 1)',
-    primaryHover: 'hsla(0, 100%, 45%, 1)'
+    primaryHover: 'hsla(0, 100%, 45%, 1)',
+    secondary: 'hsla(0, 100%, 90%, 1)'
   },
   contact: {
     team: 'team@decompress.com.au',
