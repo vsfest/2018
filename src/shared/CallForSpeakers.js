@@ -276,13 +276,8 @@ export default ({ conference }) => {
                 <strong>Originality:</strong> We’re committed to pushing the
                 community forward, which is why we favour original content.
                 There’s nothing wrong with a talk that has already been given
-<<<<<<< HEAD
                 elsewhere though, if it will be presented with new information
                 or demonstrations, making it unique for our audience.
-=======
-                elsewhere if it will be presented with new information or
-                demonstrations, making it unique for our audience.
->>>>>>> a0b1efff734c80150145710f149601eb817bf108
               </li>
             </ul>
           </div>
