@@ -23,16 +23,7 @@ const decompress = serve('decompress')
 
 app.use((req, res, next) => {
   console.log(req.hostname, req.path)
-  if (req.path.match(/static/)) return serve('')(req, res, next)
-
-  switch (req.hostname) {
-    case '2018.cssconf.com.au':
-      return css(req, res, next)
-    case '2018.jsconfau.com':
-      return js(req, res, next)
-    case '2018.decompress.com.au':
-      return decompress(req, res, next)
-  }
+  return serve('')(req, res, next)
 })
 
 app.get('*', (request, response) => response.sendFile(path.resolve(__dirname, 'build/200.html')))
