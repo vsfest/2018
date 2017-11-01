@@ -4,7 +4,7 @@ import { injectGlobal } from 'styled-components'
 import font from './assets/fonts/Maison-Neue-Book.woff'
 
 injectGlobal`
-  ${ css_wipe }
+  ${css_wipe}
 
   @font-face {
     font-family: 'Maison Neue';

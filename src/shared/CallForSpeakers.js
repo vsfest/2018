@@ -210,13 +210,15 @@ const JSConfTopics = () => (
 export default ({ conference }) => {
   const team = conference.contact.team
   const cfpURL = conference.cfpURL
+  const date = conference.date
 
   return (
     <Container>
-      <Title>Call For Speakers</Title>
       <SectionCentered>
+        <Title>Call For Speakers</Title>
         <p>
-          <strong>The Call for Speakers will close on December 1st.</strong>
+          <strong>The Call for Speakers will close on December 1st.</strong> We
+          strongly advise against waiting to submit at the last minute.
         </p>
         <ButtonThemed href={cfpURL}>Submit a talk</ButtonThemed>
       </SectionCentered>
@@ -302,11 +304,13 @@ export default ({ conference }) => {
         <p>Here’s what we can do:</p>
         <ul>
           <li>
-            Brainstorm the ideas for a talk (<LinkThemed
+            Brainstorm general ideas for a talk (<LinkThemed
               href={`mailto:${team}`}
             >
               just drop us an email
-            </LinkThemed>).
+            </LinkThemed>, but remember to{' '}
+            <strong>not disclose talk titles or full abstracts</strong> as it
+            might disqualify your future submissions).
           </li>
           <li>
             Connect you to experienced speakers, who can offer mentorship in
@@ -314,7 +318,7 @@ export default ({ conference }) => {
           </li>
           <li>
             Provide advice on creating a great slide deck, from typography,
-            colours, div-writing to accessibility and Code of Conduct
+            colours, copy-writing to accessibility and Code of Conduct
             compliance.
           </li>
           <li>
