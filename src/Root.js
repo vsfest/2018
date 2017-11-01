@@ -3,7 +3,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import {
   BrowserRouter as Router,
   Route,
-  Link as RouterLink
 } from 'react-router-dom'
 
 import JS from './js'
@@ -19,7 +18,9 @@ const Frame = styled.div`
   min-height: 100vh;
 `
 
-const Link = styled(RouterLink)`
+const Link = styled.a.attrs({
+  href: props => props.to
+})`
   background: ${ props => props.theme.primary };
   color: white;
   font-size: 1.5rem;
@@ -27,29 +28,50 @@ const Link = styled(RouterLink)`
   border: 2px solid black;
   margin: 1rem;
   border-radius: 0.5rem;
+  text-decoration: none;
+`
+
+const Help = styled.div`
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  pre {
+    margin: 1rem;
+    padding: 1rem;
+    background: #ccc;
+  }
 `
 
 const Index = () => (
   <Frame>
+    <Help>
+      Add this to your <code>/etc/hosts</code> file:
+      <pre>
+        127.0.0.1   css.localhost js.localhost decompress.localhost
+      </pre>
+      Then hax:
+    </Help>
     <ThemeProvider theme={themes.CSS.theme}>
-      <Link to="/css/">CSS Conf</Link>
+      <Link to={themes.CSS.url}>CSS Conf</Link>
     </ThemeProvider>
     <ThemeProvider theme={themes.JS.theme}>
-      <Link to="/js/">JS Conf</Link>
+      <Link to={`http://js.localhost:${window.location.port}`}>JS Conf</Link>
     </ThemeProvider>
     <ThemeProvider theme={themes.Decompress.theme}>
-      <Link to="/decompress/">Decompress</Link>
+      <Link to={`http://decompress.localhost:${window.location.port}`}>Decompress</Link>
     </ThemeProvider>
   </Frame>
 )
 
+const domain = window.location.host
+const RootComponentForDomain =
+  /js/.exec(domain) ? JS :
+  /css/.exec(domain) ? CSS :
+  /decompress/.exec(domain) ? Decompress :
+  Index
+
 export default () => (
   <Router>
-    <div>
-      <Route exact path="/" component={Index}/>
-      <Route path="/js" component={JS}/>
-      <Route path="/css" component={CSS}/>
-      <Route path="/decompress" component={Decompress}/>
-    </div>
+    <RootComponentForDomain/>
   </Router>
 )

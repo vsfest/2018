@@ -24,9 +24,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "react-snapshot": {
-    "stripJS": "^\\/static\\/js\\/main"
-  },
   "prettier": {
     "semi": false,
     "singleQuote": true

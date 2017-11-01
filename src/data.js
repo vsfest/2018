@@ -53,7 +53,7 @@ export const JS = {
   title: 'JSConf AU 2018',
   logo: js_logo,
   date: '21st & 22nd March 2018',
-  url: 'https://2018.jsconfau.com',
+  url: process.env.NODE_ENV === 'production' ? 'https://2018.jsconfau.com' : `http://js.localhost:${window.location.port}`,
   cfpURL: 'https://cfp.jsconfau.com',
   description: `
     JSConf Australia is a two-day, community event for JavaScript enthusiasts, pushing tech beyond its boundaries. We strongly encourage learning, sharing and making friends.
@@ -87,7 +87,7 @@ export const CSS = {
   title: 'CSSConf AU 2018',
   logo: css_logo,
   date: '20th March 2018',
-  url: 'https://2018.cssconf.com.au',
+  url: process.env.NODE_ENV === 'production' ? 'https://2018.cssconf.com.au' : `http://css.localhost:${window.location.port}`,
   cfpURL: 'https://cfp.cssconf.com.au',
   description:
     'CSSConf Australia is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
@@ -120,7 +120,7 @@ export const Decompress = {
   title: 'Decompress 2018',
   logo: decompress_logo,
   date: '23rd March 2018',
-  url: 'https://2018.decompress.com.au',
+  url: process.env.NODE_ENV === 'production' ? 'https://2018.decompress.com.au' : `http://decompress.localhost:${window.location.port}`,
   description:
     'Decompress is a community day for designers and developers run by the CSSConf and JSConf team. Our focus is squarely set on creating an all- inclusive space for attendees to learn, share and create. Topics covered are a blend of CSSConf and JSConf, and will even feature some of the same speakers.',
   venue,
