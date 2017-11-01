@@ -462,7 +462,7 @@ export default ({ conference }) => {
           <strong>Entrance to all conferences</strong>
         </p>
         <p>
-          As a speaker you can access all the events during View Source Fest
+          As a speaker you can access all our events during the conference week
           free of charge. That includes CSSConf, JSConf, Decompress and all
           accompanying parties.
         </p>
