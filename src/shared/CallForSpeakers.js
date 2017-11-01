@@ -16,7 +16,7 @@ import {
 
 const Photo = ({ src, alt = 'Inline image' }) => (
   <Photo.Wrapper>
-    <Photo.Img src={src} alt={alt}/>
+    <Photo.Img src={src} alt={alt} />
   </Photo.Wrapper>
 )
 
@@ -77,7 +77,7 @@ const JSConfTestimonials = () => (
   <Section>
     <Quote>
       <div>
-        <img src={require('../assets/photo-ruth.jpg')} alt="Ruth John"/>
+        <img src={require('../assets/photo-ruth.jpg')} alt="Ruth John" />
         <p>
           JSConfAU is amazing, the conference organisers, attendees, location,
           socials... well basically everything was brilliant! It was such an
@@ -90,7 +90,10 @@ const JSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-michaela.jpg')} alt="Michaela Lehr"/>
+        <img
+          src={require('../assets/photo-michaela.jpg')}
+          alt="Michaela Lehr"
+        />
         <p>
           Feeling anxious giving my first tech talk in English, the organizers
           and attendees made me feel welcome, encouraged and safe. From the Call
@@ -102,7 +105,10 @@ const JSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-soledad.jpg')} alt="Soledad Penandés"/>
+        <img
+          src={require('../assets/photo-soledad.jpg')}
+          alt="Soledad Penandés"
+        />
         <p>
           If you are ever faced with the possibility of submitting a proposal
           for this conference, don’t even think about it—do it! It was really
@@ -118,7 +124,7 @@ const CSSConfTestimonials = () => (
   <Section>
     <Quote>
       <div>
-        <img src={require('../assets/photo-ally.jpg')} alt="Ally Palanzi"/>
+        <img src={require('../assets/photo-ally.jpg')} alt="Ally Palanzi" />
         <p>
           Speaking at CSSConf AU was definitely a highlight of 2016. The team
           was so thoughtful and considerate while coordinating the whole thing
@@ -131,7 +137,7 @@ const CSSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-michael.jpg')} alt="Michael Rog"/>
+        <img src={require('../assets/photo-michael.jpg')} alt="Michael Rog" />
         <p>
           CSSconf AU was the most thoughtfully organized conference I’ve ever
           been a part of. The speaker experience was flawless; I'm so
@@ -143,7 +149,7 @@ const CSSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-nadieh.jpg')} alt="Nadieh Bremer"/>
+        <img src={require('../assets/photo-nadieh.jpg')} alt="Nadieh Bremer" />
         <p>
           Travelling halfway around the world to get the opportunity to speak at
           CSSConf AU 2016 was more than worth it! The attendees interacted with
@@ -156,7 +162,7 @@ const CSSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-serena.jpg')} alt="Serena Chen"/>
+        <img src={require('../assets/photo-serena.jpg')} alt="Serena Chen" />
         <p>
           My experience was wonderful - not only was the conference filled with
           incredibly fascinating talks, having the travel necessities taken care
@@ -209,7 +215,7 @@ export default ({ conference }) => {
       <Title>Call For Speakers</Title>
       <SectionCentered>
         <p>
-          <strong>The Call for Speakers will close on November 31st.</strong>
+          <strong>The Call for Speakers will close on December 1st.</strong>
         </p>
         <ButtonThemed href={cfpURL}>Submit a talk</ButtonThemed>
       </SectionCentered>
