@@ -12,9 +12,8 @@ import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 
 const Background = styled.div`
-  min-height: 100vh;
-  background: ${ props => props.theme.primary};
-  color: white;
+  background-color: #fafafa;
+  color: #222;
 `
 
 const ContentPage = ({ conference, children }) => (
@@ -35,22 +34,35 @@ export default withRouter(({ conference, children, match }) => (
     <Background>
       <Helmet {...conference} />
 
-      <Route exact path={`${match.url}`} render={() => <main>{children}</main>} />
-      <Route path={`${match.url}/code-of-conduct`} render={() => (
-        <ContentPage conference={conference}>
-          <CodeOfConductFull conference={conference} />
-        </ContentPage>
-      )} />
-      <Route path={`${match.url}/call-for-speakers`} render={() => (
-        <ContentPage conference={conference}>
-          <CallForSpeakers conference={conference} />
-        </ContentPage>
-      )} />
-    <Route path={`${match.url}/team`} render={() => (
-        <ContentPage conference={conference}>
-          <Team members={Staff} />
-        </ContentPage>
-      )} />
+      <Route
+        exact
+        path={`${match.url}`}
+        render={() => <main>{children}</main>}
+      />
+      <Route
+        path={`${match.url}/code-of-conduct`}
+        render={() => (
+          <ContentPage conference={conference}>
+            <CodeOfConductFull conference={conference} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path={`${match.url}/call-for-speakers`}
+        render={() => (
+          <ContentPage conference={conference}>
+            <CallForSpeakers conference={conference} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path={`${match.url}/team`}
+        render={() => (
+          <ContentPage conference={conference}>
+            <Team members={Staff} />
+          </ContentPage>
+        )}
+      />
     </Background>
   </ThemeProvider>
 ))

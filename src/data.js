@@ -54,16 +54,16 @@ export const JS = {
   logo: js_logo,
   date: '21st & 22nd March 2018',
   url: 'https://2018.jsconfau.com',
+  cfpURL: 'https://cfp.jsconfau.com',
   description: `
     JSConf Australia is a two-day, community event for JavaScript enthusiasts, pushing tech beyond its boundaries. We strongly encourage learning, sharing and making friends.
   `,
   venue,
   titoLink,
   theme: {
-    primary: '#0247BF',
-    primaryHover: '#013CA3',
-    primaryContrast: '#039FFF',
-    secondary: '#03B7FF'
+    primary: 'hsla(218, 98%, 38%, 1)',
+    primaryHover: 'hsla(218, 98%, 28%, 1)',
+    secondary: 'hsla(218, 98%, 90%, 1)'
   },
   contact: {
     team: 'team@jsconfau.com',
@@ -75,9 +75,9 @@ export const JS = {
     }
   },
   previousEvents: [
-    {title: 2016, url: 'http://2016.jsconfau.com/'},
-    {title: 2014, url: 'http://au.jsconf.com/'},
-    {title: 2012}
+    { title: 2016, url: 'http://2016.jsconfau.com/' },
+    { title: 2014, url: 'http://au.jsconf.com/' },
+    { title: 2012 }
   ],
   isCfpOpen: true
 }
@@ -88,14 +88,15 @@ export const CSS = {
   logo: css_logo,
   date: '20th March 2018',
   url: 'https://2018.cssconf.com.au',
-  description: 'CSSConf Australia is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
+  cfpURL: 'https://cfp.cssconf.com.au',
+  description:
+    'CSSConf Australia is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
   venue,
   titoLink,
   theme: {
-    primary: '#ff7500',
-    primaryHover: '#E86B00',
-    primaryContrast: '#ff7500',
-    secondary: '#6B3100'
+    primary: 'hsla(28, 100%, 50%, 1)',
+    primaryHover: 'hsla(28, 100%, 40%, 1)',
+    secondary: 'hsla(28, 100%, 90%, 1)'
   },
   contact: {
     team: 'team@cssconf.com.au',
@@ -107,9 +108,9 @@ export const CSS = {
     }
   },
   previousEvents: [
-    {title: 2016, url: 'http://2016.cssconf.com.au/'},
-    {title: 2015, url: 'http://2015.cssconf.com.au/'},
-    {title: 2014, url: 'http://2014.cssconf.com.au/'}
+    { title: 2016, url: 'http://2016.cssconf.com.au/' },
+    { title: 2015, url: 'http://2015.cssconf.com.au/' },
+    { title: 2014, url: 'http://2014.cssconf.com.au/' }
   ],
   isCfpOpen: true
 }
@@ -120,14 +121,13 @@ export const Decompress = {
   logo: decompress_logo,
   date: '23rd March 2018',
   url: 'https://2018.decompress.com.au',
-  description: 'Decompress is a community day for designers and developers run by the CSSConf and JSConf team. Our focus is squarely set on creating an all- inclusive space for attendees to learn, share and create. Topics covered are a blend of CSSConf and JSConf, and will even feature some of the same speakers.',
+  description:
+    'Decompress is a community day for designers and developers run by the CSSConf and JSConf team. Our focus is squarely set on creating an all- inclusive space for attendees to learn, share and create. Topics covered are a blend of CSSConf and JSConf, and will even feature some of the same speakers.',
   venue,
   titoLink,
   theme: {
-    primary: '#ff3d3d',
-    primaryHover: '#E40000',
-    primaryContrast: '#ff3d3d',
-    secondary: '#6E1A1A'
+    primary: 'hsla(0, 100%, 62%, 1)',
+    primaryHover: 'hsla(0, 100%, 45%, 1)'
   },
   contact: {
     team: 'team@decompress.com.au',
@@ -139,9 +139,9 @@ export const Decompress = {
     }
   },
   previousEvents: [
-    {title: 2016, url: 'http://2016.decompress.com.au/'},
-    {title: 2015},
-    {title: 2014}
+    { title: 2016, url: 'http://2016.decompress.com.au/' },
+    { title: 2015 },
+    { title: 2014 }
   ],
   isCfpOpen: false
 }

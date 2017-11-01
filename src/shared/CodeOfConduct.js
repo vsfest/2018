@@ -9,14 +9,14 @@ const CodeOfConduct = styled.div`
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    color: ${ props => props.theme.secondary};
-    
+    color: ${props => props.theme.primary};
+
     &:focus {
       outline: none;
     }
-    
+
     &:hover {
-      color: white;
+      color: ${props => props.theme.primaryHover};
       text-decoration: none;
     }
   }
@@ -26,8 +26,12 @@ export default () => {
   return (
     <CodeOfConduct>
       <Headline>Code of Conduct</Headline>
-      <Copy>All organisers, sponsors, speakers and attendees are required to follow the <Link to="code-of-conduct">conference Code of Conduct</Link>.
-      We are committed to providing a harassment-free, professional and welcoming environment for all attendees.</Copy>
+      <Copy>
+        All organisers, sponsors, speakers and attendees are required to follow
+        the <Link to="code-of-conduct">conference Code of Conduct</Link>. We are
+        committed to providing a harassment-free, professional and welcoming
+        environment for all attendees.
+      </Copy>
     </CodeOfConduct>
   )
 }

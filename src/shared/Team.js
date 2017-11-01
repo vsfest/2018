@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import Title from './components/Title'
 
 import Container from '../shared/components/Container'
-import Section from '../shared/components/Section'
-import {LinkMono} from './components/Links'
+import { Section } from '../shared/components/Section'
+import { LinkThemed } from './components/Links'
 
 const Members = styled.div`
   display: flex;
@@ -17,11 +17,11 @@ const Human = styled.div`
   margin-bottom: 30px;
   text-align: center;
   width: 100%;
-  
+
   p {
     margin: 0;
   }
-  
+
   @media (min-width: 30em) {
     width: 180px;
   }
@@ -40,9 +40,22 @@ export default ({ members }) => {
     <Container>
       <Title>Team</Title>
       <Section>
-        <p>Our team consists of some of the most respected web practitioners both locally and globally. We’re regular contributors to Open Source, and have run many events in the past, from user group meetups like SydCSS, ngmelb, Melbourne Ruby, Sydney Ruby, MelbCSS, BeResponsive to CSSConf Oakland or JSConf EU. We’ve also spoken at events all over Australia and internationally.</p>
+        <p>
+          Our team consists of some of the most respected web practitioners both
+          locally and globally. We’re regular contributors to Open Source, and
+          have run many events in the past, from user group meetups like SydCSS,
+          ngmelb, Melbourne Ruby, Sydney Ruby, MelbCSS, BeResponsive to CSSConf
+          Oakland or JSConf EU. We’ve also spoken at events all over Australia
+          and internationally.
+        </p>
 
-        <p>We know what makes an event great, and we’re striving to create an inclusive and memorable conference here in Melbourne. More importantly, we’re a registered not-for-profit, bootstrapping CSSConf with many hours of hard, voluntary work—your help is invaluable and appreciated by both us and the community.</p>
+        <p>
+          We know what makes an event great, and we’re striving to create an
+          inclusive and memorable conference here in Melbourne. More
+          importantly, we’re a registered not-for-profit, bootstrapping CSSConf
+          with many hours of hard, voluntary work—your help is invaluable and
+          appreciated by both us and the community.
+        </p>
         <Members>
           {members.map((person, i) => {
             return (
@@ -50,13 +63,15 @@ export default ({ members }) => {
                 <Avatar src={person.mugshot} />
                 <div>
                   <p>{person.name}</p>
-                  <LinkMono href={`https://twitter.com/${person.twitter}`}>@{person.twitter}</LinkMono>
+                  <LinkThemed href={`https://twitter.com/${person.twitter}`}>
+                    @{person.twitter}
+                  </LinkThemed>
                 </div>
               </Human>
             )
           })}
         </Members>
       </Section>
-      </Container>
-    )
-  }
+    </Container>
+  )
+}

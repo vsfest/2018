@@ -4,27 +4,18 @@ const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  
+
   &:focus {
     outline: none;
-  }
-  
-  &:hover {
-    text-decoration: underline;
   }
 `
 
 const LinkThemed = Link.extend`
-  color: ${ props => props.theme.primaryContrast};
-`
+  color: ${props => props.theme.primary};
 
-const LinkMono = Link.extend`
-  color: ${ props => props.theme.secondary};
-  
   &:hover {
-    color: white;
-    text-decoration: none;
+    color: ${props => props.theme.primaryHover};
   }
 `
 
-export {LinkThemed, LinkMono}
+export { LinkThemed }

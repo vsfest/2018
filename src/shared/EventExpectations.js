@@ -2,24 +2,31 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Headline from './components/Headline'
-import Copy from './components/Copy'
-import Section from './components/Section'
+import { SectionCentered } from './components/Section'
 
 const Expectations = styled.div`
   @media (min-width: 30em) {
     display: flex;
-    
+
     ul {
       flex: auto;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    @media (max-width: 48em) {
+      text-align: left;
     }
   }
 `
 
 export default () => {
   return (
-    <div>
+    <SectionCentered>
       <Headline>What to expect</Headline>
-        <Expectations>
+      <Expectations>
         <ul>
           <li>8 high quality talks per day</li>
           <li>delicious, nutritious meals</li>
@@ -31,6 +38,6 @@ export default () => {
           <li>wheelchair-accessible venue</li>
         </ul>
       </Expectations>
-    </div>
+    </SectionCentered>
   )
 }

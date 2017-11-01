@@ -2,11 +2,15 @@ import styled from 'styled-components'
 
 export default styled.div`
   margin: 0 auto;
-  max-width: 70vw;
   display: flex;
+  max-width: 90vw;
   flex-direction: column;
-  
-  @media (max-width: 48em) {
-    max-width: 90vw;
+
+  @media (min-width: 60em) {
+    max-width: 75vw;
+  }
+
+  @media (min-width: 120em) {
+    max-width: 50vw;
   }
 `
