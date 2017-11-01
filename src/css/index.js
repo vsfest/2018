@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../shared/Home'
-import { CSS, Staff } from '../data'
+import { CSS } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
@@ -8,24 +8,41 @@ import Schedule from '../shared/Schedule'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
-import Team from '../shared/Team'
-import Contact from '../shared/Contact'
+import EventExpectations from '../shared/EventExpectations'
+import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
+import { Section } from '../shared/components/Section'
 
 export default () => (
   <Home conference={CSS}>
     <Masthead {...CSS} />
+    <Container>
+      <Logo src={CSS.logo} />
+      <Section>
+        <EventInfo {...CSS} />
+      </Section>
 
-    <Logo src={CSS.logo} />
-    <EventInfo {...CSS} />
+      <Section>
+        <EventExpectations />
+      </Section>
 
-    <Schedule />
-    <MailingList {...CSS.contact} />
+      <Section>
+        <Schedule />
+      </Section>
 
-    <CodeOfConduct />
+      <Section>
+        <MailingList {...CSS.contact} />
+      </Section>
 
-    <Sponsorship {...CSS.contact} />
-    <Team members={Staff} />
+      <Section>
+        <CodeOfConduct />
+      </Section>
 
-    <Contact {...CSS.contact} />
+      <Section>
+        <Sponsorship {...CSS.contact} />
+      </Section>
+    </Container>
+
+    <Footer {...CSS} />
   </Home>
 )

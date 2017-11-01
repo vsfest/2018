@@ -3,42 +3,30 @@ import styled, { ThemeProvider } from 'styled-components'
 import Helmet from 'react-helmet'
 import { Route, withRouter } from 'react-router-dom'
 import CodeOfConductFull from './CodeOfConductFull'
+import CallForSpeakers from './CallForSpeakers'
+import Team from './Team'
 import { Staff } from '../data'
 import Masthead from './Masthead'
 import Logo from './Logo'
-import Team from './Team'
+import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
 
 const Background = styled.div`
-  min-height: 100vh;
-
-  background: ${ props => props.theme.primary};
-  color: white;
-`
-
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 60rem;
-  padding: 1rem;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  > * {
-    margin-bottom: 4rem;
-  }
+  background-color: #fafafa;
+  color: #222;
 `
 
 const ContentPage = ({ conference, children }) => (
-  <Container>
+  <div>
     <Masthead {...conference} />
 
-    <Logo src={conference.logo} />
+    <Container>
+      <Logo src={conference.logo} />
+    </Container>
 
     {children}
-
-    <Team members={Staff} />
-  </Container>
+    <Footer {...conference} />
+  </div>
 )
 
 export default withRouter(({ conference, children, match }) => (
@@ -46,12 +34,35 @@ export default withRouter(({ conference, children, match }) => (
     <Background>
       <Helmet {...conference} />
 
-      <Route exact path={`${match.url}`} render={() => <Container>{children}</Container>} />
-      <Route path={`${match.url}/codeofconduct`} render={() => (
-        <ContentPage conference={conference}>
-          <CodeOfConductFull conference={conference} />
-        </ContentPage>
-      )} />
+      <Route
+        exact
+        path={`${match.url}`}
+        render={() => <main>{children}</main>}
+      />
+      <Route
+        path={`${match.url}/code-of-conduct`}
+        render={() => (
+          <ContentPage conference={conference}>
+            <CodeOfConductFull conference={conference} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path={`${match.url}/call-for-speakers`}
+        render={() => (
+          <ContentPage conference={conference}>
+            <CallForSpeakers conference={conference} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path={`${match.url}/team`}
+        render={() => (
+          <ContentPage conference={conference}>
+            <Team members={Staff} />
+          </ContentPage>
+        )}
+      />
     </Background>
   </ThemeProvider>
 ))

@@ -26,5 +26,9 @@
   },
   "react-snapshot": {
     "stripJS": "^\\/static\\/js\\/main"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

@@ -16,15 +16,26 @@ injectGlobal`
 
   body {
     font-family: 'Maison Neue', Helvetica, Arial;
-    font-size: 20px;
-    letter-spacing: 0.05rem;
-    line-height: 1.45;
+    font-size: 18px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
   }
-
-  a {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 2px solid;
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  p,
+  blockquote {
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin: 30px;
+  }
+  
+  li {
+    margin-bottom: 15px;
   }
 `

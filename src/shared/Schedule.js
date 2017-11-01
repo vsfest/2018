@@ -4,28 +4,40 @@ import { CSS, JS, Decompress } from '../data'
 
 import Headline from './components/Headline'
 import Copy from './components/Copy'
+import { LinkThemed } from './components/Links'
+import { ButtonThemed } from './components/Buttons'
 
 const Schedule = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   text-align: center;
-  margin: 40px 0;
+  margin: 30px 0;
 `
 
 const Conference = styled.div`
   display: flex;
   align-items: center;
-  background: white;
-  margin: 10px;
-  padding: 30px 20px;
+  border: 2px solid hsla(0, 0%, 0%, 0.2);
+  padding: 30px;
+  margin-right: 10px;
+  margin-bottom: 30px;
   width: 100%;
-  border-radius: 4px;
   text-align: left;
-  color: ${ props => props.theme.primary};
-  
+
+  p {
+    margin: 0;
+  }
+
   @media (min-width: 700px) {
-    width: 31%;
+    width: calc(33% - 10px);
+  }
+
+  a {
+    color: ${props => props.theme.primary};
+
+    &:hover {
+      color: ${props => props.theme.primaryHover};
+    }
   }
 `
 
@@ -33,37 +45,40 @@ export default () => {
   return (
     <div>
       <Headline>Schedule</Headline>
+      <Copy>
+        The conference is a part of a bigger family of events. Limited Early
+        Bird tickets are now available. Our programme will be announced by
+        January 2018.
+      </Copy>
       <Schedule>
         <Conference {...CSS}>
-          <a href={CSS.url}>
+          <LinkThemed href={CSS.url}>
             <div>
               <p>{CSS.title}</p>
-              <p>{CSS.date}</p>
+              <span>{CSS.date}</span>
             </div>
-          </a>
+          </LinkThemed>
         </Conference>
 
         <Conference {...JS}>
-          <a href={JS.url}>
+          <LinkThemed href={JS.url}>
             <div>
               <p>{JS.title}</p>
               <p>{JS.date}</p>
             </div>
-          </a>
+          </LinkThemed>
         </Conference>
 
         <Conference {...Decompress}>
-          <a href={Decompress.url}>
+          <LinkThemed href={Decompress.url}>
             <div>
               <p>{Decompress.title}</p>
               <p>{Decompress.date}</p>
             </div>
-          </a>
+          </LinkThemed>
         </Conference>
+        <ButtonThemed href={CSS.titoLink}>Get a Ticket</ButtonThemed>
       </Schedule>
-
-      <Copy>Early Bird tickets are extremely limited. Because our full programme hasn't been announced yet you're able to secure a pass on a discounted price.</Copy>
-      <a href={CSS.titoLink}>Buy Tickets</a>
     </div>
   )
 }

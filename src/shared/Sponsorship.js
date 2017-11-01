@@ -1,14 +1,21 @@
 import React from 'react'
 import Headline from './components/Headline'
 import Copy from './components/Copy'
+import { LinkThemed } from './components/Links'
 
 export default ({ sponsorship }) => {
   return (
     <div>
       <Headline>Sponsorship</Headline>
 
-      <Copy>We’re looking for more people to help support this event.
-      If your organisation could help, please drop an email to <a href={`mailto:${sponsorship}`}>{sponsorship}</a> for more details.</Copy>
+      <Copy>
+        As a registered community, nonprofit event we’re looking for
+        organizations and individuals, who are willing to enable us to run the
+        best, accessible and inclusive conference possible. If you can help,{' '}
+        <LinkThemed href={`mailto:${sponsorship}`}>
+          reach out for more details
+        </LinkThemed>. We’d love to work with you.
+      </Copy>
     </div>
   )
 }

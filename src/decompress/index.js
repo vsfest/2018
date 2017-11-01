@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../shared/Home'
-import { Decompress, Staff } from '../data'
+import { Decompress } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
@@ -8,25 +8,36 @@ import Schedule from '../shared/Schedule'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
-import Team from '../shared/Team'
-import Contact from '../shared/Contact'
-
+import Footer from '../shared/Footer'
+import Container from '../shared/components/Container'
+import { Section } from '../shared/components/Section'
 
 export default () => (
   <Home conference={Decompress}>
     <Masthead {...Decompress} />
+    <Container>
+      <Logo src={Decompress.logo} />
+      <Section>
+        <EventInfo {...Decompress} />
+      </Section>
 
-    <Logo src={Decompress.logo} />
-    <EventInfo {...Decompress} />
+      <Section>
+        <Schedule />
+      </Section>
 
-    <Schedule />
-    <MailingList {...Decompress.contact} />
+      <Section>
+        <MailingList {...Decompress.contact} />
+      </Section>
 
-    <CodeOfConduct />
+      <Section>
+        <CodeOfConduct />
+      </Section>
 
-    <Sponsorship {...Decompress.contact} />
-    <Team members={Staff} />
+      <Section>
+        <Sponsorship {...Decompress.contact} />
+      </Section>
+    </Container>
 
-    <Contact {...Decompress.contact} />
+    <Footer {...Decompress} />
   </Home>
 )
