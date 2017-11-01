@@ -274,10 +274,10 @@ export default ({ conference }) => {
               </li>
               <li>
                 <strong>Originality:</strong> We’re committed to pushing the
-                community forward, which is why we favour original div. There’s
-                nothing wrong with a talk that has already been given elsewhere
-                if it will be presented with new information or demonstrations,
-                making it unique for our audience.
+                community forward, which is why we favour original content.
+                There’s nothing wrong with a talk that has already been given
+                elsewhere though, if it will be presented with new information
+                or demonstrations, making it unique for our audience.
               </li>
             </ul>
           </div>
@@ -363,8 +363,9 @@ export default ({ conference }) => {
           <div>
             <p>
               We wrote a lengthy explanation of how we’re going to be gathering
-              submissions and why we’re doing things differently—you should have
-              a look. Here’s how it’ll work in a nutshell:
+              submissions and why we’re doing things differently—<LinkThemed href="http://2016.cssconf.com.au/2016/07/01/cfp.html">
+                you should have a look
+              </LinkThemed>. Here’s how it’ll work in a nutshell:
             </p>
 
             <ul>
