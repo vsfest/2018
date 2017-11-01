@@ -114,13 +114,21 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
               })}
             </ul>
 
-            <img src="/flag-aboriginal.jpg" alt="Aboriginal Flag" width="40" />
             <img
-              src="/flag-torres.jpg"
+              src={require('../assets/flag-aboriginal.jpg')}
+              alt="Aboriginal Flag"
+              width="40"
+            />
+            <img
+              src={require('../assets/flag-torres.jpg')}
               alt="Torres Strait Islanders Flag"
               width="40"
             />
-            <img src="/flag-lgbtqi.jpg" alt="LGBTQI Flag" width="40" />
+            <img
+              src={require('../assets/flag-lgbtqi.jpg')}
+              alt="LGBTQI Flag"
+              width="40"
+            />
 
             <p>
               We acknowledge the Wurundjeri people of the Kulin nations, the
