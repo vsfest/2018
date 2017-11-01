@@ -26,6 +26,6 @@ app.use((req, res, next) => {
   return serve('')(req, res, next)
 })
 
-app.get('*', (request, response) => response.sendFile(path.resolve(__dirname, 'build/index.html')))
+app.get('*', (request, response) => response.sendFile(path.resolve(__dirname, '../build/index.html')))
 
 module.exports = app
