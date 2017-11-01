@@ -1,9 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import JS from './js'
 import CSS from './css'
@@ -21,7 +18,7 @@ const Frame = styled.div`
 const Link = styled.a.attrs({
   href: props => props.to
 })`
-  background: ${ props => props.theme.primary };
+  background: ${props => props.theme.primary};
   color: white;
   font-size: 1.5rem;
   padding: 2rem 4rem;
@@ -34,7 +31,7 @@ const Link = styled.a.attrs({
 const Help = styled.div`
   text-align: center;
   margin-bottom: 2rem;
-  
+
   pre {
     margin: 1rem;
     padding: 1rem;
@@ -46,9 +43,7 @@ const Index = () => (
   <Frame>
     <Help>
       Add this to your <code>/etc/hosts</code> file:
-      <pre>
-        127.0.0.1   css.localhost js.localhost decompress.localhost
-      </pre>
+      <pre>127.0.0.1 css.localhost js.localhost decompress.localhost</pre>
       Then hax:
     </Help>
     <ThemeProvider theme={themes.CSS.theme}>
@@ -58,20 +53,20 @@ const Index = () => (
       <Link to={`http://js.localhost:${window.location.port}`}>JS Conf</Link>
     </ThemeProvider>
     <ThemeProvider theme={themes.Decompress.theme}>
-      <Link to={`http://decompress.localhost:${window.location.port}`}>Decompress</Link>
+      <Link to={`http://decompress.localhost:${window.location.port}`}>
+        Decompress
+      </Link>
     </ThemeProvider>
   </Frame>
 )
 
 const domain = window.location.host
-const RootComponentForDomain =
-  /js/.exec(domain) ? JS :
-  /css/.exec(domain) ? CSS :
-  /decompress/.exec(domain) ? Decompress :
-  Index
+const RootComponentForDomain = /js/.exec(domain)
+  ? JS
+  : /css/.exec(domain) ? CSS : /decompress/.exec(domain) ? Decompress : Index
 
 export default () => (
   <Router>
-    <RootComponentForDomain/>
+    <RootComponentForDomain />
   </Router>
 )
