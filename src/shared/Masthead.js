@@ -61,7 +61,7 @@ const NavMobile = styled.nav`
 
 const NavDesktop = styled.nav`
   border-bottom: 2px solid ${props => props.theme.secondary};
-  padding-bottom: 15px;
+  padding: 15px 0;
 
   @media (max-width: 30em) {
     text-align: center;
