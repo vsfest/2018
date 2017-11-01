@@ -56,7 +56,6 @@ const NavMobile = styled.nav`
 
   &.nav-isOpen ul {
     display: block;
-    margin-top: 15px;
   }
 `
 
@@ -79,14 +78,10 @@ const NavDesktop = styled.nav`
   }
 `
 
-const Wrapper = styled.div`
-  padding: 15px 0;
-  font-size: 18px;
-`
+const Wrapper = styled.div`font-size: 18px;`
 
 const NavToggle = styled.button`
-  padding: 0;
-  margin: 0 0 15px 0;
+  padding: 15px 0;
   width: 100%;
   font-size: 16px;
   cursor: pointer;

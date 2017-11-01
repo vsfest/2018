@@ -44,8 +44,7 @@ const Quote = styled.blockquote`
       display: flex;
     }
 
-    p,
-    img {
+    p {
       flex: auto;
     }
   }
