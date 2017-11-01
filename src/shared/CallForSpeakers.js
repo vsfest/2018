@@ -66,6 +66,7 @@ const Quote = styled.blockquote`
     width: 100px;
     height: 100px;
     margin-right: 30px;
+    flex: 100px;
 
     @media (max-width: 48em) {
       margin: 15px auto;
