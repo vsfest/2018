@@ -19,8 +19,12 @@ export default ({ date, venue, description }) => {
     <div>
       <CalloutCopy>{date}</CalloutCopy>
       <CalloutCopy>{venue}</CalloutCopy>
-    
-      <CalloutCopy><Description>{description}</Description></CalloutCopy>
+
+      <Description>
+        <CalloutCopy>
+          {description}
+        </CalloutCopy>
+      </Description>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { ButtonThemed } from './components/Buttons'
 import Container from './components/Container'
@@ -43,10 +43,6 @@ const NavMobile = styled.nav`
     display: none;
   }
 
-  ul {
-    display: none;
-  }
-
   li {
     display: block;
     padding: 15px 30px;
@@ -54,9 +50,16 @@ const NavMobile = styled.nav`
     border-top: 2px solid ${props => props.theme.secondary};
   }
 
-  &.nav-isOpen ul {
-    display: block;
+  ul {
+    display: none;
   }
+
+  ${ props => props.navOpen && css`
+    ul {
+      display: block;
+      margin-top: 15px;
+    }
+  `}
 `
 
 const NavDesktop = styled.nav`
@@ -78,7 +81,10 @@ const NavDesktop = styled.nav`
   }
 `
 
-const Wrapper = styled.div`font-size: 18px;`
+const Wrapper = styled.div`
+  
+  font-size: 18px;
+`
 
 const NavToggle = styled.button`
   padding: 15px 0;
@@ -87,7 +93,6 @@ const NavToggle = styled.button`
   cursor: pointer;
   background-color: #fafafa;
   border: 0;
-  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -95,18 +100,10 @@ const NavToggle = styled.button`
 `
 
 export default class Masthead extends React.Component {
-  constructor(props) {
-    super(props)
-    this.toggleNav = this.toggleNav.bind(this)
-    this.state = {
-      navOpen: false
-    }
-  }
+  state = { navOpen: false }
 
-  toggleNav() {
-    this.setState({
-      navOpen: !this.state.navOpen
-    })
+  toggleNav = () => {
+    this.setState(oldState => ({ navOpen: !oldState.navOpen }))
   }
 
   render() {
@@ -120,35 +117,35 @@ export default class Masthead extends React.Component {
           <Container>
             <NavDesktop>
               <ul>
-                {isCfpOpen ? (
+                { isCfpOpen ? (
                   <li>
                     <Link to="call-for-speakers">Call for Speakers</Link>
                   </li>
-                ) : null}
+                ) : null }
                 <li>
-                  <a href={`mailto:${sponsorship}`}>Sponsor</a>
+                  <a href={ `mailto:${sponsorship}` }>Sponsor</a>
                 </li>
                 <li>
                   <Link to="code-of-conduct">Code of Conduct</Link>
                 </li>
               </ul>
-              <ButtonThemed href={titoLink}>Get a Ticket</ButtonThemed>
+              <ButtonThemed href={ titoLink }>Get a Ticket</ButtonThemed>
             </NavDesktop>
           </Container>
-          <NavMobile className={this.state.navOpen ? 'nav-isOpen' : null}>
-            <NavToggle onClick={this.toggleNav}>Menu</NavToggle>
+          <NavMobile navOpen={ this.state.navOpen }>
+            <NavToggle onClick={ this.toggleNav }>Menu</NavToggle>
             <ul>
               <li>
                 <Link to="call-for-speakers">Call for Speakers</Link>
               </li>
               <li>
-                <a href={`mailto:${sponsorship}`}>Sponsor</a>
+                <a href={ `mailto:${sponsorship}` }>Sponsor</a>
               </li>
               <li>
                 <Link to="code-of-conduct">Code of Conduct</Link>
               </li>
               <li>
-                <Link to={titoLink}>Get a Ticket</Link>
+                <Link to={ titoLink }>Get a Ticket</Link>
               </li>
             </ul>
           </NavMobile>
