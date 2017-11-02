@@ -145,7 +145,7 @@ export default class Masthead extends React.Component {
                 <Link to="code-of-conduct">Code of Conduct</Link>
               </li>
               <li>
-                <Link to={ titoLink }>Get a Ticket</Link>
+                <a href={titoLink}>Get a Ticket</a>
               </li>
             </ul>
           </NavMobile>
