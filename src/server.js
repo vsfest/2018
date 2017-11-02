@@ -13,7 +13,7 @@ const serve = (path) => {
         isRevved
           ? `max-age=31536000,immutable`
           : `max-age=0,s-maxage=31536000`)
-    }
+    },
   })
 }
 
@@ -23,9 +23,16 @@ const decompress = serve('decompress')
 
 app.use((req, res, next) => {
   console.log(req.hostname, req.path)
-  return serve('')(req, res, next)
-})
+  if (req.path.match(/static/)) return serve('')(req, res, next)
 
-app.get('*', (request, response) => response.sendFile(path.resolve(__dirname, '../build/index.html')))
+  if (/css/.exec(req.hostname))
+    return css(req, res, next)
+  else if (/js/.exec(req.hostname))
+    return js(req, res, next)
+  else if (/decompress/.exec(req.hostname))
+    return decompress(req, res, next)
+  else
+    res.sendFile(path.resolve(__dirname, '../build/200.html'))
+})
 
 module.exports = app
