@@ -210,7 +210,6 @@ const JSConfTopics = () => (
 export default ({ conference }) => {
   const team = conference.contact.team
   const cfpURL = conference.cfpURL
-  const date = conference.date
 
   return (
     <Container>

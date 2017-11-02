@@ -48,7 +48,14 @@ export default withRouter(({ conference, children, match }) => (
       <Helmet {...conference}>
         <link
           rel="preload"
-          href={require('../assets/fonts/Maison-Neue-Book.woff')}
+          href={require('../assets/fonts/MaisonNeue-Book.woff2')}
+          as="font"
+          type="font/woff"
+          crossorigin
+        />
+        <link
+          rel="preload"
+          href={require('../assets/fonts/MaisonNeue-ExtraBold.woff2')}
           as="font"
           type="font/woff"
           crossorigin
