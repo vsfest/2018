@@ -16,7 +16,7 @@ const Frame = styled.div`
 `
 
 const Link = styled.a.attrs({
-  href: props => props.to
+  href: props => props.to,
 })`
   background: ${props => props.theme.primary};
   color: white;
@@ -46,27 +46,28 @@ const Index = () => (
       <pre>127.0.0.1 css.localhost js.localhost decompress.localhost</pre>
       Then hax:
     </Help>
-    <ThemeProvider theme={themes.CSS.theme}>
-      <Link to={themes.CSS.url}>CSS Conf</Link>
+    <ThemeProvider theme={ themes.CSS.theme }>
+      <Link to={ themes.CSS.url }>CSS Conf</Link>
     </ThemeProvider>
-    <ThemeProvider theme={themes.JS.theme}>
-      <Link to={`http://js.localhost:${window.location.port}`}>JS Conf</Link>
+    <ThemeProvider theme={ themes.JS.theme }>
+      <Link to={ `http://js.localhost:${window.location.port}` }>JS Conf</Link>
     </ThemeProvider>
-    <ThemeProvider theme={themes.Decompress.theme}>
-      <Link to={`http://decompress.localhost:${window.location.port}`}>
+    <ThemeProvider theme={ themes.Decompress.theme }>
+      <Link to={ `http://decompress.localhost:${window.location.port}` }>
         Decompress
       </Link>
     </ThemeProvider>
   </Frame>
 )
 
-const domain = window.location.host
-const RootComponentForDomain = /js/.exec(domain)
-  ? JS
-  : /css/.exec(domain) ? CSS : /decompress/.exec(domain) ? Decompress : Index
+const domain = process.env.REACT_APP_CONF_DOMAIN || window.location.host
+const RootComponentForDomain =
+  /js/.exec(domain) ? JS :
+    /css/.exec(domain) ? CSS :
+      /decompress/.exec(domain) ? Decompress : Index
 
 export default () => (
   <Router>
-    <RootComponentForDomain />
+    <RootComponentForDomain/>
   </Router>
 )

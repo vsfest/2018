@@ -5,14 +5,15 @@ set -ex
 NODE_ENV=production
 export NODE_ENV
 
-echo "127.0.0.1 css.localhost\n" > /etc/hosts
-echo "127.0.0.1 js.localhost\n" > /etc/hosts
-echo "127.0.0.1 decompress.localhost\n" > /etc/hosts
+rm -rf dist
+mkdir dist
 
-react-scripts build
-
-react-snapshot
-
-react-snapshot --domain css.localhost --output-dir build/css
-react-snapshot --domain js.localhost --output-dir build/js
-react-snapshot --domain decompress.localhost --output-dir build/decompress
+REACT_APP_CONF_DOMAIN=js npm run build
+npm run snapshot
+mv build dist/js
+REACT_APP_CONF_DOMAIN=css npm run build
+npm run snapshot
+mv build dist/css
+REACT_APP_CONF_DOMAIN=decompress npm run build
+npm run snapshot
+mv build dist/decompress

@@ -17,9 +17,8 @@
     "heroku-postbuild": "./scripts/heroku-build.sh",
     "start": "node index.js",
     "dev": "react-scripts start",
-    "build": "react-scripts build && npm run snapshot",
-    "snapshot":
-      "react-snapshot && react-snapshot --domain css.localhost --output-dir build/css && react-snapshot --domain js.localhost --output-dir build/js && react-snapshot --domain decompress.localhost --output-dir build/decompress",
+    "build": "react-scripts build",
+    "snapshot": "react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

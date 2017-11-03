@@ -5,7 +5,7 @@ const serveStatic = require('serve-static')
 const app = express()
 
 const serve = (path) => {
-  return serveStatic(`build/${path}`, {
+  return serveStatic(`dist/${path}`, {
     extensions: ['html'],
     setHeaders(res, path) {
       const isRevved = /[a-f0-9]{7,}/.exec(path)
@@ -23,16 +23,13 @@ const decompress = serve('decompress')
 
 app.use((req, res, next) => {
   console.log(req.hostname, req.path)
-  if (req.path.match(/static/)) return serve('')(req, res, next)
 
   if (/css/.exec(req.hostname))
     return css(req, res, next)
-  else if (/js/.exec(req.hostname))
-    return js(req, res, next)
   else if (/decompress/.exec(req.hostname))
     return decompress(req, res, next)
   else
-    res.sendFile(path.resolve(__dirname, '../build/200.html'))
+    return js(req, res, next)
 })
 
 module.exports = app
