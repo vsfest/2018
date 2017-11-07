@@ -5,6 +5,8 @@ import Headline from './components/Headline'
 import { ButtonThemed } from './components/Buttons'
 import { LinkThemed } from './components/Links'
 
+const Button = ButtonThemed.withComponent('button')
+
 const MailingList = styled.div`
   width: 100%;
 
@@ -56,7 +58,7 @@ export default ({ twitter, mailingList }) => {
           required
           placeholder="Your email address"
         />
-        <ButtonThemed type="submit">Join &rarr;</ButtonThemed>
+        <Button type="submit">Join &rarr;</Button>
       </form>
     </MailingList>
   )
