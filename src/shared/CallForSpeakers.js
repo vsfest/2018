@@ -14,6 +14,8 @@ import {
   SectionCentered
 } from '../shared/components/Section'
 
+const StyledLink = LinkThemed.withComponent(Link)
+
 const Photo = ({ src, alt = 'Inline image' }) => (
   <Photo.Wrapper>
     <Photo.Img src={src} alt={alt} />
@@ -37,6 +39,8 @@ Photo.Img = styled.img`
   max-width: 100%;
   mix-blend-mode: multiply;
 `
+
+const SpeakerImageWrapper = styled.div`flex: 100px;`
 
 const Quote = styled.blockquote`
   @media (min-width: 48em) {
@@ -66,7 +70,6 @@ const Quote = styled.blockquote`
     width: 100px;
     height: 100px;
     margin-right: 30px;
-    flex: 100px;
 
     @media (max-width: 48em) {
       margin: 15px auto;
@@ -78,7 +81,9 @@ const JSConfTestimonials = () => (
   <Section>
     <Quote>
       <div>
-        <img src={require('../assets/photo-ruth.jpg')} alt="Ruth John" />
+        <SpeakerImageWrapper>
+          <img src={require('../assets/photo-ruth.jpg')} alt="Ruth John" />
+        </SpeakerImageWrapper>
         <p>
           JSConfAU is amazing, the conference organisers, attendees, location,
           socials... well basically everything was brilliant! It was such an
@@ -91,10 +96,12 @@ const JSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img
-          src={require('../assets/photo-michaela.jpg')}
-          alt="Michaela Lehr"
-        />
+        <SpeakerImageWrapper>
+          <img
+            src={require('../assets/photo-michaela.jpg')}
+            alt="Michaela Lehr"
+          />
+        </SpeakerImageWrapper>
         <p>
           Feeling anxious giving my first tech talk in English, the organizers
           and attendees made me feel welcome, encouraged and safe. From the Call
@@ -106,10 +113,12 @@ const JSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img
-          src={require('../assets/photo-soledad.jpg')}
-          alt="Soledad Penandés"
-        />
+        <SpeakerImageWrapper>
+          <img
+            src={require('../assets/photo-soledad.jpg')}
+            alt="Soledad Penandés"
+          />
+        </SpeakerImageWrapper>
         <p>
           If you are ever faced with the possibility of submitting a proposal
           for this conference, don’t even think about it—do it! It was really
@@ -125,7 +134,9 @@ const CSSConfTestimonials = () => (
   <Section>
     <Quote>
       <div>
-        <img src={require('../assets/photo-ally.jpg')} alt="Ally Palanzi" />
+        <SpeakerImageWrapper>
+          <img src={require('../assets/photo-ally.jpg')} alt="Ally Palanzi" />
+        </SpeakerImageWrapper>
         <p>
           Speaking at CSSConf AU was definitely a highlight of 2016. The team
           was so thoughtful and considerate while coordinating the whole thing
@@ -138,7 +149,9 @@ const CSSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-michael.jpg')} alt="Michael Rog" />
+        <SpeakerImageWrapper>
+          <img src={require('../assets/photo-michael.jpg')} alt="Michael Rog" />
+        </SpeakerImageWrapper>
         <p>
           CSSconf AU was the most thoughtfully organized conference I’ve ever
           been a part of. The speaker experience was flawless; I'm so
@@ -150,7 +163,12 @@ const CSSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-nadieh.jpg')} alt="Nadieh Bremer" />
+        <SpeakerImageWrapper>
+          <img
+            src={require('../assets/photo-nadieh.jpg')}
+            alt="Nadieh Bremer"
+          />
+        </SpeakerImageWrapper>
         <p>
           Travelling halfway around the world to get the opportunity to speak at
           CSSConf AU 2016 was more than worth it! The attendees interacted with
@@ -163,7 +181,9 @@ const CSSConfTestimonials = () => (
     </Quote>
     <Quote>
       <div>
-        <img src={require('../assets/photo-serena.jpg')} alt="Serena Chen" />
+        <SpeakerImageWrapper>
+          <img src={require('../assets/photo-serena.jpg')} alt="Serena Chen" />
+        </SpeakerImageWrapper>
         <p>
           My experience was wonderful - not only was the conference filled with
           incredibly fascinating talks, having the travel necessities taken care
@@ -502,9 +522,9 @@ export default ({ conference }) => {
         <Headline>Code of Conduct</Headline>
         <p>
           By applying to speak you agree to follow the conference{' '}
-          <Link to="code-of-conduct">Code of Conduct</Link>. We are committed to
-          providing a harassment-free, professional and welcoming environment
-          for all attendees.
+          <StyledLink to="code-of-conduct">Code of Conduct</StyledLink>. We are
+          committed to providing a harassment-free, professional and welcoming
+          environment for all attendees.
         </p>
 
         <p>
