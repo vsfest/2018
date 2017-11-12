@@ -502,10 +502,9 @@ export default ({ conference }) => {
         <Headline>Code of Conduct</Headline>
         <p>
           By applying to speak you agree to follow the conference{' '}
-          <Link to="code-of-conduct">
-            <LinkThemed>Code of Conduct</LinkThemed>
-          </Link>. We are committed to providing a harassment-free, professional
-          and welcoming environment for all attendees.
+          <Link to="code-of-conduct">Code of Conduct</Link>. We are committed to
+          providing a harassment-free, professional and welcoming environment
+          for all attendees.
         </p>
 
         <p>
