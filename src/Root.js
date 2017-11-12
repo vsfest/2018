@@ -7,6 +7,8 @@ import CSS from './css'
 import Decompress from './decompress'
 import * as themes from './data'
 
+import ScrollToTop from './shared/ScrollToTop'
+
 const Frame = styled.div`
   display: flex;
   flex-direction: column;
@@ -68,6 +70,8 @@ const RootComponentForDomain =
 
 export default () => (
   <Router>
-    <RootComponentForDomain/>
+    <ScrollToTop>
+      <RootComponentForDomain />
+    </ScrollToTop>
   </Router>
 )
