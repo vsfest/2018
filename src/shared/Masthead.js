@@ -2,102 +2,72 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
-import { ButtonThemed } from './components/Buttons'
-import Container from './components/Container'
+import { Button, ButtonThemed } from './components/Buttons'
+import { LinkThemed } from './components/Links'
+
+const StyledLink = LinkThemed.withComponent(Link)
 
 const Nav = styled.div`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   ul {
     margin: 0;
   }
 
   li {
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 30px;
     margin: 0;
-
-    @media (min-width: 48em) {
-      padding-right: 30px;
-    }
-
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      color: ${props => props.theme.primary};
-
-      &:focus {
-        outline: none;
-      }
-
-      &:hover {
-        color: ${props => props.theme.primaryHover};
-      }
-    }
   }
 `
 
 const NavMobile = styled.nav`
-  border-bottom: 2px solid ${props => props.theme.secondary};
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
 
-  @media (min-width: 48em) {
+  @media (min-width: 921px) {
     display: none;
   }
 
   li {
     display: block;
-    padding: 15px 30px;
-    margin: 0;
-    border-top: 2px solid ${props => props.theme.secondary};
+    padding: 10px 0;
+    border-bottom: 2px solid ${props => props.theme.secondary};
   }
 
   ul {
     display: none;
   }
 
-  ${ props => props.navOpen && css`
-    ul {
-      display: block;
-      margin-top: 15px;
-    }
-  `}
+  ${props =>
+    props.navOpen &&
+    css`
+      ul {
+        display: block;
+      }
+    `};
 `
 
 const NavDesktop = styled.nav`
-  border-bottom: 2px solid ${props => props.theme.secondary};
-  padding: 15px 0;
-
-  @media (max-width: 30em) {
-    text-align: center;
-  }
-
-  @media (min-width: 30em) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  @media (max-width: 47.99em) {
-    display: none;
+  display: none;
+  @media (min-width: 920px) {
+    display: block;
   }
 `
 
-const Wrapper = styled.div`
-  
-  font-size: 18px;
-`
-
-const NavToggle = styled.button`
-  padding: 15px 0;
-  width: 100%;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #fafafa;
-  border: 0;
-
-  &:focus {
-    outline: none;
-  }
-`
+const NavToggle = styled(Button)`@media (min-width: 920px) {display: none;}`
 
 export default class Masthead extends React.Component {
   state = { navOpen: false }
@@ -107,50 +77,64 @@ export default class Masthead extends React.Component {
   }
 
   render() {
-    const sponsorship = this.props.contact.sponsorship
     const titoLink = this.props.titoLink
     const isCfpOpen = this.props.isCfpOpen
+    const confName = this.props.title
 
     return (
-      <Wrapper>
+      <div>
         <Nav>
-          <Container>
-            <NavDesktop>
-              <ul>
-                { isCfpOpen ? (
-                  <li>
-                    <Link to="call-for-speakers">Call for Speakers</Link>
-                  </li>
-                ) : null }
-                <li>
-                  <a href={ `mailto:${sponsorship}` }>Sponsor</a>
-                </li>
-                <li>
-                  <Link to="code-of-conduct">Code of Conduct</Link>
-                </li>
-              </ul>
-              <ButtonThemed href={ titoLink }>Get a Ticket</ButtonThemed>
-            </NavDesktop>
-          </Container>
-          <NavMobile navOpen={ this.state.navOpen }>
-            <NavToggle onClick={ this.toggleNav }>Menu</NavToggle>
+          <StyledLink to="/">{confName}</StyledLink>
+          <NavDesktop>
             <ul>
               <li>
-                <Link to="call-for-speakers">Call for Speakers</Link>
+                <StyledLink to="information">Information</StyledLink>
+              </li>
+              {isCfpOpen ? (
+                <li>
+                  <StyledLink to="call-for-speakers">
+                    Become a Speaker
+                  </StyledLink>
+                </li>
+              ) : null}
+              <li>
+                <StyledLink to="schedule">Schedule</StyledLink>
               </li>
               <li>
-                <a href={ `mailto:${sponsorship}` }>Sponsor</a>
+                <StyledLink to="sponsors">Sponsors</StyledLink>
               </li>
               <li>
-                <Link to="code-of-conduct">Code of Conduct</Link>
+                <StyledLink to="team">Team</StyledLink>
+              </li>
+            </ul>
+          </NavDesktop>
+          <NavToggle onClick={this.toggleNav}>Menu</NavToggle>
+          <NavMobile navOpen={this.state.navOpen}>
+            <ul>
+              <li>
+                <StyledLink to="information">Information</StyledLink>
+              </li>
+              {isCfpOpen ? (
+                <li>
+                  <StyledLink to="call-for-speakers">
+                    Become a Speaker
+                  </StyledLink>
+                </li>
+              ) : null}
+              <li>
+                <StyledLink to="schedule">Schedule</StyledLink>
               </li>
               <li>
-                <a href={titoLink}>Get a Ticket</a>
+                <StyledLink to="sponsors">Sponsors</StyledLink>
+              </li>
+              <li>
+                <StyledLink to="team">Team</StyledLink>
               </li>
             </ul>
           </NavMobile>
+          <ButtonThemed href={titoLink}>Tickets</ButtonThemed>
         </Nav>
-      </Wrapper>
+      </div>
     )
   }
 }

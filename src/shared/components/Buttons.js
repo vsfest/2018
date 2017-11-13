@@ -13,15 +13,15 @@ const Button = styled.a`
   &:focus {
     outline: none;
   }
-
-  &:hover {
-    transform: translateY(4px);
-  }
 `
 
 const ButtonThemed = Button.extend`
   background-color: ${props => props.theme.primary};
   color: white;
+
+  &:hover {
+    transform: translateY(4px);
+  }
 
   &:hover,
   &:active {
@@ -29,4 +29,4 @@ const ButtonThemed = Button.extend`
   }
 `
 
-export { ButtonThemed }
+export { Button, ButtonThemed }
