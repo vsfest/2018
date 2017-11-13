@@ -14,7 +14,9 @@ const When = styled.p`
 `
 
 const Body = styled.div`
-  h2,h3,h4,h5,h6
+  h2,h3,h4,h5,h6 {
+    color: red;
+  }
 `
 
 export default withRouter(({ conference, match }) => {
@@ -25,7 +27,7 @@ export default withRouter(({ conference, match }) => {
         <When>{ new Date(item.date).toLocaleDateString("en-US", { weekday: "long", day: "numeric", month: "long" }) }</When>
       </Title>
       <Body>
-        { item.body }
+        { item.render() }
       </Body>
     </Container>
   )
