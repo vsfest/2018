@@ -6,10 +6,7 @@ module.exports = function override(config, env) {
   let babel_loader = existing_loaders.find(({test}) => test instanceof RegExp && test.exec('ugh.js'))
   existing_loaders.unshift({
     test: /\.md$/,
-    use: [
-      { loader: babel_loader.loader, options: babel_loader.options },
-      require.resolve('react-markdown-loader'),
-    ],
+    use: 'md-to-react',
   })
   return config
 }

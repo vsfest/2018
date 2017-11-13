@@ -1,9 +1,6 @@
 let news = [
   require('./2017-11-13-Test.md'),
-].map(imp => ({
-  ...imp.attributes,
-  render: imp.default,
-}))
+]
 
 export const newsForConference = conferenceId => (
   news.filter(item => (

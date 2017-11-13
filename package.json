@@ -8,6 +8,7 @@
     "css-wipe": "^4.3.0",
     "express": "^4.15.4",
     "front-matter": "^2.3.0",
+    "md-to-react": "^0.2.1",
     "raw-loader": "^0.5.1",
     "raw-text-loader": "^0.1.1",
     "react": "^15.6.1",

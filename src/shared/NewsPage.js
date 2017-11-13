@@ -4,6 +4,7 @@ import Container from './components/Container'
 import { withRouter } from 'react-router-dom'
 import news from './news/index'
 import Title from './components/Title'
+import MailingList from './MailingList'
 
 const When = styled.p`
   text-align: center;
@@ -19,6 +20,11 @@ const Body = styled.div`
   }
 `
 
+const Hr = styled.div`
+  border-top: 2px solid ${props => props.theme.secondary};
+  margin: 4rem 25%;
+`
+
 export default withRouter(({ conference, match }) => {
   const item = news[match.url]
   return (
@@ -27,7 +33,7 @@ export default withRouter(({ conference, match }) => {
         <When>{ new Date(item.date).toLocaleDateString("en-US", { weekday: "long", day: "numeric", month: "long" }) }</When>
       </Title>
       <Body>
-        { item.render() }
+        { item.render({ MailingList, Hr }) }
       </Body>
     </Container>
   )
