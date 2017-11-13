@@ -23,7 +23,7 @@ export default () => (
       </Section>
 
       <Section>
-        <News news={Decompress.news} />
+        <News />
       </Section>
 
       <Section>

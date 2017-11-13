@@ -1,6 +1,7 @@
 let news = [
   require('./2017-11-13-Test.md'),
 ]
+console.log(news)
 
 export const newsForConference = conferenceId => (
   news.filter(item => (

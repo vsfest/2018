@@ -2,8 +2,9 @@ import React from 'react'
 import Headline from './components/Headline'
 import Copy from './components/Copy'
 import { Link } from 'react-router-dom'
+import withConference from './withConference'
 
-export default ({news}) => {
+export default withConference(({conference: {news}}) => {
   return (
     <div>
       <Headline>News</Headline>
@@ -22,4 +23,4 @@ export default ({news}) => {
       </Copy>
     </div>
   )
-}
+})

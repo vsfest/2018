@@ -28,7 +28,7 @@ export default () => (
       </Section>
 
       <Section>
-        <News news={JS.news} />
+        <News />
       </Section>
 
       <Section>
