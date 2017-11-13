@@ -4,6 +4,7 @@ import styled, { withTheme } from 'styled-components'
 import Headline from './components/Headline'
 import { ButtonThemed } from './components/Buttons'
 import { LinkThemed } from './components/Links'
+import withConference from './withConference'
 
 const Button = ButtonThemed.withComponent('button')
 
@@ -38,22 +39,22 @@ const MailingList = styled.div`
   }
 `
 
-export default withTheme(({ theme: {conference: {contact: {twitter, mailingList }}}}) => {
+export default withConference(({ conference: { contact: { twitter, mailingList } } }) => {
   return (
     <MailingList>
       <Headline>Stay up to date with announcements</Headline>
 
       <p>
-        For more announcements follow{' '}
-        <LinkThemed href={`https://twitter.com/${twitter}`} target="_blank">
-          @{twitter}
-        </LinkThemed>{' '}
+        For more announcements follow{ ' ' }
+        <LinkThemed href={ `https://twitter.com/${twitter}` } target="_blank">
+          @{ twitter }
+        </LinkThemed>{ ' ' }
         or sign up to our mailing list below.
       </p>
-      <form action={mailingList.url} method="post">
+      <form action={ mailingList.url } method="post">
         <input
           id="fieldEmail"
-          name={mailingList.formName}
+          name={ mailingList.formName }
           type="email"
           required
           placeholder="Your email address"

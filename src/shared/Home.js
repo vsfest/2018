@@ -44,7 +44,7 @@ const ContentPage = ({ conference, children }) => (
 )
 
 export default withRouter(({ conference, children, match }) => (
-  <ThemeProvider theme={{ ...conference.theme, conference }}>
+  <ThemeProvider theme={{ ...conference.theme, _conference: conference }}>
     <Background>
       <Helmet {...conference}>
         <link
