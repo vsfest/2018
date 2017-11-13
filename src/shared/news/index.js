@@ -9,22 +9,29 @@ const fs = require('fs')
 const path = require('path')
 const fm = require('front-matter')
 
-const filenames = fs.readdirSync(__dirname)
-module.exports = "news = [" + 
-filenames.filter(file => file.endsWith('.md'))
-         .map(file => {
-           const data = fs.readFileSync(path.join(__dirname, file), 'utf8')
-           const content = fm(data)
-           return "Object.assign(" + JSON.stringify(content.attributes) + ", { body: md\`" + content.body + "\` })"
-         })
-         .join(',') +
-"]"
+let imports = []
+const news = fs.readdirSync(__dirname)
+  .filter(file => file.endsWith('.md'))
+  .map(file => {
+    const data = fs.readFileSync(path.join(__dirname, file), 'utf8')
+    const content = fm(data)
+    return "Object.assign(" + JSON.stringify(content.attributes) + ", { body: md\`" + content.body + "\` })"
+  })
+
+module.exports = imports.join('') + "\\nnews = [" + news.join(',') + "]"
 `
 
-export default conferenceId => (
+export const newsForConference = conferenceId => (
   news.filter(item => (
     item.conference === 'all' ||
     item.conference === conferenceId ||
     (Array.isArray(item.conference) && item.conference.indexOf(conferenceId) !== -1)
   ))
 )
+
+const newsByUrl = news.reduce((accum, item) => (
+  { ...accum, [item.url]: item }
+), {})
+
+//console.log(newsByUrl)
+export default newsByUrl

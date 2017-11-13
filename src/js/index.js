@@ -28,7 +28,7 @@ export default () => (
       </Section>
 
       <Section>
-        <News conferenceId={JS.id} />
+        <News news={JS.news} />
       </Section>
 
       <Section>

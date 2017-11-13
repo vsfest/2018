@@ -10,6 +10,7 @@ import Masthead from './Masthead'
 import Logo from './Logo'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import NewsPage from '../shared/NewsPage'
 
 const Background = styled.div`
   background-color: #fafafa;
@@ -87,6 +88,13 @@ export default withRouter(({ conference, children, match }) => (
           </ContentPage>
         )}
       />
+      { conference.news.map((item,i) => (
+        <Route key={i} exact path={item.url} render={() => (
+          <ContentPage conference={conference}>
+            <NewsPage conference={conference} />
+          </ContentPage>
+        )}/>
+      ))}
     </Background>
   </ThemeProvider>
 ))

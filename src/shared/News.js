@@ -1,11 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
-import { CSS, JS, Decompress } from '../data'
 import Headline from './components/Headline'
 import Copy from './components/Copy'
-import news from './news/index'
+import { Link } from 'react-router-dom'
 
-export default ({conferenceId}) => {
+export default ({news}) => {
   return (
     <div>
       <Headline>News</Headline>
@@ -15,10 +13,9 @@ export default ({conferenceId}) => {
 
       <Copy>
         {
-          news(conferenceId).map(item => (
+          news.map(item => (
             <div key={item.title}>
-              <h4>{ item.title }</h4>
-              <div>{ item.body }</div>
+              <Link to={item.url}>{ item.title }</Link>
             </div>
           ))
         }

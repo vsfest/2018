@@ -1,6 +1,7 @@
 import js_logo from './js/logo.svg'
 import css_logo from './css/logo.svg'
 import decompress_logo from './decompress/logo.svg'
+import {newsForConference} from './shared/news/index'
 
 const titoLink = 'https://ti.to/cssconf-au/2018'
 const venue = 'North Melbourne Meat Market'
@@ -82,7 +83,8 @@ export const JS = {
     { title: 2014, url: 'http://au.jsconf.com/' },
     { title: 2012 }
   ],
-  isCfpOpen: true
+  isCfpOpen: true,
+  news: newsForConference('js'),
 }
 
 export const CSS = {
@@ -118,7 +120,8 @@ export const CSS = {
     { title: 2015, url: 'http://2015.cssconf.com.au/' },
     { title: 2014, url: 'http://2014.cssconf.com.au/' }
   ],
-  isCfpOpen: true
+  isCfpOpen: true,
+  news: newsForConference('css'),
 }
 
 export const Decompress = {
@@ -153,5 +156,6 @@ export const Decompress = {
     { title: 2015 },
     { title: 2014 }
   ],
-  isCfpOpen: false
+  isCfpOpen: false,
+  news: newsForConference('decompress'),
 }
