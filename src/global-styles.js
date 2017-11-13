@@ -5,6 +5,7 @@ import fontBookWoff from './assets/fonts/MaisonNeue-Book.woff'
 import fontBookWoff2 from './assets/fonts/MaisonNeue-Book.woff2'
 import fontBoldWoff from './assets/fonts/MaisonNeue-ExtraBold.woff'
 import fontBoldWoff2 from './assets/fonts/MaisonNeue-ExtraBold.woff2'
+import { typography } from './styles/traits'
 
 injectGlobal`
   ${css_wipe}
@@ -28,15 +29,13 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Maison Neue Book', -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    ${ typography.normal };
     font-size: 18px;
     line-height: 1.4;
   }
   
   strong {
-    font-family: 'Maison Neue Extra Bold', -apple-system, BlinkMacSystemFont,
-    avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-    segoe ui, arial, sans-serif;
+    ${ typography.bold };
   }
   
   p,
