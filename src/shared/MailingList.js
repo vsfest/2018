@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
 import Headline from './components/Headline'
 import { ButtonThemed } from './components/Buttons'
@@ -38,7 +38,7 @@ const MailingList = styled.div`
   }
 `
 
-export default ({ twitter, mailingList }) => {
+export default withTheme(({ theme: {conference: {contact: {twitter, mailingList }}}}) => {
   return (
     <MailingList>
       <Headline>Stay up to date with announcements</Headline>
@@ -62,4 +62,4 @@ export default ({ twitter, mailingList }) => {
       </form>
     </MailingList>
   )
-}
+})
