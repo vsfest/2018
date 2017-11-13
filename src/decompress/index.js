@@ -11,6 +11,7 @@ import Sponsorship from '../shared/Sponsorship'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { Section } from '../shared/components/Section'
+import News from '../shared/News'
 
 export default () => (
   <Home conference={Decompress}>
@@ -19,6 +20,10 @@ export default () => (
       <Logo src={Decompress.logo} />
       <Section>
         <EventInfo {...Decompress} />
+      </Section>
+
+      <Section>
+        <News />
       </Section>
 
       <Section>

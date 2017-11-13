@@ -12,6 +12,7 @@ import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { Section } from '../shared/components/Section'
 import EventExpectations from '../shared/EventExpectations'
+import News from '../shared/News'
 
 export default () => (
   <Home conference={JS}>
@@ -24,6 +25,10 @@ export default () => (
 
       <Section>
         <EventExpectations />
+      </Section>
+
+      <Section>
+        <News />
       </Section>
 
       <Section>
