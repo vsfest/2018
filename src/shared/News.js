@@ -18,7 +18,7 @@ export default ({conferenceId}) => {
           news(conferenceId).map(item => (
             <div key={item.title}>
               <h4>{ item.title }</h4>
-              <p>{ item.content }</p>
+              <div>{ item.body }</div>
             </div>
           ))
         }
