@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { withTheme } from 'styled-components'
+import styled from 'styled-components'
 
 import Headline from './components/Headline'
 import { ButtonThemed } from './components/Buttons'
