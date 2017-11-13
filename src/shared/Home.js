@@ -12,8 +12,9 @@ import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 
 const Background = styled.div`
-  background-color: #fafafa;
+  background-color: #fff;
   color: #222;
+  padding-top: 80px;
 `
 
 const EventMeta = styled.section`

@@ -66,7 +66,7 @@ export const JS = {
   theme: {
     primary: 'hsla(218, 98%, 38%, 1)',
     primaryHover: 'hsla(218, 98%, 28%, 1)',
-    secondary: 'hsla(218, 98%, 90%, 1)'
+    secondary: 'hsla(218, 98%, 98%, 1)'
   },
   contact: {
     team: 'team@jsconfau.com',

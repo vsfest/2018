@@ -17,6 +17,8 @@ const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid hsl(0, 0%, 90%);
+  z-index: 2;
 
   ul {
     margin: 0;
@@ -43,8 +45,8 @@ const NavMobile = styled.nav`
 
   li {
     display: block;
-    padding: 10px 0;
-    border-bottom: 2px solid ${props => props.theme.secondary};
+    padding: 15px 0;
+    border-bottom: 2px solid hsl(0, 0%, 90%);
   }
 
   ul {

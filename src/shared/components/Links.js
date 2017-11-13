@@ -18,4 +18,12 @@ const LinkThemed = Link.extend`
   }
 `
 
-export { LinkThemed }
+const LinkGreyed = Link.extend`
+  color: hsl(0, 0%, 35%);
+
+  &:hover {
+    color: hsl(0, 0%, 15%);
+  }
+`
+
+export { LinkThemed, LinkGreyed }
