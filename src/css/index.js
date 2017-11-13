@@ -12,6 +12,7 @@ import EventExpectations from '../shared/EventExpectations'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { Section } from '../shared/components/Section'
+import News from '../shared/News'
 
 export default () => (
   <Home conference={CSS}>
@@ -24,6 +25,10 @@ export default () => (
 
       <Section>
         <EventExpectations />
+      </Section>
+
+      <Section>
+        <News conferenceId={CSS.id} />
       </Section>
 
       <Section>
