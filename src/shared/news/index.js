@@ -3,13 +3,15 @@ import codegen from 'codegen.macro'
 import md from 'react-markings'
 /* eslint-enable no-unused-vars */
 
-let news
+let news = [
+  require('./2017-11-13-Test.md'),
+]
+
 codegen`
 const fs = require('fs')
 const path = require('path')
 const fm = require('front-matter')
 
-let imports = []
 const news = fs.readdirSync(__dirname)
   .filter(file => file.endsWith('.md'))
   .map(file => {
@@ -18,7 +20,7 @@ const news = fs.readdirSync(__dirname)
     return "Object.assign(" + JSON.stringify(content.attributes) + ", { body: md\`" + content.body + "\` })"
   })
 
-module.exports = imports.join('') + "\\nnews = [" + news.join(',') + "]"
+module.exports = "news = [" + news.join(',') + "]"
 `
 
 export const newsForConference = conferenceId => (
