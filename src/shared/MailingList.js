@@ -41,7 +41,7 @@ const MailingList = styled.div`
 export default ({ twitter, mailingList }) => {
   return (
     <MailingList>
-      <Headline>Stay up to date with announcements</Headline>
+      <Headline>Stay up to date</Headline>
 
       <p>
         For more announcements follow{' '}

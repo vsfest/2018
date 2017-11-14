@@ -82,7 +82,7 @@ export default ({ sponsors, contact }) => {
         </LinkThemed>. We’d love to work with you.
       </Copy>
 
-      <Copy>Thanks to our wonderful patrons:</Copy>
+      <Copy>We’re thankful for our patrons:</Copy>
       <SectionCentered>
         {mainSponsors.length ? (
           <HeadlineSmall>Main Sponsors</HeadlineSmall>

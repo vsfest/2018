@@ -46,7 +46,7 @@ injectGlobal`
   
   ul {
     list-style-type: disc;
-    margin: 30px;
+    margin: 0 0 30px 20px;
   }
   
   li {

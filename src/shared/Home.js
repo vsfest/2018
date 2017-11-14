@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import Helmet from 'react-helmet'
 import { Route, withRouter } from 'react-router-dom'
 import CodeOfConductFull from './CodeOfConductFull'
+import Sponsors from './Sponsors'
 import CallForSpeakers from './CallForSpeakers'
 import Team from './Team'
 import { Staff } from '../data'
@@ -85,6 +86,14 @@ export default withRouter(({ conference, children, match }) => (
         render={() => (
           <ContentPage conference={conference}>
             <Team members={Staff} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path="/sponsors"
+        render={() => (
+          <ContentPage conference={conference}>
+            <Sponsors conference={conference} />
           </ContentPage>
         )}
       />

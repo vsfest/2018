@@ -34,6 +34,7 @@ const SectionBannerExpanded = Section.extend`
 const SectionBanner = Section.extend`
   margin: 0;
   padding: 60px 0 30px 0;
+  margin-bottom: 60px;
   background-color: ${props => props.theme.primary};
   background-image: url(${props => props.theme.bannerImageSmall});
   background-size: cover;
