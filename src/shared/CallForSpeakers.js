@@ -6,6 +6,7 @@ import Headline from './components/Headline'
 import Title from './components/Title'
 import { ButtonThemed } from './components/Buttons'
 import { LinkThemed } from './components/Links'
+import Copy from './components/Copy'
 
 import Container from '../shared/components/Container'
 import {
@@ -23,29 +24,40 @@ const Photo = ({ src, alt = 'Inline image' }) => (
 )
 
 Photo.Wrapper = styled.div`
-  background-color: ${props => props.theme.secondary};
+  background-color: ${props => props.theme.primary};
   margin-bottom: 60px;
-  box-shadow: 15px 15px ${props => props.theme.secondary};
 
   @media (min-width: 70em) {
     width: 400px;
     margin-right: 60px;
     margin-bottom: 30px;
+    margin-left: -200px;
   }
 `
 
 Photo.Img = styled.img`
   display: block;
   max-width: 100%;
-  mix-blend-mode: multiply;
+  mix-blend-mode: soft-light;
 `
 
-const SpeakerImageWrapper = styled.div`flex: 100px;`
+const SpeakerImageWrapper = styled.div`
+  width: 200px;
+  height: 200px;
+  background-color: ${props => props.theme.primary};
+  margin-right: 30px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto 30px auto;
+  }
+`
 
 const Quote = styled.blockquote`
+  margin-bottom: 60px;
   @media (min-width: 48em) {
     div {
       display: flex;
+      align-items: center;
     }
 
     p {
@@ -56,6 +68,7 @@ const Quote = styled.blockquote`
   p {
     background-color: ${props => props.theme.secondary};
     padding: 30px;
+    margin: 0;
   }
 
   cite {
@@ -66,14 +79,9 @@ const Quote = styled.blockquote`
 
   img {
     display: inline-block;
-    box-shadow: 5px 5px ${props => props.theme.secondary};
-    width: 100px;
-    height: 100px;
-    margin-right: 30px;
-
-    @media (max-width: 48em) {
-      margin: 15px auto;
-    }
+    mix-blend-mode: soft-light;
+    width: 200px;
+    height: 200px;
   }
 `
 
@@ -236,8 +244,12 @@ export default ({ conference }) => {
       <SectionCentered>
         <Title>Call For Speakers</Title>
         <p>
-          <strong>The Call for Speakers will close on December 1st.</strong> We
-          strongly advise against waiting to submit at the last minute.
+          <strong>The Call for Speakers will close on December 1st.</strong>
+        </p>
+        <p>
+          We strongly advise against waiting to submit at the last minute.
+          Remember to not share abstracts or talk titles with the organiser
+          team, as your submission might be rejected.
         </p>
         <ButtonThemed href={cfpURL}>Submit a talk</ButtonThemed>
       </SectionCentered>
@@ -537,10 +549,10 @@ export default ({ conference }) => {
 
       <Section>
         <Headline>Past speakers feedback</Headline>
-        <p>
+        <Copy>
           Don’t take our word for it and read about the experiences of our past
           speakers.
-        </p>
+        </Copy>
 
         {conference.id === 'css' ? CSSConfTestimonials() : JSConfTestimonials()}
 
