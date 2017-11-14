@@ -74,15 +74,12 @@ export default ({ sponsors, contact }) => {
       <Headline>Sponsors</Headline>
 
       <Copy>
-        As a registered not-for-profit event we’re looking for organizations and
-        individuals, who are willing to enable us to run the best, accessible
-        and inclusive conference possible. If you can help,{' '}
+        We are currently offering sponsorship packages and media partnerships.{' '}
         <LinkThemed href={`mailto:${contact.sponsorship}`}>
-          reach out for more details
-        </LinkThemed>. We’d love to work with you.
+          Contact us for more details
+        </LinkThemed>. Thanks to these great companies already supporting us:
       </Copy>
 
-      <Copy>We’re thankful for our patrons:</Copy>
       <SectionCentered>
         {mainSponsors.length ? (
           <HeadlineSmall>Main Sponsors</HeadlineSmall>
@@ -145,7 +142,14 @@ export default ({ sponsors, contact }) => {
         </SponsorContainer>
 
         {mediaPartners.length ? (
-          <HeadlineSmall>Media Partners</HeadlineSmall>
+          <div>
+            <HeadlineSmall>Media Partners</HeadlineSmall>
+            <p>
+              We’re always happy to work with media partners. If you run a
+              magazine, podcast, blog or a newsletter drop us a line for
+              options.
+            </p>
+          </div>
         ) : null}
         <SponsorContainer>
           {mediaPartners.map((sponsor, i) => {
