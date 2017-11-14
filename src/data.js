@@ -69,7 +69,8 @@ export const JS = {
     primary: 'hsla(218, 98%, 38%, 1)',
     primaryHover: 'hsla(218, 98%, 28%, 1)',
     secondary: 'hsla(218, 98%, 86%, 1)',
-    bannerImage: require('./js/banner-bg.jpg')
+    bannerImage: require('./js/banner-bg.jpg'),
+    bannerImageSmall: require('./js/banner-bg-small.jpg')
   },
   contact: {
     team: 'team@jsconfau.com',
@@ -85,7 +86,33 @@ export const JS = {
     { title: 2014, url: 'http://au.jsconf.com/' },
     { title: 2012 }
   ],
-  isCfpOpen: true
+  isCfpOpen: true,
+  sponsors: [
+    {
+      name: 'Calibre',
+      url: 'https://calibreapp.com/',
+      image: require('./assets/sponsor-calibre.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Front-end Center',
+      url: 'https://frontend.center/',
+      image: require('./assets/sponsor-fec.svg'),
+      tier: 'main'
+    },
+    {
+      name: '99designs',
+      url: 'https://99designs.com.au/',
+      image: require('./assets/sponsor-99designs.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Lookahead Search',
+      url: 'https://www.lookahead.com.au/',
+      image: require('./assets/sponsor-lookahead.svg'),
+      tier: 'diversity'
+    }
+  ]
 }
 
 export const CSS = {
@@ -124,7 +151,39 @@ export const CSS = {
     { title: 2015, url: 'http://2015.cssconf.com.au/' },
     { title: 2014, url: 'http://2014.cssconf.com.au/' }
   ],
-  isCfpOpen: true
+  isCfpOpen: true,
+  sponsors: [
+    {
+      name: 'Calibre',
+      url: 'https://calibreapp.com/',
+      image: require('./assets/sponsor-calibre.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Front-end Center',
+      url: 'https://frontend.center/',
+      image: require('./assets/sponsor-fec.svg'),
+      tier: 'main'
+    },
+    {
+      name: '99designs',
+      url: 'https://99designs.com.au/',
+      image: require('./assets/sponsor-99designs.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Lookahead Search',
+      url: 'https://www.lookahead.com.au/',
+      image: require('./assets/sponsor-lookahead.svg'),
+      tier: 'diversity'
+    },
+    {
+      name: 'Offscreen',
+      url: 'https://www.offscreenmag.com/',
+      image: require('./assets/sponsor-offscreen.svg'),
+      tier: 'media'
+    }
+  ]
 }
 
 export const Decompress = {
@@ -159,5 +218,19 @@ export const Decompress = {
     { title: 2015 },
     { title: 2014 }
   ],
-  isCfpOpen: false
+  isCfpOpen: false,
+  sponsors: [
+    {
+      name: 'Calibre',
+      url: 'https://calibreapp.com/',
+      image: require('./assets/sponsor-calibre.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Front-end Center',
+      url: 'https://frontend.center/',
+      image: require('./assets/sponsor-fec.svg'),
+      tier: 'main'
+    }
+  ]
 }

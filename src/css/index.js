@@ -39,9 +39,7 @@ export default () => (
         <CodeOfConduct />
       </Section>
 
-      <Section>
-        <Sponsorship {...CSS.contact} />
-      </Section>
+      <Sponsorship {...CSS} />
     </Container>
 
     <Footer {...CSS} />

@@ -38,6 +38,8 @@ export default () => (
       <Section>
         <CodeOfConduct />
       </Section>
+
+      <Sponsorship {...JS} />
     </Container>
 
     <Footer {...JS} />

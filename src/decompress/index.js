@@ -33,6 +33,8 @@ export default () => (
       <Section>
         <CodeOfConduct />
       </Section>
+
+      <Sponsorship {...Decompress} />
     </Container>
 
     <Footer {...Decompress} />

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export default styled.h2`
-  margin: 0 0 30px 0;
-  font-size: 28px;
+  margin: 0 0 60px 0;
+  font-size: 36px;
   line-height: 1;
   font-family: 'Maison Neue Extra Bold', -apple-system, BlinkMacSystemFont,
     avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
