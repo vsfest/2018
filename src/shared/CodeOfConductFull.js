@@ -4,7 +4,6 @@ import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import Title from './components/Title'
 import Container from '../shared/components/Container'
-import { Section } from '../shared/components/Section'
 import { LinkThemed } from './components/Links'
 import Copy from './components/Copy'
 

@@ -79,7 +79,7 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
           <HeadlineSmall>Get Involved</HeadlineSmall>
           <ul>
             <li>
-              <StyledLink to="sponsor">Sponsor</StyledLink>
+              <StyledLink to="sponsors">Sponsor</StyledLink>
             </li>
             {isCfpOpen ? (
               <li>
