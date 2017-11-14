@@ -6,6 +6,7 @@ import CodeOfConductFull from './CodeOfConductFull'
 import Sponsors from './Sponsors'
 import Accessibility from './Accessibility'
 import CallForSpeakers from './CallForSpeakers'
+import Scholarship from './Scholarship'
 import Team from './Team'
 import { Staff } from '../data'
 import Masthead from './Masthead'
@@ -103,6 +104,14 @@ export default withRouter(({ conference, children, match }) => (
         render={() => (
           <ContentPage conference={conference}>
             <Accessibility conference={conference} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path="/scholarship"
+        render={() => (
+          <ContentPage conference={conference}>
+            <Scholarship conference={conference} />
           </ContentPage>
         )}
       />

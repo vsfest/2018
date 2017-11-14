@@ -9,7 +9,7 @@ const StyledLink = LinkGreyed.withComponent(Link)
 
 const Footer = styled.div`
   padding: 30px;
-  margin-top: 30px;
+  margin-top: 60px;
   background-color: hsla(0, 0%, 13%, 1);
   color: hsla(0, 0%, 67%, 1);
 
