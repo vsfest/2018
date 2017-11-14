@@ -1,5 +1,6 @@
 import React from 'react'
 import Headline from './components/Headline'
+import HeadlineSmall from './components/HeadlineSmall'
 import Copy from './components/Copy'
 import { LinkThemed } from './components/Links'
 
@@ -16,6 +17,11 @@ export default ({ sponsorship }) => {
           reach out for more details
         </LinkThemed>. We’d love to work with you.
       </Copy>
+
+      <HeadlineSmall>Main Sponsors</HeadlineSmall>
+      <HeadlineSmall>Community Sponsors</HeadlineSmall>
+      <HeadlineSmall>Diversity Sponsors</HeadlineSmall>
+      <HeadlineSmall>Media Partners</HeadlineSmall>
     </div>
   )
 }

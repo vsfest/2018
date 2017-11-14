@@ -8,48 +8,46 @@ import { LinkGreyed } from './components/Links'
 const StyledLink = LinkGreyed.withComponent(Link)
 
 const Footer = styled.div`
+  padding: 30px;
   margin-top: 30px;
-  padding: 60px 30px 30px 30px;
-  position: relative;
-
-  &:before {
-    content: '';
-    width: 30%;
-    height: 2px;
-    background-color: hsl(0, 0%, 90%);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -15%;
-  }
-
-  p {
-    color: hsl(0, 0%, 35%);
-  }
+  background-color: hsla(0, 0%, 13%, 1);
+  color: hsla(0, 0%, 67%, 1);
 
   footer {
     @media (min-width: 920px) {
       display: flex;
     }
   }
-
-  div {
-    flex: 50%;
-  }
-
   ul {
     list-style-type: none;
-    margin: 0 0 15px 0;
+    margin: 30px 0;
   }
 
   li {
-    display: inline-block;
-    margin-right: 15px;
+    margin-bottom: 15px;
   }
 
   img {
     margin-right: 7px;
     margin-bottom: 30px;
+  }
+`
+
+const Column = styled.div`
+  @media (min-width: 768px) {
+    flex: 25%;
+    padding: 30px;
+  }
+`
+
+const Acknowledgement = styled.div`
+  padding: 30px;
+  text-align: center;
+
+  p {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 
@@ -59,7 +57,7 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
   return (
     <Footer>
       <footer role="contentinfo">
-        <div>
+        <Column>
           <HeadlineSmall>About</HeadlineSmall>
           <ul>
             <li>
@@ -75,7 +73,9 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
               <LinkGreyed href={`mailto:${team}`}>Contact</LinkGreyed>
             </li>
           </ul>
+        </Column>
 
+        <Column>
           <HeadlineSmall>Get Involved</HeadlineSmall>
           <ul>
             <li>
@@ -87,7 +87,9 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
               </li>
             ) : null}
           </ul>
+        </Column>
 
+        <Column>
           <HeadlineSmall>Diversity & Inclusion</HeadlineSmall>
           <ul>
             <li>
@@ -102,9 +104,9 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
               <StyledLink to="scholarship">Opportunity Program</StyledLink>
             </li>
           </ul>
-        </div>
+        </Column>
 
-        <div>
+        <Column>
           <HeadlineSmall>Past Events</HeadlineSmall>
           <ul>
             {previousEvents.map((event, i) => {
@@ -121,32 +123,33 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
               )
             })}
           </ul>
-
-          <img
-            src={require('../assets/flag-aboriginal.jpg')}
-            alt="Aboriginal Flag"
-            width="40"
-          />
-          <img
-            src={require('../assets/flag-torres.jpg')}
-            alt="Torres Strait Islanders Flag"
-            width="40"
-          />
-          <img
-            src={require('../assets/flag-lgbtqi.jpg')}
-            alt="LGBTQI Flag"
-            width="40"
-          />
-
-          <p>
-            We acknowledge the Wurundjeri people of the Kulin nations, the
-            traditional owners of the land on which we gather. We pay our
-            respects to their Elders: past, present and future.
-          </p>
-
-          <p>We firmly believe in diversity, inclusion and equality.</p>
-        </div>
+        </Column>
       </footer>
+      <Acknowledgement>
+        <img
+          src={require('../assets/flag-aboriginal.jpg')}
+          alt="Aboriginal Flag"
+          width="40"
+        />
+        <img
+          src={require('../assets/flag-torres.jpg')}
+          alt="Torres Strait Islanders Flag"
+          width="40"
+        />
+        <img
+          src={require('../assets/flag-lgbtqi.jpg')}
+          alt="LGBTQI Flag"
+          width="40"
+        />
+
+        <p>
+          We acknowledge the Wurundjeri people of the Kulin nations, the
+          traditional owners of the land on which we gather. We pay our respects
+          to their Elders: past, present and future.
+        </p>
+
+        <p>We firmly believe in diversity, inclusion and equality.</p>
+      </Acknowledgement>
     </Footer>
   )
 }

@@ -10,11 +10,13 @@ import Masthead from './Masthead'
 import Logo from './Logo'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import { SectionBanner } from '../shared/components/Section'
+import EventInfo from '../shared/EventInfo'
 
 const Background = styled.div`
   background-color: #fff;
   color: #222;
-  padding-top: 80px;
+  padding-top: 50px;
 `
 
 const EventMeta = styled.section`
@@ -30,13 +32,11 @@ const ContentPage = ({ conference, children }) => (
   <div>
     <Masthead {...conference} />
 
-    <Container>
-      <Logo src={conference.logo} />
-      <EventMeta>
-        <p>{conference.date}</p>
-        <p>{conference.venue}</p>
-      </EventMeta>
-    </Container>
+    <SectionBanner>
+      <Container>
+        <Logo src={conference.logo} />
+      </Container>
+    </SectionBanner>
 
     {children}
     <Footer {...conference} />

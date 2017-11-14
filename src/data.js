@@ -4,6 +4,7 @@ import decompress_logo from './decompress/logo.svg'
 
 const titoLink = 'https://ti.to/cssconf-au/2018'
 const venue = 'North Melbourne Meat Market'
+const city = 'Melbourne, Australia'
 
 export const Staff = [
   {
@@ -59,14 +60,16 @@ export const JS = {
       : `http://js.localhost:${window.location.port}`,
   cfpURL: 'https://cfp.jsconfau.com',
   description: `
-    JSConf Australia is a two-day, community event for JavaScript enthusiasts, pushing tech beyond its boundaries. We strongly encourage learning, sharing and making friends.
+  A two-day conference for JavaScript enthusiasts, pushing technology beyond its boundaries. From the community, for the community. A part of global JSConf Family.
   `,
   venue,
+  city,
   titoLink,
   theme: {
     primary: 'hsla(218, 98%, 38%, 1)',
     primaryHover: 'hsla(218, 98%, 28%, 1)',
-    secondary: 'hsla(218, 98%, 98%, 1)'
+    secondary: 'hsla(218, 98%, 86%, 1)',
+    bannerImage: require('./js/banner-bg.jpg')
   },
   contact: {
     team: 'team@jsconfau.com',
@@ -96,13 +99,16 @@ export const CSS = {
       : `http://css.localhost:${window.location.port}`,
   cfpURL: 'https://cfp.cssconf.com.au',
   description:
-    'CSSConf Australia is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
+    'A one-day, community conference dedicated to the designers, developers, and other CSS aficionados building the world’s most engaging user interfaces. A part of global CSSConf Family.',
   venue,
+  city,
   titoLink,
   theme: {
-    primary: 'hsla(28, 100%, 50%, 1)',
-    primaryHover: 'hsla(28, 100%, 40%, 1)',
-    secondary: 'hsla(28, 100%, 90%, 1)'
+    primary: 'hsla(18, 90%, 50%, 1)',
+    primaryHover: 'hsla(18, 100%, 40%, 1)',
+    secondary: 'hsla(18, 100%, 90%, 1)',
+    bannerImage: require('./css/banner-bg.jpg'),
+    bannerImageSmall: require('./css/banner-bg-small.jpg')
   },
   contact: {
     team: 'team@cssconf.com.au',
@@ -131,7 +137,7 @@ export const Decompress = {
       ? 'https://2018.decompress.com.au'
       : `http://decompress.localhost:${window.location.port}`,
   description:
-    'Decompress is a community day for designers and developers run by the CSSConf and JSConf team. Our focus is squarely set on creating an all- inclusive space for attendees to learn, share and create. Topics covered are a blend of CSSConf and JSConf, and will even feature some of the same speakers.',
+    'Decompress is an affordable community day for designers and developers run by the CSSConf and JSConf AU teams. Our focus is squarely set on creating an all-inclusive space to learn, share and create.',
   venue,
   titoLink,
   theme: {

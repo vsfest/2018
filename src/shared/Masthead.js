@@ -13,11 +13,11 @@ const Nav = styled.div`
   top: 0;
   left: 0;
   background-color: white;
+  box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.2);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid hsl(0, 0%, 90%);
   z-index: 2;
 
   ul {
@@ -28,6 +28,12 @@ const Nav = styled.div`
     display: inline-block;
     padding-right: 30px;
     margin: 0;
+  }
+
+  ${ButtonThemed} {
+    @media (max-width: 460px) {
+      display: none;
+    }
   }
 `
 
@@ -46,7 +52,7 @@ const NavMobile = styled.nav`
   li {
     display: block;
     padding: 15px 0;
-    border-bottom: 2px solid hsl(0, 0%, 90%);
+    border-bottom: 2px solid ${props => props.theme.secondary};
   }
 
   ul {
@@ -69,7 +75,14 @@ const NavDesktop = styled.nav`
   }
 `
 
-const NavToggle = styled(Button)`@media (min-width: 920px) {display: none;}`
+const NavToggle = styled(Button)`
+  @media (min-width: 920px) {
+    display: none;
+  }
+  @media (max-width: 460px) {
+    padding-right: 0;
+  }
+`
 
 export default class Masthead extends React.Component {
   state = { navOpen: false }

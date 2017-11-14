@@ -29,8 +29,8 @@ injectGlobal`
 
   body {
     font-family: 'Maison Neue Book', -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.5;
   }
   
   strong {

@@ -19,10 +19,10 @@ const LinkThemed = Link.extend`
 `
 
 const LinkGreyed = Link.extend`
-  color: hsl(0, 0%, 35%);
+  color: hsla(0, 0%, 67%, 1);
 
   &:hover {
-    color: hsl(0, 0%, 15%);
+    color: hsla(0, 0%, 87%, 1);
   }
 `
 

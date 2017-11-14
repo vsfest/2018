@@ -24,7 +24,7 @@ const Expectations = styled.div`
 
 export default () => {
   return (
-    <SectionCentered>
+    <div>
       <Headline>What to expect</Headline>
       <Expectations>
         <ul>
@@ -38,6 +38,6 @@ export default () => {
           <li>wheelchair-accessible venue</li>
         </ul>
       </Expectations>
-    </SectionCentered>
+    </div>
   )
 }

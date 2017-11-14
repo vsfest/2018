@@ -10,18 +10,19 @@ import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
-import { Section } from '../shared/components/Section'
+import { Section, SectionBannerExpanded } from '../shared/components/Section'
 import EventExpectations from '../shared/EventExpectations'
 
 export default () => (
   <Home conference={JS}>
     <Masthead {...JS} />
-    <Container>
-      <Logo src={JS.logo} />
-      <Section>
+    <SectionBannerExpanded>
+      <Container>
+        <Logo src={JS.logo} />
         <EventInfo {...JS} />
-      </Section>
-
+      </Container>
+    </SectionBannerExpanded>
+    <Container>
       <Section>
         <EventExpectations />
       </Section>
@@ -36,10 +37,6 @@ export default () => (
 
       <Section>
         <CodeOfConduct />
-      </Section>
-
-      <Section>
-        <Sponsorship {...JS.contact} />
       </Section>
     </Container>
 

@@ -11,17 +11,18 @@ import Sponsorship from '../shared/Sponsorship'
 import EventExpectations from '../shared/EventExpectations'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
-import { Section } from '../shared/components/Section'
+import { Section, SectionBannerExpanded } from '../shared/components/Section'
 
 export default () => (
   <Home conference={CSS}>
     <Masthead {...CSS} />
-    <Container>
-      <Logo src={CSS.logo} />
-      <Section>
+    <SectionBannerExpanded>
+      <Container>
+        <Logo src={CSS.logo} />
         <EventInfo {...CSS} />
-      </Section>
-
+      </Container>
+    </SectionBannerExpanded>
+    <Container>
       <Section>
         <EventExpectations />
       </Section>
