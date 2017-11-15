@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
-import Title from './components/Title'
 import Container from '../shared/components/Container'
 import { LinkThemed } from './components/Links'
 import Copy from './components/Copy'

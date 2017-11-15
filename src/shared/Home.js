@@ -15,21 +15,11 @@ import Logo from './Logo'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { SectionBanner } from '../shared/components/Section'
-import EventInfo from '../shared/EventInfo'
 
 const Background = styled.div`
   background-color: #fff;
   color: #222;
   padding-top: 50px;
-`
-
-const EventMeta = styled.section`
-  text-align: center;
-  margin-bottom: 30px;
-
-  p {
-    margin-bottom: 0;
-  }
 `
 
 const ContentPage = ({ conference, children }) => (

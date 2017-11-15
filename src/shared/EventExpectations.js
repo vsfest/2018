@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Headline from './components/Headline'
-import { SectionCentered } from './components/Section'
 
 const Expectations = styled.div`
   @media (min-width: 30em) {
