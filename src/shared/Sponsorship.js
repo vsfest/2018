@@ -24,7 +24,7 @@ const Sponsor = styled.div`
   a {
     display: table;
     padding: 40px;
-    margin: 30px 0;
+    margin-bottom: 30px;
     justify-content: center;
     background-color: ${props => props.theme.secondary};
     vertical-align: middle;
@@ -146,8 +146,11 @@ export default ({ sponsors, contact }) => {
             <HeadlineSmall>Media Partners</HeadlineSmall>
             <p>
               We’re always happy to work with media partners. If you run a
-              magazine, podcast, blog or a newsletter drop us a line for
-              options.
+              magazine, podcast, blog or a newsletter{' '}
+              <LinkThemed href={`mailto:${contact.sponsorship}`}>
+                drop us a line
+              </LinkThemed>{' '}
+              for options.
             </p>
           </div>
         ) : null}
