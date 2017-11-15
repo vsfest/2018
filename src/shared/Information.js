@@ -1,13 +1,37 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from '../shared/components/Container'
 import { LinkThemed } from './components/Links'
 import Copy from './components/Copy'
+import { SectionFlex } from './components/Section'
+
+import MailingList from './MailingList'
 
 const StyledLink = LinkThemed.withComponent(Link)
+
+const ImageWrapper = styled.div`
+  background-color: ${props => props.theme.primary};
+  display: inline-block;
+  max-width: 600px;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+    margin-right: 60px;
+    margin-left: -160px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    mix-blend-mode: soft-light;
+    display: block;
+  }
+`
 
 export default ({ conference }) => {
   return (
@@ -37,10 +61,15 @@ export default ({ conference }) => {
         being transparent about our multidisciplinary approach to the event.
       </Copy>
       <Headline>Venue & Date</Headline>
-      <p>
-        Meat Market<br /> 5 Blackwood Street<br /> North Melbourne VIC 3051
-        <br />Australia
-      </p>
+      <SectionFlex>
+        <ImageWrapper>
+          <img src={require('../assets/venue.jpg')} alt="Venue" />
+        </ImageWrapper>
+        <p>
+          Meat Market<br /> 5 Blackwood Street<br /> North Melbourne VIC 3051
+          <br />Australia
+        </p>
+      </SectionFlex>
       <p>
         {conference.title} will take place on <strong>{conference.date}</strong>{' '}
         at{' '}
@@ -233,12 +262,14 @@ export default ({ conference }) => {
           </LinkThemed>
         </li>
       </ul>
-      <p>
+      <Copy>
         There are much more hotels further into CBD available on{' '}
         <LinkThemed href="http://booking.com/">Booking.com</LinkThemed>.
         Alternatively, consider private accommodation through{' '}
         <LinkThemed href="http://airbnb.com/">AirBnB</LinkThemed>.
-      </p>
+      </Copy>
+
+      <MailingList {...conference.contact} />
     </Container>
   )
 }
