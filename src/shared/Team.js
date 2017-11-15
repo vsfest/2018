@@ -67,7 +67,9 @@ export default ({ members }) => {
 
       <p>
         We know what makes an event great, and we’re striving to create an
-        inclusive and memorable conference here in Melbourne.
+        inclusive and memorable conference here in Melbourne. More importantly,
+        we’re a registered not-for-profit, bootstrapping with many hours of
+        hard, voluntary work.
       </p>
       <Members>
         {members.map((person, i) => {
@@ -86,6 +88,10 @@ export default ({ members }) => {
           )
         })}
       </Members>
+      <p>
+        Our thanks go to countless volunteers aiding us each year in creating a
+        remarkable event.
+      </p>
     </Container>
   )
 }

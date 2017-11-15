@@ -38,17 +38,19 @@ const MailingList = styled.div`
   }
 `
 
-export default ({ twitter, mailingList }) => {
+export default ({ twitter, mailingList, team }) => {
   return (
     <MailingList>
       <Headline>Stay up to date</Headline>
 
       <p>
-        For more announcements follow{' '}
+        For all announcements follow{' '}
         <LinkThemed href={`https://twitter.com/${twitter}`} target="_blank">
           @{twitter}
         </LinkThemed>{' '}
-        or sign up to our mailing list below.
+        on Twitter or sign up to our mailing list below. In case of any
+        questions you can always{' '}
+        <LinkThemed href={`mailto:${team}`}>contact our team</LinkThemed>.
       </p>
       <form action={mailingList.url} method="post">
         <input

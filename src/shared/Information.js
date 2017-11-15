@@ -14,16 +14,43 @@ const StyledLink = LinkThemed.withComponent(Link)
 export default ({ conference }) => {
   return (
     <Container>
-      <Headline>Venue</Headline>
+      <Headline>About</Headline>
+      <p>
+        {conference.title} is a part of a curated family of events upheld to the
+        highest standards in the industry. We’re well-established and recognized
+        worldwide, striving to raise the bar for tech events across the globe.
+      </p>
+      <p>
+        For the fourth time, we’re assembling a group of international and local
+        speakers to present in Melbourne on the topics of front-end development,
+        design, JavaScript, industry culture, ethics, security, cryptography,
+        and much more, bringing innovation to Australia.
+      </p>
+
+      <Copy>
+        We’re driven by a deep commitment to diversity, inclusion, and
+        equality—operating under{' '}
+        <StyledLink to="code-of-conduct">
+          an actionable Code of Conduct
+        </StyledLink>, running a{' '}
+        <StyledLink to="scholarship">Scholarship Program</StyledLink> for
+        underrepresented groups, sharing our{' '}
+        <StyledLink to="accessiblity">Accessibility Statement</StyledLink>, and
+        being transparent about our multidisciplinary approach to the event.
+      </Copy>
+      <Headline>Venue & Date</Headline>
       <p>
         Meat Market<br /> 5 Blackwood Street<br /> North Melbourne VIC 3051
         <br />Australia
       </p>
       <p>
-        {conference.title} will take place on {conference.date} at North
-        Melbourne Meat Market. Build in the 1880s; the Meat Market is a
-        heritage-listed building, previously home to butchers, now house to
-        countless cultural and arts events.
+        {conference.title} will take place on <strong>{conference.date}</strong>{' '}
+        at{' '}
+        <LinkThemed href="http://www.meatmarket.org.au/">
+          North Melbourne Meat Market
+        </LinkThemed>. Build in the 1880s; the Meat Market is a heritage-listed
+        building, previously home to butchers, now house to countless cultural
+        and arts events.
       </p>
       <p>
         The Meat Market is conveniently located within 3-5 minutes walk from
@@ -39,6 +66,57 @@ export default ({ conference }) => {
       <Copy>
         The venue is wheelchair accessible (read more in our{' '}
         <StyledLink to="accessibility">Accessibility Statement</StyledLink>).
+      </Copy>
+
+      <Headline>Tickets</Headline>
+      <p>
+        Until sold out, you can{' '}
+        <LinkThemed href={conference.titoLink}>
+          purchase a pass here
+        </LinkThemed>. All prices inclusive of GST.
+      </p>
+      <HeadlineSmall>Early Bird</HeadlineSmall>
+      <p>Available until December 1.</p>
+
+      <ul>
+        <li>CSSConf: $375</li>
+        <li>JSConf: $750</li>
+        <li>Combo: $1050</li>
+      </ul>
+
+      <HeadlineSmall>Regular Bird</HeadlineSmall>
+      <p>December 2 onwards.</p>
+
+      <ul>
+        <li>CSSConf: $450</li>
+        <li>JSConf: $825</li>
+        <li>Combo: $1250</li>
+      </ul>
+
+      <p>
+        You can pay with Visa or MasterCard, or choose to be invoiced when
+        purchasing a larger quantity of tickets (5+ passes).
+      </p>
+
+      <HeadlineSmall>What do I get?</HeadlineSmall>
+      <p>
+        Apart from excellent talks, a few days of learning and fantastic
+        opportunities to make friends, hire or get hired, going to the
+        conference gets you:
+      </p>
+
+      <ul>
+        <li>carefully crafted swag</li>
+        <li>healthy and hearty breakfast, lunch, morning and afternoon teas</li>
+        <li>free, high-quality coffee and soft drinks throughout the event</li>
+        <li>free entry, food, and drink at all pre and afterparties</li>
+      </ul>
+
+      <Copy>
+        All tickets include entry to{' '}
+        <LinkThemed href="https://2018.decompress.com.au/">
+          Decompress
+        </LinkThemed>.
       </Copy>
 
       <Headline>Travel and Transport</Headline>

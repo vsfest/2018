@@ -9,6 +9,7 @@ const Button = styled.a`
   transition: all 0.2s ease-in;
   display: inline-block;
   text-decoration: none;
+  border-radius: 0;
 
   &:focus {
     outline: none;
