@@ -23,7 +23,7 @@ const SectionBannerExpanded = Section.extend`
   background-blend-mode: soft-light;
 
   @media (max-width: 425px) {
-    background-position: left center;
+    background-position: -200px center;
   }
 
   p {

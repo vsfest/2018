@@ -53,6 +53,10 @@ const NavMobile = styled.nav`
     display: block;
     padding: 15px 0;
     border-bottom: 2px solid ${props => props.theme.secondary};
+
+    &:last-child {
+      border: none;
+    }
   }
 
   ul {
