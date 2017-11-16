@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Helmet from 'react-helmet'
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from '../shared/components/Container'
@@ -12,6 +12,9 @@ const StyledLink = LinkThemed.withComponent(Link)
 export default ({ conference }) => {
   return (
     <Container>
+      <Helmet {...conference}>
+        <title>Accessibility Statement — {conference.title}</title>
+      </Helmet>
       <Headline>Accessibility Statement</Headline>
       <p>
         {conference.title} is committed to providing an inclusive, accessible

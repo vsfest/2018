@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
@@ -10,6 +11,9 @@ import Copy from './components/Copy'
 export default ({ conference }) => {
   return (
     <Container>
+      <Helmet {...conference}>
+        <title>Code of Conduct — {conference.title}</title>
+      </Helmet>
       <Title>Code of Conduct</Title>
       <Headline>Purpose</Headline>
       <Copy>

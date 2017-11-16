@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Helmet from 'react-helmet'
 import Headline from './components/Headline'
 
 import Container from '../shared/components/Container'
@@ -43,9 +43,12 @@ const Avatar = styled.img`
   }
 `
 
-export default ({ members }) => {
+export default ({ members, conference }) => {
   return (
     <Container>
+      <Helmet {...conference}>
+        <title>Team — {conference.title}</title>
+      </Helmet>
       <Headline>Team</Headline>
       <p>
         Our team consists of some of the most respected web practitioners both

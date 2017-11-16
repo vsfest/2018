@@ -1,42 +1,71 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import Headline from './components/Headline'
+import Container from './components/Container'
+import { LinkThemed } from './components/Links'
 
-const Expectations = styled.div`
-  @media (min-width: 30em) {
-    display: flex;
+const StyledLink = LinkThemed.withComponent(Link)
 
-    ul {
-      flex: auto;
+const Wrapper = styled.div`
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  background-color: hsla(0, 0%, 13%, 1);
+  color: hsla(0, 0%, 67%, 1);
+
+  ${Container} {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
     }
   }
 
-  ul {
-    list-style: none;
+  ${Headline} {
+    margin: 0;
+    color: white;
+  }
 
-    @media (max-width: 48em) {
-      text-align: left;
+  ${StyledLink} {
+    color: ${props => props.theme.secondary};
+
+    &:hover {
+      color: ${props => props.theme.primary};
     }
   }
 `
 
-export default () => {
+const Perk = styled.div`
+  flex: auto;
+  @media (min-width: 768px) {
+    margin-right: 60px;
+  }
+`
+
+export default ({ id }) => {
   return (
-    <div>
-      <Headline>What to expect</Headline>
-      <Expectations>
-        <ul>
-          <li>8 high quality talks per day</li>
-          <li>delicious, nutritious meals</li>
-          <li>endless coffee and soft drinks</li>
-        </ul>
-        <ul>
-          <li>gender neutral bathrooms</li>
-          <li>live captioning</li>
-          <li>wheelchair-accessible venue</li>
-        </ul>
-      </Expectations>
-    </div>
+    <Wrapper>
+      <Container>
+        <Perk>
+          <Headline>450</Headline>
+          <p>attendees</p>
+        </Perk>
+        <Perk>
+          {id === 'css' ? <Headline>9</Headline> : <Headline>16</Headline>}
+          <p>talks</p>
+        </Perk>
+        <Perk>
+          <Headline>Inclusive space</Headline>
+          <p>
+            Healthy meals, endless coffee and soft drinks, gender neutral
+            bathrooms, live captioning, wheelchair-accessible venue and more.{' '}
+            <StyledLink to="accessibility">
+              Our accessibility statement &rarr;
+            </StyledLink>
+          </p>
+        </Perk>
+      </Container>
+    </Wrapper>
   )
 }

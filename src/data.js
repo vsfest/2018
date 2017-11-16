@@ -112,7 +112,6 @@ export const JS = {
       image: require('./assets/sponsor-lookahead.svg'),
       tier: 'diversity'
     },
-    ,
     {
       name: 'Culture Amp',
       url: 'https://www.cultureamp.com/',

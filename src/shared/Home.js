@@ -41,6 +41,7 @@ export default withRouter(({ conference, children, match }) => (
   <ThemeProvider theme={conference.theme}>
     <Background>
       <Helmet {...conference}>
+        <title>{conference.title}</title>
         <link
           rel="preload"
           href={require('../assets/fonts/MaisonNeue-Book.woff2')}
@@ -78,7 +79,7 @@ export default withRouter(({ conference, children, match }) => (
         path="/team"
         render={() => (
           <ContentPage conference={conference}>
-            <Team members={Staff} />
+            <Team members={Staff} conference={conference} />
           </ContentPage>
         )}
       />

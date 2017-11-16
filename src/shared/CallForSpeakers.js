@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 import Headline from './components/Headline'
 import Title from './components/Title'
@@ -241,6 +242,9 @@ export default ({ conference }) => {
 
   return (
     <Container>
+      <Helmet {...conference}>
+        <title>Call for Speakers — {conference.title}</title>
+      </Helmet>
       <SectionCentered>
         <Title>Call For Speakers</Title>
         <p>

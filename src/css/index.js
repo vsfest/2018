@@ -22,11 +22,8 @@ export default () => (
         <EventInfo {...CSS} />
       </Container>
     </SectionBannerExpanded>
+    <EventExpectations {...CSS} />
     <Container>
-      <Section>
-        <EventExpectations />
-      </Section>
-
       <Section>
         <EventsList />
       </Section>

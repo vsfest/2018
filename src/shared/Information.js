@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
+import Helmet from 'react-helmet'
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from '../shared/components/Container'
@@ -36,6 +36,9 @@ const ImageWrapper = styled.div`
 export default ({ conference }) => {
   return (
     <Container>
+      <Helmet {...conference}>
+        <title>Information — {conference.title}</title>
+      </Helmet>
       <Headline>About</Headline>
       <p>
         {conference.title} is a part of a curated family of events upheld to the
