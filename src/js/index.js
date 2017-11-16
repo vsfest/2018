@@ -4,30 +4,28 @@ import { JS } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
-import Schedule from '../shared/Schedule'
+import EventsList from '../shared/EventsList'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
-import { Section } from '../shared/components/Section'
+import { Section, SectionBannerExpanded } from '../shared/components/Section'
 import EventExpectations from '../shared/EventExpectations'
 
 export default () => (
   <Home conference={JS}>
     <Masthead {...JS} />
-    <Container>
-      <Logo src={JS.logo} />
-      <Section>
+    <SectionBannerExpanded>
+      <Container>
+        <Logo src={JS.logo} />
         <EventInfo {...JS} />
-      </Section>
-
+      </Container>
+    </SectionBannerExpanded>
+    <EventExpectations />
+    <Container>
       <Section>
-        <EventExpectations />
-      </Section>
-
-      <Section>
-        <Schedule />
+        <EventsList />
       </Section>
 
       <Section>
@@ -38,9 +36,7 @@ export default () => (
         <CodeOfConduct />
       </Section>
 
-      <Section>
-        <Sponsorship {...JS.contact} />
-      </Section>
+      <Sponsorship {...JS} />
     </Container>
 
     <Footer {...JS} />

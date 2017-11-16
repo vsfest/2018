@@ -5,21 +5,19 @@ import { CSS, JS, Decompress } from '../data'
 import Headline from './components/Headline'
 import Copy from './components/Copy'
 import { LinkThemed } from './components/Links'
-import { ButtonThemed } from './components/Buttons'
 
 const Schedule = styled.div`
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin: 30px 0;
 `
 
 const Conference = styled.div`
   display: flex;
   align-items: center;
-  border: 2px solid ${props => props.theme.secondary};
+  background-color: ${props => props.theme.secondary};
   padding: 30px;
-  margin-right: 10px;
+  margin-right: 15px;
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
@@ -29,7 +27,7 @@ const Conference = styled.div`
   }
 
   @media (min-width: 700px) {
-    width: calc(33% - 10px);
+    width: calc(33% - 15px);
   }
 
   a {
@@ -44,12 +42,15 @@ const Conference = styled.div`
 export default () => {
   return (
     <div>
-      <Headline>Schedule</Headline>
-      <Copy>
-        The conference is a part of a bigger family of events. Limited Early
-        Bird tickets are now available. Our programme will be announced by
-        January 2018.
-      </Copy>
+      <Headline>Schedule & Tickets</Headline>
+      <p>
+        The conference is a part of a bigger family of events.{' '}
+        <strong>
+          Limited Early Bird tickets available till December 1.
+        </strong>{' '}
+        <LinkThemed href={CSS.titoLink}>Purchase a pass &rarr;</LinkThemed>
+      </p>
+      <Copy>Our programme will be announced by January 2018.</Copy>
       <Schedule>
         <Conference {...CSS}>
           <LinkThemed href={CSS.url}>
@@ -77,7 +78,6 @@ export default () => {
             </div>
           </LinkThemed>
         </Conference>
-        <ButtonThemed href={CSS.titoLink}>Get a Ticket</ButtonThemed>
       </Schedule>
     </div>
   )

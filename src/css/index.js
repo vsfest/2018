@@ -4,30 +4,28 @@ import { CSS } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
-import Schedule from '../shared/Schedule'
+import EventsList from '../shared/EventsList'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import EventExpectations from '../shared/EventExpectations'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
-import { Section } from '../shared/components/Section'
+import { Section, SectionBannerExpanded } from '../shared/components/Section'
 
 export default () => (
   <Home conference={CSS}>
     <Masthead {...CSS} />
-    <Container>
-      <Logo src={CSS.logo} />
-      <Section>
+    <SectionBannerExpanded>
+      <Container>
+        <Logo src={CSS.logo} />
         <EventInfo {...CSS} />
-      </Section>
-
+      </Container>
+    </SectionBannerExpanded>
+    <EventExpectations {...CSS} />
+    <Container>
       <Section>
-        <EventExpectations />
-      </Section>
-
-      <Section>
-        <Schedule />
+        <EventsList />
       </Section>
 
       <Section>
@@ -38,9 +36,7 @@ export default () => (
         <CodeOfConduct />
       </Section>
 
-      <Section>
-        <Sponsorship {...CSS.contact} />
-      </Section>
+      <Sponsorship {...CSS} />
     </Container>
 
     <Footer {...CSS} />

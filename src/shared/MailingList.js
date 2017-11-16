@@ -8,15 +8,23 @@ import { LinkThemed } from './components/Links'
 const Button = ButtonThemed.withComponent('button')
 
 const MailingList = styled.div`
-  width: 100%;
-
   form {
-    display: flex;
     width: 100%;
+    @media (min-width: 600px) {
+      display: flex;
+    }
+  }
+
+  ${Button} {
+    @media (max-width: 600px) {
+      margin-top: 15px;
+      width: 100%;
+    }
   }
 
   input {
     flex: 1;
+    width: 100%;
     margin-right: 15px;
     padding: 15px 0;
     background-color: transparent;
@@ -38,17 +46,19 @@ const MailingList = styled.div`
   }
 `
 
-export default ({ twitter, mailingList }) => {
+export default ({ twitter, mailingList, team }) => {
   return (
     <MailingList>
-      <Headline>Stay up to date with announcements</Headline>
+      <Headline>Stay up to date</Headline>
 
       <p>
-        For more announcements follow{' '}
+        For all announcements follow{' '}
         <LinkThemed href={`https://twitter.com/${twitter}`} target="_blank">
           @{twitter}
         </LinkThemed>{' '}
-        or sign up to our mailing list below.
+        on Twitter or sign up to our mailing list below. In case of any
+        questions you can always{' '}
+        <LinkThemed href={`mailto:${team}`}>contact our team</LinkThemed>.
       </p>
       <form action={mailingList.url} method="post">
         <input

@@ -2,8 +2,12 @@ import js_logo from './js/logo.svg'
 import css_logo from './css/logo.svg'
 import decompress_logo from './decompress/logo.svg'
 
+import css_favicon from './assets/css-favicon.ico'
+import js_favicon from './assets/js-favicon.png'
+
 const titoLink = 'https://ti.to/cssconf-au/2018'
 const venue = 'North Melbourne Meat Market'
+const city = 'Melbourne, Australia'
 
 export const Staff = [
   {
@@ -52,6 +56,7 @@ export const JS = {
   id: 'js',
   title: 'JSConf AU 2018',
   logo: js_logo,
+  favicon: js_favicon,
   date: '21st & 22nd March 2018',
   url:
     process.env.NODE_ENV === 'production'
@@ -59,14 +64,17 @@ export const JS = {
       : `http://js.localhost:${window.location.port}`,
   cfpURL: 'https://cfp.jsconfau.com',
   description: `
-    JSConf Australia is a two-day, community event for JavaScript enthusiasts, pushing tech beyond its boundaries. We strongly encourage learning, sharing and making friends.
+  A two-day conference for JavaScript enthusiasts, pushing technology beyond its boundaries. From the community, for the community. A part of global JSConf Family.
   `,
   venue,
+  city,
   titoLink,
   theme: {
     primary: 'hsla(218, 98%, 38%, 1)',
     primaryHover: 'hsla(218, 98%, 28%, 1)',
-    secondary: 'hsla(218, 98%, 90%, 1)'
+    secondary: 'hsla(218, 98%, 86%, 1)',
+    bannerImage: require('./js/banner-bg.jpg'),
+    bannerImageSmall: require('./js/banner-bg-small.jpg')
   },
   contact: {
     team: 'team@jsconfau.com',
@@ -82,13 +90,58 @@ export const JS = {
     { title: 2014, url: 'http://au.jsconf.com/' },
     { title: 2012 }
   ],
-  isCfpOpen: true
+  isCfpOpen: true,
+  sponsors: [
+    {
+      name: 'Calibre',
+      url: 'https://calibreapp.com/',
+      image: require('./assets/sponsor-calibre.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Front-end Center',
+      url: 'https://frontend.center/',
+      image: require('./assets/sponsor-fec.svg'),
+      tier: 'main'
+    },
+    {
+      name: '99designs',
+      url: 'https://99designs.com.au/',
+      image: require('./assets/sponsor-99designs.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Pin Payments',
+      url: 'https://pin.net.au/',
+      image: require('./assets/sponsor-pin.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Lookahead Search',
+      url: 'https://www.lookahead.com.au/',
+      image: require('./assets/sponsor-lookahead.svg'),
+      tier: 'diversity'
+    },
+    {
+      name: 'Culture Amp',
+      url: 'https://www.cultureamp.com/',
+      image: require('./assets/sponsor-cultureamp.svg'),
+      tier: 'supporter'
+    },
+    {
+      name: 'The Sizzle',
+      url: 'https://www.thesizzle.com.au/',
+      image: require('./assets/sponsor-sizzle.svg'),
+      tier: 'media'
+    }
+  ]
 }
 
 export const CSS = {
   id: 'css',
   title: 'CSSConf AU 2018',
   logo: css_logo,
+  favicon: css_favicon,
   date: '20th March 2018',
   url:
     process.env.NODE_ENV === 'production'
@@ -96,13 +149,16 @@ export const CSS = {
       : `http://css.localhost:${window.location.port}`,
   cfpURL: 'https://cfp.cssconf.com.au',
   description:
-    'CSSConf Australia is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.',
+    'A one-day, community conference dedicated to the designers, developers, and other CSS aficionados building the world’s most engaging user interfaces. A part of global CSSConf Family.',
   venue,
+  city,
   titoLink,
   theme: {
-    primary: 'hsla(28, 100%, 50%, 1)',
-    primaryHover: 'hsla(28, 100%, 40%, 1)',
-    secondary: 'hsla(28, 100%, 90%, 1)'
+    primary: 'hsla(18, 90%, 50%, 1)',
+    primaryHover: 'hsla(18, 100%, 40%, 1)',
+    secondary: 'hsla(18, 100%, 90%, 1)',
+    bannerImage: require('./css/banner-bg.jpg'),
+    bannerImageSmall: require('./css/banner-bg-small.jpg')
   },
   contact: {
     team: 'team@cssconf.com.au',
@@ -118,7 +174,57 @@ export const CSS = {
     { title: 2015, url: 'http://2015.cssconf.com.au/' },
     { title: 2014, url: 'http://2014.cssconf.com.au/' }
   ],
-  isCfpOpen: true
+  isCfpOpen: true,
+  sponsors: [
+    {
+      name: 'Calibre',
+      url: 'https://calibreapp.com/',
+      image: require('./assets/sponsor-calibre.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Front-end Center',
+      url: 'https://frontend.center/',
+      image: require('./assets/sponsor-fec.svg'),
+      tier: 'main'
+    },
+    {
+      name: '99designs',
+      url: 'https://99designs.com.au/',
+      image: require('./assets/sponsor-99designs.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Pin Payments',
+      url: 'https://pin.net.au/',
+      image: require('./assets/sponsor-pin.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Lookahead Search',
+      url: 'https://www.lookahead.com.au/',
+      image: require('./assets/sponsor-lookahead.svg'),
+      tier: 'diversity'
+    },
+    {
+      name: 'Offscreen',
+      url: 'https://www.offscreenmag.com/',
+      image: require('./assets/sponsor-offscreen.svg'),
+      tier: 'media'
+    },
+    {
+      name: 'Culture Amp',
+      url: 'https://www.cultureamp.com/',
+      image: require('./assets/sponsor-cultureamp.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'The Sizzle',
+      url: 'https://www.thesizzle.com.au/',
+      image: require('./assets/sponsor-sizzle.svg'),
+      tier: 'media'
+    }
+  ]
 }
 
 export const Decompress = {
@@ -131,7 +237,7 @@ export const Decompress = {
       ? 'https://2018.decompress.com.au'
       : `http://decompress.localhost:${window.location.port}`,
   description:
-    'Decompress is a community day for designers and developers run by the CSSConf and JSConf team. Our focus is squarely set on creating an all- inclusive space for attendees to learn, share and create. Topics covered are a blend of CSSConf and JSConf, and will even feature some of the same speakers.',
+    'Decompress is an affordable community day for designers and developers run by the CSSConf and JSConf AU teams. Our focus is squarely set on creating an all-inclusive space to learn, share and create.',
   venue,
   titoLink,
   theme: {
@@ -153,5 +259,19 @@ export const Decompress = {
     { title: 2015 },
     { title: 2014 }
   ],
-  isCfpOpen: false
+  isCfpOpen: false,
+  sponsors: [
+    {
+      name: 'Calibre',
+      url: 'https://calibreapp.com/',
+      image: require('./assets/sponsor-calibre.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Front-end Center',
+      url: 'https://frontend.center/',
+      image: require('./assets/sponsor-fec.svg'),
+      tier: 'main'
+    }
+  ]
 }

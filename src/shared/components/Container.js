@@ -6,11 +6,11 @@ export default styled.div`
   max-width: 90vw;
   flex-direction: column;
 
-  @media (min-width: 60em) {
-    max-width: 75vw;
+  @media (min-width: 1200px) {
+    max-width: 60vw;
   }
 
-  @media (min-width: 120em) {
+  @media (min-width: 1800px) {
     max-width: 50vw;
   }
 `
