@@ -4,7 +4,7 @@ import { CSS } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
-import Schedule from '../shared/Schedule'
+import EventsList from '../shared/EventsList'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
@@ -28,7 +28,7 @@ export default () => (
       </Section>
 
       <Section>
-        <Schedule />
+        <EventsList />
       </Section>
 
       <Section>

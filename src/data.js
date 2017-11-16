@@ -111,6 +111,13 @@ export const JS = {
       url: 'https://www.lookahead.com.au/',
       image: require('./assets/sponsor-lookahead.svg'),
       tier: 'diversity'
+    },
+    ,
+    {
+      name: 'Culture Amp',
+      url: 'https://www.cultureamp.com/',
+      image: require('./assets/sponsor-cultureamp.svg'),
+      tier: 'supporter'
     }
   ]
 }
@@ -182,6 +189,12 @@ export const CSS = {
       url: 'https://www.offscreenmag.com/',
       image: require('./assets/sponsor-offscreen.svg'),
       tier: 'media'
+    },
+    {
+      name: 'Culture Amp',
+      url: 'https://www.cultureamp.com/',
+      image: require('./assets/sponsor-cultureamp.svg'),
+      tier: 'community'
     }
   ]
 }

@@ -64,9 +64,6 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
               <StyledLink to="information">Information</StyledLink>
             </li>
             <li>
-              <StyledLink to="schedule">Schedule</StyledLink>
-            </li>
-            <li>
               <StyledLink to="team">Team</StyledLink>
             </li>
             <li>

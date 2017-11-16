@@ -113,7 +113,7 @@ export default class Masthead extends React.Component {
                 </li>
               ) : null}
               <li>
-                <StyledLink to="schedule">Schedule</StyledLink>
+                <StyledLink to="code-of-conduct">Code of Conduct</StyledLink>
               </li>
               <li>
                 <StyledLink to="sponsors">Sponsors</StyledLink>
@@ -137,7 +137,7 @@ export default class Masthead extends React.Component {
                 </li>
               ) : null}
               <li>
-                <StyledLink to="schedule">Schedule</StyledLink>
+                <StyledLink to="code-of-conduct">Code of Conduct</StyledLink>
               </li>
               <li>
                 <StyledLink to="sponsors">Sponsors</StyledLink>
