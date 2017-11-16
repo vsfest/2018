@@ -8,15 +8,23 @@ import { LinkThemed } from './components/Links'
 const Button = ButtonThemed.withComponent('button')
 
 const MailingList = styled.div`
-  width: 100%;
-
   form {
-    display: flex;
     width: 100%;
+    @media (min-width: 600px) {
+      display: flex;
+    }
+  }
+
+  ${Button} {
+    @media (max-width: 600px) {
+      margin-top: 15px;
+      width: 100%;
+    }
   }
 
   input {
     flex: 1;
+    width: 100%;
     margin-right: 15px;
     padding: 15px 0;
     background-color: transparent;
