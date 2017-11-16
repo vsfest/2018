@@ -78,7 +78,7 @@ export default ({ conference }) => {
         at{' '}
         <LinkThemed href="http://www.meatmarket.org.au/">
           North Melbourne Meat Market
-        </LinkThemed>. Build in the 1880s; the Meat Market is a heritage-listed
+        </LinkThemed>. Built in the 1880s; the Meat Market is a heritage-listed
         building, previously home to butchers, now house to countless cultural
         and arts events.
       </p>
@@ -124,8 +124,8 @@ export default ({ conference }) => {
       </ul>
 
       <p>
-        You can pay with Visa or MasterCard, or choose to be invoiced when
-        purchasing a larger quantity of tickets (5+ passes).
+        You can pay with Visa or MasterCard. Please contact us to arrange
+        invoice payment of group bookings of 6 or more tickets.
       </p>
 
       <HeadlineSmall>What do I get?</HeadlineSmall>
