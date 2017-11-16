@@ -127,6 +127,12 @@ export const JS = {
       url: 'https://www.cultureamp.com/',
       image: require('./assets/sponsor-cultureamp.svg'),
       tier: 'supporter'
+    },
+    {
+      name: 'The Sizzle',
+      url: 'https://www.thesizzle.com.au/',
+      image: require('./assets/sponsor-sizzle.svg'),
+      tier: 'media'
     }
   ]
 }
@@ -211,6 +217,12 @@ export const CSS = {
       url: 'https://www.cultureamp.com/',
       image: require('./assets/sponsor-cultureamp.svg'),
       tier: 'community'
+    },
+    {
+      name: 'The Sizzle',
+      url: 'https://www.thesizzle.com.au/',
+      image: require('./assets/sponsor-sizzle.svg'),
+      tier: 'media'
     }
   ]
 }
