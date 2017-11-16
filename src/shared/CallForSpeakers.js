@@ -43,7 +43,6 @@ Photo.Img = styled.img`
 const SpeakerImageWrapper = styled.div`
   width: 200px;
   height: 200px;
-  background-color: ${props => props.theme.primary};
   margin-right: 30px;
 
   @media (max-width: 768px) {
@@ -78,7 +77,6 @@ const Quote = styled.blockquote`
 
   img {
     display: inline-block;
-    mix-blend-mode: soft-light;
     width: 200px;
     height: 200px;
   }
