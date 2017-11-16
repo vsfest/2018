@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
@@ -9,7 +10,56 @@ import { ButtonThemed } from './components/Buttons'
 
 const StyledLink = LinkThemed.withComponent(Link)
 
+
+const SponsorContainer = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+`
+
+const Sponsor = styled.div`
+  &:not(:only-child) {
+    @media (min-width: 768px) {
+      margin-right: 30px;
+    }
+  }
+
+  a {
+    display: table;
+    padding: 40px;
+    margin-bottom: 30px;
+    justify-content: center;
+    background-color: ${props => props.theme.secondary};
+    vertical-align: middle;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &:hover {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  img {
+    ${props => (props.tier === 'main' ? 'height: 60px;' : 'height: 40px;')};
+    max-width: 100%;
+    display: table-cell;
+    transition: all 0.2s ease;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+`
+
 export default ({ conference }) => {
+  const diversitySponsors = conference.sponsors.filter(
+    sponsor => sponsor.tier === 'diversity'
+  )
   return (
     <Container>
       <Helmet {...conference}>
@@ -137,11 +187,17 @@ export default ({ conference }) => {
         We’re grateful for the generous support of the following organizations
         making the Opportunity Program possible ❤️:
       </p>
-      <p>
-        <LinkThemed href="https://www.lookahead.com.au/">
-          Lookahead Search
-        </LinkThemed>
-      </p>
+      <SponsorContainer>
+        {diversitySponsors.map((sponsor, i) => {
+          return (
+            <Sponsor key={i} {...sponsor}>
+              <a href={sponsor.url}>
+                <img src={sponsor.image} alt={sponsor.name} />
+              </a>
+            </Sponsor>
+          )
+        })}
+      </SponsorContainer>
       <HeadlineSmall>Contact</HeadlineSmall>
       <p>
         If you have any questions, do not hesitate and{' '}

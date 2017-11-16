@@ -14,7 +14,6 @@ import MailingList from './MailingList'
 const StyledLink = LinkThemed.withComponent(Link)
 
 const ImageWrapper = styled.div`
-  background-color: ${props => props.theme.primary};
   display: inline-block;
   max-width: 600px;
   margin-bottom: 30px;
@@ -28,7 +27,6 @@ const ImageWrapper = styled.div`
   img {
     max-width: 100%;
     max-height: 100%;
-    mix-blend-mode: soft-light;
     display: block;
   }
 `

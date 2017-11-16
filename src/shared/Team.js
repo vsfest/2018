@@ -14,10 +14,6 @@ const Members = styled.div`
   justify-content: space-around;
 `
 
-const AvatarWrapper = styled.div`
-  background-color: ${props => props.theme.primary};
-`
-
 const Human = styled.div`
   text-align: center;
   margin: 30px 0;
@@ -36,7 +32,6 @@ const Avatar = styled.img`
   display: block;
   margin-bottom: 30px;
   width: 180px;
-  mix-blend-mode: soft-light;
 
   @media (min-width: 768px) {
     width: 250px;
@@ -78,9 +73,9 @@ export default ({ members, conference }) => {
         {members.map((person, i) => {
           return (
             <Human key={i}>
-              <AvatarWrapper>
+              <div>
                 <Avatar src={person.mugshot} />
-              </AvatarWrapper>
+              </div>
               <div>
                 <HeadlineSmall>{person.name}</HeadlineSmall>
                 <LinkThemed href={`https://twitter.com/${person.twitter}`}>

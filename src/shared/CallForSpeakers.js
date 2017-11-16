@@ -25,7 +25,6 @@ const Photo = ({ src, alt = 'Inline image' }) => (
 )
 
 Photo.Wrapper = styled.div`
-  background-color: ${props => props.theme.primary};
   margin-bottom: 60px;
 
   @media (min-width: 70em) {
@@ -39,7 +38,6 @@ Photo.Wrapper = styled.div`
 Photo.Img = styled.img`
   display: block;
   max-width: 100%;
-  mix-blend-mode: soft-light;
 `
 
 const SpeakerImageWrapper = styled.div`
