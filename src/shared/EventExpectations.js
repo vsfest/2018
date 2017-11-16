@@ -19,6 +19,7 @@ const Wrapper = styled.div`
     @media (min-width: 768px) {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
   }
 
@@ -56,7 +57,6 @@ export default ({ id }) => {
           <p>talks</p>
         </Perk>
         <Perk>
-          <Headline>Inclusive space</Headline>
           <p>
             Healthy meals, endless coffee and soft drinks, gender neutral
             bathrooms, live captioning, wheelchair-accessible venue and more.{' '}

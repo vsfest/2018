@@ -2,6 +2,9 @@ import js_logo from './js/logo.svg'
 import css_logo from './css/logo.svg'
 import decompress_logo from './decompress/logo.svg'
 
+import css_favicon from './assets/css-favicon.ico'
+import js_favicon from './assets/js-favicon.png'
+
 const titoLink = 'https://ti.to/cssconf-au/2018'
 const venue = 'North Melbourne Meat Market'
 const city = 'Melbourne, Australia'
@@ -53,6 +56,7 @@ export const JS = {
   id: 'js',
   title: 'JSConf AU 2018',
   logo: js_logo,
+  favicon: js_favicon,
   date: '21st & 22nd March 2018',
   url:
     process.env.NODE_ENV === 'production'
@@ -107,6 +111,12 @@ export const JS = {
       tier: 'community'
     },
     {
+      name: 'Pin Payments',
+      url: 'https://pin.net.au/',
+      image: require('./assets/sponsor-pin.svg'),
+      tier: 'community'
+    },
+    {
       name: 'Lookahead Search',
       url: 'https://www.lookahead.com.au/',
       image: require('./assets/sponsor-lookahead.svg'),
@@ -125,6 +135,7 @@ export const CSS = {
   id: 'css',
   title: 'CSSConf AU 2018',
   logo: css_logo,
+  favicon: css_favicon,
   date: '20th March 2018',
   url:
     process.env.NODE_ENV === 'production'
@@ -175,6 +186,12 @@ export const CSS = {
       name: '99designs',
       url: 'https://99designs.com.au/',
       image: require('./assets/sponsor-99designs.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Pin Payments',
+      url: 'https://pin.net.au/',
+      image: require('./assets/sponsor-pin.svg'),
       tier: 'community'
     },
     {

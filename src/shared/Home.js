@@ -42,6 +42,7 @@ export default withRouter(({ conference, children, match }) => (
     <Background>
       <Helmet {...conference}>
         <title>{conference.title}</title>
+        <link rel="icon" href={conference.favicon} />
         <link
           rel="preload"
           href={require('../assets/fonts/MaisonNeue-Book.woff2')}
