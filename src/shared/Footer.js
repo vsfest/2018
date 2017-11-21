@@ -138,6 +138,11 @@ export default ({ isCfpOpen, contact, previousEvents }) => {
           alt="LGBTQI Flag"
           width="40"
         />
+        <img
+          src={require('../assets/flag-transgender.jpg')}
+          alt="Transgender Pride Flag"
+          width="40"
+        />
 
         <p>
           We acknowledge the Wurundjeri people of the Kulin nations, the

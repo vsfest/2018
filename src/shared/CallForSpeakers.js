@@ -454,7 +454,7 @@ export default ({ conference }) => {
           <strong>Accommodation</strong>
         </p>
         <p>
-          5 nights in a nice, central hotel, located close to the venue. We’d
+          6 nights in a nice, central hotel, located close to the venue. We’d
           like you to be well rested and have the ability to discover and enjoy
           the beauty of the city.
         </p>
