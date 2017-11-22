@@ -123,6 +123,18 @@ export const JS = {
       tier: 'diversity'
     },
     {
+      name: 'Prismatik',
+      url: 'http://prismatik.com.au/',
+      image: require('./assets/sponsor-prismatik.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Prismatik',
+      url: 'http://prismatik.com.au/',
+      image: require('./assets/sponsor-prismatik.svg'),
+      tier: 'diversity'
+    },
+    {
       name: 'Culture Amp',
       url: 'https://www.cultureamp.com/',
       image: require('./assets/sponsor-cultureamp.svg'),
