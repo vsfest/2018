@@ -244,14 +244,12 @@ export default ({ conference }) => {
       <SectionCentered>
         <Title>Call For Speakers</Title>
         <p>
-          <strong>The Call for Speakers will close on December 1st.</strong>
+          <strong>Our Call for Speakers has closed.</strong>
         </p>
         <p>
-          We strongly advise against waiting to submit at the last minute.
-          Remember to not share abstracts or talk titles with the organiser
-          team, as your submission might be rejected.
+          If you have submitted a talk, we will notify you of the result before
+          January 2018.
         </p>
-        <ButtonThemed href={cfpURL}>Submit a talk</ButtonThemed>
       </SectionCentered>
 
       <Section>
@@ -294,11 +292,13 @@ export default ({ conference }) => {
                 There will be no Q&A.
               </li>
               <li>
-                <strong>Conciseness:</strong> Keep the proposal short and sweet—<strong>up to four paragraphs</strong>.
-                It’s tempting to write a lengthy description to fully convey the
-                idea in your head, but due to the amount of submissions we get
-                it makes a big difference if a proposal makes a good impression
-                straight away.
+                <strong>Conciseness:</strong> Keep the proposal short and sweet—<strong
+                >
+                  up to four paragraphs
+                </strong>. It’s tempting to write a lengthy description to fully
+                convey the idea in your head, but due to the amount of
+                submissions we get it makes a big difference if a proposal makes
+                a good impression straight away.
               </li>
               <li>
                 <strong>Formatting:</strong> Write with care. Typos, sloppy
