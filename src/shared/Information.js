@@ -99,18 +99,9 @@ export default ({ conference }) => {
       <Headline>Tickets</Headline>
       <p>
         Until sold out, you can{' '}
-        <LinkThemed href={conference.titoLink}>
-          purchase a pass here
-        </LinkThemed>. All prices inclusive of GST.
+        <LinkThemed href={conference.titoLink}>purchase a pass here</LinkThemed>.
+        All prices inclusive of GST.
       </p>
-      <HeadlineSmall>Early Bird</HeadlineSmall>
-      <p>Available until December 1.</p>
-
-      <ul>
-        <li>CSSConf: $375</li>
-        <li>JSConf: $750</li>
-        <li>Combo: $1050</li>
-      </ul>
 
       <HeadlineSmall>Regular Bird</HeadlineSmall>
       <p>December 2 onwards.</p>

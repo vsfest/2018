@@ -45,9 +45,7 @@ export default () => {
       <Headline>Schedule & Tickets</Headline>
       <p>
         The conference is a part of a bigger family of events.{' '}
-        <strong>
-          Limited Early Bird tickets available till December 1.
-        </strong>{' '}
+        <strong>Regular Bird tickets available.</strong>{' '}
         <LinkThemed href={CSS.titoLink}>Purchase a pass &rarr;</LinkThemed>
       </p>
       <Copy>Our programme will be announced by January 2018.</Copy>
