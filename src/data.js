@@ -145,6 +145,24 @@ export const JS = {
       url: 'https://www.thesizzle.com.au/',
       image: require('./assets/sponsor-sizzle.svg'),
       tier: 'media'
+    },
+    {
+      name: 'Twilio',
+      url: 'https://www.twilio.com/',
+      image: require('./assets/sponsor-twilio.svg'),
+      tier: 'community'
+    },
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/',
+      image: require('./assets/sponsor-fb.svg'),
+      tier: 'main'
+    },
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/',
+      image: require('./assets/sponsor-fb.svg'),
+      tier: 'diversity'
     }
   ]
 }
