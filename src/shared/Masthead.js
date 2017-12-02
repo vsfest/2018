@@ -111,9 +111,7 @@ export default class Masthead extends React.Component {
               </li>
               {isCfpOpen ? (
                 <li>
-                  <StyledLink to="call-for-speakers">
-                    Become a Speaker
-                  </StyledLink>
+                  <StyledLink to="scholarship">Opportunity Program</StyledLink>
                 </li>
               ) : null}
               <li>
