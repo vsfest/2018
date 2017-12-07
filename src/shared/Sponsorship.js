@@ -23,7 +23,7 @@ const Sponsor = styled.div`
 
   a {
     display: table;
-    padding: 40px;
+    ${props => (props.tier === 'main' ? 'padding: 40px;' : 'padding: 25px;')};
     margin-bottom: 30px;
     justify-content: center;
     background-color: ${props => props.theme.secondary};
@@ -41,7 +41,7 @@ const Sponsor = styled.div`
   }
 
   img {
-    ${props => (props.tier === 'main' ? 'height: 60px;' : 'height: 40px;')};
+    ${props => (props.tier === 'main' ? 'height: 60px;' : 'height: 35px;')};
     max-width: 100%;
     display: table-cell;
     transition: all 0.2s ease;

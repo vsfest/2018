@@ -253,6 +253,18 @@ export const CSS = {
       url: 'https://www.thesizzle.com.au/',
       image: require('./assets/sponsor-sizzle.svg'),
       tier: 'media'
+    },
+    {
+      name: 'Envato',
+      url: 'https://envato.com/',
+      image: require('./assets/sponsor-envato.svg'),
+      tier: 'diversity'
+    },
+    {
+      name: 'Envato',
+      url: 'https://envato.com/',
+      image: require('./assets/sponsor-envato.svg'),
+      tier: 'community'
     }
   ]
 }
