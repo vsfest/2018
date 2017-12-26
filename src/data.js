@@ -265,6 +265,19 @@ export const CSS = {
       url: 'https://envato.com/',
       image: require('./assets/sponsor-envato.svg'),
       tier: 'community'
+    },
+    {
+      name: 'AMP Project',
+      url: 'https://www.ampproject.org/',
+      image: require('./assets/sponsor-amp.svg'),
+      tier: 'diversity'
+    },
+    ,
+    {
+      name: 'AMP Project',
+      url: 'https://www.ampproject.org/',
+      image: require('./assets/sponsor-amp.svg'),
+      tier: 'main'
     }
   ]
 }
