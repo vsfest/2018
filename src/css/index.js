@@ -4,11 +4,11 @@ import { CSS } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
-import EventsList from '../shared/EventsList'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import EventExpectations from '../shared/EventExpectations'
+import SpeakersTeaser from '../shared/SpeakersTeaser'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { Section, SectionBannerExpanded } from '../shared/components/Section'
@@ -25,9 +25,8 @@ export default () => (
     <EventExpectations {...CSS} />
     <Container>
       <Section>
-        <EventsList />
+        <SpeakersTeaser {...CSS} />
       </Section>
-
       <Section>
         <MailingList {...CSS.contact} />
       </Section>

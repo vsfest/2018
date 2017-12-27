@@ -91,6 +91,7 @@ export const JS = {
     { title: 2012 }
   ],
   isCfpOpen: true,
+  hasSpeakers: false,
   sponsors: [
     {
       name: 'Calibre',
@@ -205,6 +206,7 @@ export const CSS = {
     { title: 2014, url: 'http://2014.cssconf.com.au/' }
   ],
   isCfpOpen: true,
+  hasSpeakers: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -272,12 +274,103 @@ export const CSS = {
       image: require('./assets/sponsor-amp.svg'),
       tier: 'diversity'
     },
-    ,
     {
       name: 'AMP Project',
       url: 'https://www.ampproject.org/',
       image: require('./assets/sponsor-amp.svg'),
       tier: 'main'
+    }
+  ],
+  speakers: [
+    {
+      name: 'Ire Aderinokun',
+      twitter: 'ireaderinokun',
+      url: '',
+      bio: '',
+      location: 'Lagos, Nigeria',
+      talk: 'CSS for the next billion users'
+    },
+    {
+      name: 'David Khourshid',
+      twitter: 'davidkpiano',
+      url: 'https://codepen.io/davidkpiano',
+      announced: true,
+      bio:
+        'David Khourshid is a software engineer at Microsoft who is passionate about making users as happy as possible. He is passionate about JavaScript, CSS, animation, innovative UIs, and cutting-edge front-end technologies. When not behind a computer keyboard, he’s behind a piano keyboard or traveling.',
+      location: 'Orlando, United States',
+      image: require('./assets/speaker-david.jpg'),
+      talk:
+        'Behind the illusions: impossibly high-performance layout animations'
+    },
+    {
+      name: 'Brenda Storer',
+      twitter: 'brendamarienyc',
+      url: '',
+      bio: '',
+      location: 'New York, United States',
+      // image: require('./assets/'),
+      talk: 'How to use CSS Grid today in the real world'
+    },
+    {
+      name: 'Jeremy Wagner',
+      twitter: 'malchata',
+      url: 'https://jeremywagner.me/',
+      bio:
+        'Jeremy Wagner is a web developer from Saint Paul, Minnesota who frequently blogs on the topic of web performance. He is also the author of Web Performance in Action from Manning Publications.',
+      location: 'Saint Paul, United States',
+      image: require('./assets/speaker-jeremy.jpg'),
+      talk: 'Faster fonts for speed freaks'
+    },
+    {
+      name: 'Julie Grundy',
+      twitter: 'stringy',
+      url: 'http://www.juliegrundy.id.au/',
+      bio:
+        'Julie Grundy is a front-end dev turned accessibility consultant. She believes in an independent democratic web and wishes everyone was issued a personal domain name at birth.',
+      location: 'Perth, Australia',
+      image: require('./assets/speaker-julie.jpg'),
+      talk: 'Can you see that OK? CSS tips for low-vision accessibility'
+    },
+    {
+      name: 'Diana Mounter',
+      twitter: 'broccolini',
+      url: 'http://broccolini.net',
+      announced: true,
+      bio:
+        'Diana is a designer based in Brooklyn, NY. She leads GitHub’s design systems team, organizes the NYC Design Systems Coalition, and writes and speaks about code, design, and working with people.',
+      location: 'New York, United States',
+      image: require('./assets/speaker-diana.jpg'),
+      talk: 'Interaction of color systems'
+    },
+    {
+      name: 'Sam Richard',
+      twitter: 'snugug',
+      url: 'https://snugug.com',
+      bio:
+        'Sam Richard, better known as Snugug, is a developer and designer with a love of building open source tools for both. He also geeks out on content, process, transformation, and food.',
+      location: 'New York, United States',
+      image: require('./assets/speaker-sam.jpg'),
+      talk: 'Magic tricks with Houdini'
+    },
+    {
+      name: 'Theresa Ma',
+      twitter: 'mapotato',
+      url: '',
+      bio: '',
+      location: 'San Francisco, United States',
+      // image: require('./assets/'),
+      talk: 'Effective design and engineering collaboration'
+    },
+    {
+      name: 'Ivana McConnell',
+      twitter: 'IvanaMcConnell',
+      url: 'http://ivanamcconnell.com',
+      announced: true,
+      bio:
+        'Ivana is a UI/UX designer. She fell in love with the web on Geocities and Neopets many years ago, and found her way into UX design via neuroscience research, rock climbing instruction, and video game testing. Originally born in Sarajevo, she has lived in Croatia, all over Canada, and Scotland, and is now based in Vancouver working remotely for Customer.io.',
+      location: 'Vancouver, Canada',
+      image: require('./assets/speaker-ivana.jpg'),
+      talk: 'Journeys: What makes a developer, really?'
     }
   ]
 }
@@ -315,6 +408,7 @@ export const Decompress = {
     { title: 2014 }
   ],
   isCfpOpen: false,
+  hasSpeakers: false,
   sponsors: [
     {
       name: 'Calibre',

@@ -99,6 +99,7 @@ export default class Masthead extends React.Component {
     const titoLink = this.props.titoLink
     const isCfpOpen = this.props.isCfpOpen
     const confName = this.props.title
+    const hasSpeakers = this.props.hasSpeakers
 
     return (
       <div>
@@ -109,6 +110,11 @@ export default class Masthead extends React.Component {
               <li>
                 <StyledLink to="information">Information</StyledLink>
               </li>
+              {hasSpeakers ? (
+                <li>
+                  <StyledLink to="speakers">Speakers</StyledLink>
+                </li>
+              ) : null}
               {isCfpOpen ? (
                 <li>
                   <StyledLink to="scholarship">Opportunity Program</StyledLink>
@@ -119,9 +125,6 @@ export default class Masthead extends React.Component {
               </li>
               <li>
                 <StyledLink to="sponsors">Sponsors</StyledLink>
-              </li>
-              <li>
-                <StyledLink to="team">Team</StyledLink>
               </li>
             </ul>
           </NavDesktop>
