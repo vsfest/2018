@@ -52,4 +52,8 @@ injectGlobal`
   li {
     margin-bottom: 15px;
   }
+
+  .mb0 {
+    margin-bottom: 0;
+  }
 `

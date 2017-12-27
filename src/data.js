@@ -296,7 +296,7 @@ export const CSS = {
       url: 'https://codepen.io/davidkpiano',
       announced: true,
       bio:
-        'David Khourshid is a software engineer at Microsoft who is passionate about making users as happy as possible. He is passionate about JavaScript, CSS, animation, innovative UIs, and cutting-edge front-end technologies. When not behind a computer keyboard, he’s behind a piano keyboard or traveling.',
+        'David is a software engineer at Microsoft who is passionate about making users as happy as possible. He is passionate about JavaScript, CSS, animation, innovative UIs, and cutting-edge front-end technologies. When not behind a computer keyboard, he’s behind a piano keyboard or traveling.',
       location: 'Orlando, United States',
       image: require('./assets/speaker-david.jpg'),
       talk:

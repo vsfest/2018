@@ -49,7 +49,8 @@ export default ({ speakers, titoLink }) => {
         })}
       </SpeakersWrapper>
       <p>
-        More speakers to be announced.{' '}
+        <LinkThemed href="/speakers">More speakers</LinkThemed> and full
+        presentation schedule to be announced.{' '}
         <LinkThemed href={titoLink}>Get a ticket &rarr;</LinkThemed>
       </p>
     </div>
