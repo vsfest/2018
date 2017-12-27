@@ -55,7 +55,10 @@ export default ({ conference, titoLink }) => {
                 <HeadlineSmall>{speaker.name}</HeadlineSmall>
               </LinkThemed>
               <SpeakerLocation>{speaker.location}</SpeakerLocation>
-              <p className="mb0">{speaker.bio}</p>
+              <p>{speaker.bio}</p>
+              <p className="mb0">
+                <strong>Presentation:</strong> {speaker.talk}
+              </p>
             </div>
           </Speaker>
         )
