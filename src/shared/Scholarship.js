@@ -66,6 +66,7 @@ export default ({ conference }) => {
         <title>Opportunity Program — {conference.title}</title>
       </Helmet>
       <Headline>Opportunity Program</Headline>
+      <p><strong>The applications for Opportunity Program has now closed.</strong></p>
       <p>
         We’re dedicated to diversity, inclusion and even more so—equal
         opportunity. We realize that buying a ticket to a conference for many

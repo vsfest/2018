@@ -285,10 +285,32 @@ export const CSS = {
     {
       name: 'Ire Aderinokun',
       twitter: 'ireaderinokun',
-      url: '',
-      bio: '',
+      url: 'https://ireaderinokun.com',
+      announced: true,
+      image: require('./assets/speaker-ire.jpg'),
+      bio: 'Ire is a self-taught Frontend Developer and User Interface Designer based in Lagos, Nigeria. She currently works as a Software Developer for eyeo, the company behind products like Adblock Plus and Flattr Plus, building open source software to make a better internet. Ire specialised in all things HTML, CSS, and JavaScript, but is passionate about all aspects of technology. She has written over 100 articles on these topics on her blog, bitsofco.de, and has spoken at conferences around Africa and the world.',
       location: 'Lagos, Nigeria',
       talk: 'CSS for the next billion users'
+    },
+    {
+      name: 'Brenda Storer',
+      twitter: 'brendamarienyc',
+      announced: true,
+      url: 'http://brendastorer.com/',
+      bio: 'Brenda is a designer and front-end developer Thoughtbot, a Girl Develop It alumnus turned instructor, and an assistant organizer for CSS Layout Club in NYC.',
+      location: 'New York, United States',
+      image: require('./assets/speaker-brenda.jpg'),
+      talk: 'How to use CSS Grid today in the real world'
+    },
+    {
+      name: 'Theresa Ma',
+      twitter: 'mapotato',
+      announced: true,
+      url: 'https://www.yelp.com/styleguide',
+      bio: 'Theresa is a Toronto raised and San Francisco based software engineer with an interdisciplinary background in cognitive science and philosophy. She\'s a relentless advocate for the design system at Yelp.',
+      location: 'San Francisco, United States',
+      image: require('./assets/speaker-theresa.jpg'),
+      talk: 'Effective design and engineering collaboration'
     },
     {
       name: 'David Khourshid',
@@ -301,15 +323,6 @@ export const CSS = {
       image: require('./assets/speaker-david.jpg'),
       talk:
         'Behind the illusions: impossibly high-performance layout animations'
-    },
-    {
-      name: 'Brenda Storer',
-      twitter: 'brendamarienyc',
-      url: '',
-      bio: '',
-      location: 'New York, United States',
-      // image: require('./assets/'),
-      talk: 'How to use CSS Grid today in the real world'
     },
     {
       name: 'Jeremy Wagner',
@@ -351,15 +364,6 @@ export const CSS = {
       location: 'New York, United States',
       image: require('./assets/speaker-sam.jpg'),
       talk: 'Magic tricks with Houdini'
-    },
-    {
-      name: 'Theresa Ma',
-      twitter: 'mapotato',
-      url: '',
-      bio: '',
-      location: 'San Francisco, United States',
-      // image: require('./assets/'),
-      talk: 'Effective design and engineering collaboration'
     },
     {
       name: 'Ivana McConnell',
