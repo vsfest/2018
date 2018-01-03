@@ -191,7 +191,7 @@ export const JS = {
       name: 'Madlaina Kalunder',
       twitter: 'anialdam',
       url: 'https://github.com/aadjou',
-      location: 'Zurich, Switzerland',
+      location: 'Zürich, Switzerland',
       image: require('./assets/speaker-madlaina.jpg'),
       bio:
         'Madlaina is a full stack developer and a 3d processes magician at Archilogic, making 3d content accessible for people working on the web. She graduated at the Zurich University of Arts with a bachelor degree in Design, specialization Game Design, combining the passion for design and story telling with the newest technologies. She believes in bringing people of different backgrounds together to solve problems in creative ways.',
@@ -256,6 +256,17 @@ export const JS = {
       bio:
         'Caleb is an Architect at OpenX, where he helps build digital advertising exchanges. He loves hiking the Sierra Nevada mountains and analyzing news articles at scale.',
       talk: 'Taming the World’s Largest Trojan Horse'
+    },
+    {
+      name: 'Suz Hinton',
+      twitter: 'noopkat',
+      url: 'https://github.com/noopkat',
+      location: 'New York, United States',
+      image: require('./assets/speaker-suz.jpg'),
+      bio:
+        'Suz is a Cloud Developer Advocate at Microsoft. Suz specializes in accessibility, hardware, JavaScript, and cloud computing. She likes dreaming up fun electronic projects in her spare time.',
+      talk:
+        "I'm afraid your browser has been talking to the robots again - a gentle intro to WebUSB"
     },
     {
       name: 'Madalyn Parker',
