@@ -91,7 +91,7 @@ export const JS = {
     { title: 2012 }
   ],
   isCfpOpen: true,
-  hasSpeakers: false,
+  hasSpeakers: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -164,6 +164,153 @@ export const JS = {
       url: 'https://www.facebook.com/',
       image: require('./assets/sponsor-fb.svg'),
       tier: 'diversity'
+    }
+  ],
+  speakers: [
+    {
+      name: 'Nikolai Matvienko',
+      twitter: '',
+      url: 'https://github.com/nickkooper',
+      image: require('./assets/speaker-nikolai.jpg'),
+      location: 'Saint Petersburg, Russia',
+      bio:
+        'Nikolay is a full stack JS developer in the Grid Dynamics company. The last three years mainly works on a major e-commerce project in San Francisco, California, where in addition to development, the core responsibilities include: production troubleshooting, diagnostics, profiling, and optimization Node.js applications performance in production. Nikolay is addicted to attending meetups and conferences in “the Valley”.',
+      talk: 'Node.js applications diagnostics under the hood'
+    },
+    {
+      name: 'Alexander Pope',
+      twitter: 'popeindustries',
+      url: 'https://github.com/popeindustries',
+      image: require('./assets/speaker-alexander.jpg'),
+      location: 'Oslo, Norway',
+      bio:
+        'Regardless of what Google might think, Alexander Pope does *not* write poetry; he mostly writes JavaScript and pushes pixels around. Originally of Canadian extraction, Alexander now works and lives in the wilds of Norway (Oslo).',
+      talk: 'OUTBREAK: index-sw-9a4c43b4b4778e7d1ca619eaaf5ac1db.js'
+    },
+    {
+      name: 'Madlaina Kalunder',
+      twitter: 'anialdam',
+      url: 'https://github.com/aadjou',
+      location: 'Zurich, Switzerland',
+      image: require('./assets/speaker-madlaina.jpg'),
+      bio:
+        'Madlaina is a full stack developer and a 3d processes magician at Archilogic, making 3d content accessible for people working on the web. She graduated at the Zurich University of Arts with a bachelor degree in Design, specialization Game Design, combining the passion for design and story telling with the newest technologies. She believes in bringing people of different backgrounds together to solve problems in creative ways.',
+      talk: 'Building a raytracing engine with JS'
+    },
+    {
+      name: 'Irina Shestak',
+      twitter: '_lrlna',
+      url: 'github.com/lrlna',
+      location: 'Berlin, Germany',
+      // image: require('./assets/speaker-ire.jpg'),
+      bio:
+        'The not so short: Irina is a Berlin via London via Vancouver (geeeez grrrl) software developer who is, oh hey, hello, really into node.js. When she is not in front of a computer, she is exploring the outdoors, gushing over trains, and you will probably find her at your nearest ramen shop™ reading some Beatniks.',
+      talk: 'HTTP2, one frame at a time'
+    },
+    {
+      name: 'Craig Spence',
+      twitter: 'phenomnominal',
+      url: 'http://phenomnomnominal.github.io/',
+      location: 'Wellington, New Zealand',
+      image: require('./assets/speaker-craig.jpg'),
+      bio:
+        "Craig lives in Wellington NZ, where he does JavaScript-y stuff at Trade Me. He loves building cool things that help teams build cool things! He also loves punk rock, Disney's Frozen, and his cat Cosy.",
+      talk: 'Fantastic ASTs and Where to Find Them'
+    },
+    {
+      name: 'Brittany Storoz',
+      twitter: 'brittanystoroz',
+      url: 'https://github.com/brittanystoroz',
+      image: require('./assets/speaker-brittany.jpg'),
+      location: 'Boston, United States',
+      bio:
+        "Brittany is a senior instructor and tech lead for the front-end program at Turing School. She's passionate about building a community that prioritizes making programming friendlier for new developers.",
+      talk: "A Year of Other's Bugs: The Sad State of Error Handling"
+    },
+    {
+      name: 'Tim Holman',
+      twitter: 'twholman',
+      url: 'http://tholman.com',
+      location: '',
+      image: require('./assets/speaker-tim.jpg'),
+      bio:
+        'Tim is a tinkerer, tuner & tamperer of all things online. He enjoys adding a lot of whimsy to the weird wide web, and prides himself with the overall joy it brings to the world.',
+      talk: 'Generative Art Speedrun'
+    },
+    {
+      name: 'Malte Ubl',
+      twitter: 'cramforce',
+      url: 'https://github.com/cramforce',
+      location: 'San Francisco, United States',
+      image: require('./assets/speaker-malte.jpg'),
+      bio:
+        'Malte is the tech lead of the AMP Project for Google. Previously Malte has created JavaScript infrastructure for lots of Google web apps and he is a curator of JSConf EU.',
+      talk: 'Designing very large JavaScript applications'
+    },
+    {
+      name: 'Caleb Sotelo',
+      twitter: 'calebds',
+      url: 'paislee.io',
+      location: 'Pasadena, United States',
+      image: require('./assets/speaker-caleb.jpg'),
+      bio:
+        'Caleb is an Architect at OpenX, where he helps build digital advertising exchanges. He loves hiking the Sierra Nevada mountains and analyzing news articles at scale.',
+      talk: 'Taming the World’s Largest Trojan Horse'
+    },
+    {
+      name: 'Madalyn Parker',
+      twitter: 'madalynrose',
+      url: 'www.madalynparker.com',
+      announced: true,
+      location: 'Ann Arbor, United States',
+      image: require('./assets/speaker-madalyn.jpg'),
+      bio:
+        'Madalyn has been writing code since 2007. Engineering at Olark since 2014. Working to cultivate humanity in tech. Outspoken about mental health in tech. Loves coffee, climbing, live music, and rabbits.',
+      talk: 'Uncharted Territory: Using aXe to Forge a Path'
+    },
+    {
+      name: 'Vigneshwer Dhinakaran',
+      twitter: 'dvigneshwer',
+      url: 'https://github.com/vigneshwerd',
+      location: 'Bengaluru, India',
+      announced: true,
+      image: require('./assets/speaker-vigneshwer.jpg'),
+      bio:
+        'Vigneshwer is an innovative data scientist from Bengaluru who crunches real-time data and builds AI algorithms for complex business problems. He believes that technology needs to have a human-centric design to cater solutions to a diverse audience. He’s an official Mozilla TechSpeaker and is the author of Rust Cookbook.',
+      talk: 'Pumping up Node.js modules with Rust'
+    },
+    {
+      name: 'Harriet Lawrence',
+      twitter: 'harrietgl',
+      url: 'https://github.com/harrietgrace',
+      location: 'Melbourne, Australia',
+      announced: true,
+      image: require('./assets/speaker-harriet.jpg'),
+      bio:
+        'Harriet is Buildkite’s resident linguist. When she’s not crafting exciting ways to describe new Buildkite features, you’ll find her hanging out in bouldering gyms, or with her nose in a book.',
+      talk: 'Why robots suck at fighting harassment'
+    },
+    {
+      name: 'Amy Nguyen',
+      twitter: 'amyngyn',
+      url: 'http://blog.amynguyen.net/',
+      location: 'San Francisco, United States',
+      image: require('./assets/speaker-amy.jpg'),
+      announced: true,
+      bio:
+        'Amy is a software engineer on the Stripe Observability team and she wants to make data accessible for everyone. Outside of work, Amy writes about the tech industry, loves baking, and reads too many self-improvement books.',
+      talk: 'Using Chrome Developer Tools to Hack Your Way Into Concerts'
+    },
+    {
+      name: 'Mathias Bynens',
+      twitter: 'mathias',
+      location: 'Munich, Germany',
+      announced: true,
+      url: 'https://mathiasbynens.be/',
+      image: require('./assets/speaker-mathias.jpg'),
+      bio:
+        'Mathias works on V8 at Google, and ❤️ JavaScript, HTML, CSS, HTTP, performance, security, Bash, Unicode, i18n, macOS.',
+      talk: '$JAVASCRIPT_ENGINE internals for JavaScript developers'
     }
   ]
 }
@@ -288,7 +435,8 @@ export const CSS = {
       url: 'https://ireaderinokun.com',
       announced: true,
       image: require('./assets/speaker-ire.jpg'),
-      bio: 'Ire is a self-taught Frontend Developer and User Interface Designer based in Lagos, Nigeria. She currently works as a Software Developer for eyeo, the company behind products like Adblock Plus and Flattr Plus, building open source software to make a better internet. Ire specialised in all things HTML, CSS, and JavaScript, but is passionate about all aspects of technology. She has written over 100 articles on these topics on her blog, bitsofco.de, and has spoken at conferences around Africa and the world.',
+      bio:
+        'Ire is a self-taught Frontend Developer and User Interface Designer based in Lagos, Nigeria. She currently works as a Software Developer for eyeo, the company behind products like Adblock Plus and Flattr Plus, building open source software to make a better internet. Ire specialised in all things HTML, CSS, and JavaScript, but is passionate about all aspects of technology. She has written over 100 articles on these topics on her blog, bitsofco.de, and has spoken at conferences around Africa and the world.',
       location: 'Lagos, Nigeria',
       talk: 'CSS for the next billion users'
     },
@@ -297,7 +445,8 @@ export const CSS = {
       twitter: 'brendamarienyc',
       announced: true,
       url: 'http://brendastorer.com/',
-      bio: 'Brenda is a designer and front-end developer Thoughtbot, a Girl Develop It alumnus turned instructor, and an assistant organizer for CSS Layout Club in NYC.',
+      bio:
+        'Brenda is a designer and front-end developer Thoughtbot, a Girl Develop It alumnus turned instructor, and an assistant organizer for CSS Layout Club in NYC.',
       location: 'New York, United States',
       image: require('./assets/speaker-brenda.jpg'),
       talk: 'How to use CSS Grid today in the real world'
@@ -307,7 +456,8 @@ export const CSS = {
       twitter: 'mapotato',
       announced: true,
       url: 'https://www.yelp.com/styleguide',
-      bio: 'Theresa is a Toronto raised and San Francisco based software engineer with an interdisciplinary background in cognitive science and philosophy. She\'s a relentless advocate for the design system at Yelp.',
+      bio:
+        "Theresa is a Toronto raised and San Francisco based software engineer with an interdisciplinary background in cognitive science and philosophy. She's a relentless advocate for the design system at Yelp.",
       location: 'San Francisco, United States',
       image: require('./assets/speaker-theresa.jpg'),
       talk: 'Effective design and engineering collaboration'

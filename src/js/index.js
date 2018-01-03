@@ -4,7 +4,7 @@ import { JS } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
-import EventsList from '../shared/EventsList'
+import SpeakersTeaser from '../shared/SpeakersTeaser'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
@@ -25,7 +25,7 @@ export default () => (
     <EventExpectations />
     <Container>
       <Section>
-        <EventsList />
+        <SpeakersTeaser {...JS} />
       </Section>
 
       <Section>
