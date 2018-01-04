@@ -168,6 +168,16 @@ export const JS = {
   ],
   speakers: [
     {
+      name: 'Anjuan Simmons',
+      twitter: 'anjuan',
+      url: 'http://www.AnjuanSimmons.com',
+      image: require('./assets/speaker-anjuan.jpg'),
+      location: 'Houston, United States',
+      bio:
+        'Anjuan operates at the intersection of business and technology by relentlessly focusing on delivering delight to customers while effectively applying engineering talent. He’s a pragmatic Agilist.',
+      talk: 'Lending Privilege'
+    },
+    {
       name: 'Nikolai Matvienko',
       twitter: '',
       url: 'https://github.com/nickkooper',
@@ -202,7 +212,7 @@ export const JS = {
       twitter: '_lrlna',
       url: 'github.com/lrlna',
       location: 'Berlin, Germany',
-      // image: require('./assets/speaker-ire.jpg'),
+      image: require('./assets/speaker-irina.jpg'),
       bio:
         'The not so short: Irina is a Berlin via London via Vancouver (geeeez grrrl) software developer who is, oh hey, hello, really into node.js. When she is not in front of a computer, she is exploring the outdoors, gushing over trains, and you will probably find her at your nearest ramen shop™ reading some Beatniks.',
       talk: 'HTTP2, one frame at a time'
