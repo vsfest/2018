@@ -164,6 +164,12 @@ export const JS = {
       url: 'https://www.facebook.com/',
       image: require('./assets/sponsor-fb.svg'),
       tier: 'diversity'
+    },
+    {
+      name: 'Addition',
+      url: 'http://addition.com.au/',
+      image: require('./assets/sponsor-addition.svg'),
+      tier: 'diversity'
     }
   ],
   speakers: [
@@ -447,6 +453,12 @@ export const CSS = {
       url: 'https://www.ampproject.org/',
       image: require('./assets/sponsor-amp.svg'),
       tier: 'main'
+    },
+    {
+      name: 'Addition',
+      url: 'http://addition.com.au/',
+      image: require('./assets/sponsor-addition.svg'),
+      tier: 'diversity'
     }
   ],
   speakers: [
