@@ -16,6 +16,7 @@ import Logo from './Logo'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { SectionBanner } from '../shared/components/Section'
+import ScheduleCSS from '../shared/ScheduleCSS'
 
 const Background = styled.div`
   background-color: #fff;
@@ -122,6 +123,16 @@ export default withRouter(({ conference, children, match }) => (
         render={() => (
           <ContentPage conference={conference}>
             <Speakers conference={conference} />
+          </ContentPage>
+        )}
+      />
+      <Route
+        path="/schedule"
+        render={() => (
+          <ContentPage conference={conference}>
+            {conference.id == 'css' ? (
+              <ScheduleCSS conference={conference} />
+            ) : null}
           </ContentPage>
         )}
       />

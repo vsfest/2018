@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import { LinkThemed } from './components/Links'
+import Copy from './components/Copy'
+
+const StyledLink = LinkThemed.withComponent(Link)
 
 const Speaker = styled.div`
   text-align: center;
@@ -27,7 +30,7 @@ const SpeakersWrapper = styled.div`
   }
 `
 
-export default ({ speakers, titoLink }) => {
+export default ({ conference, speakers, titoLink }) => {
   const announcedSpeakers = speakers.filter(
     speaker => speaker.announced === true
   )
@@ -35,6 +38,11 @@ export default ({ speakers, titoLink }) => {
   return (
     <div>
       <Headline>Speakers</Headline>
+      <Copy>
+        Read <StyledLink to="schedule">the conference schedule</StyledLink>,{' '}
+        <StyledLink to="speakers">talk descriptions</StyledLink> or{' '}
+        <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
+      </Copy>
       <SpeakersWrapper>
         {announcedSpeakers.map((speaker, i) => {
           return (
@@ -48,11 +56,6 @@ export default ({ speakers, titoLink }) => {
           )
         })}
       </SpeakersWrapper>
-      <p>
-        <LinkThemed href="/speakers">More speakers</LinkThemed> and full
-        presentation schedule to be announced.{' '}
-        <LinkThemed href={titoLink}>Get a ticket &rarr;</LinkThemed>
-      </p>
     </div>
   )
 }
