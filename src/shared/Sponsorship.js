@@ -44,7 +44,6 @@ const Sponsor = styled.div`
     ${props => (props.tier === 'main' ? 'height: 60px;' : 'height: 35px;')};
     max-width: 100%;
     display: table-cell;
-    transition: all 0.2s ease;
 
     @media (max-width: 768px) {
       margin: 0 auto;
@@ -68,6 +67,8 @@ export default ({ sponsors, contact }) => {
   const mainSponsors = sponsors.filter(sponsor => sponsor.tier === 'main')
 
   const mediaPartners = sponsors.filter(sponsor => sponsor.tier === 'media')
+
+  const travelSponsors = sponsors.filter(sponsor => sponsor.tier === 'travel')
 
   return (
     <div>
@@ -131,6 +132,21 @@ export default ({ sponsors, contact }) => {
         ) : null}
         <SponsorContainer>
           {diversitySponsors.map((sponsor, i) => {
+            return (
+              <Sponsor key={i} {...sponsor}>
+                <a href={sponsor.url}>
+                  <img src={sponsor.image} alt={sponsor.name} />
+                </a>
+              </Sponsor>
+            )
+          })}
+        </SponsorContainer>
+
+        {travelSponsors.length ? (
+          <HeadlineSmall>Speaker Travel Sponsors</HeadlineSmall>
+        ) : null}
+        <SponsorContainer>
+          {travelSponsors.map((sponsor, i) => {
             return (
               <Sponsor key={i} {...sponsor}>
                 <a href={sponsor.url}>

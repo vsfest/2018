@@ -170,6 +170,18 @@ export const JS = {
       url: 'http://addition.com.au/',
       image: require('./assets/sponsor-addition.svg'),
       tier: 'diversity'
+    },
+    {
+      name: 'Google',
+      url: 'https://google.com',
+      image: require('./assets/sponsor-google.svg'),
+      tier: 'travel'
+    },
+    {
+      name: 'Stripe',
+      url: 'https://stripe.com',
+      image: require('./assets/sponsor-stripe.svg'),
+      tier: 'travel'
     }
   ],
   speakers: [
@@ -502,6 +514,18 @@ export const CSS = {
       url: 'http://addition.com.au/',
       image: require('./assets/sponsor-addition.svg'),
       tier: 'diversity'
+    },
+    {
+      name: 'eyeo',
+      url: 'https://eyeo.com/',
+      image: require('./assets/sponsor-eyeo.png'),
+      tier: 'travel'
+    },
+    {
+      name: 'Yelp',
+      url: 'https://www.yelp.com/',
+      image: require('./assets/sponsor-yelp.png'),
+      tier: 'travel'
     }
   ],
   speakers: [
