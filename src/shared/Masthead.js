@@ -134,11 +134,14 @@ export default class Masthead extends React.Component {
               <li>
                 <StyledLink to="information">Information</StyledLink>
               </li>
-              {isCfpOpen ? (
+              {hasSpeakers ? (
                 <li>
-                  <StyledLink to="call-for-speakers">
-                    Become a Speaker
-                  </StyledLink>
+                  <StyledLink to="speakers">Speakers</StyledLink>
+                </li>
+              ) : null}
+              {hasSpeakers ? (
+                <li>
+                  <StyledLink to="schedule">Schedule</StyledLink>
                 </li>
               ) : null}
               <li>
@@ -146,9 +149,6 @@ export default class Masthead extends React.Component {
               </li>
               <li>
                 <StyledLink to="sponsors">Sponsors</StyledLink>
-              </li>
-              <li>
-                <StyledLink to="team">Team</StyledLink>
               </li>
             </ul>
           </NavMobile>

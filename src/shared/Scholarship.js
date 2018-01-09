@@ -10,7 +10,6 @@ import { ButtonThemed } from './components/Buttons'
 
 const StyledLink = LinkThemed.withComponent(Link)
 
-
 const SponsorContainer = styled.div`
   @media (min-width: 768px) {
     display: flex;
@@ -66,7 +65,11 @@ export default ({ conference }) => {
         <title>Opportunity Program — {conference.title}</title>
       </Helmet>
       <Headline>Opportunity Program</Headline>
-      <p><strong>The applications for Opportunity Program has now closed.</strong></p>
+      <p>
+        <strong>
+          The applications for Opportunity Program has now closed.
+        </strong>
+      </p>
       <p>
         We’re dedicated to diversity, inclusion and even more so—equal
         opportunity. We realize that buying a ticket to a conference for many
@@ -113,7 +116,12 @@ export default ({ conference }) => {
         <li>
           No technology experience or knowledge is required—we’re here to learn!
         </li>
-        <li>Yes, you deserve it ✨</li>
+        <li>
+          Yes, you deserve it{' '}
+          <span role="img" aria-label="sparkles">
+            ✨
+          </span>
+        </li>
       </ul>
       <HeadlineSmall>How to apply</HeadlineSmall>
       <p>
@@ -186,7 +194,10 @@ export default ({ conference }) => {
       </p>
       <p>
         We’re grateful for the generous support of the following organizations
-        making the Opportunity Program possible ❤️:
+        making the Opportunity Program possible{' '}
+        <span role="img" aria-label="heart">
+          ❤️
+        </span>:
       </p>
       <SponsorContainer>
         {diversitySponsors.map((sponsor, i) => {

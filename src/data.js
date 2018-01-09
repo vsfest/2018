@@ -182,7 +182,9 @@ export const JS = {
       location: 'Houston, United States',
       bio:
         'Anjuan operates at the intersection of business and technology by relentlessly focusing on delivering delight to customers while effectively applying engineering talent. He’s a pragmatic Agilist.',
-      talk: 'Lending Privilege'
+      talk: 'Lending Privilege',
+      talkAbstract:
+        'Diversity and inclusion have become hot topics in technology, but you may not know how you can make a difference. However, this talk will help you understand that, no matter your background, you have privilege and can lend it to marginalized groups in tech.<br/><br/>Privilege is access to societal and economic benefits based on a characteristic you possess. The most well understood forms of privilege are the ones most people don’t choose for themselves like racial, gender, and physical privilege, but there are also selected privileges like religion, career, and education. This session will teach you how to lend your privilege. You’ll learn the various types of privilege lending including credibility lending (where you attach your name to a project being undertaken by someone without privilege) and access lending (where you provide access to a location or event for someone without privilege). These different types of privilege lending will be illustrated through well known examples and an explanation of how they can be applied to software development.<br/><br/>While technology companies are trying to improve their diversity, I believe that change will only occur when individuals take action to make technology a more inclusive industry. I think that the concept of lending privilege can be a powerful tool that technology practitioners can use to expand the diversity of the industry.'
     },
     {
       name: 'Suz Hinton',
@@ -194,7 +196,9 @@ export const JS = {
       bio:
         'Suz is a Cloud Developer Advocate at Microsoft. Suz specializes in accessibility, hardware, JavaScript, and cloud computing. She likes dreaming up fun electronic projects in her spare time.',
       talk:
-        "I'm afraid your browser has been talking to the robots again - a gentle intro to WebUSB"
+        "I'm afraid your browser has been talking to the robots again - a gentle intro to WebUSB",
+      talkAbstract:
+        'The browser’s capibilities have snuck up on us over the years, and it’s turned into a full blown operating system! "But wait," I hear you protest, "it’s not like the browser can talk to stuff I have plugged in to my USB ports!". Ah! But it can!<br/><br/>The new WebUSB spec has arrived, and is already supported in at least one browser today. The previous hacks of connecting browsers to robots and other hardware will soon be a thing of the past. WebUSB as a first class API citizen opens up some great opportunities to create new and delightful experiences with robotics.<br/><br/>I’ll introduce you to the WebUSB API, its history, and compare it to previous ’hacks’ to demonstrate why this is such a big deal for you, as a web developer. There will be real hardware shown on stage ready to inspire you to think outside of the box of what browsers are really meant to be used for.'
     },
     {
       name: 'Mathias Bynens',
@@ -205,7 +209,9 @@ export const JS = {
       image: require('./assets/speaker-mathias.jpg'),
       bio:
         'Mathias works on V8 at Google, and ❤️ JavaScript, HTML, CSS, HTTP, performance, security, Bash, Unicode, i18n, macOS.',
-      talk: '$JAVASCRIPT_ENGINE internals for JavaScript developers'
+      talk: '$JAVASCRIPT_ENGINE internals for JavaScript developers',
+      talkAbstract:
+        'This presentation demonstrates how learning just a little bit about JavaScript engine internals can help you improve the run-time performance of your JavaScript code — not just in $JAVASCRIPT_ENGINE specifically, but across all JavaScript engines!<br/><br/>I’ll start by explaining how $JAVASCRIPT_ENGINE handles arrays behind the scenes, and especially how it can optimize operations on them. I can do all of this with my “JS developer” hat on, i.e. without showing a single line of C++. This knowledge leads to useful insights for JavaScript developers wishing to improve their code’s run-time performance. In the end, the audience will walk away with several practical performance tips, and a deeper understanding of what’s going on under the hood.'
     },
     {
       name: 'Alexander Pope',
@@ -216,7 +222,9 @@ export const JS = {
       location: 'Oslo, Norway',
       bio:
         'Regardless of what Google might think, Alexander Pope does *not* write poetry; he mostly writes JavaScript and pushes pixels around. Originally of Canadian extraction, Alexander now works and lives in the wilds of Norway (Oslo).',
-      talk: 'OUTBREAK: index-sw-9a4c43b4b4778e7d1ca619eaaf5ac1db.js'
+      talk: 'OUTBREAK: index-sw-9a4c43b4b4778e7d1ca619eaaf5ac1db.js',
+      talkAbstract:
+        'August 30, 2016, was by all accounts an average Tuesday, and release number 523 just a simple re-factor, but something went horribly wrong that day: bad code escaped from the office, and it quickly spread to infect tens of thousands, giving rise to a hoard of zombie ServiceWorkers!<br/><br/>This is a disaster about a typo. This is a thriller about technology out of control. This is a tragedy about wasted CPU cycles. This is a cautionary tale about living in the age of ServiceWorker.'
     },
     {
       name: 'Madlaina Kalunder',
@@ -227,7 +235,9 @@ export const JS = {
       image: require('./assets/speaker-madlaina.jpg'),
       bio:
         'Madlaina is a full stack developer and a 3d processes magician at Archilogic, making 3d content accessible for people working on the web. She graduated at the Zurich University of Arts with a bachelor degree in Design, specialization Game Design, combining the passion for design and story telling with the newest technologies. She believes in bringing people of different backgrounds together to solve problems in creative ways.',
-      talk: 'Building a raytracing engine with JS'
+      talk: 'Building a raytracing engine with JS',
+      talkAbstract:
+        'In this talk we will build a 3D ray tracer with Javascript. We learn about the basics of real time 3D graphics and what we need in order to produce realistic looking 3D graphics in the browser.<br/><br/>It’s fun to learn about 3D and graphics, plus seeing how a seemingly complex concept such as ray tracing can be broken down to simpler concepts is inspiring. I enjoyed the artistic aspect of using maths to make 3D objects appear in a browser - and demystifying it in the process of learning. I hope to show and inspire the audience to experiment.'
     },
     {
       name: 'Irina Shestak',
@@ -238,7 +248,9 @@ export const JS = {
       image: require('./assets/speaker-irina.jpg'),
       bio:
         'The not so short: Irina is a Berlin via London via Vancouver (geeeez grrrl) software developer who is, oh hey, hello, really into node.js. When she is not in front of a computer, she is exploring the outdoors, gushing over trains, and you will probably find her at your nearest ramen shop™ reading some Beatniks.',
-      talk: 'HTTP2, one frame at a time'
+      talk: 'HTTP2, one frame at a time',
+      talkAbstract:
+        "Node Files.<br/> Take #1337.<br/>~ * Action! * ~<br/><br/>INT. JSCONF AU CONFERENCE VENUE<br/><br/>The camera zooms in on an intense discussion between Scully and Mulder. Both are huddled around a terminal, both are uncertain about the next steps. Ghosts of old TCP connections wail in the background.<br/>Scully is frantically typing. The left hand side shows a new session starting. Soon a new stream created. Multiple requests come in and Scully and Mulder frantically look at each other with a single face expression -- what. do. we. do. now? A minute passes. Scully looks like she has an idea.<br/><br/>~ * Scene * ~<br/><br/>In this fresh off the press episode of Node Files, I will take you to  a set of Node.js' implementation of HTTP2. Its quirks, its benefits,  and its workings explained and illustrated. How do we get from an  established connection to TLS decryption? How does the concept of  session come in to play? How does node handle memory usage when it comes  to HTTP2? And what are these frame things everyone keeps talking about?  This and more explained in HTTP2, one frame at a time. Coming to theatre near you from JSConf AU in March 2018."
     },
     {
       name: 'Craig Spence',
@@ -249,7 +261,9 @@ export const JS = {
       image: require('./assets/speaker-craig.jpg'),
       bio:
         "Craig lives in Wellington NZ, where he does JavaScript-y stuff at Trade Me. He loves building cool things that help teams build cool things! He also loves punk rock, Disney's Frozen, and his cat Cosy.",
-      talk: 'Fantastic ASTs and Where to Find Them'
+      talk: 'Fantastic ASTs and Where to Find Them',
+      talkAbstract:
+        'Oh no! Harry Potter, the hero from the J K Rowling’s wizarding universe, has been cursed by the super-villain, Lord Voldemort, and now he is trapped inside the Internet! <br/><br/>Harry knows Parseltongue, which means that he can talk to snakes. Incredibly, Parseltongue also happens to be a Turing complete programming language! In order for Harry to escape from the Internet, we need to transpile Parseltongue into JavaScript. In order to do that we need to learn all about Abstract Syntax Trees and how to use them to manipulate code. <br/><br/>This talk goes through the details of these magical data-structures, and all about language transformation, including lexing, parsing, code generation and creating source maps.By the end of the talk, attendants should have an idea of how ASTs work, how they are used in code transformation, and how they can be used to manipulate and interrogate code at a structural level.'
     },
     {
       name: 'Brittany Storoz',
@@ -260,7 +274,9 @@ export const JS = {
       location: 'Denver, United States',
       bio:
         "Brittany is a senior instructor and tech lead for the front-end program at Turing School. She's passionate about building a community that prioritizes making programming friendlier for new developers.",
-      talk: "A Year of Other's Bugs: The Sad State of Error Handling"
+      talk: "A Year of Other's Bugs: The Sad State of Error Handling",
+      talkAbstract:
+        'As an instructor of front-end software engineering, I’ve seen first-hand how difficult it is for new developers to navigate call stacks and decrypt error messages. We have built a culture that considers effective error handling a secondary priority, which has a significant impact on those who are just learning to code. Debugging is a huge part of the development process, and the less time we have to spend spinning our wheels, fighting an error message, the more time we have to get back to the fun stuff.<br/><br/>The more experience we have in engineering, the better we get at debugging broken code. We learn how to isolate the problem, decode cryptic error messages, and figure out the most effective terms to research. The faster we develop these skills, the faster we lose our perspective on what it’s like to be a beginner. It’s only when we watch others struggle through these experiences that it becomes obvious just how ineffective our error handling is. Let’s explore the shortcomings of the current state of error handling and how we can improve upon this to make engineering friendlier for newcomers.<br/><br/>This talk is applicable to developers of all skill-levels working with JavaScript. I hope to enlighten engineers on how to create more effective error handling for juniors, and also demonstrate how new developers are currently navigating the choppy waters we’ve presented them with when things go wrong.'
     },
     {
       name: 'Tim Holman',
@@ -271,7 +287,9 @@ export const JS = {
       image: require('./assets/speaker-tim.jpg'),
       bio:
         'Tim is a tinkerer, tuner & tamperer of all things online. He enjoys adding a lot of whimsy to the weird wide web, and prides himself with the overall joy it brings to the world.',
-      talk: 'Generative Art Speedrun'
+      talk: 'Generative Art Speedrun',
+      talkAbstract:
+        'For so many of us, myself included, the art world is the entry point into the coding world. Here we will explore ins and outs of generative art, and experience the joy of creating art with code. Generative art can be as simple or complex as you like, at the end of the day, everyone will have the mindset and processes down to create their own unique pieces of joy.<br/><br/>This talk begins with the basics of generative art, a small history, including some of the earliest "code art", proceeding into examples through history leading us here. The goal of the "speed run" is to give the audience as much knowledge about generative art as possible in the given time, while also showing the tooling, and surprisingly few steps it takes to get creating unique and original art. Generally speaking, there is no limitation to the audience of this talk, it really sits on the borderlines of people who enjoy art, code and science, and everyone will take home a different piece of that puzzle.<br/><br/>The talk shows both the simplicity and beauty of generative art, with just a few lines of code, we can put the computer to work creating millions of unique pieces.'
     },
     {
       name: 'Malte Ubl',
@@ -282,7 +300,9 @@ export const JS = {
       image: require('./assets/speaker-malte.jpg'),
       bio:
         'Malte is the tech lead of the AMP Project for Google. Previously Malte has created JavaScript infrastructure for lots of Google web apps and he is a curator of JSConf EU.',
-      talk: 'Designing very large JavaScript applications'
+      talk: 'Designing very large JavaScript applications',
+      talkAbstract:
+        'Over the last years a modular approach to programming in JS gained a huge following and with the advent of virtual DOM building isomorphic JavaScript application for the web became dramatically more approachable; yet, we are still largely deploying monolithic application blobs that know how to render the settings page of our single page apps before accepting user input on the homepage.<br/><br/>My talk will explore 2 primary themes:<br/><br/><ul><li>How to build highly sophisticated web apps that load a constant amount of JS to make the first page the user sees interactive; where constant means, even if you have 100s of engineers write code for your app for a year, the size will still be the same.</li><li>How to throughout the lifecycle of your application never load a single line of JS that is not currently needed.</li></ul>As part of this exploration I will introduce 3 novel concepts: lazy decoration, asynchronous dependency injection and reverse dependencies in module systems.</br><br/>Come see my talk if you enjoy nerding out on over-engineering problems, or want to build the next YouTube or Twitter.'
     },
     {
       name: 'Caleb Sotelo',
@@ -293,19 +313,22 @@ export const JS = {
       image: require('./assets/speaker-caleb.jpg'),
       bio:
         'Caleb is an Architect at OpenX, where he helps build digital advertising exchanges. He loves hiking the Sierra Nevada mountains and analyzing news articles at scale.',
-      talk: 'Taming the World’s Largest Trojan Horse'
+      talk: 'Taming the World’s Largest Trojan Horse',
+      talkAbstract:
+        'In 2017, companies globally spent $80B on digital advertising—web pages and mobile apps—delivering ads to billions of users, trillions of times. The majority of these ads were rendered in JavaScript environments. Technically, the challenge for JS developers is to instantaneously find the perfect match between an advertiser and a user, regardless of the website, app, or user profile. This is fun. But economically, we’ve been incentivized to create a global delivery mechanism for arbitrary code onto every connected device, without a care for user experience. It’s the world’s largest, and spammiest, Trojan Horse, and JS developers created it.<br/><br/>(1) Construction — What does this Trojan Horse look like at a technical level? This section covers JavaScript constructs that are really unique to ad-tech, including the rise and anatomy of the “ad tag”, creating sandboxes for arbitrary markup, cookie tracking and pixel syncing, and the impression beacon.<br/><br/>(2) Payload — What kinds of undesirable things are being delivered to publisher properties, and onto our devices? This section goes beyond specific examples of ad quality issues, sniffing, tracking, and malware, also looking at a longer-term invasion happening beneath our feet: have content creators begun trading clicks for a kind of dystopian digital future where ad blockers are simply common sense?<br/><br/>(3) Inversion — What can we as JS developers do about all this? This section argues that we have the power to change ad technology from a Trojan Horse into a powerful message delivery system, one that allows the coexistence of free content, advertising, and delightful user experiences. Ethical and optimistic developers will be the Trojan Horse inside the Trojan Horse.'
     },
     {
       name: 'Madalyn Parker',
       twitter: 'madalynrose',
       announced: true,
       url: 'www.madalynparker.com',
-      announced: true,
       location: 'Ann Arbor, United States',
       image: require('./assets/speaker-madalyn.jpg'),
       bio:
         'Madalyn has been writing code since 2007. Engineering at Olark since 2014. Working to cultivate humanity in tech. Outspoken about mental health in tech. Loves coffee, climbing, live music, and rabbits.',
-      talk: 'Uncharted Territory: Using aXe to Forge a Path'
+      talk: 'Uncharted Territory: Using aXe to Forge a Path',
+      talkAbstract:
+        'I remember attending my first JSConf in 2014 and watching Marcy Sutton talk about accessibility and the Shadow DOM. I was hooked on creating an accessible web for everyone. However, it’s really hard to get accessibility prioritized when you’Years later, my company is ready to hop on the train and now we’re working to implement the first ever ADA compliant chat box used in a support and sales context. I’ve seen lots of talks on accessibility basics and implementing aria on static sites, but few that demonstrate what it’s actually like to approach a codebase architected without accessibility in mind (especially one that will run on sites you have no control over) and add that layer in.<br/><br/>I want to show that it’s okay to roll out accessibility changes bit by bit, that it doesn’t have to be all or nothing, and that there are good tools out there to help you out. I think the stumbling blocks I come across (and overcome) in this project would be useful for others who find themselves in my position. Part of what made this project difficult was my inability to accurately estimate how long or how much work it would take to update our application. Hopefully, with the lessons I learn, I’ll be able to help someone else blaze their own trail at their company.'
     },
     {
       name: 'Vigneshwer Dhinakaran',
@@ -316,7 +339,9 @@ export const JS = {
       image: require('./assets/speaker-vigneshwer.jpg'),
       bio:
         'Vigneshwer is an innovative data scientist from Bengaluru who crunches real-time data and builds AI algorithms for complex business problems. He believes that technology needs to have a human-centric design to cater solutions to a diverse audience. He’s an official Mozilla TechSpeaker and is the author of Rust Cookbook.',
-      talk: 'Pumping up Node.js modules with Rust'
+      talk: 'Pumping up Node.js modules with Rust',
+      talkAbstract:
+        'If you’ve spent much time writing and debugging  node module code for performance in a Js app, you’ve probably had a hard  time managing memory and native code integration.<br/><br/>In  this talk, we venture deep into the belly of the Rust Language to  uncover the secret incantations for building high performance and memory  safe node modules using Neon, which helps you to write native node js  modules and it is definitely gonna mesmerize you with its easy language  bridge capabilities for building high performant and crash-free Js apps.<br/><br />Rust is out there creating a new generation of system  programmers, it has a lot to offer in terms of safety and performance  for high-level programming languages such Python, Ruby, Js and more with  its easy Foreign Function Interface capabilities which enables  developers to easily develop bindings for foreign code.'
     },
     {
       name: 'Harriet Lawrence',
@@ -327,7 +352,9 @@ export const JS = {
       image: require('./assets/speaker-harriet.jpg'),
       bio:
         'Harriet is Buildkite’s resident linguist. When she’s not crafting exciting ways to describe new Buildkite features, you’ll find her hanging out in bouldering gyms, or with her nose in a book.',
-      talk: 'Why robots suck at fighting harassment'
+      talk: 'Why robots suck at fighting harassment',
+      talkAbstract:
+        'Harassment is everywhere online, but it often flies under our radar and we don’t see it. Working in tech, we help to shape the online spaces where people interact. Because of this, we have more power than most to have a positive impact on the prevention of harassment. Our community is making algorithms to identify harassment, but they’re not very effective yet. We can improve these algorithms by looking at the problem from a different perspective - looking at the context of messages as well as the content, and applying linguistic analyses.<br/><br/>For my masters thesis in linguistics I’m studying how we can apply this approach to improve existing NLP algorithms. In this talk I’ll discuss the current blockers in identifying harassment online, and show some ways we can get around them. I’ll be diving into the basics of feature engineering for NLP algorithms, and will demonstrate how each of us can start contributing to training these algorithms right now. <br/><br/>'
     },
     {
       name: 'Amy Nguyen',
@@ -338,7 +365,9 @@ export const JS = {
       announced: true,
       bio:
         'Amy is a software engineer on the Stripe Observability team and she wants to make data accessible for everyone. Outside of work, Amy writes about the tech industry, loves baking, and reads too many self-improvement books.',
-      talk: 'Using Chrome Developer Tools to Hack Your Way Into Concerts'
+      talk: 'Using Chrome Developer Tools to Hack Your Way Into Concerts',
+      talkAbstract:
+        "Chrome Developer Tools is magical. It lets you record network traffic, step through code, modify the DOM, and more! To learn when we would use each of these features, I'll walk you through my adventures trying to trick Taylor Swift’s website into giving me concert tickets. Instead of reading through all of the JS files in her site and scrolling through hundreds of useless network activity logs, I learned how to use XHR breakpoints, filter network activity by type and domain, and recreate requests with CURL. I'll show you all of these tools and a few other tricks, and by the end of this talk, you will know how to reverse engineer any website and manipulate it to do your bidding."
     },
     {
       name: 'Nikolai Matvienko',
@@ -349,7 +378,9 @@ export const JS = {
       location: 'Saint Petersburg, Russia',
       bio:
         'Nikolay is a full stack JS developer in the Grid Dynamics company. The last three years mainly works on a major e-commerce project in San Francisco, California, where in addition to development, the core responsibilities include: production troubleshooting, diagnostics, profiling, and optimization Node.js applications performance in production. Nikolay is addicted to attending meetups and conferences in “the Valley”.',
-      talk: 'Node.js applications diagnostics under the hood'
+      talk: 'Node.js applications diagnostics under the hood',
+      talkAbstract:
+        'Based on my experience in diagnosing and troubleshooting highload e-commerce Node.js app in production, I’ve identified three stages in the Node.js diagnostic history. I’d like to briefly tell this path and show where we are now and tell in details "How to debug and tracing Node.js apps on different levels, and how to track performance problems and memory leaks inside Node.js apps in 2018":<br/><br/><ul><li>Production troubleshooting: I show and explain the strategy of creation and debugging core dump using llnode, node-report and X-Transaction-ID in our company with real-life examples.</li><li>Memory leaks: I show how to identify memory leaks, memory holders using V8 GC tracing, llnode debugging + gencore tool with real-life examples.</li><li>Performance: I show how to use 0x flame graph to find performance bottlenecks, how identify Event Loop lags, GC slow work and what can give Async Hooks for that with real-life examples.</li></ul>'
     }
   ]
 }

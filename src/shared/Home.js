@@ -17,6 +17,7 @@ import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { SectionBanner } from '../shared/components/Section'
 import ScheduleCSS from '../shared/ScheduleCSS'
+import ScheduleJS from '../shared/ScheduleJS'
 
 const Background = styled.div`
   background-color: #fff;
@@ -130,9 +131,11 @@ export default withRouter(({ conference, children, match }) => (
         path="/schedule"
         render={() => (
           <ContentPage conference={conference}>
-            {conference.id == 'css' ? (
+            {conference.id === 'css' ? (
               <ScheduleCSS conference={conference} />
-            ) : null}
+            ) : (
+              <ScheduleJS conference={conference} />
+            )}
           </ContentPage>
         )}
       />

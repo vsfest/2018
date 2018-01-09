@@ -38,6 +38,10 @@ const Speaker = styled.div`
 const SpeakerTalk = styled.div`
   background-color: ${props => props.theme.secondary};
   padding: 30px;
+
+  ${HeadlineSmall} {
+    overflow-wrap: break-word;
+  }
 `
 
 const TalkAbstract = styled.p`
@@ -48,10 +52,12 @@ const SpeakerLocation = styled.p`
   color: hsla(0, 0%, 50%, 1);
 `
 
-export default ({ conference, titoLink }) => {
+export default ({ conference }) => {
   const announcedSpeakers = conference.speakers.filter(
     speaker => speaker.announced === true
   )
+
+  const titoLink = conference.titoLink
 
   return (
     <Container>

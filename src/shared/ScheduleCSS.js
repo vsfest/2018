@@ -26,10 +26,6 @@ const ScheduleItemContent = styled.div`
   width: calc(100% - 100px);
 `
 
-const SpeakerTalk = styled.div`
-  margin-top: 30px;
-`
-
 const Time = styled.time`
   width: 100px;
 `
