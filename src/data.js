@@ -168,7 +168,7 @@ export const JS = {
     {
       name: 'Addition',
       url: 'http://addition.com.au/',
-      image: require('./assets/sponsor-addition.svg'),
+      image: require('./assets/sponsor-zann-addition.svg'),
       tier: 'diversity'
     },
     {
@@ -512,7 +512,7 @@ export const CSS = {
     {
       name: 'Addition',
       url: 'http://addition.com.au/',
-      image: require('./assets/sponsor-addition.svg'),
+      image: require('./assets/sponsor-zann-addition.svg'),
       tier: 'diversity'
     },
     {
@@ -526,6 +526,12 @@ export const CSS = {
       url: 'https://www.yelp.com/',
       image: require('./assets/sponsor-yelp.png'),
       tier: 'travel'
+    },
+    {
+      name: 'Today',
+      url: 'https://today.design/',
+      image: require('./assets/sponsor-today.svg'),
+      tier: 'diversity'
     }
   ],
   speakers: [
