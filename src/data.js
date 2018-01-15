@@ -182,6 +182,12 @@ export const JS = {
       url: 'https://stripe.com',
       image: require('./assets/sponsor-stripe.svg'),
       tier: 'travel'
+    },
+    {
+      name: 'Biarri',
+      url: 'https://biarri.com/',
+      image: require('./assets/sponsor-biarri.svg'),
+      tier: 'community'
     }
   ],
   speakers: [
