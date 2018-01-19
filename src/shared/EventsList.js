@@ -42,13 +42,13 @@ const Conference = styled.div`
 export default () => {
   return (
     <div>
-      <Headline>Schedule & Tickets</Headline>
+      <Headline>Schedule and tickets</Headline>
       <p>
         The conference is a part of a bigger family of events.{' '}
-        <strong>Regular Bird tickets available.</strong>{' '}
-        <LinkThemed href={CSS.titoLink}>Purchase a pass &rarr;</LinkThemed>
+        <strong>Regular Bird tickets are still available.</strong> Entry to
+        Decompress is included in all CSSConf, JSConf or Combo passes.{' '}
+        <LinkThemed href={CSS.titoLink}>Purchase a ticket &rarr;</LinkThemed>
       </p>
-      <Copy>Our programme will be announced by January 2018.</Copy>
       <Schedule>
         <Conference {...CSS}>
           <LinkThemed href={CSS.url}>

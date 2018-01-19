@@ -10,6 +10,7 @@ import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import EventsList from '../shared/EventsList'
 import { Section, SectionBannerExpanded } from '../shared/components/Section'
 import EventExpectations from '../shared/EventExpectations'
 
@@ -27,7 +28,9 @@ export default () => (
       <Section>
         <SpeakersTeaser {...JS} />
       </Section>
-
+      <Section>
+        <EventsList />
+      </Section>
       <Section>
         <MailingList {...JS.contact} />
       </Section>
