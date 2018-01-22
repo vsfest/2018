@@ -29,8 +29,8 @@ const SpeakersWrapper = styled.div`
   }
 `
 
-export default ({ conference, speakers, titoLink }) => {
-  const announcedSpeakers = speakers.filter(
+export default ({ conference, speakers, workshops, titoLink }) => {
+  const announcedSpeakers = (speakers.concat(workshops || [])).filter(
     speaker => speaker.announced === true
   )
 

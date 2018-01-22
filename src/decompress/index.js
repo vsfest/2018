@@ -8,6 +8,7 @@ import EventsList from '../shared/EventsList'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
+import SpeakersTeaser from '../shared/SpeakersTeaser'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
 import { Section, SectionBannerExpanded } from '../shared/components/Section'
@@ -22,6 +23,9 @@ export default () => (
       </Container>
     </SectionBannerExpanded>
     <Container>
+      <Section>
+        <SpeakersTeaser {...Decompress} />
+      </Section>
       <Section>
         <EventsList />
       </Section>
