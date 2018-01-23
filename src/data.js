@@ -738,7 +738,7 @@ export const Decompress = {
       name: 'Jeremy Nagel',
       twitter: 'jeznag',
       url: 'https://www.programmerswhogiveashit.com',
-      announced: true,
+      announced: false,
       image: require('./assets/speaker-jeremy-nagel.jpg'),
       bio:
         "Jeremy is an environmentalist turned programmer focused on using software to solve sustainability challenges. He's more than a little obsessed with checklists and automated tests.",
@@ -751,7 +751,7 @@ export const Decompress = {
       name: 'Juliet Brown',
       twitter: 'julietbrown84',
       // url: '',
-      announced: true,
+      announced: false,
       image: require('./assets/speaker-juliet.jpg'),
       bio:
         "Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.",
@@ -765,7 +765,7 @@ export const Decompress = {
       name: 'Rob Crowley',
       twitter: 'robdcrowley',
       // url: '',
-      announced: true,
+      announced: false,
       image: require('./assets/speaker-rob.jpg'),
       bio:
         "Rob is the technical lead for APIs at Bankwest and has read more RFCs than he cares to admit. Rob is passionate about crafting distributed systems that perform at scale. Originally from Ireland, Rob now calls Perth home after taking quite a few detours along the way.",
