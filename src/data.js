@@ -730,7 +730,7 @@ export const Decompress = {
       bio:
         "Keira is a developer at Culture Amp, an all-in-one people feedback and analytics platform. She works with React, Flow, and Rails on solutions to help customers share, and act upon company employee engagement data. Keira is an advocate for using functional programming techniques to improve the JavaScript coding and refactoring experience. When she's not writing code, she can be found under a large cat.",
       location: 'Melbourne, Australia',
-      talk: 'Attack of the mutants: using mutation testing to improve your test suite',
+      talk: 'The Why and How of ReasonML',
       talkAbstract:
         "New kid on the 'compile-to-JavaScript' block is ReasonML, a syntax layer and toolchain for OCaml, brought to you by the creator of React.js. While there has been a steadily-increasing buzz around ReasonML since the release of ReasonReact by Facebook in March 2017, it's hard to know from the outside whether the hype is truly deserved, or a product of savvy marketing and social media management. More importantly, why should you, as a JavaScript developer care? Aren't compile-to-JS alternatives created for people who don't like JavaScript? <br /><br /> The relationship between ML languages and some of our more popular JavaScript libraries is more than cursory. Scratch the surface of one of our main JavaScript type systems, Flow, and you'll find OCaml. The original prototype of React.js was created in another ML language (SML/ Standard-ML). The JavaScript Redux library is based on Elm's reducer architecture. <br /><br /> While the ReasonML creator has stated his original intent was to fix the top 15 things in the OCaml syntax that annoyed experienced OCaml developers, the result ended up looking a lot like... JavaScript! In this brief exploration of the syntax and the growing community that supports it, one aspect does become abundantly clear. ReasonML and ReasonReact have evolved with the JavaScript community forefront in mind."
     },
@@ -738,7 +738,7 @@ export const Decompress = {
       name: 'Jeremy Nagel',
       twitter: 'jeznag',
       url: 'https://www.programmerswhogiveashit.com',
-      announced: true,
+      announced: false,
       image: require('./assets/speaker-jeremy-nagel.jpg'),
       bio:
         "Jeremy is an environmentalist turned programmer focused on using software to solve sustainability challenges. He's more than a little obsessed with checklists and automated tests.",
@@ -751,7 +751,7 @@ export const Decompress = {
       name: 'Rob Crowley',
       twitter: 'robdcrowley',
       // url: '',
-      announced: true,
+      announced: false,
       image: require('./assets/speaker-rob.jpg'),
       bio:
         "Rob is the technical lead for APIs at Bankwest and has read more RFCs than he cares to admit. Rob is passionate about crafting distributed systems that perform at scale. Originally from Ireland, Rob now calls Perth home after taking quite a few detours along the way.",
@@ -784,8 +784,20 @@ export const Decompress = {
       image: require('./assets/speaker-tim.jpg'),
       bio:
         "Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!",
-      location: '',
-      talk: 'Getting creating with generative art!'
+      location: 'New York, USA',
+      talk: 'Generative Art with JavaScript and HTML5 Canvas'
+    },
+    {
+      name: 'Mandy Michael',
+      twitter: 'mandy_kerr',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-mandy.jpg'),
+      bio:
+        "Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML.",
+      location: 'Perth, Australia',
+      talk: 'Creative Text Effects with CSS'
+
     }
   ]
 }

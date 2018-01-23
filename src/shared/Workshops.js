@@ -78,10 +78,10 @@ export default ({ conference }) => {
             <img src={speaker.image} alt={speaker.name} />
             <div>
               <HeadlineSmall>{speaker.talk}</HeadlineSmall>
-              <SpeakerLocation>{speaker.location}</SpeakerLocation>
               <SpeakerTalk>
                 <LinkThemed href={`https://twitter.com/${speaker.twitter}`}>
                   <HeadlineSmall>{speaker.name}</HeadlineSmall>
+                  <SpeakerLocation>{speaker.location}</SpeakerLocation>
                 </LinkThemed>
                 <p>{speaker.bio}</p>
               </SpeakerTalk>
