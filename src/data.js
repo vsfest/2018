@@ -679,9 +679,9 @@ export const Decompress = {
   theme: {
     primary: 'hsla(0, 100%, 62%, 1)',
     primaryHover: 'hsla(0, 100%, 45%, 1)',
-    secondary: 'hsla(0, 100%, 90%, 1)'
-    // bannerImage: require('./css/banner-bg.jpg'),
-    // bannerImageSmall: require('./css/banner-bg-small.jpg')
+    secondary: 'hsla(0, 100%, 90%, 1)',
+    bannerImage: require('./assets/banner-decompress.jpg'),
+    bannerImageSmall: require('./assets/banner-decompress-small.jpg')
   },
   contact: {
     team: 'team@decompress.com.au',
