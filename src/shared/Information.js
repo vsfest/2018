@@ -58,7 +58,7 @@ export default ({ conference }) => {
         </StyledLink>, running a{' '}
         <StyledLink to="scholarship">Scholarship Program</StyledLink> for
         underrepresented groups, sharing our{' '}
-        <StyledLink to="accessiblity">Accessibility Statement</StyledLink>, and
+        <StyledLink to="accessibility">Accessibility Statement</StyledLink>, and
         being transparent about our multidisciplinary approach to the event.
       </Copy>
       <Headline>Venue & Date</Headline>

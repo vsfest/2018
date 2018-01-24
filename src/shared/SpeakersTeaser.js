@@ -29,7 +29,7 @@ const SpeakersWrapper = styled.div`
   }
 `
 
-export default ({ conference, speakers, workshops, titoLink }) => {
+export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) => {
   const announcedSpeakers = (speakers.concat(workshops || [])).filter(
     speaker => speaker.announced === true
   )
@@ -38,8 +38,17 @@ export default ({ conference, speakers, workshops, titoLink }) => {
     <div>
       <Headline>Speakers</Headline>
       <Copy>
-        Read <StyledLink to="schedule">the conference schedule</StyledLink>,{' '}
-        <StyledLink to="speakers">talk descriptions</StyledLink> or{' '}
+        Read the{' '}
+        {hasSchedule && (
+          <StyledLink to="schedule">conference schedule</StyledLink>
+        )}
+        {hasSchedule && ', '}
+        <StyledLink to="speakers">talk descriptions</StyledLink>
+        {hasWorkshops && ', '}
+        {hasWorkshops && (
+          <StyledLink to="workshops">workshop details</StyledLink>
+        )}
+        {' or '}
         <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
       </Copy>
       <SpeakersWrapper>
