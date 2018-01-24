@@ -97,10 +97,8 @@ export default class Masthead extends React.Component {
 
   render() {
     const titoLink = this.props.titoLink
-    const isCfpOpen = this.props.isCfpOpen
     const confName = this.props.title
-    const hasSpeakers = this.props.hasSpeakers
-    const hasWorkshops = this.props.hasWorkshops
+    const { hasSpeakers, hasSchedule, hasWorkshops } = this.props
 
     return (
       <div>
@@ -121,7 +119,7 @@ export default class Masthead extends React.Component {
                   <StyledLink to="workshops">Workshops</StyledLink>
                 </li>
               ) : null}
-              {isCfpOpen ? (
+              {hasSchedule ? (
                 <li>
                   <StyledLink to="schedule">Schedule</StyledLink>
                 </li>

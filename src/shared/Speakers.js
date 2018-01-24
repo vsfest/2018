@@ -67,8 +67,17 @@ export default ({ conference }) => {
       <Headline>Speakers</Headline>
 
       <Copy>
-        Read <StyledLink to="schedule">the conference schedule</StyledLink>,{' '}
-        <StyledLink to="speakers">talk descriptions</StyledLink> or{' '}
+        Read the{' '}
+        {conference.hasSchedule && (
+          <StyledLink to="schedule">conference schedule</StyledLink>
+        )}
+        {conference.hasSchedule && ', '}
+        <StyledLink to="speakers">talk descriptions</StyledLink>
+        {conference.hasWorkshops && ', '}
+        {conference.hasWorkshops && (
+          <StyledLink to="workshops">workshop details</StyledLink>
+        )}
+        {' or '}
         <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
       </Copy>
 

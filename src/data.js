@@ -92,6 +92,7 @@ export const JS = {
   ],
   isCfpOpen: true,
   hasSpeakers: true,
+  hasSchedule: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -442,6 +443,7 @@ export const CSS = {
   ],
   isCfpOpen: true,
   hasSpeakers: true,
+  hasSchedule: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -700,6 +702,7 @@ export const Decompress = {
   isCfpOpen: false,
   hasSpeakers: true,
   hasWorkshops: true,
+  hasSchedule: false,
   sponsors: [
     {
       name: 'Calibre',
