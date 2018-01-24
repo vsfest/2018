@@ -667,6 +667,7 @@ export const Decompress = {
   title: 'Decompress 2018',
   logo: decompress_logo,
   date: '23rd March 2018',
+  // favicon: decompress_favicon,
   url:
     process.env.NODE_ENV === 'production'
       ? 'https://2018.decompress.com.au'
@@ -679,6 +680,8 @@ export const Decompress = {
     primary: 'hsla(0, 100%, 62%, 1)',
     primaryHover: 'hsla(0, 100%, 45%, 1)',
     secondary: 'hsla(0, 100%, 90%, 1)'
+    // bannerImage: require('./css/banner-bg.jpg'),
+    // bannerImageSmall: require('./css/banner-bg-small.jpg')
   },
   contact: {
     team: 'team@decompress.com.au',
@@ -695,7 +698,8 @@ export const Decompress = {
     { title: 2014 }
   ],
   isCfpOpen: false,
-  hasSpeakers: false,
+  hasSpeakers: true,
+  hasWorkshops: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -708,6 +712,105 @@ export const Decompress = {
       url: 'https://frontend.center/',
       image: require('./assets/sponsor-fec.svg'),
       tier: 'main'
+    },
+    {
+      name: 'Trade Me',
+      url: 'https://www.trademe.co.nz/',
+      image: require('./assets/sponsor-trade-me.svg'),
+      tier: 'travel'
+    }
+  ],
+  speakers: [
+    {
+      name: 'Keira Hodgkison',
+      twitter: 'keirasaid',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-keira.jpg'),
+      bio:
+        "Keira is a developer at Culture Amp, an all-in-one people feedback and analytics platform. She works with React, Flow, and Rails on solutions to help customers share, and act upon company employee engagement data. Keira is an advocate for using functional programming techniques to improve the JavaScript coding and refactoring experience. When she's not writing code, she can be found under a large cat.",
+      location: 'Melbourne, Australia',
+      talk: 'The Why and How of ReasonML',
+      talkAbstract:
+        "New kid on the 'compile-to-JavaScript' block is ReasonML, a syntax layer and toolchain for OCaml, brought to you by the creator of React.js. While there has been a steadily-increasing buzz around ReasonML since the release of ReasonReact by Facebook in March 2017, it's hard to know from the outside whether the hype is truly deserved, or a product of savvy marketing and social media management. More importantly, why should you, as a JavaScript developer care? Aren't compile-to-JS alternatives created for people who don't like JavaScript? <br /><br /> The relationship between ML languages and some of our more popular JavaScript libraries is more than cursory. Scratch the surface of one of our main JavaScript type systems, Flow, and you'll find OCaml. The original prototype of React.js was created in another ML language (SML/ Standard-ML). The JavaScript Redux library is based on Elm's reducer architecture. <br /><br /> While the ReasonML creator has stated his original intent was to fix the top 15 things in the OCaml syntax that annoyed experienced OCaml developers, the result ended up looking a lot like... JavaScript! In this brief exploration of the syntax and the growing community that supports it, one aspect does become abundantly clear. ReasonML and ReasonReact have evolved with the JavaScript community forefront in mind."
+    },
+    {
+      name: 'Jeremy Nagel',
+      twitter: 'jeznag',
+      url: 'https://www.programmerswhogiveashit.com',
+      announced: false,
+      image: require('./assets/speaker-jeremy-nagel.jpg'),
+      bio:
+        "Jeremy is an environmentalist turned programmer focused on using software to solve sustainability challenges. He's more than a little obsessed with checklists and automated tests.",
+      location: 'Sydney, Australia',
+      talk: 'Attack of the mutants: using mutation testing to improve your test suite',
+      talkAbstract:
+        "Code without tests is code that is going to sneak up behind you while you’re texting on your phone, put glue in your hair and steal your lucky horseshoe from your bag. Evil! But how can you find those dastardly lines? Traditionally we’ve used test coverage metrics (e.g. Istanbul) to track down those villains but coverage has a lot of gaps. A test can execute 100% of code without performing any assertions, giving you a false sense of security. <br /><br /> What's the solution then? Fight back against those villains by unleashing mutants! Don't worry, you don't have to drink radioactive coolaid, we're talking about mutation testing. It involves using a tool like StrykerJS to programatically insert bugs (mutants) into your code and check whether the tests catch them. Having 100% test coverage is a noble goal but ultimately not very useful as it says nothing about the test suite's ability to catch bugs. On the other hand, having a 100% mutant kill score is a big deal. It means that your assertions can effectively pick up most potential bugs. <br /><br /> Next time your manager asks for a risk analysis of the company's test suite, you'll know what to do: call in the mutants!"
+    },
+    {
+      name: 'Juliet Brown',
+      twitter: 'julietbrown84',
+      // url: '',
+      announced: false,
+      image: require('./assets/speaker-juliet.jpg'),
+      bio:
+        "Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.",
+      location: 'Wellington, New Zealand',
+      talk:
+        "Intersection between Art and Technology",
+      talkAbstract:
+        "Programmers are artists. I am a web animator, developer, and artist. I come from A Fine Arts background, and a question I often get asked is how and why did you become a developer if you come from an arts background? For me, programming is creative, and I would like to share my journey with you. How I brought my diverse background to the developer community and what I am doing with that now. How I relate to technology with its subject matter, medium, and process. Using coding as an artistic medium references and also pushes the boundaries of what art is and can do. Painting and drawing come with such a historical background. <br /><br /> By bringing the old medium into technology - a new medium, a tool that we as people are involved with day to day excites me, it brings new possibilities for css and javascript and the technology space. <br /><br /> Common themes I explore in my art practice is popular culture, and the real and the imaginary. Recently, I have been working at converting my practice (painting, drawings) into a large human sized 3D animation world. <br /><br /> By combing Art and technology together, challenges the notions of the digital world and also how we perceive art and the 'artist'"
+    },
+    {
+      name: 'Rob Crowley',
+      twitter: 'robdcrowley',
+      // url: '',
+      announced: false,
+      image: require('./assets/speaker-rob.jpg'),
+      bio:
+        "Rob is the technical lead for APIs at Bankwest and has read more RFCs than he cares to admit. Rob is passionate about crafting distributed systems that perform at scale. Originally from Ireland, Rob now calls Perth home after taking quite a few detours along the way.",
+      location: 'Perth, Australia',
+      talk: 'Crafting compelling real-time web experiences with GraphQL',
+      talkAbstract:
+        "Users expect real-time data. They want their banking transaction notifications now. Their order confirmed now. They want their user experience to feel—connected. The world has moved to push and users are waiting for the data-driven experiences we create on the web to catch up. <br /><br /> GraphQL is Facebook’s response to this challenge and it is quickly proving itself as an exciting alternative to RESTful APIs for a wide range of contexts. GraphQL is a query language that provides a clean and simple syntax for consumers to interrogate your APIs. These queries are strongly typed, hierarchical and enable clients to retrieve only the data they need. <br /><br /> In addition to the familiar pull based request-response pattern, GraphQL provides a mechanism for clients to subscribe to real-time updates in the form of Subscriptions. Subscriptions are exciting as they represent the core ability we need to satisfy the connected push based experience that our users demand. <br /><br />  In this talk, we will take a hands-on look at GraphQL and see how it can be used to build real-time APIs that are a joy to use. Additionally, we will see how we can integrate a React client with GraphQL using Relay Modern, Facebook's JavaScript framework for building data driven applications. By the end of the session you will understand what is required to craft a compelling real-time user experience with GraphQL, and have the knowledge to deliver on these requirements."
+    },
+    {
+      name: 'Maz Hermon',
+      twitter: 'mazhermon',
+      url: 'http://mazhermon.com/',
+      announced: true,
+      image: require('./assets/speaker-maz.jpg'),
+      bio:
+        "Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.",
+      location: 'Wellington, New Zealand',
+      talk:
+        "How is a UI component library the 'Mise en place' of the modern Web-Chef’s kitchen?",
+      talkAbstract:
+        "Do you need help convincing your team or wider company they’d benefit from creating a living style guide and UI component library? Or getting buy in on why the one you’ve started is a good idea? Let’s run through a fun analogy comparing how having a design system and building a front-end component library is like the essential afternoon preparation session in a high performing kitchen known as ‘Mise en place’. You’ll learn how to explain how having this in place seperates the amatures from the professionals in kitchens around the world, and will ensure that by the time users walk in the virtual door, the dev kitchen is operating at high speed with grace, and no one’s left waiting, grumpily staring down the wait-staff with their best evil-eyes. <br /><br />This talk will benefit you regardless of what level you're at. You’ll come away with a new way to explain to your technical and non-technical stakeholders why you and your team should be given the go ahead to support the successful fast paced delivery of features and products for your users. Don’t sit back and say ‘I told you so’ when things slow to crawl and you're all tangled in legacy code and specifity wars with your heavy CSS. Instead, come and learn a new way to frame the argument to ensure you’ve given everyone the best chance to realise what you already know to be true, before it’s too late."
+    }
+  ],
+  workshops: [
+    {
+      name: 'Mandy Michael',
+      twitter: 'mandy_kerr',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-mandy.jpg'),
+      bio:
+        "Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.",
+      location: 'Perth, Australia',
+      talk: 'Creative Text Effects with CSS'
+    },
+    {
+      name: 'Tim Holman',
+      twitter: 'twholman',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-tim.jpg'),
+      bio:
+        "Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!",
+      location: 'New York, USA',
+      talk: 'Generative Art with JavaScript and HTML5 Canvas'
     }
   ]
 }

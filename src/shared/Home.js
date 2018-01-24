@@ -9,6 +9,7 @@ import CallForSpeakers from './CallForSpeakers'
 import Scholarship from './Scholarship'
 import Information from './Information'
 import Speakers from './Speakers'
+import Workshops from './Workshops'
 import Team from './Team'
 import { Staff } from '../data'
 import Masthead from './Masthead'
@@ -127,6 +128,14 @@ export default withRouter(({ conference, children, match }) => (
           </ContentPage>
         )}
       />
+      {conference.workshops && <Route
+        path="/workshops"
+        render={() => (
+          <ContentPage conference={conference}>
+            <Workshops conference={conference} />
+          </ContentPage>
+        )}
+      />}
       <Route
         path="/schedule"
         render={() => (
