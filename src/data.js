@@ -189,6 +189,12 @@ export const JS = {
       url: 'https://biarri.com/',
       image: require('./assets/sponsor-biarri.svg'),
       tier: 'community'
+    },
+    {
+      name: 'AMP Project',
+      url: 'https://www.ampproject.org/',
+      image: require('./assets/sponsor-amp.svg'),
+      tier: 'title'
     }
   ],
   speakers: [
@@ -515,7 +521,7 @@ export const CSS = {
       name: 'AMP Project',
       url: 'https://www.ampproject.org/',
       image: require('./assets/sponsor-amp.svg'),
-      tier: 'main'
+      tier: 'title'
     },
     {
       name: 'Addition',
@@ -717,6 +723,12 @@ export const Decompress = {
       tier: 'main'
     },
     {
+      name: 'AMP Project',
+      url: 'https://www.ampproject.org/',
+      image: require('./assets/sponsor-amp.svg'),
+      tier: 'title'
+    },
+    {
       name: 'Trade Me',
       url: 'https://www.trademe.co.nz/',
       image: require('./assets/sponsor-trade-me.svg'),
@@ -766,7 +778,8 @@ export const Decompress = {
       bio:
         "Jeremy is an environmentalist turned programmer focused on using software to solve sustainability challenges. He's more than a little obsessed with checklists and automated tests.",
       location: 'Sydney, Australia',
-      talk: 'Attack of the mutants: using mutation testing to improve your test suite',
+      talk:
+        'Attack of the mutants: using mutation testing to improve your test suite',
       talkAbstract:
         "Code without tests is code that is going to sneak up behind you while you’re texting on your phone, put glue in your hair and steal your lucky horseshoe from your bag. Evil! But how can you find those dastardly lines? Traditionally we’ve used test coverage metrics (e.g. Istanbul) to track down those villains but coverage has a lot of gaps. A test can execute 100% of code without performing any assertions, giving you a false sense of security. <br /><br /> What's the solution then? Fight back against those villains by unleashing mutants! Don't worry, you don't have to drink radioactive coolaid, we're talking about mutation testing. It involves using a tool like StrykerJS to programatically insert bugs (mutants) into your code and check whether the tests catch them. Having 100% test coverage is a noble goal but ultimately not very useful as it says nothing about the test suite's ability to catch bugs. On the other hand, having a 100% mutant kill score is a big deal. It means that your assertions can effectively pick up most potential bugs. <br /><br /> Next time your manager asks for a risk analysis of the company's test suite, you'll know what to do: call in the mutants!"
     },
@@ -777,10 +790,9 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-juliet.jpg'),
       bio:
-        "Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.",
+        'Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.',
       location: 'Wellington, New Zealand',
-      talk:
-        "Intersection between Art and Technology",
+      talk: 'Intersection between Art and Technology',
       talkAbstract:
         "Programmers are artists. I am a web animator, developer, and artist. I come from A Fine Arts background, and a question I often get asked is how and why did you become a developer if you come from an arts background? For me, programming is creative, and I would like to share my journey with you. How I brought my diverse background to the developer community and what I am doing with that now. How I relate to technology with its subject matter, medium, and process. Using coding as an artistic medium references and also pushes the boundaries of what art is and can do. Painting and drawing come with such a historical background. <br /><br /> By bringing the old medium into technology - a new medium, a tool that we as people are involved with day to day excites me, it brings new possibilities for css and javascript and the technology space. <br /><br /> Common themes I explore in my art practice is popular culture, and the real and the imaginary. Recently, I have been working at converting my practice (painting, drawings) into a large human sized 3D animation world. <br /><br /> By combing Art and technology together, challenges the notions of the digital world and also how we perceive art and the 'artist'"
     },
@@ -791,7 +803,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-rob.jpg'),
       bio:
-        "Rob is the technical lead for APIs at Bankwest and has read more RFCs than he cares to admit. Rob is passionate about crafting distributed systems that perform at scale. Originally from Ireland, Rob now calls Perth home after taking quite a few detours along the way.",
+        'Rob is the technical lead for APIs at Bankwest and has read more RFCs than he cares to admit. Rob is passionate about crafting distributed systems that perform at scale. Originally from Ireland, Rob now calls Perth home after taking quite a few detours along the way.',
       location: 'Perth, Australia',
       talk: 'Crafting compelling real-time web experiences with GraphQL',
       talkAbstract:
@@ -819,7 +831,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-mandy.jpg'),
       bio:
-        "Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.",
+        'Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.',
       location: 'Perth, Australia',
       talk: 'Creative Text Effects with CSS'
     },
@@ -830,7 +842,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-tim.jpg'),
       bio:
-        "Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!",
+        'Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!',
       location: 'New York, USA',
       talk: 'Generative Art with JavaScript and HTML5 Canvas'
     }

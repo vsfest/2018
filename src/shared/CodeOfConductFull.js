@@ -17,23 +17,27 @@ export default ({ conference }) => {
       <Title>Code of Conduct</Title>
       <Headline>Purpose</Headline>
       <Copy>
-        CSSConf AU is dedicated to providing a harassment-free conference
-        experience for everyone, regardless of gender, gender identity and
-        expression, sexual orientation, disability, physical appearance, body
-        size, race, age or religion. We do not tolerate harassment of conference
-        participants in any form. Sexual language and imagery is not appropriate
-        for any conference venue, including talks. Conference participants
-        violating these rules may be sanctioned or expelled from the conference
-        without a refund at the discretion of the conference organisers.
+        {conference.title} is dedicated to providing a harassment-free
+        conference experience for everyone, regardless of gender, gender
+        identity and expression, sexual orientation, disability, physical
+        appearance, body size, race, age or religion. We do not tolerate
+        harassment of conference participants in any form. Sexual language and
+        imagery is not appropriate for any conference venue, including talks.
+      </Copy>
+      <Copy>
+        Conference participants or anyone interacting with the event violating
+        these rules may be sanctioned or expelled from the conference without a
+        refund at the discretion of the conference organisers.
       </Copy>
 
       <Headline>Anti-harassment</Headline>
       <p>Harassment includes, but is not limited to:</p>
       <ul>
         <li>
-          Verbal comments that reinforce social structures of domination related
-          to gender, gender identity and expression, sexual orientation,
-          disability, physical appearance, body size, race, age, religion
+          Verbal or written comments that reinforce social structures of
+          domination related to gender, gender identity and expression, sexual
+          orientation, disability, physical appearance, body size, race, age,
+          religion
         </li>
         <li>Sexual images in public spaces</li>
         <li>Deliberate intimidation, stalking, or following</li>
@@ -61,9 +65,11 @@ export default ({ conference }) => {
       <Copy>
         Event organisers may take action to redress anything designed to, or
         with the clear impact of, disrupting the event or making the environment
-        hostile for any participants. We expect participants to follow these
-        rules at all event venues and event-related social activities. We think
-        people should follow these rules outside event activities too!
+        hostile for any participants.{' '}
+        <strong>
+          We expect participants to follow these rules at all event venues,
+          event-related social activities as well as social media.
+        </strong>
       </Copy>
 
       <Headline>Reporting</Headline>
@@ -100,10 +106,11 @@ export default ({ conference }) => {
         </li>
       </ul>
       <p>
-        When taking a personal report, our staff will ensure you are safe and
-        cannot be overheard. They may involve other event staff to ensure your
-        report is managed properly. Once safe, we'll ask you to tell us about
-        what happened. This can be upsetting, but we'll handle it as
+        When taking a personal report,{' '}
+        <LinkThemed href="/team">our staff</LinkThemed> will ensure you are safe
+        and cannot be overheard. They may involve other event staff to ensure
+        your report is managed properly. Once safe, we'll ask you to tell us
+        about what happened. This can be upsetting, but we'll handle it as
         respectfully as possible, and you can bring someone to support you. You
         won't be asked to confront anyone and we won't tell anyone who you are.
       </p>
@@ -206,7 +213,7 @@ export default ({ conference }) => {
           Conference Code of Conduct
         </LinkThemed>.
       </p>
-      <p>Last update: 14 Nov 2017</p>
+      <p>Last update: 25 Jan 2018</p>
     </Container>
   )
 }
