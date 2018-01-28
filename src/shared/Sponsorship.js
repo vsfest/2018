@@ -12,19 +12,20 @@ const SponsorContainer = styled.div`
     display: flex;
     justify-content: center;
   }
+  flex-wrap: wrap;
 `
 
 const Sponsor = styled.div`
   &:not(:only-child) {
     @media (min-width: 768px) {
-      margin-right: 30px;
+      margin-right: 20px;
     }
   }
 
   a {
     display: table;
-    ${props => (props.tier === 'main' ? 'padding: 40px;' : 'padding: 25px;')};
-    margin-bottom: 30px;
+    ${props => (props.tier === 'main' ? 'padding: 30px;' : 'padding: 25px;')};
+    margin-bottom: 20px;
     justify-content: center;
     background-color: ${props => props.theme.secondary};
     vertical-align: middle;
@@ -38,10 +39,18 @@ const Sponsor = styled.div`
         opacity: 0.5;
       }
     }
+
+    &.titleSponsor {
+      padding: 40px;
+
+      img {
+        height: 80px;
+      }
+    }
   }
 
   img {
-    ${props => (props.tier === 'main' ? 'height: 60px;' : 'height: 35px;')};
+    ${props => (props.tier === 'main' ? 'height: 50px;' : 'height: 30px;')};
     max-width: 100%;
     display: table-cell;
 
@@ -64,6 +73,8 @@ export default ({ sponsors, contact }) => {
     sponsor => sponsor.tier === 'diversity'
   )
 
+  const titleSponsor = sponsors.filter(sponsor => sponsor.tier === 'title')
+
   const mainSponsors = sponsors.filter(sponsor => sponsor.tier === 'main')
 
   const mediaPartners = sponsors.filter(sponsor => sponsor.tier === 'media')
@@ -80,6 +91,23 @@ export default ({ sponsors, contact }) => {
           Contact us for more details
         </LinkThemed>. Thanks to these great companies already supporting us:
       </Copy>
+
+      <SectionCentered>
+        {titleSponsor.length ? (
+          <HeadlineSmall>Title Sponsor</HeadlineSmall>
+        ) : null}
+        <SponsorContainer>
+          {titleSponsor.map((sponsor, i) => {
+            return (
+              <Sponsor key={i} {...sponsor}>
+                <a href={sponsor.url} className="titleSponsor">
+                  <img src={sponsor.image} alt={sponsor.name} />
+                </a>
+              </Sponsor>
+            )
+          })}
+        </SponsorContainer>
+      </SectionCentered>
 
       <SectionCentered>
         {mainSponsors.length ? (
