@@ -721,6 +721,12 @@ export const Decompress = {
       url: 'https://www.trademe.co.nz/',
       image: require('./assets/sponsor-trade-me.svg'),
       tier: 'travel'
+    },
+    {
+      name: 'Grok Learning',
+      url: 'https://groklearning.com/',
+      image: require('./assets/sponsor-grok-learning.svg'),
+      tier: 'travel'
     }
   ],
   speakers: [
@@ -738,10 +744,24 @@ export const Decompress = {
         "New kid on the 'compile-to-JavaScript' block is ReasonML, a syntax layer and toolchain for OCaml, brought to you by the creator of React.js. While there has been a steadily-increasing buzz around ReasonML since the release of ReasonReact by Facebook in March 2017, it's hard to know from the outside whether the hype is truly deserved, or a product of savvy marketing and social media management. More importantly, why should you, as a JavaScript developer care? Aren't compile-to-JS alternatives created for people who don't like JavaScript? <br /><br /> The relationship between ML languages and some of our more popular JavaScript libraries is more than cursory. Scratch the surface of one of our main JavaScript type systems, Flow, and you'll find OCaml. The original prototype of React.js was created in another ML language (SML/ Standard-ML). The JavaScript Redux library is based on Elm's reducer architecture. <br /><br /> While the ReasonML creator has stated his original intent was to fix the top 15 things in the OCaml syntax that annoyed experienced OCaml developers, the result ended up looking a lot like... JavaScript! In this brief exploration of the syntax and the growing community that supports it, one aspect does become abundantly clear. ReasonML and ReasonReact have evolved with the JavaScript community forefront in mind."
     },
     {
+      name: 'Maz Hermon',
+      twitter: 'mazhermon',
+      url: 'http://mazhermon.com/',
+      announced: true,
+      image: require('./assets/speaker-maz.jpg'),
+      bio:
+        "Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.",
+      location: 'Wellington, New Zealand',
+      talk:
+        "How is a UI component library the 'Mise en place' of the modern Web-Chef’s kitchen?",
+      talkAbstract:
+        "Do you need help convincing your team or wider company they’d benefit from creating a living style guide and UI component library? Or getting buy in on why the one you’ve started is a good idea? Let’s run through a fun analogy comparing how having a design system and building a front-end component library is like the essential afternoon preparation session in a high performing kitchen known as ‘Mise en place’. You’ll learn how to explain how having this in place seperates the amatures from the professionals in kitchens around the world, and will ensure that by the time users walk in the virtual door, the dev kitchen is operating at high speed with grace, and no one’s left waiting, grumpily staring down the wait-staff with their best evil-eyes. <br /><br />This talk will benefit you regardless of what level you're at. You’ll come away with a new way to explain to your technical and non-technical stakeholders why you and your team should be given the go ahead to support the successful fast paced delivery of features and products for your users. Don’t sit back and say ‘I told you so’ when things slow to crawl and you're all tangled in legacy code and specifity wars with your heavy CSS. Instead, come and learn a new way to frame the argument to ensure you’ve given everyone the best chance to realise what you already know to be true, before it’s too late."
+    },
+    {
       name: 'Jeremy Nagel',
       twitter: 'jeznag',
       url: 'https://www.programmerswhogiveashit.com',
-      announced: false,
+      announced: true,
       image: require('./assets/speaker-jeremy-nagel.jpg'),
       bio:
         "Jeremy is an environmentalist turned programmer focused on using software to solve sustainability challenges. He's more than a little obsessed with checklists and automated tests.",
@@ -754,7 +774,7 @@ export const Decompress = {
       name: 'Juliet Brown',
       twitter: 'julietbrown84',
       // url: '',
-      announced: false,
+      announced: true,
       image: require('./assets/speaker-juliet.jpg'),
       bio:
         "Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.",
@@ -768,7 +788,7 @@ export const Decompress = {
       name: 'Rob Crowley',
       twitter: 'robdcrowley',
       // url: '',
-      announced: false,
+      announced: true,
       image: require('./assets/speaker-rob.jpg'),
       bio:
         "Rob is the technical lead for APIs at Bankwest and has read more RFCs than he cares to admit. Rob is passionate about crafting distributed systems that perform at scale. Originally from Ireland, Rob now calls Perth home after taking quite a few detours along the way.",
@@ -778,18 +798,17 @@ export const Decompress = {
         "Users expect real-time data. They want their banking transaction notifications now. Their order confirmed now. They want their user experience to feel—connected. The world has moved to push and users are waiting for the data-driven experiences we create on the web to catch up. <br /><br /> GraphQL is Facebook’s response to this challenge and it is quickly proving itself as an exciting alternative to RESTful APIs for a wide range of contexts. GraphQL is a query language that provides a clean and simple syntax for consumers to interrogate your APIs. These queries are strongly typed, hierarchical and enable clients to retrieve only the data they need. <br /><br /> In addition to the familiar pull based request-response pattern, GraphQL provides a mechanism for clients to subscribe to real-time updates in the form of Subscriptions. Subscriptions are exciting as they represent the core ability we need to satisfy the connected push based experience that our users demand. <br /><br />  In this talk, we will take a hands-on look at GraphQL and see how it can be used to build real-time APIs that are a joy to use. Additionally, we will see how we can integrate a React client with GraphQL using Relay Modern, Facebook's JavaScript framework for building data driven applications. By the end of the session you will understand what is required to craft a compelling real-time user experience with GraphQL, and have the knowledge to deliver on these requirements."
     },
     {
-      name: 'Maz Hermon',
-      twitter: 'mazhermon',
-      url: 'http://mazhermon.com/',
+      name: 'Jessica Norris and Ben Taylor',
+      // twitter: 'groklearning',
+      // url: '',
       announced: true,
-      image: require('./assets/speaker-maz.jpg'),
+      image: require('./assets/speaker-jess-and-ben.jpg'),
       bio:
-        "Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.",
-      location: 'Wellington, New Zealand',
-      talk:
-        "How is a UI component library the 'Mise en place' of the modern Web-Chef’s kitchen?",
+        "Ben is a software developer and interface designer with a passion for building usable edtech. In his holidays he teaches coding to high school students and in his spare time he studies and researches learning & technology at university. <br /><br /> Jess loves to get deep into the nitty gritty of a software project, especially if it involves designing elegant APIs or complicated algorithms. When not making software, she spends her energy doing creative things - sewing, weaving, and making pillow forts with the kids.",
+      location: 'Sydney, Australia',
+      talk: 'How to keep your server alive AND teach JS to kids',
       talkAbstract:
-        "Do you need help convincing your team or wider company they’d benefit from creating a living style guide and UI component library? Or getting buy in on why the one you’ve started is a good idea? Let’s run through a fun analogy comparing how having a design system and building a front-end component library is like the essential afternoon preparation session in a high performing kitchen known as ‘Mise en place’. You’ll learn how to explain how having this in place seperates the amatures from the professionals in kitchens around the world, and will ensure that by the time users walk in the virtual door, the dev kitchen is operating at high speed with grace, and no one’s left waiting, grumpily staring down the wait-staff with their best evil-eyes. <br /><br />This talk will benefit you regardless of what level you're at. You’ll come away with a new way to explain to your technical and non-technical stakeholders why you and your team should be given the go ahead to support the successful fast paced delivery of features and products for your users. Don’t sit back and say ‘I told you so’ when things slow to crawl and you're all tangled in legacy code and specifity wars with your heavy CSS. Instead, come and learn a new way to frame the argument to ensure you’ve given everyone the best chance to realise what you already know to be true, before it’s too late."
+        "We’re all buzzing about Headless Chrome and how we can automate our testing, but what if we go one step further and try automated marking of… untrusted student code? <br /><br /> Imagine the sort of code you first wrote — full of syntax errors and infinite loops — now load that code on to a server and click ‘Test’. What happens? Did you crash the page? Did it do anything? <br /><br /> At Grok Learning we are allowing kids as young as twelve (think ‘Stranger Things’!) to do exactly that. Come discover the challenges we had putting together a JavaScript course with a smart automatic marker that defends our system against whatever crazy code they come up with. <br /><br /> We’ll get technical and talk about how we’re using Headless Chrome and Puppeteer inside our server-side marker. We’ll dip into what makes it ‘smart’ — good feedback and hints to help students understand why their code doesn’t work the way they expected. And we’ll chat about how to make a good learning experience for JavaScript. <br /><br /> Let’s ditch to-do list tutorials and make something better!"
     }
   ],
   workshops: [
