@@ -90,7 +90,7 @@ export default ({ conference }) => {
                 <HeadlineSmall>{speaker.name}</HeadlineSmall>
               </LinkThemed>
               <SpeakerLocation>{speaker.location}</SpeakerLocation>
-              <p>{speaker.bio}</p>
+              <p dangerouslySetInnerHTML={{ __html: speaker.bio }} />
               <SpeakerTalk>
                 <HeadlineSmall>{speaker.talk}</HeadlineSmall>
                 <TalkAbstract
