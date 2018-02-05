@@ -834,6 +834,19 @@ export const Decompress = {
       talk: '50,000 lines of spaghetti code (and how to unravel it)',
       talkAbstract:
         "To our wonderful users the web-app looked fine. It had a nice UI, a tonne of useful features, and mostly seemed to work. But our team of two engineers knew the truth - the app was a mess. Bug fixes that should be simple eluded us. Features that should have taken 2 weeks took 2 months. And users started telling us the app was crashing their browser (it turns out we were leaking memory and the tab was using over 2GB!). This talk shares the story of how I joined a start-up that in its 3 short years had already accumulated a tonne of technical debt - and how my fellow engineer and I took a 50,000 line code base of unstructured jQuery, untyped Angular, and a bunch of scary Grunt tasks, and turned it into a well structured React App, using Webpack to handle our assets and split our bundle, MobX to simplify our page interactions, Flow to add type safety to our code piece by piece, and Jest to test it all. And also how we dealt with those nasty memory leaks using Chrome dev tools so the app stopped crashing. Just as importantly - I’ll share the secrets of how we convinced the non-technical management team that this massive investment was worth it, and had them excited about paying down technical debt. If you have a codebase you’re ashamed to let other engineers look at, if you’re looking at a code-cleanup that feels like it’ll be an insurmountable task, if you are sick of dealing with code that has names like “AbstractModuleDataStrategy” that don’t mean anything, and maybe don’t even do anything, and you’re not even sure anymore, then this is the talk for you. We will map a path out of the spaghetti. Or if you have it all together and always write beautiful, maintainable, well structured code and would like to come and laugh at me and my horror stories, this may also be the talk for you."
+    },
+    {
+      name: 'Jess Champion',
+      twitter: 'jess_champion',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-jess-champion.jpg'),
+      bio:
+        "With a background spanning product development, operations and project delivery, Jess has developed a zealous focus on the quality and maintainability of software. While she can happily work across the full stack, Jess has a passion for all things frontend, and is always looking for ways to leverage new technologies to craft digital experiences.",
+      location: 'Wellington, New Zealand',
+      talk: 'A unit test walks into a bar',
+      talkAbstract:
+        "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."
     }
   ],
   workshops: [
