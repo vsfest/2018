@@ -821,6 +821,19 @@ export const Decompress = {
       talk: 'How to keep your server alive AND teach JS to kids',
       talkAbstract:
         "We’re all buzzing about Headless Chrome and how we can automate our testing, but what if we go one step further and try automated marking of… untrusted student code? <br /><br /> Imagine the sort of code you first wrote — full of syntax errors and infinite loops — now load that code on to a server and click ‘Test’. What happens? Did you crash the page? Did it do anything? <br /><br /> At Grok Learning we are allowing kids as young as twelve (think ‘Stranger Things’!) to do exactly that. Come discover the challenges we had putting together a JavaScript course with a smart automatic marker that defends our system against whatever crazy code they come up with. <br /><br /> We’ll get technical and talk about how we’re using Headless Chrome and Puppeteer inside our server-side marker. We’ll dip into what makes it ‘smart’ — good feedback and hints to help students understand why their code doesn’t work the way they expected. And we’ll chat about how to make a good learning experience for JavaScript. <br /><br /> Let’s ditch to-do list tutorials and make something better!"
+    },
+    {
+      name: 'Jason O\'Neil',
+      twitter: 'jasonaoneil',
+      url: 'https://jasono.co/',
+      announced: true,
+      image: require('./assets/speaker-jason.jpg'),
+      bio:
+        "Jason recently joined Culture Amp as a specialist in front-end developer tools. He wants software engineers to enjoy their jobs and so rages against technical debt, slow iteration cycles and lousy error messages.",
+      location: 'Melbourne, Australia',
+      talk: '50,000 lines of spaghetti code (and how to unravel it)',
+      talkAbstract:
+        "To our wonderful users the web-app looked fine. It had a nice UI, a tonne of useful features, and mostly seemed to work. But our team of two engineers knew the truth - the app was a mess. Bug fixes that should be simple eluded us. Features that should have taken 2 weeks took 2 months. And users started telling us the app was crashing their browser (it turns out we were leaking memory and the tab was using over 2GB!). This talk shares the story of how I joined a start-up that in its 3 short years had already accumulated a tonne of technical debt - and how my fellow engineer and I took a 50,000 line code base of unstructured jQuery, untyped Angular, and a bunch of scary Grunt tasks, and turned it into a well structured React App, using Webpack to handle our assets and split our bundle, MobX to simplify our page interactions, Flow to add type safety to our code piece by piece, and Jest to test it all. And also how we dealt with those nasty memory leaks using Chrome dev tools so the app stopped crashing. Just as importantly - I’ll share the secrets of how we convinced the non-technical management team that this massive investment was worth it, and had them excited about paying down technical debt. If you have a codebase you’re ashamed to let other engineers look at, if you’re looking at a code-cleanup that feels like it’ll be an insurmountable task, if you are sick of dealing with code that has names like “AbstractModuleDataStrategy” that don’t mean anything, and maybe don’t even do anything, and you’re not even sure anymore, then this is the talk for you. We will map a path out of the spaghetti. Or if you have it all together and always write beautiful, maintainable, well structured code and would like to come and laugh at me and my horror stories, this may also be the talk for you."
     }
   ],
   workshops: [
@@ -845,6 +858,28 @@ export const Decompress = {
         'Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!',
       location: 'New York, USA',
       talk: 'Generative Art with JavaScript and HTML5 Canvas'
+    },
+    {
+      name: 'Anna Gerber',
+      twitter: 'AnnaGerber',
+      url: 'http://crufti.com/about-anna/',
+      announced: true,
+      image: require('./assets/speaker-anna.jpg'),
+      bio:
+        'Anna is a backend Node.js developer from Brisbane. An avid maker and crafter, Anna also enjoys teaching sewable electronics and 3D printing, as well as how to build robots and IoT devices using MicroPython and Node.js.',
+      location: 'Brisbane, Australia',
+      talk: 'Building NodeBots with NodeJS'
+    },
+    {
+      name: 'Sarah Goodwin',
+      twitter: 'sgeoviz',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-sarah.jpg'),
+      bio:
+        'Sarah has worked in data analytics and visualisation for over 10 years. Her work explores new ways to visualise and explain complex multi-dimensional spatio-temporal datasets. She also teaches visualisation and cartographic design skills.',
+      location: 'Melbourne, Australia',
+      talk: 'Visualising Geographical Data with MapBox'
     }
   ]
 }
