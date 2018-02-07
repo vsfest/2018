@@ -195,6 +195,12 @@ export const JS = {
       url: 'https://www.ampproject.org/',
       image: require('./assets/sponsor-amp.svg'),
       tier: 'title'
+    },
+    {
+      name: 'SiteMinder',
+      url: 'https://www.siteminder.com/',
+      image: require('./assets/sponsor-siteminder.svg'),
+      tier: 'main'
     }
   ],
   speakers: [
@@ -762,7 +768,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-maz.jpg'),
       bio:
-        "Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.",
+        'Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.',
       location: 'Wellington, New Zealand',
       talk:
         "How is a UI component library the 'Mise en place' of the modern Web-Chef’s kitchen?",
@@ -816,11 +822,11 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-jess-and-ben.jpg'),
       bio:
-        "Ben is a software developer and interface designer with a passion for building usable edtech. In his holidays he teaches coding to high school students and in his spare time he studies and researches learning & technology at university. <br /><br /> Jess loves to get deep into the nitty gritty of a software project, especially if it involves designing elegant APIs or complicated algorithms. When not making software, she spends her energy doing creative things - sewing, weaving, and making pillow forts with the kids.",
+        'Ben is a software developer and interface designer with a passion for building usable edtech. In his holidays he teaches coding to high school students and in his spare time he studies and researches learning & technology at university. <br /><br /> Jess loves to get deep into the nitty gritty of a software project, especially if it involves designing elegant APIs or complicated algorithms. When not making software, she spends her energy doing creative things - sewing, weaving, and making pillow forts with the kids.',
       location: 'Sydney, Australia',
       talk: 'How to keep your server alive AND teach JS to kids',
       talkAbstract:
-        "We’re all buzzing about Headless Chrome and how we can automate our testing, but what if we go one step further and try automated marking of… untrusted student code? <br /><br /> Imagine the sort of code you first wrote — full of syntax errors and infinite loops — now load that code on to a server and click ‘Test’. What happens? Did you crash the page? Did it do anything? <br /><br /> At Grok Learning we are allowing kids as young as twelve (think ‘Stranger Things’!) to do exactly that. Come discover the challenges we had putting together a JavaScript course with a smart automatic marker that defends our system against whatever crazy code they come up with. <br /><br /> We’ll get technical and talk about how we’re using Headless Chrome and Puppeteer inside our server-side marker. We’ll dip into what makes it ‘smart’ — good feedback and hints to help students understand why their code doesn’t work the way they expected. And we’ll chat about how to make a good learning experience for JavaScript. <br /><br /> Let’s ditch to-do list tutorials and make something better!"
+        'We’re all buzzing about Headless Chrome and how we can automate our testing, but what if we go one step further and try automated marking of… untrusted student code? <br /><br /> Imagine the sort of code you first wrote — full of syntax errors and infinite loops — now load that code on to a server and click ‘Test’. What happens? Did you crash the page? Did it do anything? <br /><br /> At Grok Learning we are allowing kids as young as twelve (think ‘Stranger Things’!) to do exactly that. Come discover the challenges we had putting together a JavaScript course with a smart automatic marker that defends our system against whatever crazy code they come up with. <br /><br /> We’ll get technical and talk about how we’re using Headless Chrome and Puppeteer inside our server-side marker. We’ll dip into what makes it ‘smart’ — good feedback and hints to help students understand why their code doesn’t work the way they expected. And we’ll chat about how to make a good learning experience for JavaScript. <br /><br /> Let’s ditch to-do list tutorials and make something better!'
     }
   ],
   workshops: [
