@@ -6,7 +6,6 @@ import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from '../shared/components/Container'
 import { LinkThemed } from './components/Links'
-import { ButtonThemed } from './components/Buttons'
 
 const StyledLink = LinkThemed.withComponent(Link)
 
