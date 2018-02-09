@@ -552,6 +552,12 @@ export const CSS = {
       url: 'https://today.design/',
       image: require('./assets/sponsor-today.svg'),
       tier: 'diversity'
+    },
+    {
+      name: 'Cocina Mexico',
+      url: 'http://www.locotaco.com.au/',
+      image: require('./assets/sponsor-cocina.jpg'),
+      tier: 'community'
     }
   ],
   speakers: [
