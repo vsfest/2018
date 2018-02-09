@@ -50,7 +50,21 @@ export default ({ conference }) => {
         <title>Schedule — {conference.title}</title>
       </Helmet>
       <Headline>Schedule</Headline>
-      <HeadlineSmall>Day One</HeadlineSmall>
+      <HeadlineSmall>March 19</HeadlineSmall>
+      <ScheduleWrapper>
+        <ScheduleItem>
+          <Time>18:00</Time>
+          <ScheduleItemContent>
+            Community Social (non-attendees welcome)
+            <LinkThemed href="https://www.stompingground.beer/">
+              Stomping Ground Brewing Co (100 Gipps Street, Collingwood VIC
+              3066)
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+      </ScheduleWrapper>
+
+      <HeadlineSmall>March 21 — Day One</HeadlineSmall>
       <ScheduleWrapper>
         <ScheduleItem>
           <Time>8:30</Time>
@@ -150,12 +164,18 @@ export default ({ conference }) => {
           <ScheduleItemContent>Closing Remarks</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>17:00</Time>
-          <ScheduleItemContent>Party</ScheduleItemContent>
+          <Time>18:00</Time>
+          <ScheduleItemContent>
+            Party
+            <LinkThemed href="http://www.pilgrimbar.com.au/">
+              Pilgrim Bar (Vaults 15-19 Federation Wharf Federation Square,
+              Melbourne 3000)
+            </LinkThemed>
+          </ScheduleItemContent>
         </ScheduleItem>
       </ScheduleWrapper>
 
-      <HeadlineSmall>Day Two</HeadlineSmall>
+      <HeadlineSmall>March 22 — Day Two</HeadlineSmall>
 
       <ScheduleWrapper>
         <ScheduleItem>
@@ -258,7 +278,7 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>17:15</Time>
-          <ScheduleItemContent>Party</ScheduleItemContent>
+          <ScheduleItemContent>Party at the Meat Market</ScheduleItemContent>
         </ScheduleItem>
       </ScheduleWrapper>
     </Container>
