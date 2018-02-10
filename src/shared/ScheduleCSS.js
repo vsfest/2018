@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Headline from './components/Headline'
 import Container from '../shared/components/Container'
 import { LinkThemed } from './components/Links'
+import HeadlineSmall from './components/HeadlineSmall'
 
 const ScheduleWrapper = styled.ul`
   list-style-type: none;
@@ -44,6 +45,20 @@ export default ({ conference }) => {
         <title>Schedule — {conference.title}</title>
       </Helmet>
       <Headline>Schedule</Headline>
+      <HeadlineSmall>March 19</HeadlineSmall>
+      <ScheduleWrapper>
+        <ScheduleItem>
+          <Time>18:00</Time>
+          <ScheduleItemContent>
+            Community Social (non-attendees welcome)
+            <LinkThemed href="https://www.stompingground.beer/">
+              Stomping Ground Brewing Co (100 Gipps Street, Collingwood VIC
+              3066)
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+      </ScheduleWrapper>
+      <HeadlineSmall>March 20</HeadlineSmall>
       <ScheduleWrapper>
         <ScheduleItem>
           <Time>8:30</Time>
@@ -161,7 +176,7 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>18:00</Time>
-          <ScheduleItemContent>Party</ScheduleItemContent>
+          <ScheduleItemContent>Party at the Meat Market</ScheduleItemContent>
         </ScheduleItem>
       </ScheduleWrapper>
     </Container>

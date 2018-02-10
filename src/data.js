@@ -195,6 +195,12 @@ export const JS = {
       url: 'https://www.ampproject.org/',
       image: require('./assets/sponsor-amp.svg'),
       tier: 'title'
+    },
+    {
+      name: 'SiteMinder',
+      url: 'https://www.siteminder.com/',
+      image: require('./assets/sponsor-siteminder.svg'),
+      tier: 'main'
     }
   ],
   speakers: [
@@ -546,6 +552,12 @@ export const CSS = {
       url: 'https://today.design/',
       image: require('./assets/sponsor-today.svg'),
       tier: 'diversity'
+    },
+    {
+      name: 'Cocina Mexico',
+      url: 'http://www.locotaco.com.au/',
+      image: require('./assets/sponsor-cocina.jpg'),
+      tier: 'community'
     }
   ],
   speakers: [
@@ -762,7 +774,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-maz.jpg'),
       bio:
-        "Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.",
+        'Maz Hermon is a front-end dev at Trade Me in New Zealand currently working with a great team on an epic responsive rebuild of a large and well-loved NZ e-commerce site. Maz has a passion for scalable CSS, UI component libraries and living style guides, accessibility and all things web. When not doing these things Maz enjoys time with his young family, drawing funny characters and music making.',
       location: 'Wellington, New Zealand',
       talk:
         "How is a UI component library the 'Mise en place' of the modern Web-Chef’s kitchen?",
@@ -816,7 +828,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-jess-and-ben.jpg'),
       bio:
-        "Ben is a software developer and interface designer with a passion for building usable edtech. In his holidays he teaches coding to high school students and in his spare time he studies and researches learning & technology at university. <br /><br /> Jess loves to get deep into the nitty gritty of a software project, especially if it involves designing elegant APIs or complicated algorithms. When not making software, she spends her energy doing creative things - sewing, weaving, and making pillow forts with the kids.",
+        'Ben is a software developer and interface designer with a passion for building usable edtech. In his holidays he teaches coding to high school students and in his spare time he studies and researches learning & technology at university. <br /><br /> Jess loves to get deep into the nitty gritty of a software project, especially if it involves designing elegant APIs or complicated algorithms. When not making software, she spends her energy doing creative things - sewing, weaving, and making pillow forts with the kids.',
       location: 'Sydney, Australia',
       talk: 'How to keep your server alive AND teach JS to kids',
       talkAbstract:
@@ -846,8 +858,7 @@ export const Decompress = {
       location: 'Wellington, New Zealand',
       talk: 'A unit test walks into a bar',
       talkAbstract:
-        "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."
-    }
+        "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."    }
   ],
   workshops: [
     {

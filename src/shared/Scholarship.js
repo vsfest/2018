@@ -6,7 +6,6 @@ import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import Container from '../shared/components/Container'
 import { LinkThemed } from './components/Links'
-import { ButtonThemed } from './components/Buttons'
 
 const StyledLink = LinkThemed.withComponent(Link)
 
@@ -20,13 +19,13 @@ const SponsorContainer = styled.div`
 const Sponsor = styled.div`
   &:not(:only-child) {
     @media (min-width: 768px) {
-      margin-right: 30px;
+      margin-right: 15px;
     }
   }
 
   a {
     display: table;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 30px;
     justify-content: center;
     background-color: ${props => props.theme.secondary};
@@ -44,7 +43,7 @@ const Sponsor = styled.div`
   }
 
   img {
-    ${props => (props.tier === 'main' ? 'height: 60px;' : 'height: 40px;')};
+    height: 60px;
     max-width: 100%;
     display: table-cell;
     transition: all 0.2s ease;
@@ -125,24 +124,15 @@ export default ({ conference }) => {
       </ul>
       <HeadlineSmall>How to apply</HeadlineSmall>
       <p>
-        To apply, please{' '}
-        <LinkThemed href="https://goo.gl/forms/UzUOgp59cCgo2Omu2">
-          fill out the application form
-        </LinkThemed>. All information will be kept confidential except the
-        review committee. You’ll be notified of the result no matter the
-        outcome.
+        All information will be kept confidential except the review committee.
+        You’ll be notified of the result no matter the outcome. The program is
+        now closed.
       </p>
 
       <ul>
         <li>Applications close: January 1, 2018</li>
         <li>Application notification: January 15, 2018</li>
       </ul>
-
-      <p>
-        <ButtonThemed href="https://goo.gl/forms/UzUOgp59cCgo2Omu2">
-          Apply for a free ticket to {conference.title}
-        </ButtonThemed>
-      </p>
 
       <HeadlineSmall>How can I tell you care about inclusion?</HeadlineSmall>
       <p>

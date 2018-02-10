@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { CSS, JS, Decompress } from '../data'
 
 import Headline from './components/Headline'
-import Copy from './components/Copy'
 import { LinkThemed } from './components/Links'
 
 const Schedule = styled.div`
