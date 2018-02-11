@@ -858,7 +858,21 @@ export const Decompress = {
       location: 'Wellington, New Zealand',
       talk: 'A unit test walks into a bar',
       talkAbstract:
-        "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."    }
+        "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."
+    },
+    {
+      name: 'Cory-Ann Joseph',
+      twitter: 'coryannj',
+      // url: '',
+      announced: false,
+      image: require('./assets/speaker-cory.jpg'),
+      bio:
+        "Cory started working with the internet way back in 2001 when she chanced her way into a position as web content editor for the Aussie version of the X-Games. Since then she's dabbled in PR, marketing, events management, a skateboard shop, worked as a barista, accrued a blank IMDB profile, run pub poker tournaments in rural NSW, and dropped out of Bible college - amongst other things. She currently works as a UX Lead at ANZ.",
+      location: 'Melbourne, Australia',
+      talk: 'Why a poker playing AI should have you looking for a new job',
+      talkAbstract:
+        "A 2013 report called 'The Future of Employment: How susceptible are jobs to computerisation?' left some occupations like soccer umpires feeling very vulnerable, and designers feeling very smug. However as a weird mix of content strategist, UX designer and former poker player my smug job-secure world was thrown upside down by the success of the Libratus poker AI in January of this year - the first to comprehensively beat multiple poker professionals over a series of four days. If you’re wondering what poker has to do with design - the answer is a lot! In this talk I’ll cover why the mix of probability, pattern-matching, human behaviour and context in poker strategy is a good model for design, how game theory in poker strategy might be used to ‘solve’ design (and possibly front-end dev!), where design AI efforts are at, and why we should stop treating AI like a digital butler and start imagining the tools of the future - even it if puts you out of a job."
+    }
   ],
   workshops: [
     {

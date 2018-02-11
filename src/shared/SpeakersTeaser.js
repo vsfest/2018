@@ -30,9 +30,15 @@ const SpeakersWrapper = styled.div`
 `
 
 export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) => {
-  const announcedSpeakers = (speakers.concat(workshops || [])).filter(
+  const announcedWorkshops = (workshops || []).filter(
+    workshop => workshop.announced === true
+  )
+  const announcedSpeakers = speakers.filter(
     speaker => speaker.announced === true
   )
+  const announcedPresenters = announcedSpeakers.concat(announcedWorkshops.reduce((list, workshop) => {
+    return list.concat(workshop.speakers)
+  }, []))
 
   return (
     <div>
@@ -52,7 +58,7 @@ export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) =>
         <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
       </Copy>
       <SpeakersWrapper>
-        {announcedSpeakers.map((speaker, i) => {
+        {announcedPresenters.map((speaker, i) => {
           return (
             <Speaker key={i} {...speaker}>
               <img src={speaker.image} alt={speaker.name} />
