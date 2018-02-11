@@ -10,17 +10,26 @@ import Copy from './components/Copy'
 
 const StyledLink = LinkThemed.withComponent(Link)
 
+const Workshop = styled.div`
+  @media (min-width: 48em) {
+    text-align: left;
+    margin-bottom: 70px;
+  }
+
+  text-align: center;
+  margin-bottom: 50px;
+`
+
 const Speaker = styled.div`
   @media (min-width: 48em) {
     display: grid;
     grid-template-columns: 250px auto;
     grid-column-gap: 60px;
     text-align: left;
-    margin-bottom: 90px;
   }
 
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 
   img {
     width: 250px;
@@ -31,21 +40,8 @@ const Speaker = styled.div`
   }
 
   ${HeadlineSmall} {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
-`
-
-const SpeakerTalk = styled.div`
-  background-color: ${props => props.theme.secondary};
-  padding: 30px;
-
-  ${HeadlineSmall} {
-    overflow-wrap: break-word;
-  }
-`
-
-const TalkAbstract = styled.p`
-  margin: 30px 0 0 0;
 `
 
 const SpeakerLocation = styled.p`
@@ -81,21 +77,23 @@ export default ({ conference }) => {
         <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
       </Copy>
 
-      {announcedWorkshops.map((speaker, i) => {
+      {announcedWorkshops.map((workshop, i) => {
         return (
-          <Speaker key={i} {...speaker} id={speaker.twitter}>
-            <img src={speaker.image} alt={speaker.name} />
-            <div>
-              <HeadlineSmall>{speaker.talk}</HeadlineSmall>
-              <SpeakerTalk>
-                <LinkThemed href={`https://twitter.com/${speaker.twitter}`}>
-                  <HeadlineSmall>{speaker.name}</HeadlineSmall>
-                  <SpeakerLocation>{speaker.location}</SpeakerLocation>
-                </LinkThemed>
-                <p>{speaker.bio}</p>
-              </SpeakerTalk>
-            </div>
-          </Speaker>
+          <Workshop key={i}>
+            <HeadlineSmall>{workshop.talk}</HeadlineSmall>
+            {workshop.speakers.map((speaker, j) => (
+              <Speaker key={j}>
+                <img src={speaker.image} alt={speaker.name} />
+                <div>
+                  <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
+                    <HeadlineSmall>{speaker.name}</HeadlineSmall>
+                    <SpeakerLocation>{speaker.location}</SpeakerLocation>
+                  </LinkThemed>
+                  <p>{speaker.bio}</p>
+                </div>
+              </Speaker>
+            ))}
+          </Workshop>
         )
       })}
     </Container>

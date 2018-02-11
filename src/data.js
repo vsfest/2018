@@ -862,48 +862,103 @@ export const Decompress = {
   ],
   workshops: [
     {
-      name: 'Mandy Michael',
-      twitter: 'mandy_kerr',
-      // url: '',
+      talk: 'Creative Text Effects with CSS',
       announced: true,
-      image: require('./assets/speaker-mandy.jpg'),
-      bio:
-        'Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.',
-      location: 'Perth, Australia',
-      talk: 'Creative Text Effects with CSS'
+      speakers: [
+        {
+          name: 'Mandy Michael',
+          twitter: 'mandy_kerr',
+          // url: '',
+          image: require('./assets/speaker-mandy.jpg'),
+          bio:
+            'Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.',
+          location: 'Perth, Australia'
+        }
+      ]
     },
     {
-      name: 'Tim Holman',
-      twitter: 'twholman',
-      // url: '',
+      talk: 'Generative Art with JavaScript and HTML5 Canvas',
       announced: true,
-      image: require('./assets/speaker-tim.jpg'),
-      bio:
-        'Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!',
-      location: 'New York, USA',
-      talk: 'Generative Art with JavaScript and HTML5 Canvas'
+      speakers: [
+        {
+          name: 'Tim Holman',
+          twitter: 'twholman',
+          // url: '',
+          image: require('./assets/speaker-tim.jpg'),
+          bio:
+            'Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!',
+          location: 'New York, USA'
+        }
+      ]
     },
     {
-      name: 'Anna Gerber',
-      twitter: 'AnnaGerber',
-      url: 'http://crufti.com/about-anna/',
+      talk: 'Building NodeBots with NodeJS',
       announced: true,
-      image: require('./assets/speaker-anna.jpg'),
-      bio:
-        'Anna is a backend Node.js developer from Brisbane. An avid maker and crafter, Anna also enjoys teaching sewable electronics and 3D printing, as well as how to build robots and IoT devices using MicroPython and Node.js.',
-      location: 'Brisbane, Australia',
-      talk: 'Building NodeBots with NodeJS'
+      speakers: [
+        {
+          name: 'Anna Gerber',
+          twitter: 'AnnaGerber',
+          url: 'http://crufti.com/about-anna/',
+          image: require('./assets/speaker-anna.jpg'),
+          bio:
+            'Anna is a backend Node.js developer from Brisbane. An avid maker and crafter, Anna also enjoys teaching sewable electronics and 3D printing, as well as how to build robots and IoT devices using MicroPython and Node.js.',
+          location: 'Brisbane, Australia'
+        }
+      ]
     },
     {
-      name: 'Sarah Goodwin',
-      twitter: 'sgeoviz',
-      // url: '',
+      talk: 'Visualising Geographical Data with MapBox',
       announced: true,
-      image: require('./assets/speaker-sarah.jpg'),
-      bio:
-        'Sarah has worked in data analytics and visualisation for over 10 years. Her work explores new ways to visualise and explain complex multi-dimensional spatio-temporal datasets. She also teaches visualisation and cartographic design skills.',
-      location: 'Melbourne, Australia',
-      talk: 'Visualising Geographical Data with MapBox'
+      speakers: [
+        {
+          name: 'Sarah Goodwin',
+          twitter: 'sgeoviz',
+          // url: '',
+          image: require('./assets/speaker-sarah.jpg'),
+          bio:
+            'Sarah has worked in data analytics and visualisation for over 10 years. Her work explores new ways to visualise and explain complex multi-dimensional spatio-temporal datasets. She also teaches visualisation and cartographic design skills.',
+          location: 'Melbourne, Australia'
+        }
+      ]
+    },
+    {
+      talk: 'Creating Virtual Worlds with ThreeJS',
+      announced: true,
+      speakers: [
+        {
+          name: 'Xavier Ho',
+          twitter: 'Xavier_Ho',
+          url: 'https://jumptoglide.com/',
+          image: require('./assets/speaker-xavier.jpg'),
+          bio:
+            "Xavier Ho is a curiosity-driven designer, researcher and software engineer at CSIRO's Data61. He has worked on high-impact projects at CSIRO in climate science, agricultural roads optimisation, and developing data visualisation for scientists using ThreeJS, D3.js, Mapbox, Vue.js, and more. He speaks both Python and Javascript, and he hopes to pick up Haskell one day.",
+          location: 'Melbourne, Australia'
+        },
+        {
+          name: 'Bosco Ho',
+          // twitter: '',
+          url: 'http://boscoh.com/',
+          image: require('./assets/speaker-bosco.jpg'),
+          bio:
+            "Bosco is a scientific programmer at CSIRO's Data61, James Cook University and Monash University. He works in web programming, molecular graphics and epidemiology with a mix of Javascript and Python using Vue.js, Flask and of course, ThreeJS.",
+          location: 'Melbourne, Australia'
+        }
+      ]
+    },
+    {
+      talk: 'Reliable Front-end Development with Elm',
+      announced: false,
+      speakers: [
+        {
+          name: 'Sebastian Porto',
+          twitter: 'sebasporto',
+          // url: '',
+          image: require('./assets/speaker-sebastian.jpg'),
+          bio:
+            "Sebastian is a web developer working for Stax.io. He has worked on a variety of languages and frameworks in the FE, Elm is his current tool of choice for building fast and reliable web applications.",
+          location: 'Melbourne, Australia'
+        },
+      ]
     }
   ]
 }
