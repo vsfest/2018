@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Headline from './components/Headline'
 import { ButtonThemed } from './components/Buttons'
 import { LinkThemed } from './components/Links'
-import withConference from './withConference'
 
 const Button = ButtonThemed.withComponent('button')
 
@@ -73,4 +72,4 @@ export default ({ twitter, mailingList, team }) => {
       </form>
     </MailingList>
   )
-})
+}
