@@ -4,22 +4,28 @@ import { Decompress } from '../data'
 import Masthead from '../shared/Masthead'
 import Logo from '../shared/Logo'
 import EventInfo from '../shared/EventInfo'
-import Schedule from '../shared/Schedule'
+import EventsList from '../shared/EventsList'
 import MailingList from '../shared/MailingList'
 import CodeOfConduct from '../shared/CodeOfConduct'
 import Sponsorship from '../shared/Sponsorship'
+import SpeakersTeaser from '../shared/SpeakersTeaser'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
-import { Section } from '../shared/components/Section'
 import News from '../shared/News'
+import { Section, SectionBannerExpanded } from '../shared/components/Section'
 
 export default () => (
   <Home conference={Decompress}>
     <Masthead {...Decompress} />
-    <Container>
-      <Logo src={Decompress.logo} />
-      <Section>
+    <SectionBannerExpanded>
+      <Container>
+        <Logo src={Decompress.logo} />
         <EventInfo {...Decompress} />
+      </Container>
+    </SectionBannerExpanded>
+    <Container>
+      <Section>
+        <SpeakersTeaser {...Decompress} />
       </Section>
 
       <Section>
@@ -27,7 +33,7 @@ export default () => (
       </Section>
 
       <Section>
-        <Schedule />
+        <EventsList />
       </Section>
 
       <Section>
@@ -38,9 +44,7 @@ export default () => (
         <CodeOfConduct />
       </Section>
 
-      <Section>
-        <Sponsorship {...Decompress.contact} />
-      </Section>
+      <Sponsorship {...Decompress} />
     </Container>
 
     <Footer {...Decompress} />

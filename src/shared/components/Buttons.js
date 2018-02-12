@@ -9,13 +9,10 @@ const Button = styled.a`
   transition: all 0.2s ease-in;
   display: inline-block;
   text-decoration: none;
+  border-radius: 0;
 
   &:focus {
     outline: none;
-  }
-
-  &:hover {
-    transform: translateY(4px);
   }
 `
 
@@ -23,10 +20,14 @@ const ButtonThemed = Button.extend`
   background-color: ${props => props.theme.primary};
   color: white;
 
+  &:hover {
+    transform: translateY(4px);
+  }
+
   &:hover,
   &:active {
     background-color: ${props => props.theme.primaryHover};
   }
 `
 
-export { ButtonThemed }
+export { Button, ButtonThemed }

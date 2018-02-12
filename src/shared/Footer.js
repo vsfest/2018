@@ -3,143 +3,155 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import HeadlineSmall from './components/HeadlineSmall'
-import Container from './components/Container'
+import { LinkGreyed } from './components/Links'
+
+const StyledLink = LinkGreyed.withComponent(Link)
 
 const Footer = styled.div`
-  font-size: 16px;
-  margin-top: 30px;
+  padding: 30px;
+  margin-top: 60px;
+  background-color: hsla(0, 0%, 13%, 1);
+  color: hsla(0, 0%, 67%, 1);
 
   footer {
-    border-top: 2px solid ${props => props.theme.secondary};
-    padding-top: 30px;
-
-    @media (min-width: 48em) {
+    @media (min-width: 920px) {
       display: flex;
     }
   }
-
-  a {
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    color: ${props => props.theme.primary};
-
-    &:focus {
-      outline: none;
-    }
-
-    &:hover {
-      text-decoration: underline;
-      color: ${props => props.theme.primaryHover};
-    }
-  }
-
-  div {
-    flex: 50%;
-  }
-
   ul {
     list-style-type: none;
-    margin: 0 0 15px 0;
+    margin: 30px 0;
   }
 
   li {
-    display: inline-block;
-    padding-right: 7px;
-  }
-
-  a,
-  img,
-  span {
-    margin-right: 7px;
+    margin-bottom: 15px;
   }
 
   img {
+    margin-right: 7px;
     margin-bottom: 30px;
+  }
+`
+
+const Column = styled.div`
+  @media (min-width: 768px) {
+    flex: 25%;
+    padding: 30px;
+  }
+`
+
+const Acknowledgement = styled.div`
+  padding: 30px;
+  text-align: center;
+
+  p {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 
 export default ({ isCfpOpen, contact, previousEvents }) => {
   const team = contact.team
-  const sponsorship = contact.sponsorship
 
   return (
     <Footer>
-      <Container>
-        <footer role="contentinfo">
-          <div>
-            <HeadlineSmall>About</HeadlineSmall>
-            <ul>
-              <li>
-                <Link to="team">Team</Link>•
-              </li>
-              <li>
-                <Link to="code-of-conduct">Code of Conduct</Link>•
-              </li>
-              <li>
-                <a href={`mailto:${team}`}>Contact</a>
-              </li>
-            </ul>
+      <footer role="contentinfo">
+        <Column>
+          <HeadlineSmall>About</HeadlineSmall>
+          <ul>
+            <li>
+              <StyledLink to="information">Information</StyledLink>
+            </li>
+            <li>
+              <StyledLink to="team">Team</StyledLink>
+            </li>
+            <li>
+              <LinkGreyed href={`mailto:${team}`}>Contact</LinkGreyed>
+            </li>
+          </ul>
+        </Column>
 
-            <HeadlineSmall>Get Involved</HeadlineSmall>
-            <ul>
+        <Column>
+          <HeadlineSmall>Get Involved</HeadlineSmall>
+          <ul>
+            <li>
+              <StyledLink to="sponsors">Sponsor</StyledLink>
+            </li>
+            {isCfpOpen ? (
               <li>
-                <a href={`mailto:${sponsorship}`}>Sponsor</a>•
+                <StyledLink to="call-for-speakers">Become a Speaker</StyledLink>
               </li>
-              {isCfpOpen ? (
-                <li>
-                  <Link to="call-for-speakers">Call for Speakers</Link>
-                </li>
-              ) : null}
-            </ul>
-          </div>
+            ) : null}
+          </ul>
+        </Column>
 
-          <div>
-            <HeadlineSmall>Past Events</HeadlineSmall>
-            <ul>
-              {previousEvents.map((event, i) => {
-                if (event.url)
-                  return (
-                    <li key={i}>
-                      <a href={event.url}>{event.title}</a>
-                      {i === previousEvents.length - 1 ? null : '•'}
-                    </li>
-                  )
+        <Column>
+          <HeadlineSmall>Diversity & Inclusion</HeadlineSmall>
+          <ul>
+            <li>
+              <StyledLink to="accessibility">
+                Accessibility Statement
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink to="code-of-conduct">Code of Conduct</StyledLink>
+            </li>
+            <li>
+              <StyledLink to="scholarship">Opportunity Program</StyledLink>
+            </li>
+          </ul>
+        </Column>
+
+        <Column>
+          <HeadlineSmall>Past Events</HeadlineSmall>
+          <ul>
+            {previousEvents.map((event, i) => {
+              if (event.url)
                 return (
                   <li key={i}>
-                    <span>{event.title}</span>
-                    {i === previousEvents.length - 1 ? null : '•'}
+                    <LinkGreyed href={event.url}>{event.title}</LinkGreyed>
                   </li>
                 )
-              })}
-            </ul>
+              return (
+                <li key={i}>
+                  <span>{event.title}</span>
+                </li>
+              )
+            })}
+          </ul>
+        </Column>
+      </footer>
+      <Acknowledgement>
+        <img
+          src={require('../assets/flag-aboriginal.jpg')}
+          alt="Aboriginal Flag"
+          width="40"
+        />
+        <img
+          src={require('../assets/flag-torres.jpg')}
+          alt="Torres Strait Islanders Flag"
+          width="40"
+        />
+        <img
+          src={require('../assets/flag-lgbtqi.jpg')}
+          alt="LGBTQI Flag"
+          width="40"
+        />
+        <img
+          src={require('../assets/flag-transgender.jpg')}
+          alt="Transgender Pride Flag"
+          width="40"
+        />
 
-            <img
-              src={require('../assets/flag-aboriginal.jpg')}
-              alt="Aboriginal Flag"
-              width="40"
-            />
-            <img
-              src={require('../assets/flag-torres.jpg')}
-              alt="Torres Strait Islanders Flag"
-              width="40"
-            />
-            <img
-              src={require('../assets/flag-lgbtqi.jpg')}
-              alt="LGBTQI Flag"
-              width="40"
-            />
+        <p>
+          We acknowledge the Wurundjeri people of the Kulin nations, the
+          traditional owners of the land on which we gather. We pay our respects
+          to their Elders: past, present and future.
+        </p>
 
-            <p>
-              We acknowledge the Wurundjeri people of the Kulin nations, the
-              traditional owners of the land on which we gather. We pay our
-              respects to their Elders: past, present and future.
-            </p>
-
-            <p>We firmly believe in diversity, inclusion and equity.</p>
-          </div>
-        </footer>
-      </Container>
+        <p>We firmly believe in diversity, inclusion and equality.</p>
+      </Acknowledgement>
     </Footer>
   )
 }

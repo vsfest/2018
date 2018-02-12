@@ -8,9 +8,10 @@ const Link = styled.a`
 
 const Img = styled.img`
   display: block;
-  margin: 60px auto 30px;
-  max-height: 150px;
-  
+  margin: 30px auto;
+  max-height: 200px;
+  max-width: 100%;
+
   &:hover {
     transition: all 0.2s ease;
     opacity: 0.8;

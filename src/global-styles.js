@@ -30,8 +30,8 @@ injectGlobal`
 
   body {
     ${ typography.normal };
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.5;
   }
   
   strong {
@@ -45,10 +45,14 @@ injectGlobal`
   
   ul {
     list-style-type: disc;
-    margin: 30px;
+    margin: 0 0 30px 20px;
   }
   
   li {
     margin-bottom: 15px;
+  }
+
+  .mb0 {
+    margin-bottom: 0;
   }
 `
