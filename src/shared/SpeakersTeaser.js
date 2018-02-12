@@ -62,7 +62,7 @@ export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) =>
           return (
             <Speaker key={i} {...speaker}>
               <img src={speaker.image} alt={speaker.name} />
-              <LinkThemed href={`https://twitter.com/${speaker.twitter}`}>
+              <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
                 <HeadlineSmall>{speaker.name}</HeadlineSmall>
               </LinkThemed>
               <p>{speaker.location}</p>

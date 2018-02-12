@@ -87,8 +87,8 @@ export default ({ conference }) => {
                 <div>
                   <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
                     <HeadlineSmall>{speaker.name}</HeadlineSmall>
-                    <SpeakerLocation>{speaker.location}</SpeakerLocation>
                   </LinkThemed>
+                  <SpeakerLocation>{speaker.location}</SpeakerLocation>
                   <p>{speaker.bio}</p>
                 </div>
               </Speaker>
