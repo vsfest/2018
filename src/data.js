@@ -823,7 +823,7 @@ export const Decompress = {
     },
     {
       name: 'Jessica Norris and Ben Taylor',
-      // twitter: 'groklearning',
+      twitter: 'groklearning',
       // url: '',
       announced: true,
       image: require('./assets/speaker-jess-and-ben.jpg'),
