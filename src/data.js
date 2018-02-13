@@ -751,6 +751,12 @@ export const Decompress = {
       url: 'https://groklearning.com/',
       image: require('./assets/sponsor-grok-learning.svg'),
       tier: 'travel'
+    },
+    {
+      name: 'Silver Stripe',
+      url: 'https://www.silverstripe.com/',
+      image: require('./assets/sponsor-silverstripe.svg'),
+      tier: 'travel',
     }
   ],
   speakers: [
