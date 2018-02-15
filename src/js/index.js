@@ -13,6 +13,7 @@ import Container from '../shared/components/Container'
 import EventsList from '../shared/EventsList'
 import { Section, SectionBannerExpanded } from '../shared/components/Section'
 import EventExpectations from '../shared/EventExpectations'
+import News from '../shared/News'
 
 export default () => (
   <Home conference={JS}>
@@ -28,6 +29,11 @@ export default () => (
       <Section>
         <SpeakersTeaser {...JS} />
       </Section>
+
+      <Section>
+        <News />
+      </Section>
+
       <Section>
         <EventsList />
       </Section>

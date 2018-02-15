@@ -16,6 +16,7 @@ import Masthead from './Masthead'
 import Logo from './Logo'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import NewsPage from '../shared/NewsPage'
 import { SectionBanner } from '../shared/components/Section'
 import ScheduleCSS from '../shared/ScheduleCSS'
 import ScheduleJS from '../shared/ScheduleJS'
@@ -63,7 +64,7 @@ const renderSchedule = (conference) => {
 }
 
 export default withRouter(({ conference, children, match }) => (
-  <ThemeProvider theme={conference.theme}>
+  <ThemeProvider theme={{ ...conference.theme, _conference: conference }}>
     <Background>
       <Helmet {...conference}>
         <title>{conference.title}</title>
@@ -166,6 +167,13 @@ export default withRouter(({ conference, children, match }) => (
             </ContentPage>
           )}
         />
+        { conference.news.map((item,i) => (
+          <Route key={i} exact path={item.url} render={() => (
+            <ContentPage conference={conference}>
+              <NewsPage conference={conference} />
+            </ContentPage>
+          )}/>
+        ))}
         <Route
           render={() => (
             // Redirect to home instead of showing a blank white page

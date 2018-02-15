@@ -60,10 +60,10 @@ export default ({ twitter, mailingList, team }) => {
         questions you can always{' '}
         <LinkThemed href={`mailto:${team}`}>contact our team</LinkThemed>.
       </p>
-      <form action={mailingList.url} method="post">
+      <form action={ mailingList.url } method="post">
         <input
           id="fieldEmail"
-          name={mailingList.formName}
+          name={ mailingList.formName }
           type="email"
           required
           placeholder="Your email address"

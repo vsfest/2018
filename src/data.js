@@ -1,6 +1,7 @@
 import js_logo from './js/logo.svg'
 import css_logo from './css/logo.svg'
 import decompress_logo from './decompress/logo.svg'
+import {newsForConference} from './shared/news/index'
 
 import css_favicon from './assets/css-favicon.ico'
 import js_favicon from './assets/js-favicon.png'
@@ -413,7 +414,8 @@ export const JS = {
       talkAbstract:
         'Based on my experience in diagnosing and troubleshooting highload e-commerce Node.js app in production, I’ve identified three stages in the Node.js diagnostic history. I’d like to briefly tell this path and show where we are now and tell in details "How to debug and tracing Node.js apps on different levels, and how to track performance problems and memory leaks inside Node.js apps in 2018":<br/><br/><ul><li>Production troubleshooting: I show and explain the strategy of creation and debugging core dump using llnode, node-report and X-Transaction-ID in our company with real-life examples.</li><li>Memory leaks: I show how to identify memory leaks, memory holders using V8 GC tracing, llnode debugging + gencore tool with real-life examples.</li><li>Performance: I show how to use 0x flame graph to find performance bottlenecks, how identify Event Loop lags, GC slow work and what can give Async Hooks for that with real-life examples.</li></ul>'
     }
-  ]
+  ],
+  news: newsForConference('js'),
 }
 
 export const CSS = {
@@ -679,7 +681,8 @@ export const CSS = {
       talkAbstract:
         'As part of Origins, I have been researching the different paths of coders and designers into the tech industry, and the paths are wonderfully varied and unique. However, we continue to raise up and legitimise certain paths over others, implicitly deciding who gets to be a developer of CSS or Javascript. That language then feeds into job postings and wider perceptions of what it is to write CSS, what it is to write Javascript (or even Javascript frameworks), and the legitimacy of different learning paths. From this, we create hierarchies and draw lines which result in different pay scales and fluctuating perceptions of the code we write. This threatens to devalue inclusivity work, and the development community as a whole— let’s learn about the unconventional paths into development and consciously pull away from the damaging hierarchies we create. Let’s celebrate these journeys instead!'
     }
-  ]
+  ],
+  news: newsForConference('css'),
 }
 
 export const Decompress = {
@@ -911,5 +914,6 @@ export const Decompress = {
       location: 'Melbourne, Australia',
       talk: 'Visualising Geographical Data with MapBox'
     }
-  ]
+  ],
+  news: newsForConference('decompress'),
 }

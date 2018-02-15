@@ -11,6 +11,7 @@ import EventExpectations from '../shared/EventExpectations'
 import SpeakersTeaser from '../shared/SpeakersTeaser'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import News from '../shared/News'
 import EventsList from '../shared/EventsList'
 import { Section, SectionBannerExpanded } from '../shared/components/Section'
 
@@ -28,6 +29,11 @@ export default () => (
       <Section>
         <SpeakersTeaser {...CSS} />
       </Section>
+
+      <Section>
+        <News />
+      </Section>
+
       <Section>
         <EventsList />
       </Section>
