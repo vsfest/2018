@@ -9,20 +9,29 @@ import { typography } from '../styles/traits'
 
 const When = styled.p`
   text-align: center;
-  font-size: 0.9rem;
-  ${ typography.normal };
+  font-size: 18px;
+  margin: 30px 0 0 0;
+  color: hsla(0, 0%, 50%, 1);
+  ${typography.normal};
 `
 
 const Body = styled.div`
+  a {
+    color: ${props => props.theme.primary};
+    text-decoration: none;
 
+    &:hover {
+      color: ${props => props.theme.primaryHover};
+    }
+  }
 `
 
 const H2 = styled.h2`
-  ${ typography.bold };
+  ${typography.bold};
 `
 
 const Spacer = styled.div`
-  height: 2rem;
+  height: 60px;
 `
 
 const Hr = styled.div`
@@ -34,12 +43,17 @@ export default withRouter(({ conference, match }) => {
   const item = news[match.url]
   return (
     <Container>
-      <Title>{ item.title }
-        <When>{ new Date(item.date).toLocaleDateString("en-US", { weekday: "long", day: "numeric", month: "long" }) }</When>
+      <Title>
+        {item.title}
+        <When>
+          {new Date(item.date).toLocaleDateString('en-US', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long'
+          })}
+        </When>
       </Title>
-      <Body>
-        { item.render({ MailingList, H2, Hr, Spacer }) }
-      </Body>
+      <Body>{item.render({ MailingList, H2, Hr, Spacer })}</Body>
     </Container>
   )
 })
