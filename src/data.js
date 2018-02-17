@@ -960,8 +960,8 @@ export const Decompress = {
       ]
     },
     {
-      talk: 'Reliable Front-end Development with Elm',
-      announced: false,
+      talk: 'Write a Robust, Functional Front End with Elm',
+      announced: true,
       speakers: [
         {
           name: 'Sebastian Porto',
@@ -972,6 +972,15 @@ export const Decompress = {
             "Sebastian is a web developer working for Stax.io. He has worked on a variety of languages and frameworks in the FE, Elm is his current tool of choice for building fast and reliable web applications.",
           location: 'Melbourne, Australia'
         },
+        {
+          name: 'Kevin Yank',
+          twitter: 'sentience',
+          // url: '',
+          image: require('./assets/speaker-kevin.jpg'),
+          bio:
+            "Kevin is the Director of Front End Engineering at Culture Amp, which used Elm over the past year to build user interfaces that help companies like Adobe, Airbnb, Yelp and Slack to collect, understand, and act on employee feedback.",
+          location: 'Melbourne, Australia'
+        }
       ]
     }
   ]
