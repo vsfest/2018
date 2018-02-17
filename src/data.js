@@ -864,7 +864,7 @@ export const Decompress = {
       name: 'Cory-Ann Joseph',
       twitter: 'coryannj',
       // url: '',
-      announced: false,
+      announced: true,
       image: require('./assets/speaker-cory.jpg'),
       bio:
         "Cory started working with the internet way back in 2001 when she chanced her way into a position as web content editor for the Aussie version of the X-Games. Since then she's dabbled in PR, marketing, events management, a skateboard shop, worked as a barista, accrued a blank IMDB profile, run pub poker tournaments in rural NSW, and dropped out of Bible college - amongst other things. She currently works as a UX Lead at ANZ.",
