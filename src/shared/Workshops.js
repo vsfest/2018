@@ -44,10 +44,6 @@ const SpeakerTalk = styled.div`
   }
 `
 
-const TalkAbstract = styled.p`
-  margin: 30px 0 0 0;
-`
-
 const SpeakerLocation = styled.p`
   color: hsla(0, 0%, 50%, 1);
 `
