@@ -723,7 +723,7 @@ export const Decompress = {
   isCfpOpen: false,
   hasSpeakers: true,
   hasWorkshops: true,
-  hasSchedule: false,
+  hasSchedule: true,
   sponsors: [
     {
       name: 'Calibre',

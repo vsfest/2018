@@ -20,7 +20,7 @@ import NewsPage from '../shared/NewsPage'
 import { SectionBanner } from '../shared/components/Section'
 import ScheduleCSS from '../shared/ScheduleCSS'
 import ScheduleJS from '../shared/ScheduleJS'
-import ScheduleTBA from '../shared/ScheduleTBA'
+import ScheduleDecompress from '../shared/ScheduleDecompress'
 
 const Background = styled.div`
   background-color: #fff;
@@ -54,7 +54,7 @@ const renderSchedule = (conference) => {
     )
   } else if (conference.id === 'decompress') {
     return (
-      <ScheduleTBA conference={conference} />
+      <ScheduleDecompress conference={conference} />
     )
   } else {
     return (

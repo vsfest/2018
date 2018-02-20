@@ -8,7 +8,7 @@ import withConference from './withConference'
 const StyledLink = LinkThemed.withComponent(Link)
 
 export default withConference(({ conference: { news } }) => {
-  return (
+  return (news.length > 0) && (
     <div>
       <Headline>News</Headline>
 
