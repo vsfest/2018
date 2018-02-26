@@ -29,10 +29,16 @@ const SpeakersWrapper = styled.div`
   }
 `
 
-export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) => {
-  const announcedSpeakers = (speakers.concat(workshops || [])).filter(
-    speaker => speaker.announced === true
-  )
+export default ({
+  hasSchedule,
+  hasWorkshops,
+  speakers,
+  workshops,
+  titoLink
+}) => {
+  const announcedSpeakers = speakers
+    .concat(workshops || [])
+    .filter(speaker => speaker.announced === true)
 
   return (
     <div>
@@ -49,7 +55,9 @@ export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) =>
           <StyledLink to="workshops">workshop details</StyledLink>
         )}
         {' or '}
-        <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
+        <LinkThemed href={titoLink}>
+          get a ticket to CSSConf or Decompress &rarr;
+        </LinkThemed>
       </Copy>
       <SpeakersWrapper>
         {announcedSpeakers.map((speaker, i) => {

@@ -44,8 +44,11 @@ export default () => {
       <Headline>Schedule and tickets</Headline>
       <p>
         The conference is a part of a bigger family of events.{' '}
-        <strong>Regular Bird tickets are still available.</strong> Entry to
-        Decompress is included in all CSSConf, JSConf or Combo passes.{' '}
+        <strong>
+          Regular Bird tickets to CSSConf are still available. JSConf is sold
+          out.{' '}
+        </strong>{' '}
+        Entry to Decompress is included in all CSSConf, JSConf or Combo passes.{' '}
         <LinkThemed href={CSS.titoLink}>Purchase a ticket &rarr;</LinkThemed>
       </p>
       <Schedule>

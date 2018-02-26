@@ -264,8 +264,7 @@ export default ({ conference }) => {
         <ScheduleItem>
           <Time>16:15</Time>
           <ScheduleItemContent>
-            <Speaker>Anjuan Simmons</Speaker>
-            <LinkThemed href="/speakers#anjuan">Lending Privilege</LinkThemed>
+            <Speaker>TBA</Speaker>
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
