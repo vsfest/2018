@@ -11,6 +11,7 @@ import Sponsorship from '../shared/Sponsorship'
 import SpeakersTeaser from '../shared/SpeakersTeaser'
 import Footer from '../shared/Footer'
 import Container from '../shared/components/Container'
+import News from '../shared/News'
 import { Section, SectionBannerExpanded } from '../shared/components/Section'
 
 export default () => (
@@ -26,6 +27,11 @@ export default () => (
       <Section>
         <SpeakersTeaser {...Decompress} />
       </Section>
+
+      <Section>
+        <News />
+      </Section>
+
       <Section>
         <EventsList />
       </Section>

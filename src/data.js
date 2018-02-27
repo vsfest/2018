@@ -1,6 +1,7 @@
 import js_logo from './js/logo.svg'
 import css_logo from './css/logo.svg'
 import decompress_logo from './decompress/logo.svg'
+import { newsForConference } from './shared/news/index'
 
 import css_favicon from './assets/css-favicon.ico'
 import js_favicon from './assets/js-favicon.png'
@@ -14,11 +15,6 @@ export const Staff = [
     name: 'Ben Schwarz',
     twitter: 'benschwarz',
     mugshot: require('./shared/mugshot-ben.jpg')
-  },
-  {
-    name: 'Craig Sharkie',
-    twitter: 'twalve',
-    mugshot: require('./shared/mugshot-craig.png')
   },
   {
     name: 'Glen Maddern',
@@ -93,6 +89,7 @@ export const JS = {
   isCfpOpen: true,
   hasSpeakers: true,
   hasSchedule: true,
+  soldOut: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -204,19 +201,6 @@ export const JS = {
     }
   ],
   speakers: [
-    {
-      name: 'Anjuan Simmons',
-      twitter: 'anjuan',
-      announced: true,
-      url: 'http://www.AnjuanSimmons.com',
-      image: require('./assets/speaker-anjuan.jpg'),
-      location: 'Houston, United States',
-      bio:
-        'Anjuan operates at the intersection of business and technology by relentlessly focusing on delivering delight to customers while effectively applying engineering talent. He’s a pragmatic Agilist.',
-      talk: 'Lending Privilege',
-      talkAbstract:
-        'Diversity and inclusion have become hot topics in technology, but you may not know how you can make a difference. However, this talk will help you understand that, no matter your background, you have privilege and can lend it to marginalized groups in tech.<br/><br/>Privilege is access to societal and economic benefits based on a characteristic you possess. The most well understood forms of privilege are the ones most people don’t choose for themselves like racial, gender, and physical privilege, but there are also selected privileges like religion, career, and education. This session will teach you how to lend your privilege. You’ll learn the various types of privilege lending including credibility lending (where you attach your name to a project being undertaken by someone without privilege) and access lending (where you provide access to a location or event for someone without privilege). These different types of privilege lending will be illustrated through well known examples and an explanation of how they can be applied to software development.<br/><br/>While technology companies are trying to improve their diversity, I believe that change will only occur when individuals take action to make technology a more inclusive industry. I think that the concept of lending privilege can be a powerful tool that technology practitioners can use to expand the diversity of the industry.'
-    },
     {
       name: 'Suz Hinton',
       twitter: 'noopkat',
@@ -413,7 +397,8 @@ export const JS = {
       talkAbstract:
         'Based on my experience in diagnosing and troubleshooting highload e-commerce Node.js app in production, I’ve identified three stages in the Node.js diagnostic history. I’d like to briefly tell this path and show where we are now and tell in details "How to debug and tracing Node.js apps on different levels, and how to track performance problems and memory leaks inside Node.js apps in 2018":<br/><br/><ul><li>Production troubleshooting: I show and explain the strategy of creation and debugging core dump using llnode, node-report and X-Transaction-ID in our company with real-life examples.</li><li>Memory leaks: I show how to identify memory leaks, memory holders using V8 GC tracing, llnode debugging + gencore tool with real-life examples.</li><li>Performance: I show how to use 0x flame graph to find performance bottlenecks, how identify Event Loop lags, GC slow work and what can give Async Hooks for that with real-life examples.</li></ul>'
     }
-  ]
+  ],
+  news: newsForConference('js')
 }
 
 export const CSS = {
@@ -679,7 +664,8 @@ export const CSS = {
       talkAbstract:
         'As part of Origins, I have been researching the different paths of coders and designers into the tech industry, and the paths are wonderfully varied and unique. However, we continue to raise up and legitimise certain paths over others, implicitly deciding who gets to be a developer of CSS or Javascript. That language then feeds into job postings and wider perceptions of what it is to write CSS, what it is to write Javascript (or even Javascript frameworks), and the legitimacy of different learning paths. From this, we create hierarchies and draw lines which result in different pay scales and fluctuating perceptions of the code we write. This threatens to devalue inclusivity work, and the development community as a whole— let’s learn about the unconventional paths into development and consciously pull away from the damaging hierarchies we create. Let’s celebrate these journeys instead!'
     }
-  ]
+  ],
+  news: newsForConference('css')
 }
 
 export const Decompress = {
@@ -720,7 +706,7 @@ export const Decompress = {
   isCfpOpen: false,
   hasSpeakers: true,
   hasWorkshops: true,
-  hasSchedule: false,
+  hasSchedule: true,
   sponsors: [
     {
       name: 'Calibre',
@@ -750,6 +736,12 @@ export const Decompress = {
       name: 'Grok Learning',
       url: 'https://groklearning.com/',
       image: require('./assets/sponsor-grok-learning.svg'),
+      tier: 'travel'
+    },
+    {
+      name: 'Silver Stripe',
+      url: 'https://www.silverstripe.com/',
+      image: require('./assets/sponsor-silverstripe.svg'),
       tier: 'travel'
     }
   ],
@@ -823,7 +815,7 @@ export const Decompress = {
     },
     {
       name: 'Jessica Norris and Ben Taylor',
-      // twitter: 'groklearning',
+      twitter: 'groklearning',
       // url: '',
       announced: true,
       image: require('./assets/speaker-jess-and-ben.jpg'),
@@ -832,20 +824,20 @@ export const Decompress = {
       location: 'Sydney, Australia',
       talk: 'How to keep your server alive AND teach JS to kids',
       talkAbstract:
-        "We’re all buzzing about Headless Chrome and how we can automate our testing, but what if we go one step further and try automated marking of… untrusted student code? <br /><br /> Imagine the sort of code you first wrote — full of syntax errors and infinite loops — now load that code on to a server and click ‘Test’. What happens? Did you crash the page? Did it do anything? <br /><br /> At Grok Learning we are allowing kids as young as twelve (think ‘Stranger Things’!) to do exactly that. Come discover the challenges we had putting together a JavaScript course with a smart automatic marker that defends our system against whatever crazy code they come up with. <br /><br /> We’ll get technical and talk about how we’re using Headless Chrome and Puppeteer inside our server-side marker. We’ll dip into what makes it ‘smart’ — good feedback and hints to help students understand why their code doesn’t work the way they expected. And we’ll chat about how to make a good learning experience for JavaScript. <br /><br /> Let’s ditch to-do list tutorials and make something better!"
+        'We’re all buzzing about Headless Chrome and how we can automate our testing, but what if we go one step further and try automated marking of… untrusted student code? <br /><br /> Imagine the sort of code you first wrote — full of syntax errors and infinite loops — now load that code on to a server and click ‘Test’. What happens? Did you crash the page? Did it do anything? <br /><br /> At Grok Learning we are allowing kids as young as twelve (think ‘Stranger Things’!) to do exactly that. Come discover the challenges we had putting together a JavaScript course with a smart automatic marker that defends our system against whatever crazy code they come up with. <br /><br /> We’ll get technical and talk about how we’re using Headless Chrome and Puppeteer inside our server-side marker. We’ll dip into what makes it ‘smart’ — good feedback and hints to help students understand why their code doesn’t work the way they expected. And we’ll chat about how to make a good learning experience for JavaScript. <br /><br /> Let’s ditch to-do list tutorials and make something better!'
     },
     {
-      name: 'Jason O\'Neil',
+      name: "Jason O'Neil",
       twitter: 'jasonaoneil',
       url: 'https://jasono.co/',
       announced: true,
       image: require('./assets/speaker-jason.jpg'),
       bio:
-        "Jason recently joined Culture Amp as a specialist in front-end developer tools. He wants software engineers to enjoy their jobs and so rages against technical debt, slow iteration cycles and lousy error messages.",
+        'Jason recently joined Culture Amp as a specialist in front-end developer tools. He wants software engineers to enjoy their jobs and so rages against technical debt, slow iteration cycles and lousy error messages.',
       location: 'Melbourne, Australia',
       talk: '50,000 lines of spaghetti code (and how to unravel it)',
       talkAbstract:
-        "To our wonderful users the web-app looked fine. It had a nice UI, a tonne of useful features, and mostly seemed to work. But our team of two engineers knew the truth - the app was a mess. Bug fixes that should be simple eluded us. Features that should have taken 2 weeks took 2 months. And users started telling us the app was crashing their browser (it turns out we were leaking memory and the tab was using over 2GB!). This talk shares the story of how I joined a start-up that in its 3 short years had already accumulated a tonne of technical debt - and how my fellow engineer and I took a 50,000 line code base of unstructured jQuery, untyped Angular, and a bunch of scary Grunt tasks, and turned it into a well structured React App, using Webpack to handle our assets and split our bundle, MobX to simplify our page interactions, Flow to add type safety to our code piece by piece, and Jest to test it all. And also how we dealt with those nasty memory leaks using Chrome dev tools so the app stopped crashing. Just as importantly - I’ll share the secrets of how we convinced the non-technical management team that this massive investment was worth it, and had them excited about paying down technical debt. If you have a codebase you’re ashamed to let other engineers look at, if you’re looking at a code-cleanup that feels like it’ll be an insurmountable task, if you are sick of dealing with code that has names like “AbstractModuleDataStrategy” that don’t mean anything, and maybe don’t even do anything, and you’re not even sure anymore, then this is the talk for you. We will map a path out of the spaghetti. Or if you have it all together and always write beautiful, maintainable, well structured code and would like to come and laugh at me and my horror stories, this may also be the talk for you."
+        'To our wonderful users the web-app looked fine. It had a nice UI, a tonne of useful features, and mostly seemed to work. But our team of two engineers knew the truth - the app was a mess. Bug fixes that should be simple eluded us. Features that should have taken 2 weeks took 2 months. And users started telling us the app was crashing their browser (it turns out we were leaking memory and the tab was using over 2GB!). This talk shares the story of how I joined a start-up that in its 3 short years had already accumulated a tonne of technical debt - and how my fellow engineer and I took a 50,000 line code base of unstructured jQuery, untyped Angular, and a bunch of scary Grunt tasks, and turned it into a well structured React App, using Webpack to handle our assets and split our bundle, MobX to simplify our page interactions, Flow to add type safety to our code piece by piece, and Jest to test it all. And also how we dealt with those nasty memory leaks using Chrome dev tools so the app stopped crashing. Just as importantly - I’ll share the secrets of how we convinced the non-technical management team that this massive investment was worth it, and had them excited about paying down technical debt. If you have a codebase you’re ashamed to let other engineers look at, if you’re looking at a code-cleanup that feels like it’ll be an insurmountable task, if you are sick of dealing with code that has names like “AbstractModuleDataStrategy” that don’t mean anything, and maybe don’t even do anything, and you’re not even sure anymore, then this is the talk for you. We will map a path out of the spaghetti. Or if you have it all together and always write beautiful, maintainable, well structured code and would like to come and laugh at me and my horror stories, this may also be the talk for you.'
     },
     {
       name: 'Jess Champion',
@@ -854,7 +846,7 @@ export const Decompress = {
       announced: true,
       image: require('./assets/speaker-jess-champion.jpg'),
       bio:
-        "With a background spanning product development, operations and project delivery, Jess has developed a zealous focus on the quality and maintainability of software. While she can happily work across the full stack, Jess has a passion for all things frontend, and is always looking for ways to leverage new technologies to craft digital experiences.",
+        'With a background spanning product development, operations and project delivery, Jess has developed a zealous focus on the quality and maintainability of software. While she can happily work across the full stack, Jess has a passion for all things frontend, and is always looking for ways to leverage new technologies to craft digital experiences.',
       location: 'Wellington, New Zealand',
       talk: 'A unit test walks into a bar',
       talkAbstract:
@@ -983,5 +975,6 @@ export const Decompress = {
         }
       ]
     }
-  ]
+  ],
+  news: newsForConference('decompress')
 }

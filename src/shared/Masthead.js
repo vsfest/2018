@@ -98,7 +98,7 @@ export default class Masthead extends React.Component {
   render() {
     const titoLink = this.props.titoLink
     const confName = this.props.title
-    const { hasSpeakers, hasSchedule, hasWorkshops } = this.props
+    const { hasSpeakers, hasSchedule, hasWorkshops, soldOut } = this.props
 
     return (
       <div>
@@ -156,7 +156,13 @@ export default class Masthead extends React.Component {
               </li>
             </ul>
           </NavMobile>
-          <ButtonThemed href={titoLink}>Tickets</ButtonThemed>
+          {soldOut ? (
+            <ButtonThemed disabled>Sold Out</ButtonThemed>
+          ) : (
+            <ButtonThemed>
+              <a href={titoLink}>Tickets</a>
+            </ButtonThemed>
+          )}
         </Nav>
       </div>
     )

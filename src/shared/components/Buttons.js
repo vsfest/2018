@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Button = styled.a`
+const Button = styled.button`
   border: none;
   text-align: center;
   padding: 15px 30px;
@@ -20,6 +20,11 @@ const ButtonThemed = Button.extend`
   background-color: ${props => props.theme.primary};
   color: white;
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   &:hover {
     transform: translateY(4px);
   }
@@ -27,6 +32,11 @@ const ButtonThemed = Button.extend`
   &:hover,
   &:active {
     background-color: ${props => props.theme.primaryHover};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: ${props => props.theme.secondary};
   }
 `
 
