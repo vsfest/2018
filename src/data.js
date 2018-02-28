@@ -851,52 +851,129 @@ export const Decompress = {
       talk: 'A unit test walks into a bar',
       talkAbstract:
         "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."
+    },
+    {
+      name: 'Cory-Ann Joseph',
+      twitter: 'coryannj',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-cory.jpg'),
+      bio:
+        "Cory started working with the internet way back in 2001 when she chanced her way into a position as web content editor for the Aussie version of the X-Games. Since then she's dabbled in PR, marketing, events management, a skateboard shop, worked as a barista, accrued a blank IMDB profile, run pub poker tournaments in rural NSW, and dropped out of Bible college - amongst other things. She currently works as a UX Lead at ANZ.",
+      location: 'Melbourne, Australia',
+      talk: 'Why a poker playing AI should have you looking for a new job',
+      talkAbstract:
+        "A 2013 report called 'The Future of Employment: How susceptible are jobs to computerisation?' left some occupations like soccer umpires feeling very vulnerable, and designers feeling very smug. However as a weird mix of content strategist, UX designer and former poker player my smug job-secure world was thrown upside down by the success of the Libratus poker AI in January of this year - the first to comprehensively beat multiple poker professionals over a series of four days. If you’re wondering what poker has to do with design - the answer is a lot! In this talk I’ll cover why the mix of probability, pattern-matching, human behaviour and context in poker strategy is a good model for design, how game theory in poker strategy might be used to ‘solve’ design (and possibly front-end dev!), where design AI efforts are at, and why we should stop treating AI like a digital butler and start imagining the tools of the future - even it if puts you out of a job."
     }
   ],
   workshops: [
     {
-      name: 'Mandy Michael',
-      twitter: 'mandy_kerr',
-      // url: '',
+      talk: 'Creative Text Effects with CSS',
       announced: true,
-      image: require('./assets/speaker-mandy.jpg'),
-      bio:
-        'Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.',
-      location: 'Perth, Australia',
-      talk: 'Creative Text Effects with CSS'
+      speakers: [
+        {
+          name: 'Mandy Michael',
+          twitter: 'mandy_kerr',
+          // url: '',
+          image: require('./assets/speaker-mandy.jpg'),
+          bio:
+            'Mandy is the Front End Development Manager at Seven West Media in WA. She loves CSS and has been experimenting for the past year with creating editable, selectable and searching text effects on Codepen using just CSS and HTML. Come along and learn to make your own amazing text effects with a special focus on variable fonts.',
+          location: 'Perth, Australia'
+        }
+      ]
     },
     {
-      name: 'Tim Holman',
-      twitter: 'twholman',
-      // url: '',
+      talk: 'Generative Art with JavaScript and HTML5 Canvas',
       announced: true,
-      image: require('./assets/speaker-tim.jpg'),
-      bio:
-        'Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!',
-      location: 'New York, USA',
-      talk: 'Generative Art with JavaScript and HTML5 Canvas'
+      speakers: [
+        {
+          name: 'Tim Holman',
+          twitter: 'twholman',
+          // url: '',
+          image: require('./assets/speaker-tim.jpg'),
+          bio:
+            'Tim is a tinkerer, tuner & tamperer of all things online who enjoys the artistic and creative aspects of development. Generative Art is a great entry point into development, or a great way to sharpen your existing skills... and is fun too. Join in as we create with the HTML5 canvas, P5.js, and some crazy maths!',
+          location: 'New York, USA'
+        }
+      ]
     },
     {
-      name: 'Anna Gerber',
-      twitter: 'AnnaGerber',
-      url: 'http://crufti.com/about-anna/',
+      talk: 'Building NodeBots with NodeJS',
       announced: true,
-      image: require('./assets/speaker-anna.jpg'),
-      bio:
-        'Anna is a backend Node.js developer from Brisbane. An avid maker and crafter, Anna also enjoys teaching sewable electronics and 3D printing, as well as how to build robots and IoT devices using MicroPython and Node.js.',
-      location: 'Brisbane, Australia',
-      talk: 'Building NodeBots with NodeJS'
+      speakers: [
+        {
+          name: 'Anna Gerber',
+          twitter: 'AnnaGerber',
+          url: 'http://crufti.com/about-anna/',
+          image: require('./assets/speaker-anna.jpg'),
+          bio:
+            'Anna is a backend Node.js developer from Brisbane. An avid maker and crafter, Anna also enjoys teaching sewable electronics and 3D printing, as well as how to build robots and IoT devices using MicroPython and Node.js.',
+          location: 'Brisbane, Australia'
+        }
+      ]
     },
     {
-      name: 'Sarah Goodwin',
-      twitter: 'sgeoviz',
-      // url: '',
+      talk: 'Visualising Geographical Data with MapBox',
       announced: true,
-      image: require('./assets/speaker-sarah.jpg'),
-      bio:
-        'Sarah has worked in data analytics and visualisation for over 10 years. Her work explores new ways to visualise and explain complex multi-dimensional spatio-temporal datasets. She also teaches visualisation and cartographic design skills.',
-      location: 'Melbourne, Australia',
-      talk: 'Visualising Geographical Data with MapBox'
+      speakers: [
+        {
+          name: 'Sarah Goodwin',
+          twitter: 'sgeoviz',
+          // url: '',
+          image: require('./assets/speaker-sarah.jpg'),
+          bio:
+            'Sarah has worked in data analytics and visualisation for over 10 years. Her work explores new ways to visualise and explain complex multi-dimensional spatio-temporal datasets. She also teaches visualisation and cartographic design skills.',
+          location: 'Melbourne, Australia'
+        }
+      ]
+    },
+    {
+      talk: 'Creating Virtual Worlds with ThreeJS',
+      announced: true,
+      speakers: [
+        {
+          name: 'Xavier Ho',
+          twitter: 'Xavier_Ho',
+          url: 'https://jumptoglide.com/',
+          image: require('./assets/speaker-xavier.jpg'),
+          bio:
+            "Xavier Ho is a curiosity-driven designer, researcher and software engineer at CSIRO's Data61. He has worked on high-impact projects at CSIRO in climate science, agricultural roads optimisation, and developing data visualisation for scientists using ThreeJS, D3.js, Mapbox, Vue.js, and more. He speaks both Python and Javascript, and he hopes to pick up Haskell one day.",
+          location: 'Melbourne, Australia'
+        },
+        {
+          name: 'Bosco Ho',
+          // twitter: '',
+          url: 'http://boscoh.com/',
+          image: require('./assets/speaker-bosco.jpg'),
+          bio:
+            "Bosco is a scientific programmer at CSIRO's Data61, James Cook University and Monash University. He works in web programming, molecular graphics and epidemiology with a mix of Javascript and Python using Vue.js, Flask and of course, ThreeJS.",
+          location: 'Melbourne, Australia'
+        }
+      ]
+    },
+    {
+      talk: 'Write a Robust, Functional Front End with Elm',
+      announced: true,
+      speakers: [
+        {
+          name: 'Sebastian Porto',
+          twitter: 'sebasporto',
+          // url: '',
+          image: require('./assets/speaker-sebastian.jpg'),
+          bio:
+            "Sebastian is a web developer working for Stax.io. He has worked on a variety of languages and frameworks in the FE, Elm is his current tool of choice for building fast and reliable web applications.",
+          location: 'Melbourne, Australia'
+        },
+        {
+          name: 'Kevin Yank',
+          twitter: 'sentience',
+          // url: '',
+          image: require('./assets/speaker-kevin.jpg'),
+          bio:
+            "Kevin is the Director of Front End Engineering at Culture Amp, which used Elm over the past year to build user interfaces that help companies like Adobe, Airbnb, Yelp and Slack to collect, understand, and act on employee feedback.",
+          location: 'Melbourne, Australia'
+        }
+      ]
     }
   ],
   news: newsForConference('decompress')
