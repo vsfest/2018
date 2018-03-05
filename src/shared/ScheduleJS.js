@@ -264,7 +264,10 @@ export default ({ conference }) => {
         <ScheduleItem>
           <Time>16:15</Time>
           <ScheduleItemContent>
-            <Speaker>TBA</Speaker>
+            <Speaker>Patricia Realini</Speaker>
+            <LinkThemed href="/speakers#patriciarealini">
+              "Is A Hot Dog A Sandwich?" And Other Analogies Not To Trifle With
+            </LinkThemed>
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>

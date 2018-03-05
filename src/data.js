@@ -202,6 +202,19 @@ export const JS = {
   ],
   speakers: [
     {
+      name: 'Patricia Realini',
+      twitter: 'patriciarealini',
+      url: 'http://patriciarealini.com',
+      location: 'Los Angeles, United States',
+      image: require('./assets/speaker-patricia.jpg'),
+      announced: true,
+      bio:
+        "Patricia is a front end engineer, an artist, and a woman dedicated to intersectional inclusivity for underrepresented minorities in tech. Her projects have included: a workshop on intersectionality & effective allyship at DinosaurJS in Denver, Colorado, D&I panelist for Processing Foundation & NYU, and hands-on community organizing. When she's not writing javascript, she's writing documentation. When she's not writing docs, she's collecting records and recipe testing.",
+      talk: '"Is A Hot Dog A Sandwich?" And Other Analogies Not To Trifle With',
+      talkAbstract:
+        "Metaphors are an essential means of communication and method of teaching for developers. Without them and Lin Clark it would be much more difficult for teams to adopt Redux. But learning by association has it's limits. When we only discuss the things we can relate to we reinforce existing stereotypes that box us in. Instead of thinking outside the box, we will discuss how thinking about the box itself is the key to breaking down our unconscious bias. Together we will learn how to dismantle the concepts that divide us, techniques for better engaging with people of all backgrounds, and how to empower the systems we work in to be even more performant than our code."
+    },
+    {
       name: 'Suz Hinton',
       twitter: 'noopkat',
       announced: true,
