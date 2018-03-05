@@ -91,12 +91,14 @@ export default ({ conference }) => {
               </LinkThemed>
               <SpeakerLocation>{speaker.location}</SpeakerLocation>
               <p dangerouslySetInnerHTML={{ __html: speaker.bio }} />
-              <SpeakerTalk>
-                <HeadlineSmall>{speaker.talk}</HeadlineSmall>
-                <TalkAbstract
-                  dangerouslySetInnerHTML={{ __html: speaker.talkAbstract }}
-                />
-              </SpeakerTalk>
+              {!speaker.isHost ? (
+                <SpeakerTalk>
+                  <HeadlineSmall>{speaker.talk}</HeadlineSmall>
+                  <TalkAbstract
+                    dangerouslySetInnerHTML={{ __html: speaker.talkAbstract }}
+                  />
+                </SpeakerTalk>
+              ) : null}
             </div>
           </Speaker>
         )

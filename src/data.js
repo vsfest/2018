@@ -409,6 +409,58 @@ export const JS = {
       talk: 'Node.js applications diagnostics under the hood',
       talkAbstract:
         'Based on my experience in diagnosing and troubleshooting highload e-commerce Node.js app in production, I’ve identified three stages in the Node.js diagnostic history. I’d like to briefly tell this path and show where we are now and tell in details "How to debug and tracing Node.js apps on different levels, and how to track performance problems and memory leaks inside Node.js apps in 2018":<br/><br/><ul><li>Production troubleshooting: I show and explain the strategy of creation and debugging core dump using llnode, node-report and X-Transaction-ID in our company with real-life examples.</li><li>Memory leaks: I show how to identify memory leaks, memory holders using V8 GC tracing, llnode debugging + gencore tool with real-life examples.</li><li>Performance: I show how to use 0x flame graph to find performance bottlenecks, how identify Event Loop lags, GC slow work and what can give Async Hooks for that with real-life examples.</li></ul>'
+    },
+    {
+      name: 'Milly Schmidt',
+      twitter: 'meelijane',
+      announced: true,
+      url: 'https://estimate-work.com/',
+      image: require('./assets/mc-milly.jpg'),
+      location: 'Melbourne, Australia',
+      bio:
+        "Milly is a front-end engineer and strategic designer, currently working with EstimateOne in Melbourne. She's passionate about helping growing product-based startups to embrace the new way of doing thing with design thinking, systems thinking and Lean and Agile methodologies. She's an advocate for a more diverse technology industry, and works with Code Like a Girl and Girls in Tech to teach vital future-focused tech skills to those who may not have access to them normally.",
+      talk: '',
+      talkAbstract: '',
+      isHost: true
+    },
+    {
+      name: 'Charlie Gleason',
+      twitter: 'superhighfives',
+      announced: true,
+      url: 'https://charliegleason.com/',
+      image: require('./assets/mc-charlie.jpg'),
+      location: 'London, United Kingdom',
+      bio:
+        'Charlie is the lead designer and front end developer on the marketing team at Heroku. His interests include philosophy, outer space, and cats-though not necessarily in that order.',
+      talk: '',
+      talkAbstract: '',
+      isHost: true
+    },
+    {
+      name: 'Nat Dudley',
+      twitter: 'NatDudley',
+      announced: true,
+      url: 'http://natdudley.com/',
+      image: require('./assets/mc-nat.jpg'),
+      location: 'Tāmaki Makaurau, Aotearoa',
+      bio:
+        "Nat is the Head of Design for http://Figure.NZ/, where she works to take dusty spreadsheets of open data and make them into charts, maps, and other tools New Zealanders can use to understand our country. She's an accidental technologist, and a recovering recruiter and comms person. Nat advocates for an intersectional, inclusive approach to designing our future. You'll most often find her boxing, knitting, and patting dogs in the street.",
+      talk: '',
+      talkAbstract: '',
+      isHost: true
+    },
+    {
+      name: 'Laura Summers',
+      twitter: 'summerscope',
+      announced: true,
+      url: '',
+      image: require('./assets/mc-laura.jpg'),
+      location: 'Melbourne, Australia',
+      bio:
+        "Laura is a multi-disciplinary designer who works across user experience research, design and front-end development. She fell into tech sideways, a happy accident that introduced her to programming, application design and most importantly her people - and she's never looked back. Asking questions, unpacking assumptions and trying to get to the bottom of things are some of her favourite activities - supported by methodologies all the cool kids are using, such as Lean, Agile and Design Thinking. She's a passionate advocate for improving diversity in technology and ensuring our workplaces are welcoming and inclusive. Also: cats rule, dogs drool.",
+      talk: '',
+      talkAbstract: '',
+      isHost: true
     }
   ],
   news: newsForConference('js')
@@ -676,6 +728,58 @@ export const CSS = {
       talk: 'Journeys: What makes a developer, really?',
       talkAbstract:
         'As part of Origins, I have been researching the different paths of coders and designers into the tech industry, and the paths are wonderfully varied and unique. However, we continue to raise up and legitimise certain paths over others, implicitly deciding who gets to be a developer of CSS or Javascript. That language then feeds into job postings and wider perceptions of what it is to write CSS, what it is to write Javascript (or even Javascript frameworks), and the legitimacy of different learning paths. From this, we create hierarchies and draw lines which result in different pay scales and fluctuating perceptions of the code we write. This threatens to devalue inclusivity work, and the development community as a whole— let’s learn about the unconventional paths into development and consciously pull away from the damaging hierarchies we create. Let’s celebrate these journeys instead!'
+    },
+    {
+      name: 'Milly Schmidt',
+      twitter: 'meelijane',
+      announced: true,
+      url: 'https://estimate-work.com/',
+      image: require('./assets/mc-milly.jpg'),
+      location: 'Melbourne, Australia',
+      bio:
+        "Milly is a front-end engineer and strategic designer, currently working with EstimateOne in Melbourne. She's passionate about helping growing product-based startups to embrace the new way of doing thing with design thinking, systems thinking and Lean and Agile methodologies. She's an advocate for a more diverse technology industry, and works with Code Like a Girl and Girls in Tech to teach vital future-focused tech skills to those who may not have access to them normally.",
+      talk: '',
+      talkAbstract: '',
+      isHost: true
+    },
+    {
+      name: 'Charlie Gleason',
+      twitter: 'superhighfives',
+      announced: true,
+      url: 'https://charliegleason.com/',
+      image: require('./assets/mc-charlie.jpg'),
+      location: 'London, United Kingdom',
+      bio:
+        'Charlie is the lead designer and front end developer on the marketing team at Heroku. His interests include philosophy, outer space, and cats-though not necessarily in that order.',
+      talk: '',
+      talkAbstract: '',
+      isHost: true
+    },
+    {
+      name: 'Nat Dudley',
+      twitter: 'NatDudley',
+      announced: true,
+      url: 'http://natdudley.com/',
+      image: require('./assets/mc-nat.jpg'),
+      location: 'Tāmaki Makaurau, Aotearoa',
+      bio:
+        "Nat is the Head of Design for http://Figure.NZ/, where she works to take dusty spreadsheets of open data and make them into charts, maps, and other tools New Zealanders can use to understand our country. She's an accidental technologist, and a recovering recruiter and comms person. Nat advocates for an intersectional, inclusive approach to designing our future. You'll most often find her boxing, knitting, and patting dogs in the street.",
+      talk: '',
+      talkAbstract: '',
+      isHost: true
+    },
+    {
+      name: 'Laura Summers',
+      twitter: 'summerscope',
+      announced: true,
+      url: '',
+      image: require('./assets/mc-laura.jpg'),
+      location: 'Melbourne, Australia',
+      bio:
+        "Laura is a multi-disciplinary designer who works across user experience research, design and front-end development. She fell into tech sideways, a happy accident that introduced her to programming, application design and most importantly her people - and she's never looked back. Asking questions, unpacking assumptions and trying to get to the bottom of things are some of her favourite activities - supported by methodologies all the cool kids are using, such as Lean, Agile and Design Thinking. She's a passionate advocate for improving diversity in technology and ensuring our workplaces are welcoming and inclusive. Also: cats rule, dogs drool.",
+      talk: '',
+      talkAbstract: '',
+      isHost: true
     }
   ],
   news: newsForConference('css')
