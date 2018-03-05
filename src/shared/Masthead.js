@@ -143,6 +143,11 @@ export default class Masthead extends React.Component {
                   <StyledLink to="speakers">Speakers</StyledLink>
                 </li>
               ) : null}
+              {hasWorkshops ? (
+                <li>
+                  <StyledLink to="workshops">Workshops</StyledLink>
+                </li>
+              ) : null}
               {hasSpeakers ? (
                 <li>
                   <StyledLink to="schedule">Schedule</StyledLink>

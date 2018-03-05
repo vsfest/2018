@@ -86,7 +86,7 @@ export default ({ conference }) => {
           <Speaker key={i} {...speaker} id={speaker.twitter}>
             <img src={speaker.image} alt={speaker.name} />
             <div>
-              <LinkThemed href={`https://twitter.com/${speaker.twitter}`}>
+              <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
                 <HeadlineSmall>{speaker.name}</HeadlineSmall>
               </LinkThemed>
               <SpeakerLocation>{speaker.location}</SpeakerLocation>
