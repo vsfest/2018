@@ -981,6 +981,19 @@ export const Decompress = {
       talk: 'Why a poker playing AI should have you looking for a new job',
       talkAbstract:
         "A 2013 report called 'The Future of Employment: How susceptible are jobs to computerisation?' left some occupations like soccer umpires feeling very vulnerable, and designers feeling very smug. However as a weird mix of content strategist, UX designer and former poker player my smug job-secure world was thrown upside down by the success of the Libratus poker AI in January of this year - the first to comprehensively beat multiple poker professionals over a series of four days. If you’re wondering what poker has to do with design - the answer is a lot! In this talk I’ll cover why the mix of probability, pattern-matching, human behaviour and context in poker strategy is a good model for design, how game theory in poker strategy might be used to ‘solve’ design (and possibly front-end dev!), where design AI efforts are at, and why we should stop treating AI like a digital butler and start imagining the tools of the future - even it if puts you out of a job."
+    },
+    {
+      names: ['Sharon Vaughan', 'Elle Meredith'],
+      twitters: ['@Sharon_AV', '@aemeredith'],
+      urls: ['', 'aemeredith.com'],
+      announced: true,
+      image: require('./assets/speaker-sharon-and-elle.jpg'),
+      bio:
+        "Late last millenium Sharon completed a computer degree because her mum, in the mid-80s, said, \"There is a future in computers.\" After a wander through adademia and the arts, she finally became an Apprentice Developer at Envato in May 2017. <br /><br /> Elle is a full stack web developer with more than ten years experience writing Ruby and Rails. Currently Blackmill, previously she was Development Director at thoughtbot New York. For the past six months, Elle developed and ran the Hooroo Engineering Academy, up-skilling less experienced developers, covering topics such as clean code, design patterns, test driven development, and more.",
+      location: 'Melbourne, Australia',
+      talk: 'Apprenticeship patterns',
+      talkAbstract:
+        "Technology companies employ people who can learn, who love it, and those inspired to keep doing it -- \"Life-long learners\". But, how do you foster that in emerging developers? Such that they have sufficient foundational knowledge to build a meaningful career, and that they are provided the tools to continue to bridge knowledge gaps in our ever changing industry. We are going to examine two Melbourne companies who, in 2017, introduced apprenticeship programs to address this dilemma. We will include both sides of their programs, from running it to taking part in it. Discussing it from both sides gives a unique perspective and insight into apprenticeships. It enables us to offer practical suggestions on how everyone can hone a life-long goal of continuous learning. Basically this talk is about learning, how to get started, keep motivated, self-assess, and other useful patterns."
     }
   ],
   workshops: [

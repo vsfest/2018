@@ -63,10 +63,24 @@ export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) =>
         {announcedPresenters.map((speaker, i) => {
           return (
             <Speaker key={i} {...speaker}>
-              <img src={speaker.image} alt={speaker.name} />
-              <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
-                <HeadlineSmall>{speaker.name}</HeadlineSmall>
-              </LinkThemed>
+              <img src={speaker.image} alt={speaker.name || speaker.names.join(' and ')} />
+              {
+                speaker.name ? (
+                  <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
+                    <HeadlineSmall>{speaker.name}</HeadlineSmall>
+                  </LinkThemed>
+                ) : (
+                  <HeadlineSmall>
+                    <LinkThemed href={speaker.twitters[0] ? `https://twitter.com/${speaker.twitters[0]}` : speaker.urls[0]}>
+                      {speaker.names[0]}
+                    </LinkThemed>
+                    {' and '}
+                    <LinkThemed href={speaker.twitters[1] ? `https://twitter.com/${speaker.twitters[1]}` : speaker.urls[1]}>
+                      {speaker.names[1]}
+                    </LinkThemed>
+                  </HeadlineSmall>
+                )
+              }
               <p>{speaker.location}</p>
             </Speaker>
           )
