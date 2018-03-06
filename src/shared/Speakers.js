@@ -84,11 +84,25 @@ export default ({ conference }) => {
       {announcedSpeakers.map((speaker, i) => {
         return (
           <Speaker key={i} {...speaker} id={speaker.twitter}>
-            <img src={speaker.image} alt={speaker.name} />
+            <img src={speaker.image} alt={speaker.name || speaker.names.join(' and ')} />
             <div>
-              <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
-                <HeadlineSmall>{speaker.name}</HeadlineSmall>
-              </LinkThemed>
+              {
+                speaker.name ? (
+                  <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
+                    <HeadlineSmall>{speaker.name}</HeadlineSmall>
+                  </LinkThemed>
+                ) : (
+                  <HeadlineSmall>
+                    <LinkThemed href={speaker.twitters[0] ? `https://twitter.com/${speaker.twitters[0]}` : speaker.urls[0]}>
+                      {speaker.names[0]}
+                    </LinkThemed>
+                    {' and '}
+                    <LinkThemed href={speaker.twitters[1] ? `https://twitter.com/${speaker.twitters[1]}` : speaker.urls[1]}>
+                      {speaker.names[1]}
+                    </LinkThemed>
+                  </HeadlineSmall>
+                )
+              }
               <SpeakerLocation>{speaker.location}</SpeakerLocation>
               <p dangerouslySetInnerHTML={{ __html: speaker.bio }} />
               {!speaker.isHost ? (
