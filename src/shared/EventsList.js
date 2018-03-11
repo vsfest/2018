@@ -43,13 +43,9 @@ export default () => {
     <div>
       <Headline>Schedule and tickets</Headline>
       <p>
-        The conference is a part of a bigger family of events.{' '}
-        <strong>
-          Regular Bird tickets to CSSConf are still available. JSConf is sold
-          out.{' '}
-        </strong>{' '}
-        Entry to Decompress is included in all CSSConf, JSConf or Combo passes.{' '}
-        <LinkThemed href={CSS.titoLink}>Purchase a ticket &rarr;</LinkThemed>
+        The conference is a part of a bigger family of events. Entry to
+        Decompress is included in all CSSConf, JSConf or Combo passes.{' '}
+        <strong>Tickets now sold out.</strong>
       </p>
       <Schedule>
         <Conference {...CSS}>

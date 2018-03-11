@@ -49,11 +49,11 @@ export default ({ id }) => {
     <Wrapper>
       <Container>
         <Perk>
-          <Headline>450</Headline>
+          <Headline>400</Headline>
           <p>attendees</p>
         </Perk>
         <Perk>
-          {id === 'css' ? <Headline>9</Headline> : <Headline>16</Headline>}
+          {id === 'css' ? <Headline>9</Headline> : <Headline>15</Headline>}
           <p>talks</p>
         </Perk>
         <Perk>

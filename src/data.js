@@ -372,19 +372,6 @@ export const JS = {
         'If you’ve spent much time writing and debugging  node module code for performance in a Js app, you’ve probably had a hard  time managing memory and native code integration.<br/><br/>In  this talk, we venture deep into the belly of the Rust Language to  uncover the secret incantations for building high performance and memory  safe node modules using Neon, which helps you to write native node js  modules and it is definitely gonna mesmerize you with its easy language  bridge capabilities for building high performant and crash-free Js apps.<br/><br />Rust is out there creating a new generation of system  programmers, it has a lot to offer in terms of safety and performance  for high-level programming languages such Python, Ruby, Js and more with  its easy Foreign Function Interface capabilities which enables  developers to easily develop bindings for foreign code.'
     },
     {
-      name: 'Harriet Lawrence',
-      twitter: 'harrietgl',
-      url: 'https://github.com/harrietgrace',
-      location: 'Melbourne, Australia',
-      announced: true,
-      image: require('./assets/speaker-harriet.jpg'),
-      bio:
-        'Harriet is Buildkite’s resident linguist. When she’s not crafting exciting ways to describe new Buildkite features, you’ll find her hanging out in bouldering gyms, or with her nose in a book.',
-      talk: 'Why robots suck at fighting harassment',
-      talkAbstract:
-        'Harassment is everywhere online, but it often flies under our radar and we don’t see it. Working in tech, we help to shape the online spaces where people interact. Because of this, we have more power than most to have a positive impact on the prevention of harassment. Our community is making algorithms to identify harassment, but they’re not very effective yet. We can improve these algorithms by looking at the problem from a different perspective - looking at the context of messages as well as the content, and applying linguistic analyses.<br/><br/>For my masters thesis in linguistics I’m studying how we can apply this approach to improve existing NLP algorithms. In this talk I’ll discuss the current blockers in identifying harassment online, and show some ways we can get around them. I’ll be diving into the basics of feature engineering for NLP algorithms, and will demonstrate how each of us can start contributing to training these algorithms right now. <br/><br/>'
-    },
-    {
       name: 'Amy Nguyen',
       twitter: 'amyngyn',
       url: 'http://blog.amynguyen.net/',
@@ -482,6 +469,7 @@ export const CSS = {
   venue,
   city,
   titoLink,
+  soldOut: true,
   theme: {
     primary: 'hsla(18, 90%, 50%, 1)',
     primaryHover: 'hsla(18, 100%, 40%, 1)',
@@ -799,6 +787,7 @@ export const Decompress = {
     'Decompress is an affordable community day for designers and developers run by the CSSConf and JSConf AU teams. Our focus is squarely set on creating an all-inclusive space to learn, share and create.',
   venue,
   titoLink,
+  soldOut: true,
   theme: {
     primary: 'hsla(0, 100%, 62%, 1)',
     primaryHover: 'hsla(0, 100%, 45%, 1)',
@@ -1078,7 +1067,7 @@ export const Decompress = {
           // url: '',
           image: require('./assets/speaker-sebastian.jpg'),
           bio:
-            "Sebastian is a web developer working for Stax.io. He has worked on a variety of languages and frameworks in the FE, Elm is his current tool of choice for building fast and reliable web applications.",
+            'Sebastian is a web developer working for Stax.io. He has worked on a variety of languages and frameworks in the FE, Elm is his current tool of choice for building fast and reliable web applications.',
           location: 'Melbourne, Australia'
         },
         {
@@ -1087,7 +1076,7 @@ export const Decompress = {
           // url: '',
           image: require('./assets/speaker-kevin.jpg'),
           bio:
-            "Kevin is the Director of Front End Engineering at Culture Amp, which used Elm over the past year to build user interfaces that help companies like Adobe, Airbnb, Yelp and Slack to collect, understand, and act on employee feedback.",
+            'Kevin is the Director of Front End Engineering at Culture Amp, which used Elm over the past year to build user interfaces that help companies like Adobe, Airbnb, Yelp and Slack to collect, understand, and act on employee feedback.',
           location: 'Melbourne, Australia'
         }
       ]

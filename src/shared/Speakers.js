@@ -71,14 +71,12 @@ export default ({ conference }) => {
         {conference.hasSchedule && (
           <StyledLink to="schedule">conference schedule</StyledLink>
         )}
-        {conference.hasSchedule && ', '}
+        {conference.hasSchedule && ' and '}
         <StyledLink to="speakers">talk descriptions</StyledLink>
-        {conference.hasWorkshops && ', '}
+        {conference.hasWorkshops && ' and '}
         {conference.hasWorkshops && (
           <StyledLink to="workshops">workshop details</StyledLink>
-        )}
-        {' or '}
-        <LinkThemed href={titoLink}>get a ticket &rarr;</LinkThemed>
+        )}.
       </Copy>
 
       {announcedSpeakers.map((speaker, i) => {
@@ -86,7 +84,13 @@ export default ({ conference }) => {
           <Speaker key={i} {...speaker} id={speaker.twitter}>
             <img src={speaker.image} alt={speaker.name} />
             <div>
-              <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
+              <LinkThemed
+                href={
+                  speaker.twitter
+                    ? `https://twitter.com/${speaker.twitter}`
+                    : speaker.url
+                }
+              >
                 <HeadlineSmall>{speaker.name}</HeadlineSmall>
               </LinkThemed>
               <SpeakerLocation>{speaker.location}</SpeakerLocation>

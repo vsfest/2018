@@ -29,16 +29,24 @@ const SpeakersWrapper = styled.div`
   }
 `
 
-export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) => {
+export default ({
+  hasSchedule,
+  hasWorkshops,
+  speakers,
+  workshops,
+  titoLink
+}) => {
   const announcedWorkshops = (workshops || []).filter(
     workshop => workshop.announced === true
   )
   const announcedSpeakers = speakers.filter(
     speaker => speaker.announced === true
   )
-  const announcedPresenters = announcedSpeakers.concat(announcedWorkshops.reduce((list, workshop) => {
-    return list.concat(workshop.speakers)
-  }, []))
+  const announcedPresenters = announcedSpeakers.concat(
+    announcedWorkshops.reduce((list, workshop) => {
+      return list.concat(workshop.speakers)
+    }, [])
+  )
 
   return (
     <div>
@@ -48,23 +56,25 @@ export default ({ hasSchedule, hasWorkshops, speakers, workshops, titoLink }) =>
         {hasSchedule && (
           <StyledLink to="schedule">conference schedule</StyledLink>
         )}
-        {hasSchedule && ', '}
+        {hasSchedule && ' and '}
         <StyledLink to="speakers">talk descriptions</StyledLink>
-        {hasWorkshops && ', '}
+        {hasWorkshops && ' as well as '}
         {hasWorkshops && (
           <StyledLink to="workshops">workshop details</StyledLink>
-        )}
-        {' or '}
-        <LinkThemed href={titoLink}>
-          get a ticket to CSSConf or Decompress &rarr;
-        </LinkThemed>
+        )}.
       </Copy>
       <SpeakersWrapper>
         {announcedPresenters.map((speaker, i) => {
           return (
             <Speaker key={i} {...speaker}>
               <img src={speaker.image} alt={speaker.name} />
-              <LinkThemed href={speaker.twitter ? `https://twitter.com/${speaker.twitter}` : speaker.url}>
+              <LinkThemed
+                href={
+                  speaker.twitter
+                    ? `https://twitter.com/${speaker.twitter}`
+                    : speaker.url
+                }
+              >
                 <HeadlineSmall>{speaker.name}</HeadlineSmall>
               </LinkThemed>
               <p>{speaker.location}</p>

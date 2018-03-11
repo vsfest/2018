@@ -119,7 +119,7 @@ export default ({ conference }) => {
           <ScheduleItemContent>Lunch Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>14:15</Time>
+          <Time>14:45</Time>
           <ScheduleItemContent>
             <Speaker>Suz Hinton</Speaker>
             <LinkThemed href="/speakers#noopkat">
@@ -129,7 +129,7 @@ export default ({ conference }) => {
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>14:45</Time>
+          <Time>15:15</Time>
           <ScheduleItemContent>
             <Speaker>Craig Spence</Speaker>
             <LinkThemed href="/speakers#phenomnominal">
@@ -138,17 +138,8 @@ export default ({ conference }) => {
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>15:15</Time>
-          <ScheduleItemContent>Coffee Break</ScheduleItemContent>
-        </ScheduleItem>
-        <ScheduleItem>
           <Time>15:45</Time>
-          <ScheduleItemContent>
-            <Speaker>Harriet Lawrence</Speaker>
-            <LinkThemed href="/speakers#harrietgl">
-              Why robots suck at fighting harassment
-            </LinkThemed>
-          </ScheduleItemContent>
+          <ScheduleItemContent>Coffee Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
           <Time>16:15</Time>
