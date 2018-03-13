@@ -133,7 +133,7 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>15:15</Time>
-          <ScheduleItemContent>Coffee Break</ScheduleItemContent>
+          <ScheduleItemContent>Sweets Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
           <Time>15:45</Time>
@@ -155,7 +155,7 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>16:45</Time>
-          <ScheduleItemContent>Sweets Break</ScheduleItemContent>
+          <ScheduleItemContent>Coffee Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
           <Time>17:15</Time>
