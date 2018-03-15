@@ -71,19 +71,19 @@ export default ({ conference }) => {
         <ScheduleItem>
           <Time>10:15</Time>
           <ScheduleItemContent>
-            <Speaker>Ire Aderinokun</Speaker>
-            <LinkThemed href="/speakers#ireaderinokun">
-              CSS for the next billion users
+            <Speaker>David Khourshid</Speaker>
+            <LinkThemed href="/speakers#davidkpiano">
+              Behind the Illusions: Impossibly high-performance layout
+              animations
             </LinkThemed>
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
           <Time>10:45</Time>
           <ScheduleItemContent>
-            <Speaker>David Khourshid</Speaker>
-            <LinkThemed href="/speakers#davidkpiano">
-              Behind the Illusions: Impossibly high-performance layout
-              animations
+            <Speaker>Brenda Storer</Speaker>
+            <LinkThemed href="/speakers#brendamarienyc">
+              How to use CSS grid today in the real world
             </LinkThemed>
           </ScheduleItemContent>
         </ScheduleItem>
@@ -94,15 +94,6 @@ export default ({ conference }) => {
         <ScheduleItem>
           <Time>11:45</Time>
           <ScheduleItemContent>
-            <Speaker>Brenda Storer</Speaker>
-            <LinkThemed href="/speakers#brendamarienyc">
-              How to use CSS grid today in the real world
-            </LinkThemed>
-          </ScheduleItemContent>
-        </ScheduleItem>
-        <ScheduleItem>
-          <Time>12:15</Time>
-          <ScheduleItemContent>
             <Speaker>Jeremy Wagner</Speaker>
             <LinkThemed href="/speakers#malchata">
               Faster fonts for speed fanatics
@@ -110,17 +101,17 @@ export default ({ conference }) => {
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>12:45</Time>
-          <ScheduleItemContent>Lunch Break</ScheduleItemContent>
-        </ScheduleItem>
-        <ScheduleItem>
-          <Time>14:15</Time>
+          <Time>12:15</Time>
           <ScheduleItemContent>
             <Speaker>Julie Grundy</Speaker>
             <LinkThemed href="/speakers#stringy">
               Can you see that OK? CSS tips for low-vision accessibility
             </LinkThemed>
           </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>12:45</Time>
+          <ScheduleItemContent>Lunch Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
           <Time>14:45</Time>
@@ -133,16 +124,16 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>15:15</Time>
-          <ScheduleItemContent>Sweets Break</ScheduleItemContent>
-        </ScheduleItem>
-        <ScheduleItem>
-          <Time>15:45</Time>
           <ScheduleItemContent>
             <Speaker>Sam Richard</Speaker>
             <LinkThemed href="/speakers#snugug">
               Magic tricks with Houdini
             </LinkThemed>
           </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>15:45</Time>
+          <ScheduleItemContent>Sweets Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
           <Time>16:15</Time>
@@ -155,10 +146,6 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>16:45</Time>
-          <ScheduleItemContent>Coffee Break</ScheduleItemContent>
-        </ScheduleItem>
-        <ScheduleItem>
-          <Time>17:15</Time>
           <ScheduleItemContent>
             <Speaker>Ivana McConnell</Speaker>
             <LinkThemed href="/speakers#IvanaMcConnell">
@@ -167,11 +154,11 @@ export default ({ conference }) => {
           </ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>17:45</Time>
+          <Time>17:15</Time>
           <ScheduleItemContent>Closing Remarks</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>17:55</Time>
+          <Time>17:35</Time>
           <ScheduleItemContent>Family Photo</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
