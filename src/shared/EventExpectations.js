@@ -53,7 +53,7 @@ export default ({ id }) => {
           <p>attendees</p>
         </Perk>
         <Perk>
-          {id === 'css' ? <Headline>9</Headline> : <Headline>15</Headline>}
+          {id === 'css' ? <Headline>8</Headline> : <Headline>15</Headline>}
           <p>talks</p>
         </Perk>
         <Perk>

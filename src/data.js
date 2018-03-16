@@ -600,19 +600,6 @@ export const CSS = {
   ],
   speakers: [
     {
-      name: 'Ire Aderinokun',
-      twitter: 'ireaderinokun',
-      url: 'https://ireaderinokun.com',
-      announced: true,
-      image: require('./assets/speaker-ire.jpg'),
-      bio:
-        'Ire is a self-taught Frontend Developer and User Interface Designer based in Lagos, Nigeria. She currently works as a Software Developer for eyeo, the company behind products like Adblock Plus and Flattr Plus, building open source software to make a better internet. Ire specialised in all things HTML, CSS, and JavaScript, but is passionate about all aspects of technology. She has written over 100 articles on these topics on her blog, bitsofco.de, and has spoken at conferences around Africa and the world.',
-      location: 'Lagos, Nigeria',
-      talk: 'CSS for the next billion users',
-      talkAbstract:
-        'There’s been a lot of talk lately about developing for the “next billion users”, which essentially means targeting users who are coming online for the first time in developing countries. This talk will be about different ways we can write CSS for the “next billion users”. I will talk about my experience developing websites for users in Nigeria and cover areas such as performance, accessibility, and progressive enhancement.'
-    },
-    {
       name: 'Brenda Storer',
       twitter: 'brendamarienyc',
       announced: true,
