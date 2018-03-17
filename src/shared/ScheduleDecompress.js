@@ -37,12 +37,12 @@ const Time = styled.time`
   width: 100px;
 `
 
-// const Speaker = styled.p`
-//   margin-bottom: 0;
-//   font-family: 'Maison Neue Extra Bold', -apple-system, BlinkMacSystemFont,
-//     avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-//     segoe ui, arial, sans-serif;
-// `
+const Speaker = styled.p`
+  margin-bottom: 0;
+  font-family: 'Maison Neue Extra Bold', -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+    segoe ui, arial, sans-serif;
+`
 
 export default ({ conference }) => {
   return (
@@ -89,10 +89,6 @@ export default ({ conference }) => {
           <ScheduleItemContent>Lunch Break</ScheduleItemContent>
         </ScheduleItem>
         <ScheduleItem>
-          <Time>13:20</Time>
-          <ScheduleItemContent>"Meet the Meetups"</ScheduleItemContent>
-        </ScheduleItem>
-        <ScheduleItem>
           <Time>14:00</Time>
           <ScheduleItemContent>Family Photo</ScheduleItemContent>
         </ScheduleItem>
@@ -106,14 +102,106 @@ export default ({ conference }) => {
         </ScheduleItem>
         <ScheduleItem>
           <Time>17:00</Time>
-          <ScheduleItemContent>Pub Time!</ScheduleItemContent>
+          <ScheduleItemContent>
+            Pub Time!
+            <LinkThemed href="http://www.metrohotel.com.au/">
+              Just around the corner at The Metropolitan Hotel
+            </LinkThemed>
+          </ScheduleItemContent>
         </ScheduleItem>
       </ScheduleWrapper>
 
       <HeadlineSmall>Talk Schedule</HeadlineSmall>
       <ScheduleWrapper>
         <ScheduleItem>
-          Coming soon...
+          <Time>11:00</Time>
+          <ScheduleItemContent>
+            <Speaker>Kylie Long</Speaker>
+            <LinkThemed href="/speakers#kyliejlong">
+              Practical tools for happier, more seamless collaboration
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>11:20</Time>
+          <ScheduleItemContent>
+            <Speaker>Rob Crowley</Speaker>
+            <LinkThemed href="/speakers#robdcrowley">
+              Crafting compelling real-time web experiences with GraphQL
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>11:40</Time>
+          <ScheduleItemContent>
+            <Speaker>Jess Champion</Speaker>
+            <LinkThemed href="/speakers#jess_champion">
+              A unit test walks into a bar
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>12:00</Time>
+          <ScheduleItemContent>
+            <Speaker>Jeremy Nagel</Speaker>
+            <LinkThemed href="/speakers#jeznag">
+              Attack of the mutants: using mutation testing to improve your test suite
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>12:20</Time>
+          <ScheduleItemContent>
+            <Speaker>Jessica Norris and Ben Taylor</Speaker>
+            <LinkThemed href="/speakers#groklearning">
+              How to keep your server alive AND teach JS to kids
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>14:20</Time>
+          <ScheduleItemContent>
+            <Speaker>Keira Hodgkison</Speaker>
+            <LinkThemed href="/speakers#keirasaid">
+              The Why and How of ReasonML
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>14:40</Time>
+          <ScheduleItemContent>
+            <Speaker>Juliet Brown</Speaker>
+            <LinkThemed href="/speakers#julietbrown84">
+              Intersection between art and technology
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>15:00</Time>
+          <ScheduleItemContent>
+            <Speaker>Maz Hermon</Speaker>
+            <LinkThemed href="/speakers#mazhermon">
+              How is a UI component library the 'Mise en place' of the modern Web-Chef’s kitchen?
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>15:20</Time>
+          <ScheduleItemContent>
+            <Speaker>Jason O'Neil</Speaker>
+            <LinkThemed href="/speakers#jasonaoneil">
+              50,000 lines of spaghetti code (and how to unravel it)
+            </LinkThemed>
+          </ScheduleItemContent>
+        </ScheduleItem>
+        <ScheduleItem>
+          <Time>15:40</Time>
+          <ScheduleItemContent>
+            <Speaker>Cory-Ann Joseph</Speaker>
+            <LinkThemed href="/speakers#coryannj">
+              Why a poker playing AI should have you looking for a new job
+            </LinkThemed>
+          </ScheduleItemContent>
         </ScheduleItem>
       </ScheduleWrapper>
     </Container>
