@@ -889,7 +889,7 @@ export const Decompress = {
       bio:
         'Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.',
       location: 'Wellington, New Zealand',
-      talk: 'Intersection between Art and Technology',
+      talk: 'Intersection between art and technology',
       talkAbstract:
         "Programmers are artists. I am a web animator, developer, and artist. I come from A Fine Arts background, and a question I often get asked is how and why did you become a developer if you come from an arts background? For me, programming is creative, and I would like to share my journey with you. How I brought my diverse background to the developer community and what I am doing with that now. How I relate to technology with its subject matter, medium, and process. Using coding as an artistic medium references and also pushes the boundaries of what art is and can do. Painting and drawing come with such a historical background. <br /><br /> By bringing the old medium into technology - a new medium, a tool that we as people are involved with day to day excites me, it brings new possibilities for css and javascript and the technology space. <br /><br /> Common themes I explore in my art practice is popular culture, and the real and the imaginary. Recently, I have been working at converting my practice (painting, drawings) into a large human sized 3D animation world. <br /><br /> By combing Art and technology together, challenges the notions of the digital world and also how we perceive art and the 'artist'"
     },
@@ -957,6 +957,19 @@ export const Decompress = {
       talk: 'Why a poker playing AI should have you looking for a new job',
       talkAbstract:
         "A 2013 report called 'The Future of Employment: How susceptible are jobs to computerisation?' left some occupations like soccer umpires feeling very vulnerable, and designers feeling very smug. However as a weird mix of content strategist, UX designer and former poker player my smug job-secure world was thrown upside down by the success of the Libratus poker AI in January of this year - the first to comprehensively beat multiple poker professionals over a series of four days. If you’re wondering what poker has to do with design - the answer is a lot! In this talk I’ll cover why the mix of probability, pattern-matching, human behaviour and context in poker strategy is a good model for design, how game theory in poker strategy might be used to ‘solve’ design (and possibly front-end dev!), where design AI efforts are at, and why we should stop treating AI like a digital butler and start imagining the tools of the future - even it if puts you out of a job."
+    },
+    {
+      name: 'Kylie Long',
+      twitter: 'kyliejlong',
+      // url: '',
+      announced: true,
+      image: require('./assets/speaker-kylie.jpg'),
+      bio:
+        "Kylie is a startup founder, collaboration expert and restless creative. She has an unflinching belief in people’s ability to be experts of their own lives and much of her professional life has involved creating platforms for marginalised people and voices to be heard. She’s curious about the direction of technology and the role it might play in unfolding participative societies.",
+      location: 'Melbourne, Australia',
+      talk: 'Practical tools for happier, more seamless collaboration',
+      talkAbstract:
+        "So much is expected of our designers and developers. They need to know myriad programming languages and other technical competencies, they must keep abreast of emerging trends and; contribute to the broader community through meetups and online peer learning platforms. <br /><br /> Often, our designers and developers also work in non-hierarchical organisations, multidisciplinary teams or as freelancers. With organisations like Spotify, Valve & Culture Amp we’re feeling inspired to organise differently, to 'swarm' as fit for purpose teams; to collaborate and lead from anywhere despite role or rank. <br /><br /> But this scenario is not without its challenges. A couple of years ago, the Inspire9 team started to hear some grumbling from the community. Things like <em>\"My colleague won’t listen to me. I have this great idea and we’re supposed to collaborate, but he just does whatever he wants\"</em> and <em>\"I don’t know what to do when there is conflict, I just freeze\"</em>. <br /><br /> They noticed that while their community was technically brilliant, they were struggling with some of the 'human dynamics' of their work. They decided to do something about it and invited me in to run a leadership program \"Leading in Networks\" with the community which I'll share about in my presentation. <br /><br /> A very practical talk, full of the tools and tricks I shared with the I9 community. Hear about the insights we gained through our leadership journey, and what changed for participants as they attained deeper insights into their approach and practice as collaborators in multidisciplinary team environments. Hear about the tools and tricks they found most useful and take away your own insights to grow your collaborative practice."
     }
   ],
   workshops: [
