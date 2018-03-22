@@ -6,6 +6,8 @@ import Container from '../shared/components/Container'
 import { LinkThemed } from './components/Links'
 import HeadlineSmall from './components/HeadlineSmall'
 
+const workshopMap = require('../assets/workshop-map.jpg')
+
 const ScheduleWrapper = styled.ul`
   list-style-type: none;
   margin: 0 0 60px 0;
@@ -42,6 +44,10 @@ const Speaker = styled.p`
   font-family: 'Maison Neue Extra Bold', -apple-system, BlinkMacSystemFont,
     avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
     segoe ui, arial, sans-serif;
+`
+
+const Map = styled.img`
+  width: 100%;
 `
 
 export default ({ conference }) => {
@@ -111,7 +117,7 @@ export default ({ conference }) => {
         </ScheduleItem>
       </ScheduleWrapper>
 
-      <HeadlineSmall>Talk Schedule</HeadlineSmall>
+      <HeadlineSmall id="talks">Talk Schedule</HeadlineSmall>
       <ScheduleWrapper>
         <ScheduleItem>
           <Time>11:00</Time>
@@ -204,6 +210,8 @@ export default ({ conference }) => {
           </ScheduleItemContent>
         </ScheduleItem>
       </ScheduleWrapper>
+      <HeadlineSmall id="map">Workshop Map</HeadlineSmall>
+      <Map src={workshopMap} alt={'Workshop Map'} />
     </Container>
   )
 }
