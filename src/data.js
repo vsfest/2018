@@ -400,7 +400,7 @@ export const JS = {
     {
       name: 'Milly Schmidt',
       twitter: 'meelijane',
-      announced: true,
+      announced: false,
       url: 'https://estimate-work.com/',
       image: require('./assets/mc-milly.jpg'),
       location: 'Melbourne, Australia',
@@ -413,7 +413,7 @@ export const JS = {
     {
       name: 'Charlie Gleason',
       twitter: 'superhighfives',
-      announced: true,
+      announced: false,
       url: 'https://charliegleason.com/',
       image: require('./assets/mc-charlie.jpg'),
       location: 'London, United Kingdom',
@@ -426,7 +426,7 @@ export const JS = {
     {
       name: 'Nat Dudley',
       twitter: 'NatDudley',
-      announced: true,
+      announced: false,
       url: 'http://natdudley.com/',
       image: require('./assets/mc-nat.jpg'),
       location: 'Tāmaki Makaurau, Aotearoa',
@@ -439,7 +439,7 @@ export const JS = {
     {
       name: 'Laura Summers',
       twitter: 'summerscope',
-      announced: true,
+      announced: false,
       url: '',
       image: require('./assets/mc-laura.jpg'),
       location: 'Melbourne, Australia',
@@ -602,6 +602,7 @@ export const CSS = {
     {
       name: 'Brenda Storer',
       twitter: 'brendamarienyc',
+      talkVideo: 'fVX0xscGP9o',
       announced: true,
       url: 'http://brendastorer.com/',
       bio:
@@ -617,6 +618,7 @@ export const CSS = {
       twitter: 'mapotato',
       announced: true,
       url: 'https://www.yelp.com/styleguide',
+      talkVideo: 'REwp9rQQM7I',
       bio:
         "Theresa is a Toronto raised and San Francisco based software engineer with an interdisciplinary background in cognitive science and philosophy. She's a relentless advocate for the design system at Yelp.",
       location: 'San Francisco, United States',
@@ -629,6 +631,7 @@ export const CSS = {
       name: 'David Khourshid',
       twitter: 'davidkpiano',
       url: 'https://codepen.io/davidkpiano',
+      talkVideo: 'zVbLR7rI8ZU',
       announced: true,
       bio:
         'David is a software engineer at Microsoft who is passionate about making users as happy as possible. He is passionate about JavaScript, CSS, animation, innovative UIs, and cutting-edge front-end technologies. When not behind a computer keyboard, he’s behind a piano keyboard or traveling.',
@@ -643,6 +646,7 @@ export const CSS = {
       name: 'Jeremy Wagner',
       twitter: 'malchata',
       announced: true,
+      talkVideo: 'iEinIwNppW4',
       url: 'https://jeremywagner.me/',
       bio:
         'Jeremy Wagner is a web developer from Saint Paul, Minnesota who frequently blogs on the topic of web performance. He is also the author of Web Performance in Action from Manning Publications.',
@@ -656,6 +660,7 @@ export const CSS = {
       name: 'Julie Grundy',
       twitter: 'stringy',
       announced: true,
+      talkVideo: 'Wq2-cZ-vZBc?rel=0&amp;controls=0&amp;show',
       url: 'http://www.juliegrundy.id.au/',
       bio:
         'Julie Grundy is a front-end dev turned accessibility consultant. She believes in an independent democratic web and wishes everyone was issued a personal domain name at birth.',
@@ -670,6 +675,7 @@ export const CSS = {
       twitter: 'broccolini',
       url: 'http://broccolini.net',
       announced: true,
+      talkVideo: 'AbpS3Z3xXE0',
       bio:
         'Diana is a designer based in Brooklyn, NY. She leads GitHub’s design systems team, organizes the NYC Design Systems Coalition, and writes and speaks about code, design, and working with people.',
       location: 'New York, United States',
@@ -682,6 +688,7 @@ export const CSS = {
       name: 'Sam Richard',
       twitter: 'snugug',
       announced: true,
+      talkVideo: 'FYWZrLpN5Po',
       url: 'https://snugug.com',
       bio:
         'Sam Richard, better known as Snugug, is a developer and designer with a love of building open source tools for both. He also geeks out on content, process, transformation, and food.',
@@ -695,6 +702,7 @@ export const CSS = {
       name: 'Ivana McConnell',
       twitter: 'IvanaMcConnell',
       url: 'http://ivanamcconnell.com',
+      talkVideo: 'LB-DvtCHOgE',
       announced: true,
       bio:
         'Ivana is a UI/UX designer. She fell in love with the web on Geocities and Neopets many years ago, and found her way into UX design via neuroscience research, rock climbing instruction, and video game testing. Originally born in Sarajevo, she has lived in Croatia, all over Canada, and Scotland, and is now based in Vancouver working remotely for Customer.io.',
@@ -707,7 +715,7 @@ export const CSS = {
     {
       name: 'Milly Schmidt',
       twitter: 'meelijane',
-      announced: true,
+      announced: false,
       url: 'https://estimate-work.com/',
       image: require('./assets/mc-milly.jpg'),
       location: 'Melbourne, Australia',
@@ -720,7 +728,7 @@ export const CSS = {
     {
       name: 'Charlie Gleason',
       twitter: 'superhighfives',
-      announced: true,
+      announced: false,
       url: 'https://charliegleason.com/',
       image: require('./assets/mc-charlie.jpg'),
       location: 'London, United Kingdom',
@@ -733,7 +741,7 @@ export const CSS = {
     {
       name: 'Nat Dudley',
       twitter: 'NatDudley',
-      announced: true,
+      announced: false,
       url: 'http://natdudley.com/',
       image: require('./assets/mc-nat.jpg'),
       location: 'Tāmaki Makaurau, Aotearoa',
@@ -746,7 +754,7 @@ export const CSS = {
     {
       name: 'Laura Summers',
       twitter: 'summerscope',
-      announced: true,
+      announced: false,
       url: '',
       image: require('./assets/mc-laura.jpg'),
       location: 'Melbourne, Australia',
@@ -856,6 +864,7 @@ export const Decompress = {
       name: 'Maz Hermon',
       twitter: 'mazhermon',
       url: 'http://mazhermon.com/',
+      talkVideo: 'jjg0VfsS-S0',
       announced: true,
       image: require('./assets/speaker-maz.jpg'),
       bio:
@@ -870,6 +879,7 @@ export const Decompress = {
       name: 'Jeremy Nagel',
       twitter: 'jeznag',
       url: 'https://www.programmerswhogiveashit.com',
+      talkVideo: 'W8UXlk-Ug_0',
       announced: true,
       image: require('./assets/speaker-jeremy-nagel.jpg'),
       bio:
@@ -885,6 +895,7 @@ export const Decompress = {
       twitter: 'julietbrown84',
       // url: '',
       announced: true,
+      talkVideo: 'EMNP4E4a-qo',
       image: require('./assets/speaker-juliet.jpg'),
       bio:
         'Juliet Brown is an artist, a programmer, and a maker, all of which she believes require inspiration, creativity, thoughtfulness, dedication and skill. She is interested in shaping code into works of art that can stand the test of time and wants to push the boundaries of how we see technology.',
@@ -896,6 +907,7 @@ export const Decompress = {
     {
       name: 'Rob Crowley',
       twitter: 'robdcrowley',
+      talkVideo: 'Vi6vsbm20oI',
       // url: '',
       announced: true,
       image: require('./assets/speaker-rob.jpg'),
@@ -910,6 +922,7 @@ export const Decompress = {
       name: 'Jessica Norris and Ben Taylor',
       twitter: 'groklearning',
       // url: '',
+      talkVideo: 'j5UNHl9QwBY',
       announced: true,
       image: require('./assets/speaker-jess-and-ben.jpg'),
       bio:
@@ -924,6 +937,7 @@ export const Decompress = {
       twitter: 'jasonaoneil',
       url: 'https://jasono.co/',
       announced: true,
+      talkVideo: '83qcg2eD6Xo',
       image: require('./assets/speaker-jason.jpg'),
       bio:
         'Jason recently joined Culture Amp as a specialist in front-end developer tools. He wants software engineers to enjoy their jobs and so rages against technical debt, slow iteration cycles and lousy error messages.',
@@ -936,6 +950,7 @@ export const Decompress = {
       name: 'Jess Champion',
       twitter: 'jess_champion',
       // url: '',
+      talkVideo: 'd2c277s12NI',
       announced: true,
       image: require('./assets/speaker-jess-champion.jpg'),
       bio:
@@ -946,30 +961,18 @@ export const Decompress = {
         "A unit test walks into a bar. Orders a beer. Orders ten beers. Orders 2.5 billion beers. Orders -1 beers. Orders a nothing. Orders a cat. We spend a lot of time thinking and talking about how to write better code, but much less time on how to write better tests. Over the course of my career as a JavaScript developer I’ve worked across product teams, project team and operations. This talk will leverage my experience in each of these roles to examine how unit tests are a critical component of robust, stable and maintainable software across the full lifecycle. We'll do a deeper dive into some of the theory around unit testing while relating it back to business value and agile practices. I will also give opinionated practical advice for writing a robust test suite."
     },
     {
-      name: 'Cory-Ann Joseph',
-      twitter: 'coryannj',
-      // url: '',
-      announced: true,
-      image: require('./assets/speaker-cory.jpg'),
-      bio:
-        "Cory started working with the internet way back in 2001 when she chanced her way into a position as web content editor for the Aussie version of the X-Games. Since then she's dabbled in PR, marketing, events management, a skateboard shop, worked as a barista, accrued a blank IMDB profile, run pub poker tournaments in rural NSW, and dropped out of Bible college - amongst other things. She currently works as a UX Lead at ANZ.",
-      location: 'Melbourne, Australia',
-      talk: 'Why a poker playing AI should have you looking for a new job',
-      talkAbstract:
-        "A 2013 report called 'The Future of Employment: How susceptible are jobs to computerisation?' left some occupations like soccer umpires feeling very vulnerable, and designers feeling very smug. However as a weird mix of content strategist, UX designer and former poker player my smug job-secure world was thrown upside down by the success of the Libratus poker AI in January of this year - the first to comprehensively beat multiple poker professionals over a series of four days. If you’re wondering what poker has to do with design - the answer is a lot! In this talk I’ll cover why the mix of probability, pattern-matching, human behaviour and context in poker strategy is a good model for design, how game theory in poker strategy might be used to ‘solve’ design (and possibly front-end dev!), where design AI efforts are at, and why we should stop treating AI like a digital butler and start imagining the tools of the future - even it if puts you out of a job."
-    },
-    {
       name: 'Kylie Long',
       twitter: 'kyliejlong',
       // url: '',
+      talkVideo: '4Vy5SDd-hAI',
       announced: true,
       image: require('./assets/speaker-kylie.jpg'),
       bio:
-        "Kylie is a startup founder, collaboration expert and restless creative. She has an unflinching belief in people’s ability to be experts of their own lives and much of her professional life has involved creating platforms for marginalised people and voices to be heard. She’s curious about the direction of technology and the role it might play in unfolding participative societies.",
+        'Kylie is a startup founder, collaboration expert and restless creative. She has an unflinching belief in people’s ability to be experts of their own lives and much of her professional life has involved creating platforms for marginalised people and voices to be heard. She’s curious about the direction of technology and the role it might play in unfolding participative societies.',
       location: 'Melbourne, Australia',
       talk: 'Practical tools for happier, more seamless collaboration',
       talkAbstract:
-        "So much is expected of our designers and developers. They need to know myriad programming languages and other technical competencies, they must keep abreast of emerging trends and; contribute to the broader community through meetups and online peer learning platforms. <br /><br /> Often, our designers and developers also work in non-hierarchical organisations, multidisciplinary teams or as freelancers. With organisations like Spotify, Valve & Culture Amp we’re feeling inspired to organise differently, to 'swarm' as fit for purpose teams; to collaborate and lead from anywhere despite role or rank. <br /><br /> But this scenario is not without its challenges. A couple of years ago, the Inspire9 team started to hear some grumbling from the community. Things like <em>\"My colleague won’t listen to me. I have this great idea and we’re supposed to collaborate, but he just does whatever he wants\"</em> and <em>\"I don’t know what to do when there is conflict, I just freeze\"</em>. <br /><br /> They noticed that while their community was technically brilliant, they were struggling with some of the 'human dynamics' of their work. They decided to do something about it and invited me in to run a leadership program \"Leading in Networks\" with the community which I'll share about in my presentation. <br /><br /> A very practical talk, full of the tools and tricks I shared with the I9 community. Hear about the insights we gained through our leadership journey, and what changed for participants as they attained deeper insights into their approach and practice as collaborators in multidisciplinary team environments. Hear about the tools and tricks they found most useful and take away your own insights to grow your collaborative practice."
+        'So much is expected of our designers and developers. They need to know myriad programming languages and other technical competencies, they must keep abreast of emerging trends and; contribute to the broader community through meetups and online peer learning platforms. <br /><br /> Often, our designers and developers also work in non-hierarchical organisations, multidisciplinary teams or as freelancers. With organisations like Spotify, Valve & Culture Amp we’re feeling inspired to organise differently, to \'swarm\' as fit for purpose teams; to collaborate and lead from anywhere despite role or rank. <br /><br /> But this scenario is not without its challenges. A couple of years ago, the Inspire9 team started to hear some grumbling from the community. Things like <em>"My colleague won’t listen to me. I have this great idea and we’re supposed to collaborate, but he just does whatever he wants"</em> and <em>"I don’t know what to do when there is conflict, I just freeze"</em>. <br /><br /> They noticed that while their community was technically brilliant, they were struggling with some of the \'human dynamics\' of their work. They decided to do something about it and invited me in to run a leadership program "Leading in Networks" with the community which I\'ll share about in my presentation. <br /><br /> A very practical talk, full of the tools and tricks I shared with the I9 community. Hear about the insights we gained through our leadership journey, and what changed for participants as they attained deeper insights into their approach and practice as collaborators in multidisciplinary team environments. Hear about the tools and tricks they found most useful and take away your own insights to grow your collaborative practice.'
     }
   ],
   workshops: [

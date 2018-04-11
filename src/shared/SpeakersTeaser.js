@@ -1,18 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import Headline from './components/Headline'
 import HeadlineSmall from './components/HeadlineSmall'
 import { LinkThemed } from './components/Links'
-import Copy from './components/Copy'
-
-const StyledLink = LinkThemed.withComponent(Link)
+import Youtube from 'react-youtube'
 
 const Speaker = styled.div`
   text-align: center;
 
-  img {
-    max-width: 100%;
+  iframe {
+    width: 100%;
+    min-height: 250px;
     margin-bottom: 30px;
   }
 
@@ -24,7 +22,7 @@ const Speaker = styled.div`
 const SpeakersWrapper = styled.div`
   @media (min-width: 48em) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
   }
 `
@@ -42,44 +40,29 @@ export default ({
   const announcedSpeakers = speakers.filter(
     speaker => speaker.announced === true
   )
-  const announcedPresenters = announcedSpeakers.concat(
-    announcedWorkshops.reduce((list, workshop) => {
-      return list.concat(workshop.speakers)
-    }, [])
-  )
 
   return (
     <div>
-      <Headline>Speakers</Headline>
-      <Copy>
-        Read the{' '}
-        {hasSchedule && (
-          <StyledLink to="schedule">conference schedule</StyledLink>
-        )}
-        {hasSchedule && ' and '}
-        <StyledLink to="speakers">talk descriptions</StyledLink>
-        {hasWorkshops && ' as well as '}
-        {hasWorkshops && (
-          <StyledLink to="workshops">workshop details</StyledLink>
-        )}.
-      </Copy>
+      <Headline>Videos</Headline>
       <SpeakersWrapper>
-        {announcedPresenters.map((speaker, i) => {
-          return (
-            <Speaker key={i} {...speaker}>
-              <img src={speaker.image} alt={speaker.name} />
-              <LinkThemed
-                href={
-                  speaker.twitter
-                    ? `https://twitter.com/${speaker.twitter}`
-                    : speaker.url
-                }
-              >
-                <HeadlineSmall>{speaker.name}</HeadlineSmall>
-              </LinkThemed>
-              <p>{speaker.location}</p>
-            </Speaker>
-          )
+        {announcedSpeakers.map((speaker, i) => {
+          if (speaker.talkVideo) {
+            return (
+              <Speaker key={i} {...speaker}>
+                <Youtube videoId={speaker.talkVideo} />
+                <LinkThemed
+                  href={
+                    speaker.twitter
+                      ? `https://twitter.com/${speaker.twitter}`
+                      : speaker.url
+                  }
+                >
+                  <HeadlineSmall>{speaker.name}</HeadlineSmall>
+                </LinkThemed>
+                <p>{speaker.talk}</p>
+              </Speaker>
+            )
+          }
         })}
       </SpeakersWrapper>
     </div>

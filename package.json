@@ -13,6 +13,7 @@
     "react-router-dom": "^4.2.0",
     "react-scripts": "1.0.11",
     "react-snapshot": "^1.3.0",
+    "react-youtube": "^7.5.0",
     "styled-components": "^2.1.2"
   },
   "scripts": {

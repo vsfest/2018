@@ -84,7 +84,7 @@ const NavToggle = styled(Button)`
     display: none;
   }
   @media (max-width: 460px) {
-    padding-right: 0;
+    padding-right: 30px;
   }
 `
 

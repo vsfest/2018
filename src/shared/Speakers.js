@@ -57,8 +57,6 @@ export default ({ conference }) => {
     speaker => speaker.announced === true
   )
 
-  const titoLink = conference.titoLink
-
   return (
     <Container>
       <Helmet {...conference}>
