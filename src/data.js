@@ -203,6 +203,7 @@ export const JS = {
   speakers: [
     {
       name: 'Patricia Realini',
+      talkVideo: 'XV3zUI5WiOM',
       twitter: 'patriciarealini',
       url: 'http://patriciarealini.com',
       location: 'Los Angeles, United States',
@@ -221,6 +222,7 @@ export const JS = {
       url: 'https://github.com/noopkat',
       location: 'New York, United States',
       image: require('./assets/speaker-suz.jpg'),
+      talkVideo: 'ov2R3vEn14k',
       bio:
         'Suz is a Cloud Developer Advocate at Microsoft. Suz specializes in accessibility, hardware, JavaScript, and cloud computing. She likes dreaming up fun electronic projects in her spare time.',
       talk:
@@ -231,6 +233,7 @@ export const JS = {
     {
       name: 'Mathias Bynens',
       twitter: 'mathias',
+      talkVideo: 'm9cTaYI95Zc',
       location: 'Munich, Germany',
       announced: true,
       url: 'https://mathiasbynens.be/',
@@ -244,6 +247,7 @@ export const JS = {
     {
       name: 'Alexander Pope',
       twitter: 'popeindustries',
+      talkVideo: 't7WraVE8rY8',
       announced: true,
       url: 'https://github.com/popeindustries',
       image: require('./assets/speaker-alexander.jpg'),
@@ -259,6 +263,7 @@ export const JS = {
       twitter: 'anialdam',
       announced: true,
       url: 'https://github.com/aadjou',
+      talkVideo: '4W06d_kcafE',
       location: 'Zürich, Switzerland',
       image: require('./assets/speaker-madlaina.jpg'),
       bio:
@@ -271,6 +276,7 @@ export const JS = {
       name: 'Irina Shestak',
       twitter: '_lrlna',
       url: 'github.com/lrlna',
+      talkVideo: 'KpkTLmLTvAI',
       announced: true,
       location: 'Berlin, Germany',
       image: require('./assets/speaker-irina.jpg'),
@@ -287,6 +293,7 @@ export const JS = {
       url: 'http://phenomnomnominal.github.io/',
       location: 'Wellington, New Zealand',
       image: require('./assets/speaker-craig.jpg'),
+      talkVideo: 'UKCoRKzRqN4',
       bio:
         "Craig lives in Wellington NZ, where he does JavaScript-y stuff at Trade Me. He loves building cool things that help teams build cool things! He also loves punk rock, Disney's Frozen, and his cat Cosy.",
       talk: 'Fantastic ASTs and Where to Find Them',
@@ -300,6 +307,7 @@ export const JS = {
       url: 'https://github.com/brittanystoroz',
       image: require('./assets/speaker-brittany.jpg'),
       location: 'Denver, United States',
+      talkVideo: 'fQHH6aSpYV0',
       bio:
         "Brittany is a senior instructor and tech lead for the front-end program at Turing School. She's passionate about building a community that prioritizes making programming friendlier for new developers.",
       talk: "A Year of Other's Bugs: The Sad State of Error Handling",
@@ -313,6 +321,7 @@ export const JS = {
       url: 'http://tholman.com',
       location: '',
       image: require('./assets/speaker-tim.jpg'),
+      talkVideo: '4Se0_w0ISYk',
       bio:
         'Tim is a tinkerer, tuner & tamperer of all things online. He enjoys adding a lot of whimsy to the weird wide web, and prides himself with the overall joy it brings to the world.',
       talk: 'Generative Art Speedrun',
@@ -322,6 +331,7 @@ export const JS = {
     {
       name: 'Malte Ubl',
       twitter: 'cramforce',
+      talkVideo: 'ZZmUwXEiPm4',
       announced: true,
       url: 'https://github.com/cramforce',
       location: 'San Francisco, United States',
@@ -336,6 +346,7 @@ export const JS = {
       name: 'Caleb Sotelo',
       twitter: 'calebds',
       url: 'paislee.io',
+      talkVideo: 'Oz-87M6O3HY',
       announced: true,
       location: 'Pasadena, United States',
       image: require('./assets/speaker-caleb.jpg'),
@@ -350,6 +361,7 @@ export const JS = {
       twitter: 'madalynrose',
       announced: true,
       url: 'www.madalynparker.com',
+      talkVideo: 'JWqHioGOELs',
       location: 'Ann Arbor, United States',
       image: require('./assets/speaker-madalyn.jpg'),
       bio:
@@ -364,6 +376,7 @@ export const JS = {
       url: 'https://github.com/vigneshwerd',
       location: 'Bengaluru, India',
       announced: true,
+      talkVideo: 'Zqzwkiii2NE',
       image: require('./assets/speaker-vigneshwer.jpg'),
       bio:
         'Vigneshwer is an innovative data scientist from Bengaluru who crunches real-time data and builds AI algorithms for complex business problems. He believes that technology needs to have a human-centric design to cater solutions to a diverse audience. He’s an official Mozilla TechSpeaker and is the author of Rust Cookbook.',
@@ -374,6 +387,7 @@ export const JS = {
     {
       name: 'Amy Nguyen',
       twitter: 'amyngyn',
+      talkVideo: 'tXssxJgIHbs',
       url: 'http://blog.amynguyen.net/',
       location: 'San Francisco, United States',
       image: require('./assets/speaker-amy.jpg'),
@@ -387,6 +401,7 @@ export const JS = {
     {
       name: 'Nikolai Matvienko',
       twitter: 'matvi3nko',
+      talkVideo: 'y2PRfNsY28w',
       announced: true,
       url: 'https://github.com/nickkooper',
       image: require('./assets/speaker-nikolai.jpg'),
