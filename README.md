@@ -1,3 +1,7 @@
+This project builds the sites for CSSConf, JSConf and Decompress 2018. All sites run off the same codebase and use environment variables to serve the correct items based on the request domain. 
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
